@@ -1,0 +1,139 @@
+\documentclass[10pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%
+% Package Inclusion %
+%%%%%%%%%%%%%%%%%%%%%
+\usepackage{geometry,amsmath,amsthm,mathrsfs,amssymb,graphicx,bm,hyperref,url}
+
+%%%%%%%%%%%%%%%%%%%
+% Custom Commands %
+%%%%%%%%%%%%%%%%%%%
+\newcommand{\n}{\noindent}
+\newcommand{\norm}[1]{\left|#1\right|}
+\newcommand{\avg}[1]{\left<#1\right>}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title Page Information %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Notes for PHYS 232: Stellar Structure}
+\author{Bill Wolf}
+\date{\today}
+
+\begin{document}
+
+\vfill\maketitle\vfill \newpage
+
+\tableofcontents \newpage
+
+%%%%%%%%%%%%%%%%%%%%%%
+% September 23, 2011 %
+%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+	\emph{January 9, 2012}\\
+	
+	\n In this course, we will make ample use of the new computational tool MESA: \textbf{M}odules for \textbf{E}xperiments in \textbf{S}teller \textbf{A}strophysics. Throughout the class, we will have small projects to get us accustomed to using this tool, culminating in an independent research project using MESA.
+
+%%%%%
+\section{Hydrostatics and Thermodynamics of Self-Gravitating Objects}
+	\subsection{The HR Diagram} 
+	Most stars shine predominantly in the optical. Thus we get most of our information about stars by observing their optical output. When plotting a population of stars' luminosities against their surface temperature (color), we note a strong correlation between the two. As it turns out, the controlling parameter for these quantities is the mass of the star, at least while the star is on the \textbf{Main Sequence} (stars burning hydrogen to helium). The correlation between the mass of a main-sequence star and its luminosity is incredibly strong (see HR diagram examples).
+	\subsection{Conditions for a Star on the HR Diagram}
+	We are interested in knowing what defines the regime where a star can reside in $L,\,T_{\mathrm{eff}}=[L/(4\pi\sigma_{\mathrm{SB}}R^2)]^{1/4}$. Why, for example, is there a dynamical range in the luminosity spanning over six orders of magnitude, while only a range of a factor of about 5 in the effective temperature? To gain some perspective, we might observe the number of stars as a function of brightness. We organize these stars by their \textbf{spectral type} (a rough measure of how big the star is) and find their approximate \textbf{mass density} (the amount of mass contained in these stars per unit volume):
+	\begin{center} 
+	\begin{tabular}{l l}
+		Spectral Type & $\rho\ (M_\odot/\mathrm{pc^3})$\\
+		\hline
+		O-B & 0.4\\
+		A-F & 4\\
+		G-M & 40\\
+		WD's & 20
+	\end{tabular}
+	\end{center}
+	We see that the big, bright stars form an exceedingly small portion of the amount of stellar mass in our galaxy. We will find that this is because large stars exhaust their fuel much more quickly than smaller stars, and thus live and die much faster. \\
+	
+	\subsubsection{Population I Stars}
+	\n Consider the Milky Way. From Earth, the center of the galaxy is approximately 8.5 kpc away. The disk is approximately 100 pc wide.  We've observed that stars in the thin disk (commonly known as \textbf{Population I Stars}) are orbiting at the orbital velocity with a small amount of axial and radial motion. They are essentially dynamically cold and in nearly circular orbits. This is indeed where most of the \textbf{interstellar medium} (ISM) resides, causing much of the star formation in the galaxy. This region is also very metal rich. That is, compared to other parts of the universe, there is a much higher concentration of elements heavier than helium present. We will denote the mass fraction with $Z$, and in this region, we have $Z\sim 1-2\,\%$. These metals come from a previous generation of stars, who died in the past, giving off the metals we now have.\\
+	
+	\subsubsection{Population II Stars}
+	 \textbf{Population II Stars} reside mostly in the spheroid in the center of the galaxy. These are older stars in regions where star formation is largely shut down. Typically they are metal poor, with metallicities as low as $Z=10^{-4}Z_\odot$. Kinematically, they are typically on radial orbits. We typically say that the globular clusters are part of this population. Sometimes these stars are seen passing through the disk at velocities comparable to the orbital velocities, and are quite peculiar due to their high velocities and unique spectra (due to the low metallicities).
+	 
+	 \subsection{The Isothermal, Plane Parallel Atmosphere}
+	 Consider an atmosphere where the local acceleration due to gravity, $\mathbf{g}$ is constant in value and direction. The atmosphere is composed of an isothermal ideal gas with temperature $T$. We wish to find the distribution of particles in this atmosphere. In a strictly statistical sense, we would expect the energy distribution to be comparable to $e^-{E/kT}$. In our case, the energy of particles is linear in height, so we expect this probability to proportional to $e^{-mgh/kT}$.\\
+	 
+	 \n We will let $m_B\approx m_p$ be the baryon mass, $\mu$ be the mean molecular weight, and $\rho$ is the density in $\mathrm{g\,cm^{-3}}$. We suppose that the gas is in hydrostatic balance, so we have
+	 \begin{equation}
+	 	\label{ippa.1} \frac{dP}{dz}=-\rho g
+	 \end{equation}
+	 Combining this with the ideal gas law,
+	 \begin{equation}
+	 	\label{ippa.2} P=nkT
+	 \end{equation}
+	We find that
+	\begin{equation}
+		\label{ippa.3} kT\frac{dn}{dz}=m_p\mu ng
+	\end{equation}
+	which in turn gives us
+	\begin{equation}
+		\label{ippa.4} \frac{d\ln n}{dz}=-\frac{m_p\mu g}{kT}
+	\end{equation}
+	Solving this differential equation gives the expected result
+	\begin{equation}
+		\label{ippa.5} n(z)=n(0)\exp\left(-\frac{m_p\mu gz}{kT}\right)=n(0)\exp\left(-\frac{z}{h}\right)
+	\end{equation}
+	where we have defined the \textbf{scale height} $h\equiv kT/(\mu m-pg)$, which is the e-folding distance in number density. As it turns out, the scale height for earth's atmosphere is approximately 10 km. Comparing the scale height to the size of an object (say, Earth), gives us
+	\begin{equation}
+		\label{ippa.6} \frac{h}{R}=\frac{kT}{\mu m_p\frac{GM}{R^2}R}\sim \frac{v_{\mathrm{th}}^2}{v_{\mathrm{esc}}^2}
+	\end{equation}
+	For stars, we will find that $kT_c/m_p\sim GM/R$. For a star, we have
+	\begin{equation}
+		\label{ippa.7} \frac{h}{R}\sim \frac{T_{\mathrm{eff}}}{T_c}
+	\end{equation}
+	This tells us that the edges of stars are quite sharp-edged (their scale heights are very small compared to their radii). We can deduce a physical meaning for the scale height as being how far a particle needs to fall to gain an energy comparable to $kT$.\\
+	
+	\n Again returning to the ideal gas law,
+	\begin{equation}
+		\label{ippa.8} P=\frac{\rho}{\mu m_p}kT=nkT
+	\end{equation}
+	and the condition for hydrostatic equilibrium,
+	\begin{equation}
+		\label{ippa.9} dP=-\rho g\,dz,
+	\end{equation}
+	we integrate \eqref{ippa.9} from $z=z$ to $z\to \infty$:
+	\begin{align}
+		\label{ippa.10} P(\infty)-P(z)&=-\int_z^\infty \rho(z') g\,dz'\\
+		\label{ippa.11} P(z) &= g\int_z^\infty \rho(z')\,dz
+	\end{align}
+	Note that it is okay to take the integral to infinity so long as we are dealing with a constant $\mathbf{g}$. This result suggests the definition of the \textbf{column density}:
+	\begin{equation}
+		\label{ippa.12} y(z)\equiv \int_z^\infty \rho(z)\,dz
+	\end{equation}
+	On the surface of the earth, the column density is approximately $y=1000\,\mathrm{g\,cm^{-3}}$. The column density is an important number (for us) to determine the details of heat transport.
+	\subsection{Mean Molecular Weights}
+	For an ideal gas, the total pressure of a mixed gas is simply
+	\begin{equation}
+		\label{mmw.1} P=\sum_{i=1}^N n_ikT
+	\end{equation}
+	The number density is compute via
+	\begin{equation}
+		\label{mmw.2} n_i=\frac{X_i\rho}{A_im_p}.
+	\end{equation}
+	Then the ion pressure is given by (assuming total ionization)
+	\begin{equation}
+		\label{mmw.3} P_{\mathrm{ion}}=kT\sum\frac{X_i\rho}{A_im_p}=\frac{kT\rho}{m_p}\sum\frac{X_i}{A_i}=\frac{kT\rho}{\mu_im_p}.
+	\end{equation}
+	For the electrons, we have
+	\begin{equation}
+		\label{mmw.4} P_e=n_ekT=kT\left(\sum Z_in_i\right)=\frac{kT\rho}{m_p}\sum\frac{Z_iX_i}{A_i}.
+	\end{equation}
+	Then the total pressure is just the sum of these two,
+	\begin{equation}
+		\label{mmw.5} P=P_{\mathrm{ion}}+P_e=\frac{\rho kT}{m_p}\left(\frac{1}{\mu_e}+\frac{1}{\mu_i}\right)
+	\end{equation}
+	So we define the overall mean molecular weight via
+	\begin{equation}
+		\frac{1}{\mu}\equiv \frac{1}{\mu_e}+\frac{1}{\mu_i}
+	\end{equation}
+	
+\end{document}
