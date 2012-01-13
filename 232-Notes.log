@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  11 JAN 2012 13:47
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  12 JAN 2012 23:26
 entering extended mode
 \write18 enabled.
  file:line:error style messages enabled.
@@ -373,86 +373,73 @@ Notes.toc)
 \openout4 = `232-Notes.toc'.
 
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+[2] <hr_local.pdf, id=86, 691.58376pt x 548.0475pt>
+File: hr_local.pdf Graphic file (type pdf)
+ <use hr_local.pdf>
+Overfull \hbox (3.61537pt too wide) in paragraph at lines 39--40
+ [][] 
+ []
+
+[3] [4 <./hr_local.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
 
-Overfull \hbox (7.80156pt too wide) in paragraph at lines 36--37
-\OT1/cmr/m/n/10 In this course, we will make am-ple use of the new com-pu-ta-ti
-onal tool MESA: \OT1/cmr/bx/n/10 M\OT1/cmr/m/n/10 odules for \OT1/cmr/bx/n/10 E
-\OT1/cmr/m/n/10 xperiments
- []
-
-
-Overfull \hbox (3.15656pt too wide) in paragraph at lines 39--39
-[]\OT1/cmr/bx/n/14.4 Hydrostatics and Ther-mo-dy-nam-ics of Self-Gravitating Ob
--
- []
-
-
-Overfull \hbox (28.70308pt too wide) in paragraph at lines 43--44
-\OT1/cmr/m/n/10 We are in-ter-ested in know-ing what de-fines the regime where 
-a star can re-side in $\OML/cmm/m/it/10 L;  T[] \OT1/cmr/m/n/10 = [\OML/cmm/m/i
-t/10 L=\OT1/cmr/m/n/10 (4\OML/cmm/m/it/10 ^^Y^^[[]R[]\OT1/cmr/m/n/10 )][]$.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
 
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 92--94
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
 
  []
 
-[5] [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 210--212
+[7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 220--222
 
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 248--250
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 258--260
 
  []
 
-[9] [10] (./232-Notes.aux) ) 
+[10] [11] (./232-Notes.aux) ) 
 Here is how much of TeX's memory you used:
- 5612 strings out of 493876
- 78855 string characters out of 1150567
- 157600 words of memory out of 3000000
- 8704 multiletter control sequences out of 10000+50000
+ 5622 strings out of 493876
+ 78934 string characters out of 1150567
+ 157376 words of memory out of 3000000
+ 8711 multiletter control sequences out of 10000+50000
  17758 words of font info for 68 fonts, out of 3000000 for 5000
  714 hyphenation exceptions out of 8191
- 36i,9n,36p,906b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2008/texmf-dist/fonts/type1/blu
-esky/cm/cmbsy10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/
-cmbx10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx12.pf
-b></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmex10.pfb></usr/l
-ocal/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmmi10.pfb></usr/local/texl
-ive/2008/texmf-dist/fonts/type1/bluesky/cm/cmmi7.pfb></usr/local/texlive/2008/t
-exmf-dist/fonts/type1/bluesky/cm/cmr10.pfb></usr/local/texlive/2008/texmf-dist/
-fonts/type1/bluesky/cm/cmr12.pfb></usr/local/texlive/2008/texmf-dist/fonts/type
-1/bluesky/cm/cmr17.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/
-cm/cmr5.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr7.pfb
-></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmsy10.pfb></usr/lo
-cal/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmsy7.pfb></usr/local/texliv
-e/2008/texmf-dist/fonts/type1/bluesky/cm/cmti10.pfb>
-Output written on 232-Notes.pdf (10 pages, 134608 bytes).
+ 36i,9n,36p,921b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2008/texmf-dist/fonts/type1/bl
+uesky/cm/cmbsy10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm
+/cmbx10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx12.p
+fb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmex10.pfb></usr/
+local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmmi10.pfb></usr/local/tex
+live/2008/texmf-dist/fonts/type1/bluesky/cm/cmmi7.pfb></usr/local/texlive/2008/
+texmf-dist/fonts/type1/bluesky/cm/cmr10.pfb></usr/local/texlive/2008/texmf-dist
+/fonts/type1/bluesky/cm/cmr12.pfb></usr/local/texlive/2008/texmf-dist/fonts/typ
+e1/bluesky/cm/cmr17.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky
+/cm/cmr5.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr7.pf
+b></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmsy10.pfb></usr/l
+ocal/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmsy7.pfb></usr/local/texli
+ve/2008/texmf-dist/fonts/type1/bluesky/cm/cmti10.pfb>
+Output written on 232-Notes.pdf (11 pages, 162099 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 77 named destinations out of 1000 (max. 131072)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 79 named destinations out of 1000 (max. 131072)
+ 122 words of extra memory for PDF output out of 10000 (max. 10000000)
 

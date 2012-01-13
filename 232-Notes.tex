@@ -31,16 +31,17 @@
 %%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
-	\emph{Monday, January 9, 2012}\\
-	
-	\n In this course, we will make ample use of the new computational tool MESA: \textbf{M}odules for \textbf{E}xperiments in \textbf{S}teller \textbf{A}strophysics. Throughout the class, we will have small projects to get us accustomed to using this tool, culminating in an independent research project using MESA.
-
-%%%%%
-\section{Hydrostatics and Thermodynamics of Self-Gravitating Objects}
+	\emph{Monday, January 9, 2012}
 	\subsection{The HR Diagram} 
-	Most stars shine predominantly in the optical. Thus we get most of our information about stars by observing their optical output. When plotting a population of stars' luminosities against their surface temperature (color), we note a strong correlation between the two. As it turns out, the controlling parameter for these quantities is the mass of the star, at least while the star is on the \textbf{Main Sequence} (stars burning hydrogen to helium). The correlation between the mass of a main-sequence star and its luminosity is incredibly strong (see HR diagram examples).
+	Most stars shine predominantly in the optical range of the electromagnetic spectrum. As a result, we get most of our information about stars by observing their optical output.  It makes sense, then, that we might organize stars by there color, which is indicative of their surface temperature. When plotting a population of stars' luminosities against their surface temperature, we note a strong correlation between the two. As it turns out, the controlling parameter for these quantities is the mass of the star, at least while the star is on the \textbf{Main Sequence} (stars burning hydrogen to helium). The correlation between the mass of a main-sequence star and its luminosity is incredibly strong (see HR diagram examples).
+	\begin{figure}
+		\centering
+		\includegraphics[width=6in]{hr_local.pdf}
+		\caption{An HR diagram for stars in the local neighborhood (shamelessly stolen from Google Images}
+		\label{HR.1f}
+	\end{figure}
 	\subsection{Conditions for a Star on the HR Diagram}
-	We are interested in knowing what defines the regime where a star can reside in $L,\,T_{\mathrm{eff}}=[L/(4\pi\sigma_{\mathrm{SB}}R^2)]^{1/4}$. Why, for example, is there a dynamical range in the luminosity spanning over six orders of magnitude, while only a range of a factor of about 5 in the effective temperature? To gain some perspective, we might observe the number of stars as a function of brightness. We organize these stars by their \textbf{spectral type} (a rough measure of how big the star is) and find their approximate \textbf{mass density} (the amount of mass contained in these stars per unit volume):
+	We are interested in knowing what defines the regime where a star can reside in a particular $L,\,T_{\mathrm{eff}}=[L/(4\pi\sigma_{\mathrm{SB}}R^2)]^{1/4}$. Why, for example, is there a dynamical range in the luminosity spanning over six orders of magnitude, while only a range of a factor of about 5 in the effective temperature? To gain some perspective, we might observe the number of stars as a function of brightness. We organize these stars by their \textbf{spectral type} (a rough measure of how big the star is) and find their approximate \textbf{mass density} (the amount of mass contained in these stars per unit volume):
 	\begin{center} 
 	\begin{tabular}{l l}
 		Spectral Type & $\rho\ (M_\odot/\mathrm{pc^3})$\\
@@ -51,18 +52,25 @@
 		WD's & 20
 	\end{tabular}
 	\end{center}
-	We see that the big, bright stars form an exceedingly small portion of the amount of stellar mass in our galaxy. We will find that this is because large stars exhaust their fuel much more quickly than smaller stars, and thus live and die much faster. \\
-	
+	Here we've used the standard labels for different spectral types, O, B, A, F, G, K, M, L, T, which are roughly in decreasing order of size and temperature (the reasoning for this scale is historical rather than logical, and the ordering is often remembered by the mnemonic, ``Oh Be A Fine Gal/Guy, Kiss Me! Less Talk!''). We see that the big, bright stars form an exceedingly small portion of the amount of stellar mass in our galaxy. We will find that this is because large stars exhaust their fuel much more quickly than smaller stars, and thus live and die much faster. We'll now observe another type of classification of stars used in our neighborhood, the Milky Way Galaxy.
+		
 	\subsubsection{Population I Stars}
-	\n Consider the Milky Way. From Earth, the center of the galaxy is approximately 8.5 kpc away. The disk is approximately 100 pc wide.  We've observed that stars in the thin disk (commonly known as \textbf{Population I Stars}) are orbiting at the orbital velocity with a small amount of axial and radial motion. They are essentially dynamically cold and in nearly circular orbits. This is indeed where most of the \textbf{interstellar medium} (ISM) resides, causing much of the star formation in the galaxy. This region is also very metal rich. That is, compared to other parts of the universe, there is a much higher concentration of elements heavier than helium present. We will denote the mass fraction with $Z$, and in this region, we have $Z\sim 1-2\,\%$. These metals come from a previous generation of stars, who died in the past, giving off the metals we now have.\\
+	From Earth, the center of the galaxy is approximately 8.5 kpc away. Meanwhile, the disk is only about 100 pc wide.  We've observed that stars in the thin disk (commonly known as \textbf{Population I Stars}) are orbiting at the orbital velocity with only a small amount of axial and radial motion. They are essentially dynamically cold and in nearly circular orbits. This is indeed where most of the \textbf{interstellar medium} (ISM) resides, causing much of the star formation in the galaxy. This region is also very metal rich. That is, compared to other parts of the universe, there is a much higher concentration of elements heavier than helium present. We will denote the mass fraction of these ``metals'' with the letter $Z$, and in this region, we have $Z\sim 1-2\,\%$. These metals come from a previous generation of stars, who died in the past, giving off the metals we now have.	
 	
 	\subsubsection{Population II Stars}
-	 \textbf{Population II Stars} reside mostly in the spheroid in the center of the galaxy. These are older stars in regions where star formation is largely shut down. Typically they are metal poor, with metallicities as low as $Z=10^{-4}Z_\odot$. Kinematically, they are typically on radial orbits. We typically say that the globular clusters are part of this population. Sometimes these stars are seen passing through the disk at velocities comparable to the orbital velocities, and are quite peculiar due to their high velocities and unique spectra (due to the low metallicities).
+	 \textbf{Population II Stars} reside mostly in the spheroid in the center of the galaxy. These are older stars in regions where star formation is largely shut down. Typically they are metal poor, with metallicities as low as $Z=10^{-4}Z_\odot$. Kinematically, they are often on radial orbits (rather than their more azimuthal population II counterparts in the disk). We typically say that the globular clusters are part of this population. Sometimes these stars are seen passing through the disk at velocities comparable to the orbital velocities, and are easily identified due to their high velocities and unique spectra (due to the low metallicities).
+
+%%%%%
+
+\section{The Isothermal, Plane Parallel Atmosphere}
+	 \subsection{Scale Height and Column Depth}
+	 Before tackling the physics of stars, we first consider a simple toy model- the isothermal, plane parallel atmosphere. This model is somewhat applicable to the thin stellar atmosphere near the surface of a star, where curvature can be neglected and the acceleration due to gravity is nearly uniform.\\
 	 
-	 \subsection{The Isothermal, Plane Parallel Atmosphere}
-	 Consider an atmosphere where the local acceleration due to gravity, $\mathbf{g}$ is constant in value and direction. The atmosphere is composed of an isothermal ideal gas with temperature $T$. We wish to find the distribution of particles in this atmosphere. In a strictly statistical sense, we would expect the energy distribution to be comparable to $e^-{E/kT}$. In our case, the energy of particles is linear in height, so we expect this probability to proportional to $e^{-mgh/kT}$.\\
+	 \n Consider an atmosphere where the local acceleration due to gravity, $\mathbf{g}$ is constant in value and direction. The atmosphere is composed of an isothermal ideal gas with temperature $T$. We wish to find the distribution of particles in this atmosphere.\\
 	 
-	 \n We will let $m_B\approx m_p$ be the baryon mass, $\mu$ be the mean molecular weight, and $\rho$ is the density in $\mathrm{g\,cm^{-3}}$. We suppose that the gas is in hydrostatic balance, so we have
+	 \n In a strictly statistical sense, we would expect the energy distribution to be comparable to $e^{-E/kT}$ (recall that the atmosphere is isothermal, so the average kinetic energy is uniform throughout). In our case, the energy of particles is linear in height, so we expect this probability to be proportional to $e^{-mgh/kT}$.\\
+	 
+	 \n We will let $m_B\approx m_p$ be the baryon mass, $\mu$ be the mean molecular mass (measured in AMU), and $\rho$ is the density in $\mathrm{g\,cm^{-3}}$. We suppose that the gas is in hydrostatic balance, so we have
 	 \begin{equation}
 	 	\label{ippa.1} \frac{dP}{dz}=-\rho g
 	 \end{equation}
@@ -82,25 +90,25 @@
 	\begin{equation}
 		\label{ippa.5} n(z)=n(0)\exp\left(-\frac{m_p\mu gz}{kT}\right)=n(0)\exp\left(-\frac{z}{h}\right)
 	\end{equation}
-	where we have defined the \textbf{scale height} $h\equiv kT/(\mu m-pg)$, which is the e-folding distance in number density. As it turns out, the scale height for earth's atmosphere is approximately 10 km. Comparing the scale height to the size of an object (say, Earth), gives us
+	where we have defined the \textbf{scale height} $h\equiv kT/(\mu m-pg)$, which is the e-folding distance in number density. As it turns out, the scale height for earth's atmosphere is approximately 10 km. This model is really only valid in cases where $h\ll R$, (where $R$ is the size of the object), so we now investigate the ratio of these two quantities:
 	\begin{equation}
-		\label{ippa.6} \frac{h}{R}=\frac{kT}{\mu m_p\frac{GM}{R^2}R}\sim \frac{v_{\mathrm{th}}^2}{v_{\mathrm{esc}}^2}
+		\label{ippa.6} \frac{h}{R}=\frac{kT}{\mu m_p\frac{GM}{R^2}R}=\frac{1}{\mu}\frac{kT/m_p}{GM/R}\sim \frac{v_{\mathrm{th}}^2}{v_{\mathrm{esc}}^2}\ll 1
 	\end{equation}
-	For stars, we will find that $kT_c/m_p\sim GM/R$. For a star, we have
+	So if this approximation is valid, the thermal velocities of particles are typically much smaller than the escape velocity of the central body, so a star could retain its own atmosphere (thankfully, Earth does the same to its atmosphere!) For stars, we will find that $kT_c/m_p\sim GM/R$. Then, \eqref{ippa.6} tells us that
 	\begin{equation}
-		\label{ippa.7} \frac{h}{R}\sim \frac{T_{\mathrm{eff}}}{T_c}
+		\label{ippa.7} \frac{h}{R}\sim \frac{T_{\mathrm{eff}}}{T_c}.
 	\end{equation}
-	This tells us that the edges of stars are quite sharp-edged (their scale heights are very small compared to their radii). We can deduce a physical meaning for the scale height as being how far a particle needs to fall to gain an energy comparable to $kT$.\\
+	This tells us that the edges of stars are quite sharp-edged (their scale heights are very small compared to their radii). We can also deduce a physical meaning for the scale height as being how far a particle needs to fall to gain an energy comparable to $kT$.\\
 	
-	\n Again returning to the ideal gas law,
+	\n From the ideal gas law, we can easily see that the pressure will also fall off exponentially in this isothermal atmosphere. However, let's explore the pressure a bit more. First, we return to the ideal gas law,
 	\begin{equation}
 		\label{ippa.8} P=\frac{\rho}{\mu m_p}kT=nkT
 	\end{equation}
 	and the condition for hydrostatic equilibrium,
 	\begin{equation}
-		\label{ippa.9} dP=-\rho g\,dz,
+		\label{ippa.9} dP=-\rho g\,dz.
 	\end{equation}
-	we integrate \eqref{ippa.9} from $z=z$ to $z\to \infty$:
+	We now integrate \eqref{ippa.9} from $z=z$ to $z\to \infty$:
 	\begin{align}
 		\label{ippa.10} P(\infty)-P(z)&=-\int_z^\infty \rho(z') g\,dz'\\
 		\label{ippa.11} P(z) &= g\int_z^\infty \rho(z')\,dz
@@ -109,25 +117,29 @@
 	\begin{equation}
 		\label{ippa.12} y(z)\equiv \int_z^\infty \rho(z)\,dz
 	\end{equation}
-	On the surface of the earth, the column density is approximately $y=1000\,\mathrm{g\,cm^{-3}}$. The column density is an important number (for us) to determine the details of heat transport.
+	On the surface of the earth, the column density is approximately $y=1000\,\mathrm{g\,cm^{-3}}$. Think of it as the amount of mass sitting above you per unit area at a given altitude. The column density is an important number (for us) to determine the details of heat transport. For now though, we can write the pressure in this isothermal atmosphere in a compact form: $P(z)=gy(z)$.
 	\subsection{Mean Molecular Weights}
-	For an ideal gas, the total pressure of a mixed gas is simply
+	We'll now make a useful definition for calculating pressures and other useful quantities. For an ideal gas, the total pressure of a mixed gas is simply
 	\begin{equation}
 		\label{mmw.1} P=\sum_{i=1}^N n_ikT
 	\end{equation}
-	The number density is compute via
+	where $n_i$ are just the number densities for each ion. The number density is computed via
 	\begin{equation}
 		\label{mmw.2} n_i=\frac{X_i\rho}{A_im_p}.
 	\end{equation}
-	Then the ion pressure is given by (assuming total ionization)
+	where $X_i$ is the mass fraction of the $i^{\mathrm{th}}$ ion with mass number $A_i$ and $\rho$ is the overall mass density. Then the ion pressure is given by (assuming total ionization)
 	\begin{equation}
-		\label{mmw.3} P_{\mathrm{ion}}=kT\sum\frac{X_i\rho}{A_im_p}=\frac{kT\rho}{m_p}\sum\frac{X_i}{A_i}=\frac{kT\rho}{\mu_im_p}.
+		\label{mmw.3} P_{\mathrm{ion}}=kT\sum\frac{X_i\rho}{A_im_p}=\frac{kT\rho}{m_p}\sum\frac{X_i}{A_i}=\frac{kT\rho}{\mu_{\mathrm{ion}}m_p}.
 	\end{equation}
-	For the electrons, we have
+	Where we have defined the \textbf{mean molecular weight} of the ions to be
+	\begin{equation}
+		\label{mmw.3a} \mu_{\mathrm{ion}}=\left[\sum\frac{X_i}{A_i}\right]^{-1}
+	\end{equation}
+	For the electrons, we have (assuming total ionization)
 	\begin{equation}
 		\label{mmw.4} P_e=n_ekT=kT\left(\sum Z_in_i\right)=\frac{kT\rho}{m_p}\sum\frac{Z_iX_i}{A_i}.
 	\end{equation}
-	Then the total pressure is just the sum of these two,
+	(here $Z_i$ is the atomic number not the metallicity). Then the total pressure is just the sum of these two,
 	\begin{equation}
 		\label{mmw.5} P=P_{\mathrm{ion}}+P_e=\frac{\rho kT}{m_p}\left(\frac{1}{\mu_e}+\frac{1}{\mu_i}\right)
 	\end{equation}
@@ -135,16 +147,14 @@
 	\begin{equation}
 		\frac{1}{\mu}\equiv \frac{1}{\mu_e}+\frac{1}{\mu_i}
 	\end{equation}
+	One might think of this as the average weight of a particle that supplies pressure win a gas. Later, we'll see that this quantity, and its evolution, plays a large and critical role in the the nature of stellar evolution. Since fusion tends to decrease the pressure support, the star must continuously readjust its structure so as to hold itself up.\\
+	
 %%%%%%%%%%%%%%%%%%%%%%
 %  January 11, 2012  %
 %%%%%%%%%%%%%%%%%%%%%%
-	\textit{Wednesday, January 11, 2012}
+	\n \textit{Wednesday, January 11, 2012}
 	\subsection{Electric Fields in Stars}
-	Recalling the scale height,
-	\begin{equation}
-		\label{efs.1} h=\frac{kT}{mg}
-	\end{equation}
-	we wish to find the scale height in a plasma of ionized hydrogen. In this plasma, we have $n_p=n_e$ due to electric neutrality. Then the overall pressure in this hydrogen plasma is
+	Imagine a pure, ionized hydrogen atmosphere which is, on the large scale, electrically neutral. We wish to find the scale height in a plasma of ionized hydrogen. In this plasma, we have $n_p=n_e$ due to electric neutrality. Then the overall pressure in this hydrogen plasma is
 	\begin{equation}
 		\label{efs.2} P=2n_pkT
 	\end{equation}
@@ -160,26 +170,26 @@
 	\begin{equation}
 		\label{efs.5} h=\frac{2kT}{mg}
 	\end{equation}
-	We need to look at both plasmas separately. Incorporating the electric field for electrons, we have
+	We need to look at both plasmas separately while incorporating the electric field created between the protons and electrons. For electrons, we have
 	\begin{equation}
-		\label{efs.6} \frac{1}{n_e}\frac{dP_e}{dz}=-m_eg-eE
+		\label{efs.6} \frac{1}{n_e}\frac{dP_e}{dz}=-m_eg-eE.
 	\end{equation}
-	Likewise fo rhte protons,
+	Likewise for the protons,
 	\begin{equation}
 		\label{efs.7} \frac{1}{n_p}\frac{dP_p}{dz}=-m_pg+eE
 	\end{equation}
-	Now adding \eqref{efs.6} and \eqref{efs.7}, we recover hydrostatic balance. However, subtracting the two equations will get us the electric field:
+	where we've assumed that the electric field points up (the protons are heavier and would thus sink below the electrons). Now adding \eqref{efs.6} and \eqref{efs.7}, we recover hydrostatic balance. However, subtracting the two equations will get us the electric field:
 	\begin{equation}
-		\label{efs.8} 0=-m_eg+m_pg-2eE
+		\label{efs.8} 0=-m_eg+m_pg-2eE,
 	\end{equation}
-	Which gives us the electric field being
+	giving the result,
 	\begin{equation}
-		\label{efs.9} \boxed{eE=\frac{1}{2}\left(m_p-m_e\right)g}
+		\label{efs.9} eE=\frac{1}{2}\left(m_p-m_e\right)g \quad \textrm{or}\quad e\mathbf{E}\approx -\frac{m_p\mathbf{g}}{2}.
 	\end{equation}
-	This electric field is important to know what happens to a new particle introduced to the system. The gravitational force will be at odds with the electric field in determining the motion of such a particle. Additionally this explains how there is one scale height for a plasma as opposed to one for electrons and one for protons.
-	\subsection{Self-Gravitating Objects}
+	So this field does not directly affect hydrostatic balance, but it does dramatically impact the relative difficulty of (???) in a white dwarf.
+\section{Self-Gravitating Objects}
 	So far we have only considered systems where the acceleration due to gravity is constant. In any self-gravitating object, this is obviously not true. We will, however, continue to assume that such objects do not rotate. Additionally, we will be ignoring mass loss. Essentially all we must write down are equations of mass conservation, momentum conservation, and energy conservation. We'll start with momentum conservation.
-	\subsubsection{Momentum Conservation and the Free-Fall Timescale}
+	\subsection{Momentum Conservation and the Free-Fall Timescale}
 	The momentum equation for a fluid is just
 	\begin{equation}
 		\label{mc.1} \rho\frac{d\mathbf{v}}{dt}=\rho\mathbf{g}-\bm{\nabla}P
@@ -210,7 +220,7 @@
 	\end{equation}
 	This is also the same as the Keplerian orbital period, modulo some uninteresting constants. The punchline of this whole argument is that a star that is \emph{not} in hydrostatic balance will respond on a timescale of the free-fall timescale. From this alone, we may conclude that the sun (and all other stars not currently exploding) is in hydrostatic balance. We will then assume that all stars are always in hydrostatic balance.\\
 	
-	\subsubsection{Repercussions for Stellar Structure}
+	\subsection{The Virial Theorem}
 	Stars are held up by gas pressure, radiation pressure, or both. The pressure gradients are what will be the ``restoring forces'' against gravity for our cases. In spherical symmetry, hydrostatic balance tells us
 	\begin{equation}
 		\label{rss.1} \frac{dP}{dr}=-\rho\frac{Gm(r)}{r^2}
@@ -242,19 +252,19 @@
 	\begin{equation}
 		\label{rss.10} E_{\mathrm{tot}}=-3\avg{P}V+\frac{3}{2}\avg{P}V=-E_{\mathrm{KE}}
 	\end{equation}
-	However for radiation, pressure is given by $P=\frac{1}{3}aT^4$ and $E/V=aT^4$. Taking this to its conclusion gives us
+	Interestingly, this requires a negative heat capacity. That is, an increase in the temperature of the system causes a net \emph{decrease} in total energy. However for radiation, pressure is given by $P=\frac{1}{3}aT^4$ and $E/V=aT^4$. Taking this to its conclusion gives us
 	\begin{equation}
 		\label{rss.11} E_{\mathrm{tot}}\to 0\ \textrm{as the particles become relativistic}
 	\end{equation}
 	The origin of this result is in the momentum-energy relation of relativistic particles and non-relativistic particles. That is, $E=pc$ for ultra-relativistic particles and $E=p^2/2m$ for non-relativistic particles.\\
 	
-	\n The limiting energy of ultra-relativistic stars puts an upper level on the mass of large stars, since a total energy of a star being zero means unbinding the star (this is level of radiation is known as the \textbf{Eddington Limit}). In the ``normal case'' of an ideal gas star, the more traditional form of the virial theorem applies:
+	\n The limiting energy of ultra-relativistic stars puts an upper level on the mass of large stars, since a total energy of a star being zero means unbinding the star. In the ``normal case'' of an ideal gas star, the more traditional form of the virial theorem applies:
 	\begin{equation}
 		\label{rss.12} \frac{E_{\mathrm{KE}}}{\mathrm{particle}}\sim\frac{GM}{R}
 	\end{equation}
 	This is why stars typically behave with a negative heat capacity. That is, as a star radiates, $E_{\mathrm{tot}}$ is more negative, meaning that $R$ must decrease and the temperature $T$ (essentially the kinetic energy per particle) rises.
-	\subsubsection{Applications of the Virial Theorm}
-	the gravitational energy of an object is typically given by
+	\subsection{Applications of the Virial Theorm}
+	The gravitational energy of an object is typically given by
 	\begin{equation}
 		\label{avt.1}E_{\mathrm{GR}}\approx -\frac{GM^2}{R}
 	\end{equation}
@@ -278,7 +288,7 @@
 	\begin{equation}
 		\label{avt.6} t_{\mathrm{KH}}=\frac{E_{\mathrm{GR}}}{L}\approx 3\times 10^7\ \mathrm{years}
 	\end{equation}
-	for the sun. This has been known for awhile and since the Earth is known to have existed much longer than $t_{\mathrm{KH}}$, scientists deduced that another energy source within the sun was needed to explain its longevity. We now know that this energy source is, of course, fusion. Note that at the center of the sun, the temperature of $10^7\ \mathrm{K}$ corresponds to an energy per particle of about 1 keV. The binding energy of helium is approximately 7MeV, approximately 7000 times bigger than the thermal content. Thus, the sun could last approximately 7000 times longer, bringing the projected lifetime of the sun up to a more reasonable (but still wrong) number of about 200 billion years.
+	for the sun. This has been known for awhile and since the Earth is known to have existed much longer than $t_{\mathrm{KH}}$, scientists deduced that another energy source within the sun was needed to explain its longevity. We now know that this energy source is, of course, fusion. Note that at the center of the sun, the temperature of $10^7\ \mathrm{K}$ corresponds to an energy per particle of about 1 keV. The binding energy of helium is approximately 7MeV, approximately 7000 times bigger than the thermal content. Thus, the sun could last approximately 7000 times longer, bringing the projected lifetime of the sun up to a more reasonable (but still wrong) number of about 200 billion years. We conclude that nuclear energy is a more promising form of energy for the sun than chemical energy.
 \end{document}
 
 
