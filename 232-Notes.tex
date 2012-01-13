@@ -27,11 +27,11 @@
 \tableofcontents \newpage
 
 %%%%%%%%%%%%%%%%%%%%%%
-% September 23, 2011 %
+% January 9, 2012 %
 %%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
-	\emph{January 9, 2012}\\
+	\emph{Monday, January 9, 2012}\\
 	
 	\n In this course, we will make ample use of the new computational tool MESA: \textbf{M}odules for \textbf{E}xperiments in \textbf{S}teller \textbf{A}strophysics. Throughout the class, we will have small projects to get us accustomed to using this tool, culminating in an independent research project using MESA.
 
@@ -135,5 +135,156 @@
 	\begin{equation}
 		\frac{1}{\mu}\equiv \frac{1}{\mu_e}+\frac{1}{\mu_i}
 	\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%
+%  January 11, 2012  %
+%%%%%%%%%%%%%%%%%%%%%%
+	\textit{Wednesday, January 11, 2012}
+	\subsection{Electric Fields in Stars}
+	Recalling the scale height,
+	\begin{equation}
+		\label{efs.1} h=\frac{kT}{mg}
+	\end{equation}
+	we wish to find the scale height in a plasma of ionized hydrogen. In this plasma, we have $n_p=n_e$ due to electric neutrality. Then the overall pressure in this hydrogen plasma is
+	\begin{equation}
+		\label{efs.2} P=2n_pkT
+	\end{equation}
+	Using hydrostatic equilibrium, we get
+	\begin{equation}
+		\label{efs.3} 2kT\frac{dn_p}{dz}=-m_pn_pg
+	\end{equation}
+	which in turn gives us the differential equation
+	\begin{equation}
+		\label{efs.4} \frac{d\ln n_p}{dz}=-\frac{M_pg}{2kT}
+	\end{equation}
+	Which gives us a scale height of
+	\begin{equation}
+		\label{efs.5} h=\frac{2kT}{mg}
+	\end{equation}
+	We need to look at both plasmas separately. Incorporating the electric field for electrons, we have
+	\begin{equation}
+		\label{efs.6} \frac{1}{n_e}\frac{dP_e}{dz}=-m_eg-eE
+	\end{equation}
+	Likewise fo rhte protons,
+	\begin{equation}
+		\label{efs.7} \frac{1}{n_p}\frac{dP_p}{dz}=-m_pg+eE
+	\end{equation}
+	Now adding \eqref{efs.6} and \eqref{efs.7}, we recover hydrostatic balance. However, subtracting the two equations will get us the electric field:
+	\begin{equation}
+		\label{efs.8} 0=-m_eg+m_pg-2eE
+	\end{equation}
+	Which gives us the electric field being
+	\begin{equation}
+		\label{efs.9} \boxed{eE=\frac{1}{2}\left(m_p-m_e\right)g}
+	\end{equation}
+	This electric field is important to know what happens to a new particle introduced to the system. The gravitational force will be at odds with the electric field in determining the motion of such a particle. Additionally this explains how there is one scale height for a plasma as opposed to one for electrons and one for protons.
+	\subsection{Self-Gravitating Objects}
+	So far we have only considered systems where the acceleration due to gravity is constant. In any self-gravitating object, this is obviously not true. We will, however, continue to assume that such objects do not rotate. Additionally, we will be ignoring mass loss. Essentially all we must write down are equations of mass conservation, momentum conservation, and energy conservation. We'll start with momentum conservation.
+	\subsubsection{Momentum Conservation and the Free-Fall Timescale}
+	The momentum equation for a fluid is just
+	\begin{equation}
+		\label{mc.1} \rho\frac{d\mathbf{v}}{dt}=\rho\mathbf{g}-\bm{\nabla}P
+	\end{equation}
+	This equation essentially states that a self-gravitating object is neither collapsing nor expanding. If we were to ``shut off'' gravity or the pressure gradient, the star would either explode or collapse, respectively. Such a collapse would occur on the \textbf{free-fall timescale}, which we will now derive. Taking the pressure gradient out of \eqref{mc.1}, we retrieve
+	\begin{equation}
+		\label{mc.2} \mathbf{g}=-\frac{Gm(r)}{r^2}\hat{r}
+	\end{equation}
+	For this derivation, we will be using a \textbf{Lagrangian coordinate systems}. This is a system where the coordinates follow a particular fluid element. In essence, we are making the substitution
+	\begin{equation}
+		\label{mc.3} \frac{d}{t}\to\frac{\partial}{\partial t}+\mathbf{v}\cdot\bm{\nabla}
+	\end{equation}
+	Returning back to the derivation, \eqref{mc.2} gives us
+	\begin{equation}
+		\label{mc.4} \frac{dv_r}{dt}=-\frac{Gm(r)}{r^2}
+	\end{equation}
+	Initially, we have $t=0$, $v_r=0$, and $r=r_0$ with the radial velocity given by $v_r=dr/dt$. Then our differential equation is
+	\begin{equation}
+		\label{mc.5} \frac{d^2r}{dt^2}=-\frac{Gm}{r^2}
+	\end{equation}
+	As an order of magnitude estimate, this gives us
+	\begin{equation}
+		\label{mc.6}\frac{r}{t_{\mathrm{ff}}^2}\sim\frac{Gm}{r^2}\quad \Rightarrow \quad t_{\mathrm{ff}}^2\sim\frac{1}{Gm/r^3}
+	\end{equation}
+	So we define the free-fall timescale to be
+	\begin{equation}
+		\label{mc.7} t_{\mathrm{ff}}=\frac{1}{\sqrt{G\rho}}
+	\end{equation}
+	This is also the same as the Keplerian orbital period, modulo some uninteresting constants. The punchline of this whole argument is that a star that is \emph{not} in hydrostatic balance will respond on a timescale of the free-fall timescale. From this alone, we may conclude that the sun (and all other stars not currently exploding) is in hydrostatic balance. We will then assume that all stars are always in hydrostatic balance.\\
 	
+	\subsubsection{Repercussions for Stellar Structure}
+	Stars are held up by gas pressure, radiation pressure, or both. The pressure gradients are what will be the ``restoring forces'' against gravity for our cases. In spherical symmetry, hydrostatic balance tells us
+	\begin{equation}
+		\label{rss.1} \frac{dP}{dr}=-\rho\frac{Gm(r)}{r^2}
+	\end{equation}
+	We will use this to derive the \textbf{Virial Theorem}, which relates the potential energy to the kinetic energy of a system. The equation of mass conservation states that
+	\begin{equation}
+		\label{rss.2} dm=4\pi r^2\rho(r)\,dr
+	\end{equation}
+	Now we multiply both sides of \eqref{rss.1} by $4\pi r^3\,dr$:
+	\begin{align}
+		\label{rss.3} \int 4\pi r^3\,dP&=-\int \rho\frac{G}{r^2}4\pi r^3\,dr m(r)\\
+		\label{rss.4} &= -\int\frac{Gm(r)dm}{r} = E_{\mathrm{GR}}
+	\end{align}
+	Performing a similar analysis to the left side of \eqref{rss.3} gives
+	\begin{align}
+		\label{rss.5} \int 4\pi r^3\,dr\frac{dP}{dr} &= \left.4\pi r^2P\right|_{0}^R-3\left[4\pi\int Pr^2\,dr\right]\\
+		\label{rss.6} &= -3\int P4\pi  r^2\,dr\\
+		\label{rss.7}&=-3\avg{P}V
+	\end{align}
+	where we've defined the average pressure to be the pressure averaged over volume. Then the virial theorem tells us that
+	\begin{equation}
+		\label{rss.8}\boxed{\avg{P}=-\frac{1}{3}\frac{E_{\mathrm{GR}}}{V}}
+	\end{equation}
+	Now we examine the total energy:
+	\begin{equation}
+		\label{rss.9} E_{\mathrm{tot}}=E_{\mathrm{GR}}+E_{\mathrm{KE}}=-3\avg{P}V+E_{\mathrm{KE}}
+	\end{equation}
+	We need only relate the kinetic energy to the pressure to finish this equation off. For an ideal gas, we know that $P=NkT/V$, so the kinetic energy is $E_{\mathrm{KE}}=\frac{3}{2}NkT=\frac{3}{2}PV$. This gives a total energy of
+	\begin{equation}
+		\label{rss.10} E_{\mathrm{tot}}=-3\avg{P}V+\frac{3}{2}\avg{P}V=-E_{\mathrm{KE}}
+	\end{equation}
+	However for radiation, pressure is given by $P=\frac{1}{3}aT^4$ and $E/V=aT^4$. Taking this to its conclusion gives us
+	\begin{equation}
+		\label{rss.11} E_{\mathrm{tot}}\to 0\ \textrm{as the particles become relativistic}
+	\end{equation}
+	The origin of this result is in the momentum-energy relation of relativistic particles and non-relativistic particles. That is, $E=pc$ for ultra-relativistic particles and $E=p^2/2m$ for non-relativistic particles.\\
+	
+	\n The limiting energy of ultra-relativistic stars puts an upper level on the mass of large stars, since a total energy of a star being zero means unbinding the star (this is level of radiation is known as the \textbf{Eddington Limit}). In the ``normal case'' of an ideal gas star, the more traditional form of the virial theorem applies:
+	\begin{equation}
+		\label{rss.12} \frac{E_{\mathrm{KE}}}{\mathrm{particle}}\sim\frac{GM}{R}
+	\end{equation}
+	This is why stars typically behave with a negative heat capacity. That is, as a star radiates, $E_{\mathrm{tot}}$ is more negative, meaning that $R$ must decrease and the temperature $T$ (essentially the kinetic energy per particle) rises.
+	\subsubsection{Applications of the Virial Theorm}
+	the gravitational energy of an object is typically given by
+	\begin{equation}
+		\label{avt.1}E_{\mathrm{GR}}\approx -\frac{GM^2}{R}
+	\end{equation}
+	Using the virial theorem, we have
+	\begin{equation}
+		\label{avt.2} -E_{\mathrm{GR}}=-EV\frac{N}{V}kT
+	\end{equation}
+	Or,
+	\begin{equation}
+		\label{avt.3} \frac{GM}{R}\left(Nm_P\right)\sim 3NkT
+	\end{equation}
+	So we have
+	\begin{equation}
+		\label{avt.4} \boxed{kT\sim \frac{GMm_p}{R}}
+	\end{equation}
+	This temperature is the temperature of most of the material and is $T\sim T_c\sim \mathrm{core}$. For the sun, we then have $T\sim 10^7\ \mathrm{K}$. Interestingly, assuming hydrostatic equilibrium was all we needed to get a rough estimate of the sun's core temperature! One might note, though, that the surface temperature is significantly lower than the core temperature, so we must assume that there is heat loss taking place in the sun. Today the luminosity of the sun is
+	\begin{equation}
+		\label{avt.5} L_\odot = 4\times 10^{33}\ \mathrm{erg/s}
+	\end{equation}
+	If we assume there is no energy source for the sun other than gravitational energy, we can come up with a timescale (called the \textbf{Kelvin-Helmholtz timescale})
+	\begin{equation}
+		\label{avt.6} t_{\mathrm{KH}}=\frac{E_{\mathrm{GR}}}{L}\approx 3\times 10^7\ \mathrm{years}
+	\end{equation}
+	for the sun. This has been known for awhile and since the Earth is known to have existed much longer than $t_{\mathrm{KH}}$, scientists deduced that another energy source within the sun was needed to explain its longevity. We now know that this energy source is, of course, fusion. Note that at the center of the sun, the temperature of $10^7\ \mathrm{K}$ corresponds to an energy per particle of about 1 keV. The binding energy of helium is approximately 7MeV, approximately 7000 times bigger than the thermal content. Thus, the sun could last approximately 7000 times longer, bringing the projected lifetime of the sun up to a more reasonable (but still wrong) number of about 200 billion years.
 \end{document}
+
+
+
+
+
+
+
+

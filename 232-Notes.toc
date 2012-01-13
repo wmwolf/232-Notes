@@ -6,3 +6,8 @@
 \contentsline {subsubsection}{\numberline {2.2.2}Population II Stars}{4}{subsubsection.2.2.2}
 \contentsline {subsection}{\numberline {2.3}The Isothermal, Plane Parallel Atmosphere}{4}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Mean Molecular Weights}{5}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Electric Fields in Stars}{6}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Self-Gravitating Objects}{7}{subsection.2.6}
+\contentsline {subsubsection}{\numberline {2.6.1}Momentum Conservation and the Free-Fall Timescale}{7}{subsubsection.2.6.1}
+\contentsline {subsubsection}{\numberline {2.6.2}Repercussions for Stellar Structure}{8}{subsubsection.2.6.2}
+\contentsline {subsubsection}{\numberline {2.6.3}Applications of the Virial Theorm}{9}{subsubsection.2.6.3}
