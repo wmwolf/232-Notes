@@ -37,7 +37,7 @@
 	\begin{figure}
 		\centering
 		\includegraphics[width=6in]{hr_local.pdf}
-		\caption{An HR diagram for stars in the local neighborhood (shamelessly stolen from Google Images}
+		\caption{An HR diagram for stars in the local neighborhood (shamelessly stolen from Google Images)}
 		\label{HR.1f}
 	\end{figure}
 	\subsection{Conditions for a Star on the HR Diagram}
@@ -64,7 +64,7 @@
 
 \section{The Isothermal, Plane Parallel Atmosphere}
 	 \subsection{Scale Height and Column Depth}
-	 Before tackling the physics of stars, we first consider a simple toy model- the isothermal, plane parallel atmosphere. This model is somewhat applicable to the thin stellar atmosphere near the surface of a star, where curvature can be neglected and the acceleration due to gravity is nearly uniform.\\
+	 Before tackling the physics of stars, we first consider a simple toy model-- the isothermal, plane parallel atmosphere. This model is somewhat applicable to the thin stellar atmosphere near the surface of a star, where curvature can be neglected and the acceleration due to gravity is nearly uniform.\\
 	 
 	 \n Consider an atmosphere where the local acceleration due to gravity, $\mathbf{g}$ is constant in value and direction. The atmosphere is composed of an isothermal ideal gas with temperature $T$. We wish to find the distribution of particles in this atmosphere.\\
 	 
@@ -80,7 +80,7 @@
 	 \end{equation}
 	We find that
 	\begin{equation}
-		\label{ippa.3} kT\frac{dn}{dz}=m_p\mu ng
+		\label{ippa.3} kT\frac{dn}{dz}=-m_p\mu ng
 	\end{equation}
 	which in turn gives us
 	\begin{equation}
@@ -90,7 +90,7 @@
 	\begin{equation}
 		\label{ippa.5} n(z)=n(0)\exp\left(-\frac{m_p\mu gz}{kT}\right)=n(0)\exp\left(-\frac{z}{h}\right)
 	\end{equation}
-	where we have defined the \textbf{scale height} $h\equiv kT/(\mu m-pg)$, which is the e-folding distance in number density. As it turns out, the scale height for earth's atmosphere is approximately 10 km. This model is really only valid in cases where $h\ll R$, (where $R$ is the size of the object), so we now investigate the ratio of these two quantities:
+	where we have defined the \textbf{scale height} $h\equiv kT/(\mu m_pg)$, which is the e-folding distance in number density. As it turns out, the scale height for earth's atmosphere is approximately 10 km. This model is really only valid in cases where $h\ll R$, (where $R$ is the size of the object), so we now investigate the ratio of these two quantities:
 	\begin{equation}
 		\label{ippa.6} \frac{h}{R}=\frac{kT}{\mu m_p\frac{GM}{R^2}R}=\frac{1}{\mu}\frac{kT/m_p}{GM/R}\sim \frac{v_{\mathrm{th}}^2}{v_{\mathrm{esc}}^2}\ll 1
 	\end{equation}
@@ -98,7 +98,7 @@
 	\begin{equation}
 		\label{ippa.7} \frac{h}{R}\sim \frac{T_{\mathrm{eff}}}{T_c}.
 	\end{equation}
-	This tells us that the edges of stars are quite sharp-edged (their scale heights are very small compared to their radii). We can also deduce a physical meaning for the scale height as being how far a particle needs to fall to gain an energy comparable to $kT$.\\
+	This tells us that stars are quite sharp-edged (their scale heights are very small compared to their radii). We can also deduce a physical meaning for the scale height as being how far a particle needs to fall to gain an energy comparable to $kT$.\\
 	
 	\n From the ideal gas law, we can easily see that the pressure will also fall off exponentially in this isothermal atmosphere. However, let's explore the pressure a bit more. First, we return to the ideal gas law,
 	\begin{equation}
@@ -139,7 +139,7 @@
 	\begin{equation}
 		\label{mmw.4} P_e=n_ekT=kT\left(\sum Z_in_i\right)=\frac{kT\rho}{m_p}\sum\frac{Z_iX_i}{A_i}.
 	\end{equation}
-	(here $Z_i$ is the atomic number not the metallicity). Then the total pressure is just the sum of these two,
+	(here $Z_i$ is the atomic number, not the metallicity). Then the total pressure is just the sum of these two,
 	\begin{equation}
 		\label{mmw.5} P=P_{\mathrm{ion}}+P_e=\frac{\rho kT}{m_p}\left(\frac{1}{\mu_e}+\frac{1}{\mu_i}\right)
 	\end{equation}
@@ -147,7 +147,7 @@
 	\begin{equation}
 		\frac{1}{\mu}\equiv \frac{1}{\mu_e}+\frac{1}{\mu_i}
 	\end{equation}
-	One might think of this as the average weight of a particle that supplies pressure win a gas. Later, we'll see that this quantity, and its evolution, plays a large and critical role in the the nature of stellar evolution. Since fusion tends to decrease the pressure support, the star must continuously readjust its structure so as to hold itself up.\\
+	One might think of this as the average weight of a particle that supplies pressure within a gas. Later, we'll see that this quantity, and its evolution, plays a large and critical role in the the nature of stellar evolution. Since fusion tends to decrease the pressure support, the star must continuously readjust its structure so as to hold itself up.\\
 	
 %%%%%%%%%%%%%%%%%%%%%%
 %  January 11, 2012  %
@@ -164,11 +164,11 @@
 	\end{equation}
 	which in turn gives us the differential equation
 	\begin{equation}
-		\label{efs.4} \frac{d\ln n_p}{dz}=-\frac{M_pg}{2kT}
+		\label{efs.4} \frac{d\ln n_p}{dz}=-\frac{m_pg}{2kT}
 	\end{equation}
 	Which gives us a scale height of
 	\begin{equation}
-		\label{efs.5} h=\frac{2kT}{mg}
+		\label{efs.5} h=\frac{2kT}{m_pg}
 	\end{equation}
 	We need to look at both plasmas separately while incorporating the electric field created between the protons and electrons. For electrons, we have
 	\begin{equation}
@@ -186,7 +186,7 @@
 	\begin{equation}
 		\label{efs.9} eE=\frac{1}{2}\left(m_p-m_e\right)g \quad \textrm{or}\quad e\mathbf{E}\approx -\frac{m_p\mathbf{g}}{2}.
 	\end{equation}
-	So this field does not directly affect hydrostatic balance, but it does dramatically impact the relative difficulty of (???) in a white dwarf.
+	So this field does not directly affect hydrostatic balance, but it does dramatically impact the relative difficulty of (?UNREADABLE TEXT IN LECTURE NOTES?) in a white dwarf.
 \section{Self-Gravitating Objects}
 	So far we have only considered systems where the acceleration due to gravity is constant. In any self-gravitating object, this is obviously not true. We will, however, continue to assume that such objects do not rotate. Additionally, we will be ignoring mass loss. Essentially all we must write down are equations of mass conservation, momentum conservation, and energy conservation. We'll start with momentum conservation.
 	\subsection{Momentum Conservation and the Free-Fall Timescale}
@@ -200,7 +200,7 @@
 	\end{equation}
 	For this derivation, we will be using a \textbf{Lagrangian coordinate systems}. This is a system where the coordinates follow a particular fluid element. In essence, we are making the substitution
 	\begin{equation}
-		\label{mc.3} \frac{d}{t}\to\frac{\partial}{\partial t}+\mathbf{v}\cdot\bm{\nabla}
+		\label{mc.3} \frac{d}{dt}\to\frac{\partial}{\partial t}+\mathbf{v}\cdot\bm{\nabla}
 	\end{equation}
 	Returning back to the derivation, \eqref{mc.2} gives us
 	\begin{equation}
@@ -208,7 +208,7 @@
 	\end{equation}
 	Initially, we have $t=0$, $v_r=0$, and $r=r_0$ with the radial velocity given by $v_r=dr/dt$. Then our differential equation is
 	\begin{equation}
-		\label{mc.5} \frac{d^2r}{dt^2}=-\frac{Gm}{r^2}
+		\label{mc.5} \frac{d^2r}{dt^2}=-\frac{Gm(r)}{r^2}
 	\end{equation}
 	As an order of magnitude estimate, this gives us
 	\begin{equation}
@@ -216,7 +216,7 @@
 	\end{equation}
 	So we define the free-fall timescale to be
 	\begin{equation}
-		\label{mc.7} t_{\mathrm{ff}}=\frac{1}{\sqrt{G\rho}}
+		\label{mc.7} t_{\mathrm{ff}}=\frac{1}{\sqrt{G\avg{\rho}}}
 	\end{equation}
 	This is also the same as the Keplerian orbital period, modulo some uninteresting constants. The punchline of this whole argument is that a star that is \emph{not} in hydrostatic balance will respond on a timescale of the free-fall timescale. From this alone, we may conclude that the sun (and all other stars not currently exploding) is in hydrostatic balance. We will then assume that all stars are always in hydrostatic balance.\\
 	
@@ -234,7 +234,7 @@
 		\label{rss.3} \int 4\pi r^3\,dP&=-\int \rho\frac{G}{r^2}4\pi r^3\,dr m(r)\\
 		\label{rss.4} &= -\int\frac{Gm(r)dm}{r} = E_{\mathrm{GR}}
 	\end{align}
-	Performing a similar analysis to the left side of \eqref{rss.3} gives
+	where $E_{\mathrm{GR}}$ is the gravitational binding energy. Performing a similar analysis to the left side of \eqref{rss.3} gives
 	\begin{align}
 		\label{rss.5} \int 4\pi r^3\,dr\frac{dP}{dr} &= \left.4\pi r^2P\right|_{0}^R-3\left[4\pi\int Pr^2\,dr\right]\\
 		\label{rss.6} &= -3\int P4\pi  r^2\,dr\\
@@ -260,9 +260,9 @@
 	
 	\n The limiting energy of ultra-relativistic stars puts an upper level on the mass of large stars, since a total energy of a star being zero means unbinding the star. In the ``normal case'' of an ideal gas star, the more traditional form of the virial theorem applies:
 	\begin{equation}
-		\label{rss.12} \frac{E_{\mathrm{KE}}}{\mathrm{particle}}\sim\frac{GM}{R}
+		\label{rss.12} \frac{E_{\mathrm{KE}}}{\mathrm{mass}}\sim\frac{GM}{R}
 	\end{equation}
-	This is why stars typically behave with a negative heat capacity. That is, as a star radiates, $E_{\mathrm{tot}}$ is more negative, meaning that $R$ must decrease and the temperature $T$ (essentially the kinetic energy per particle) rises.
+	This is why stars typically behave with a negative heat capacity. That is, as a star radiates, $E_{\mathrm{tot}}$ is more negative, meaning that $R$ must decrease and the temperature $T$ (essentially the kinetic energy per particle) rises. This behavior would have to continue until a new energy source became available.
 	\subsection{Applications of the Virial Theorm}
 	The gravitational energy of an object is typically given by
 	\begin{equation}
@@ -270,11 +270,11 @@
 	\end{equation}
 	Using the virial theorem, we have
 	\begin{equation}
-		\label{avt.2} -E_{\mathrm{GR}}=-EV\frac{N}{V}kT
+		\label{avt.2} E_{\mathrm{GR}}=3\avg{P}V=3Nk\avg{T}
 	\end{equation}
 	Or,
 	\begin{equation}
-		\label{avt.3} \frac{GM}{R}\left(Nm_P\right)\sim 3NkT
+		\label{avt.3} \frac{GM}{R}\left(Nm_p\right)\sim 3NkT
 	\end{equation}
 	So we have
 	\begin{equation}
