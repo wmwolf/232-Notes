@@ -11,3 +11,8 @@
 \contentsline {subsection}{\numberline {3.1}Momentum Conservation and the Free-Fall Timescale}{8}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}The Virial Theorem}{9}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Applications of the Virial Theorm}{11}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Gas Pressure and Radiation Pressure}{11}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Summary}{13}{subsection.3.5}
+\contentsline {section}{\numberline {4}Heat Transfer in Stars}{13}{section.4}
+\contentsline {subsection}{\numberline {4.1}Heat Transport by Electrons}{14}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Heat Transport by Photons}{14}{subsection.4.2}

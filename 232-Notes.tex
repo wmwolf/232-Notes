@@ -288,7 +288,148 @@
 	\begin{equation}
 		\label{avt.6} t_{\mathrm{KH}}=\frac{E_{\mathrm{GR}}}{L}\approx 3\times 10^7\ \mathrm{years}
 	\end{equation}
-	for the sun. This has been known for awhile and since the Earth is known to have existed much longer than $t_{\mathrm{KH}}$, scientists deduced that another energy source within the sun was needed to explain its longevity. We now know that this energy source is, of course, fusion. Note that at the center of the sun, the temperature of $10^7\ \mathrm{K}$ corresponds to an energy per particle of about 1 keV. The binding energy of helium is approximately 7MeV, approximately 7000 times bigger than the thermal content. Thus, the sun could last approximately 7000 times longer, bringing the projected lifetime of the sun up to a more reasonable (but still wrong) number of about 200 billion years. We conclude that nuclear energy is a more promising form of energy for the sun than chemical energy.
+	for the sun. This has been known for awhile and since the Earth is known to have existed much longer than $t_{\mathrm{KH}}$, scientists deduced that another energy source within the sun was needed to explain its longevity. We now know that this energy source is, of course, fusion. Note that at the center of the sun, the temperature of $10^7\ \mathrm{K}$ corresponds to an energy per particle of about 1 keV. The binding energy of helium is approximately 7MeV, approximately 7000 times bigger than the thermal content. Thus, the sun could last approximately 7000 times longer, bringing the projected lifetime of the sun up to a more reasonable (but still wrong) number of about 200 billion years. We conclude that nuclear energy is a more promising form of energy for the sun than chemical energy.\\
+	
+\n\textit{Wednesday, January 18, 2012}
+	\subsection{Gas Pressure and Radiation Pressure}
+		Recall from the case of the constant density star that the gravitational energy is given by
+		\begin{equation}
+			\label{GPRP.1} E_{\mathrm{GR}}=-\frac{3}{5}\frac{GM^2}{R}
+		\end{equation}
+		And the average pressure is given by the virial theorem to be
+		\begin{equation}
+			\label{GPRP.2} \avg{P}=-\frac{1}{3}\frac{E_{\mathrm{GR}}}{V}=(n_e+n_p)kT=2n_pkT=\frac{2\rho kT}{m_p}
+		\end{equation}
+		Here we've sort of assumed that the star is isothermal. This tells us that the average thermal energy is given by
+		\begin{equation}
+			\label{GPRP.3} kT=\frac{1}{10}\frac{GMm_p}{R}
+		\end{equation}
+		Where the mass is obviously given by
+		\begin{equation}
+			\label{GPRP.4} M=\rho\frac{4\pi}{3}R^3
+		\end{equation}
+		and the central temperature is given approximately by (scaled by solar units)
+		\begin{equation}
+			\label{GPRP.5} T_c\approx2\times 10^6\,\mathrm{K}\left(\frac{\rho_c}{1\,\mathrm{g\,cm^{-3}}}\right)^{1/3}\left(\frac{M}{M_\odot}\right)^{2/3}
+		\end{equation}
+		These scalings are actually recovered in simulations (see MESA plot from class). Here we've only considered the case of the pressure due to an ideal gas. However, we have thus ignored the contributions to radiation pressure. We then want to know when radiation pressure becomes comparable to gas pressure. That is,
+		\begin{equation}
+			\label{GPRP.6} P_{\mathrm{rad}}=\frac{1}{3} aT^4\geq P_{\mathrm{gas}}
+		\end{equation}
+		The temperature in the star is approximately
+		\begin{equation}
+			\label{GPRP.7} kT\sim\frac{GMm_p}{R}
+		\end{equation}
+		and the pressure gradient is, (again, very approximately)
+		\begin{equation}
+			\label{GPRP.8} \frac{dP}{dr}=-\rho g\approx \frac{P_c}{R}\sim\frac{M}{R^3}\frac{GM}{R^2}
+		\end{equation}
+		Then the condition we are seeking is
+		\begin{equation}
+			\label{GPRP.9} \frac{1}{3}a\left(\frac{GMm_p}{Rk}\right)^4>\frac{GM^2}{R^4}
+		\end{equation}
+		Interestingly, $R$ cancels in \eqref{GPRP.9}, so this condition is dependent only on the mass of the star. Thus, we can get a hard limit that is independent of any other properties of the star. Dropping tons more constants, this gives
+		\begin{equation}
+			\label{GPRP.10} M^2>\frac{k_b^4}{a G^3m_p^4}
+		\end{equation}
+		Recall that the radiation constant is given by $a=\frac{\pi^2}{15}\frac{k^4}{(\hbar c)^3}$. Putting this in \eqref{GPRP.10}, we have
+		\begin{equation}
+			\label{GPRP.11} \frac{M^2}{m_p^2}>\frac{k^4(\hbar c)^3}{G^3m_p^6 k^4}\sim\left(\frac{\hbar c}{G m_p^2}\right)^3
+		\end{equation}
+		Then the limit on the mass is then
+		\begin{equation}
+			\label{GPRP.12}\boxed{ M>m_p\left(\frac{\hbar c}{Gm_p^2}\right)^{3/2}}
+		\end{equation}
+		stars above this mass (approximately) have significant radiation pressure. Recall the fine structure constant
+		\begin{equation}
+			\label{GPRP.13} \alpha=\frac{1}{137} =\frac{e^2}{\hbar c}
+		\end{equation}
+		Noting that the Coulomb energy is
+		\begin{equation}
+			\label{GPRP.14} E_{\mathrm{Coulomb}}=\frac{e^2}{r}
+		\end{equation}
+		Analagous to \eqref{GPRP.14}, we define a unit less measure of the strength of gravity, which appears in \eqref{GPRP.12}:
+		\begin{equation}
+			\label{GPRP.15} \alpha_\mathrm{G}=\frac{Gm_p^2}{\hbar c}\approx 6\times 10^{-39}
+		\end{equation}
+		Then the fundamental stellar mass given in \eqref{GPRP.12} is
+		\begin{equation}
+			\label{GPRP.16} M>m_p\frac{1}{\alpha_{\mathrm{G}}^{3/2}}\approx 2M_\odot
+		\end{equation}
+		After all that work\ldots it turns out that the mass where radiation pressure \emph{actually} starts to matter is closer to $60 M_\odot$.\\
+		
+		\n Of interest in this case is that as $P_{\mathrm{rad}}\gg P_{\mathrm{gas}}$, then $E_{\mathrm{tot}}\to 0$ from the virial theorem. In this state, the star has enough energy to unbind itself, so radiation pressure sets an upper limit on the mass of a star.
+	\subsection{Summary}
+		Note that here we have used hydrostatic balance to find the central temperature as a function of mass and radius. Additionally we have realized that energy losses from the surface require the radius of a star to decrease and the core temperature to increase. What we have \emph{not} done yet is to derive the rate of heat loss from the star.
+\section{Heat Transfer in Stars}
+	In studying the ways in which heat moves outward through a star, we will first be ignoring convection, though it is a powerful mechanism when it is available to the star. To move heat through a star, there are electrons, ions, and photons available. Recall (or perhaps you don't) \textbf{Fick's Law}, which tells us that the heat flux can be determined via
+	\begin{equation}
+		\label{HTS.1} F=\mathrm{ergs\,cm^{-2}\,s^{-1}}=-\frac{1}{3}v\ell\frac{d}{dx}(E)
+	\end{equation}
+	where here $E$ is the energy density. We'll start first with the energy density of an ideal gas of electrons
+	\subsection{Heat Transport by Electrons} For electrons, the energy density is
+	\begin{equation}
+		\label{HTS.2} E=\frac{3}{2} kT n_e
+	\end{equation}
+	Then the energy density gradient is
+	\begin{equation}
+		\label{HTS.3} \frac{dE}{dx}=\frac{dE}{dT}\frac{dT}{dx}\frac{dE}{dT}=\frac{3}{2}nk\frac{dT}{dx}
+	\end{equation}
+	Then from Fick's Law, we have
+	\begin{equation}
+		\label{HTS.4} F=-\frac{1}{3}v\ell\frac{3}{2}nk\frac{dT}{dx}=-\frac{1}{2}v\ell nk\frac{dT}{dx}
+	\end{equation}
+	Where the mean free path is
+	\begin{equation}
+		\label{HTS.5} \ell=\frac{1}{n\sigma}
+	\end{equation}
+	for the scattering cross section $\sigma$. Then \eqref{HTS.4} becomes
+	\begin{equation}
+		\label{HTS.6} F=-\left[\frac{1}{2} v\frac{k}{\sigma}\right]\bm{\nabla}T
+	\end{equation}
+	From the theory of Coulomb scattering, the cross section would be
+	\begin{equation}
+		\label{HTS.7} \sigma_{\mathrm{Coulomb}}\sim b^2\sim\frac{e^4}{(kT)^2}
+	\end{equation}
+	Which gives a flux of
+	\begin{equation}
+		\label{HTS.8} L=4\pi R^2F=4\pi R\frac{(kT)^{7/2}}{m_e^{1/2}e^4}
+	\end{equation}
+	For the sun, this would give
+	\begin{equation}
+		\label{HTS.9} L\approx 5\times 10^{31}\,\mathrm{erg\,s^{-1}}
+	\end{equation}
+	which is two orders of magnitude too small, so we conclude that the sun does not transmit its heat via conduction through electrons. Now we'll move on to photons
+	\subsection{Heat Transport by Photons}
+	For photons, the main scatterer will be electrons, so the cross section in question of the mean free path is the Thomson cross section. Additionally, the energy density is now $E=aT^4$. Additionally the speed of photons is obviously the speed of light. Then the ratio of the fluxes due to photons and electrons is
+	\begin{equation}
+		\label{HTS.10} \frac{F_{\gamma}}{F_e}=\frac{c}{(kT/m_e)^{1/2}}\frac{e^4/(kT)^2}{\sigma_{\mathrm{Th}}}\frac{E_{\mathrm{rad}}}{E_{\mathrm{gas}}}
+	\end{equation}
+	Remember that the Thomson cross section is given by
+	\begin{equation}
+		\label{HTS.11} \sigma_{\mathrm{Th}}=\frac{8\pi}{3}\frac{e^4}{(m_ec^2)^2}
+	\end{equation}
+	Then \eqref{HTS.10} becomes
+	\begin{equation}
+		\label{HTS.12} \frac{F_\gamma}{F_e}=\left(\frac{m_ec^2}{kT}\right)^{1/2}\left(\frac{m_ec^2}{kT}\right)^2\frac{P_{\mathrm{rad}}}{P_{\mathrm{gas}}}
+	\end{equation}
+	Comparing the pressures gives
+	\begin{equation}
+		\label{HTS.13} \frac{P_{\mathrm{rad}}}{P_{\mathrm{gas}}}\approx 10^{-4}\left(\frac{M}{M_\odot}\right)^2
+	\end{equation}
+	Then plugging \eqref{HTS.13} into \eqref{HTS.12}, we see that heat transport by photons dominates heat transport by electrons whenever
+	\begin{equation}
+		\label{HTS.14} M>0.03\,M_\odot\,\left(\frac{T}{10^7\ \mathrm{K}}\right)^{5/4}
+	\end{equation}
+	So if conduction ever dominates, it is in very low mass stars (also white dwarfs in their late lives). For our cases, photons are always going to be the dominant transport mechanism. We still haven't found out what the actual luminosity will be in the case of radiative diffusion. We do so now.
+	\begin{equation}
+		\label{HTS.15} L=4\pi R^2 F=4\pi R^2\frac{1}{3}c\ell\frac{d}{dr}\left(aT^4\right)\approx R^2c\frac{1}{n_e\sigma_{\mathrm{Th}}}\frac{1}{R}aT^4\approx R^2\frac{c m_p}{\rho\sigma_{\mathrm{Th}}}\frac{1}{R}a\left(\frac{GMm_p}{Rk}\right)^4
+	\end{equation}
+	where we have noted that $kT=\frac{GMm_p}{R}$. Continuing on,
+	\begin{equation}
+		\label{HTS.16} L\approx \frac{cm_pa(GMm_p)^4}{M\sigma_{\mathrm{Th}}k^4}\propto M^3
+	\end{equation}
+	This relation is surprisingly accurate for stars with masses greater than a solar mass. Note that we have derived the stellar luminosity with \emph{no knowledge} of the source of energy. The luminosity is set by the modes of heat transport available to the star.
 \end{document}
 
 
