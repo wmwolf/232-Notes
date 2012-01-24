@@ -14,9 +14,10 @@
 \contentsline {subsection}{\numberline {3.4}Gas Pressure and Radiation Pressure}{11}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Summary}{13}{subsection.3.5}
 \contentsline {section}{\numberline {4}Heat Transfer in Stars}{13}{section.4}
-\contentsline {subsection}{\numberline {4.1}Heat Transport by Electrons}{14}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Heat Transport by Photons}{14}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}The Eddington Limit and the Eddington Standard Model}{15}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Polytropic Relations}{17}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Heat Transfer in the Outer Atmosphere}{18}{subsubsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.4}The Effective Temperature}{19}{subsubsection.4.2.4}
+\contentsline {subsection}{\numberline {4.1}Heat Flux Derivation}{14}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Heat Transport by Electrons}{14}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Heat Transport by Photons}{15}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}The Eddington Limit and the Eddington Standard Model}{16}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Polytropic Relations}{18}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Heat Transfer in the Outer Atmosphere}{18}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}The Effective Temperature}{20}{subsubsection.4.3.4}
