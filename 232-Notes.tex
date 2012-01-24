@@ -429,7 +429,171 @@
 	\begin{equation}
 		\label{HTS.16} L\approx \frac{cm_pa(GMm_p)^4}{M\sigma_{\mathrm{Th}}k^4}\propto M^3
 	\end{equation}
-	This relation is surprisingly accurate for stars with masses greater than a solar mass. Note that we have derived the stellar luminosity with \emph{no knowledge} of the source of energy. The luminosity is set by the modes of heat transport available to the star.
+	This relation is surprisingly accurate for stars with masses greater than a solar mass. Note that we have derived the stellar luminosity with \emph{no knowledge} of the source of energy. The luminosity is set by the modes of heat transport available to the star.\\
+	
+%%%%%	
+	\n \textit{Monday, January 23, 2012}
+	\subsubsection{The Eddington Limit and the Eddington Standard Model}
+	Continuing with heat transfer via radiation with electron scattering being the primary source of opacity, the flux is given via Fick's law as
+	\begin{equation}
+		\label{HTS.17} F=\frac{1}{3} v\ell\frac{d}{dz}(aT^4)
+	\end{equation}
+	where now $v=c$ and $\ell=(n_e\sigma_{\mathrm{Th}})^{-1}$. Plugging these in to \eqref{HTS.17}, the flux becomes
+	\begin{equation}
+		\label{HTS.18} F=\frac{1}{3}c\frac{1}{n_e\sigma_{\mathrm{Th}}}\frac{d}{dz}(aT^4)=\frac{4}{3}\frac{acT^3}{\rho\kappa}\frac{dT}{dz}
+	\end{equation}
+	where we've defined the \textbf{opacity} via
+	\begin{equation}
+		\label{HTS.19} \kappa_{\mathrm{es}}\equiv\frac{\sigma_{\mathrm{Th}}}{m_p}
+	\end{equation}
+	The opacity is measured in units of area per unit mass, indicating it is the cross-sectional area per unit mass. For electron scattering, it is simply a constant, but when other processes are relevant, it may depend on temperature and density. With the flux available, we can write the luminosity as
+	\begin{equation}
+		\label{HTS.20} L(r)=F(r)4\pi r^2=-4\pi r^2\frac{4}{3}\frac{acT^3}{\rho\kappa}\frac{dT}{dr}=-4\pi r^2\frac{c}{\kappa\rho}\frac{d}{dr}P_{\mathrm{rad}}
+	\end{equation}
+	Noting the product $\rho\,dr$ showing up in the denominator of \eqref{HTS.20}, we are reminded of hydrostatic equilibrium:
+	\begin{equation}
+		\label{HTS.21} \frac{dP}{dr}=-\rho(r)g(r)\quad \Rightarrow \quad dP=-\rho(r)g(r)\,dr
+	\end{equation}
+	Putting in $g(r)$ explicitly,
+	\begin{equation}
+		\label{HTS.22} \frac{dP}{\rho(r)dr}=-\frac{Gm(r)}{r^2}
+	\end{equation}
+	Bringing the column depth back in ($y=\int \rho(r)\,dr$), this becomes
+	\begin{equation}
+		\label{HTS.23} \frac{dP}{dy}=\frac{Gm(r)}{r^2}
+	\end{equation}
+	where we've used the fact that $y=0$ at the surface and increases \emph{inwards} (hence the sign change). Assuming $g$ is a constant, this would give our old result
+	\begin{equation}
+		\label{HTS.24} \boxed{P=gy}
+	\end{equation}
+	Now returning to \eqref{HTS.20}:
+	\begin{equation}
+		\label{HTS.25} \frac{dP_{\mathrm{rad}}}{dy}=\frac{L(r)}{4\pi r^2}\frac{\kappa}{c}
+	\end{equation}
+	and the result we just derived
+	\begin{equation}
+		\label{HTS.26} \frac{Gm(r)}{r^2}
+	\end{equation}
+	Taking the ratio of \eqref{HTS.25} and \eqref{HTS.26} gives us
+	\begin{equation}
+		\label{HTS.27} \frac{dP}{dP_{\mathrm{rad}}}=\frac{4\pi Gm(r)c}{\kappa L(r)}
+	\end{equation}
+	Suppose $M=m(R)=\textrm{total mass of star}$ and $L=L(R)=\textrm{luminosity of star}$
+	\begin{equation}
+		\label{HTS.28} \frac{dP}{dP_{\mathrm{rad}}}=\left[\frac{4\pi GcM}{\kappa L}\right]\frac{m(r)}{M}\frac{L}{L(r)}
+	\end{equation}
+	We have now introduced the \textbf{Eddington Luminosity}, 
+	\begin{equation}
+		\label{HTS.29} L_{\mathrm{Edd}}=\frac{4\pi GcM}{\kappa}
+	\end{equation}
+	In general, the Eddington Luminosity is much larger than the luminosity, since it is the luminosity where the only pressure gradient that matters is the radiation pressure (where the star becomes unstable). Evaluating the Eddington Luminosity in solar units and with electron scattering,
+	\begin{equation}
+		\label{HTS.30} L_{\mathrm{Edd}}=3.1\times 10^4\ L_{\odot}\left(\frac{M}{M_\odot}\right)
+	\end{equation}
+	Also recall how luminosity scales with mass:
+	\begin{equation}
+		\label{HTS.31} L=L_\odot\left(\frac{M}{M_\odot}\right)
+	\end{equation}
+	So we see that for low-mass stars, their luminosities are indeed much smaller than the Eddington Luminosity. Now let's investigate the ratio of the luminosity to the Eddington Luminosity:
+	\begin{equation}
+		\label{HTS.32} \frac{L}{L_{\mathrm{Edd}}}\approx 3\times 10^{-5}\left(\frac{M}{M_\odot}\right)^2
+	\end{equation}
+	So until $M\geq 100\,M_\odot$, it will be the case that $L\ll L_{\mathrm{Edd}}$ and thus $P_{\mathrm{rad}}\ll P$. Now returning to \eqref{HTS.28}, we define a dimensionless quantity, $\eta(r)$ by
+	\begin{equation}
+		\label{HTS.33} \eta(r)\equiv \frac{L(r)}{L}{M}{m(r)}
+	\end{equation}
+	And \eqref{HTS.28} looks like
+	\begin{equation}
+		\label{HTS.34} \frac{dP_{\mathrm{rad}}}{dP}=\frac{L}{L_{\mathrm{Edd}}}\eta(r)
+	\end{equation}
+	Aside: this model of stars is the called the ``Eddington Standard Model'' and was used to describe stars before their source of energy was known. 
+	\subsubsection{Polytropic Relations}
+	Now integrating \eqref{HTS.34}, we have
+	\begin{equation}
+		\label{HTS.35} \int_R^rdP_{\mathrm{rad}}=\frac{L}{L_{\mathrm{Edd}}}\int_R^r\eta(r)\,dP
+	\end{equation}
+	We can integrate the left side, leaving us with
+	\begin{equation}
+		\label{HTS.36} P_{\mathrm{rad}}(r)=\frac{L}{L_{\mathrm{Edd}}}\int_R^r\eta(r)\,dP
+	\end{equation}
+	Mathematically speaking, we are now stuck because we do not have any knowledge of $\eta(r)$. The formal approach of solving this problem is to define spatial averages of $\eta(r)$ for different choices of mass and luminosity profiles. We will, however, just let $\eta(r)\approx 1$, which gives us
+	\begin{equation}
+		\label{HTS.37} P_{\mathrm{rad}}=\frac{L}{L_{\mathrm{Edd}}}P_{\mathrm{gas}}(r)
+	\end{equation}
+	And now substituting in our equations of state for the radiation pressure and assuming that the radiation pressure is negligible compared to the gas pressure:
+	\begin{equation}
+		\label{HTS.38} \frac{1}{3}aT^4=\frac{L}{L_{\mathrm{Edd}}}\frac{\rho kT}{\mu m_p}
+	\end{equation}
+	Solving this for $T^3$, we have
+	\begin{equation}
+		\label{HTS.39} \boxed{T(r)^3=\frac{L}{L_{\mathrm{Edd}}}\frac{d\kappa_R}{a\mu m_p}\rho(r)}
+	\end{equation}
+	So we have gone from a situation where we had only typical or central values to an actual equation that let's us find $T(r)$, $\rho(r)$, and $P(r)$. It appears then, that in our low radiation pressure limit, $\rho\propto T^3$. Additionally, for the ideal gas law, we see that $P\propto \rho^{4/3}$. For some given $L/L_{\mathrm{Edd}}$, we have a relation between pressure and density via
+	\begin{align}
+		\label{HTS.40} \frac{dP}{dr}&=-\rho(r)\frac{Gm(r)}{r^2}\\
+		\label{HTS.41} dm(r) &= \rho 4\pi r^2\,dr
+	\end{align}
+	Let us briefly consider an adiabatic change in an ideal gas. We recall from Freshman physics that $PV^\gamma=\mathrm{const}$. For a monatomic, ideal gas, $\gamma=5/3$, so we have $P\propto \rho^{5/3}$ and $\rho T\propto P$, so $T\propto \rho^{2/3}$. Then we'll call the ``entropy'' $T/\rho^{2/3}$. For our star, we have $T^3\propto \rho\Rightarrow T\propto \rho^{1/3}$. In our case, the ``entropy'' is then $a/\rho^{1/3}$. Thus the entropy is highest in the outer layers and smallest in the center.
+	\subsubsection{Heat Transfer in the Outer Atmosphere}
+	Near the surface of the star, photons naturally leave (which is why we see them!) We want to know what the place or condition is like. Near the surface, the density must decrease exponentially since $T\ll T_c$ and thus $g$ is a constant. Our previous arguments for the scale height and the plane-parallel isothermal atmosphere is largely applicable here, so the length scale of relevance is the scale height:
+	\begin{equation}
+		\label{HTS.42} h=\frac{kT}{\mu m_p g}
+	\end{equation}
+	It then makes sense that the condition for photons to escape would be for the mean free path to be comparable to the scale height:
+	\begin{equation}
+		\label{HTS.43} \ell\sim h\quad\Rightarrow\quad \frac{m_p}{\rho\sigma_{\mathrm{Th}}}\approx \frac{kT}{mg}
+	\end{equation}
+	or
+	\begin{equation}
+		\label{HTS.44} g\frac{m_p}{\sigma_{\mathrm{Th}}}\sim\frac{\rho kT}{m_p}\sim P_{\mathrm{gas}}
+	\end{equation}
+	Again, this can be rewritten as
+	\begin{equation}
+		\label{HTS.45} g\kappa^{-1}\sim P_{\mathrm{gas}}\quad\mathrm{where}\quad \kappa=\frac{\sigma_{\mathrm{Th}}}{m_p}
+	\end{equation}
+	Then we can say the condition where photons can escape is
+	\begin{equation}
+		\label{HTS.46} P_{\mathrm{gas}}\leq \frac{g}{\kappa}
+	\end{equation}
+	This argument assumed a constant opacity. In general, we must do a line integral through the depth of the outer atmosphere. Imagine we ask the probably for a photon to reach some depth in the star. We define the \textbf{optical depth} to be
+	\begin{equation}
+		\label{HTS.47} d\tau = \frac{dr}{\ell}=dr\ \kappa(r)\rho(r)
+	\end{equation}
+	Then the probability would be
+	\begin{equation}
+		\label{HTS.48} P(\tau)\propto e^{-\tau}
+	\end{equation}
+	Then the optical depth at a certain radius would be given by
+	\begin{equation}
+		\label{HTS.49} \tau = \int_R^r\kappa(r)\rho(r)\,dr
+	\end{equation}
+	or, invoking hydrostatic equilibrium,
+	\begin{equation}
+		\label{HTS.50} \tau=\int \kappa(r)\frac{dP(r)}{g}=\frac{1}{g}\int \kappa(r)\,dP(r)
+	\end{equation}
+	Then the condition for photons for leave becomes when the optical depth is unity, or
+	\begin{equation}
+		\label{HTS.51} \tau\sim1=\frac{1}{g}\kappa P(r)\quad\Rightarrow\quad P(\tau=1)=\frac{g}{\kappa}
+	\end{equation}
+	Additionally, we can redefine the flux equation in terms of optical depth into a cute form:
+	\begin{equation}
+		\label{HTS.52} F=\frac{c}{3}\frac{d}{d\tau}\left(aT^4\right)
+	\end{equation}
+	\subsubsection{The Effective Temperature}
+	At the surface, the flux is given by
+	\begin{equation}
+		\label{HTS.53} F=\frac{L}{4\pi R^2}\equiv \sigma_{\mathrm{SB}}T_{\mathrm{eff}}^4
+	\end{equation}
+	Assuming that the flux is constant at or near the surface, we may use the fact that $a=4\sigma_{\mathrm{SB}}/c$ and \eqref{HTS.52} to get
+	\begin{equation}
+		\label{HTS.54} \frac{d}{d\tau}T^4=\frac{3}{4}T_{\mathrm{eff}}^4
+	\end{equation}
+	Recall that $\tau$ is dimensionless, so there is no problem here. For $\tau\gg 1$, we have
+	\begin{equation}
+		\label{HTS.55} T^4=\frac{3}{4}T_{\mathrm{eff}}^4\tau
+	\end{equation}
+	This implies that as $\tau$ increases (going deeper and deeper into the star), the radiation field becomes more and more isotropic. Naively, we might assume that the flux would be given by the energy density multiplied by the speed of light, but our result in \eqref{HTS.55} essentially tells us that $F=acT^4/\tau$.
+	
 \end{document}
 
 
