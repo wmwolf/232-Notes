@@ -651,7 +651,204 @@ so
 
         \n \textit{Wednesday, January 25, 2012}\\
 
+\subsection{Convection}
+\label{sec:conv}
+Another important form of heat transport in stars is that of
+convection, which is where an instability causes the bulk movement of
+material (rather than the diffusion of photons or electrons) to
+transport heat throughout the star.\\
 
+\n The origin of the instability is that a fluid element that rises
+adiabatically (faster than the heat transfer time scale) is
+\textbf{lighter} than the surrounding fluid and so it
+``runs away''. This is a linear instability, in that a displacement
+exponentially grows in time. \\
+
+\n Suppose we ahve a fluid element in hydrostatic balance. We imagine
+displacing this fluid element from $r$ to $r+dr$. So we assume that
+the displaced element responds adiabatically. Thermodynamcis tells us
+that
+\begin{equation}
+  \label{eq:9}
+  T\,dS=dE+P\,dV=0
+\end{equation}
+for an adiabatic process. This is equivalent to the requirement that
+the timescale of response is much less than that for heat to enter or
+leave the fluid element. We presume that hte timescale is longer than
+the time for pressure equilibrium as well:
+\begin{equation}
+  \label{eq:10}
+  t=\frac{h}{c_s}=\textrm{time for the pressure to
+    equilibrate}\quad\Rightarrow\quad v\ll c_s
+\end{equation}
+where $h$ is agin the scale height. Suppose the element starts in
+location 1 and travels to location 2. This adiabatic process requires
+that $PV^\gamma$ be a constant within the bubble, which means that
+\begin{equation}
+  \label{eq:11}
+  \frac{P_1}{\rho_1^\gamma}=\frac{P_2}{\rho_2^\gamma}
+\end{equation}
+where the subscripts refer to where the bubble is located. Rearranging
+\eqref{eq:11} gives us the new density
+\begin{equation}
+  \label{eq:12}
+  \rho_{2,b}^\gamma=\rho_1^\gamma\frac{P_2}{P_1}
+\end{equation}
+So we require $\rho_{2,b}>\rho_{2,*}$, where the * indicates the
+density of the star's ``background'' conditions. For the star, we
+require
+\begin{equation}
+  \label{eq:13}
+  \rho_1\left(\frac{P_2}{P_1}\right)^{1/\gamma}>\rho_2
+\end{equation}
+For an infinitesimal change, this gives
+\begin{equation}
+  \label{eq:14}
+  P_2=P_1+\Delta r\frac{dP}{dr}
+\end{equation}
+and
+\begin{equation}
+  \label{eq:15}
+  \rho_2=\rho_1+\frac{d\rho}{dr}\Delta r
+\end{equation}
+Then \eqref{eq:13} requires
+\begin{equation}
+  \label{eq:16}
+  \frac{1}{\gamma}\frac{d\ln P}{d\ln r}>\frac{d\ln\rho}{dr}
+\end{equation}
+Now, we recall that
+\begin{equation}
+  \label{eq:17}
+  P=\frac{\rho kT}{\mu m_p} \quad\Rightarrow \quad d\ln\rho=d\ln
+  P-d\ln T
+\end{equation}
+and thus \eqref{eq:16} can be written as
+\begin{equation}
+  \label{eq:18}
+  \frac{1}{\gamma}\frac{d\ln P}{dr}>\frac{d\ln P}{dr}-\frac{d\ln T}{dr}
+\end{equation}
+For an ideal, monatomic gas, this becomes
+\begin{equation}
+  \label{eq:19}
+  \frac{d\ln T}{d\ln P}<1-\frac{1}{\gamma}=\frac{2}{5}
+\end{equation}
+Recall that earlier we found that for radiative heat transport in the
+Eddington standard model,
+$\rho\propto T^3$, and thus $P\propto \rho T\propto T^4$, so
+$T\propto P^{1/4}$. Then computing the logarithmic derivative in
+\eqref{eq:19}, 
+\begin{equation}
+  \label{eq:20}
+  \frac{d\ln T}{d\ln P}=\frac{1}{4}<\frac{2}{5}
+\end{equation}
+So stars folloiwng this model are stable and do not transport heat by
+convection. A model that is stable to convection has the entropy
+increasing with radius. Note that when we say ``entropy'', we mean the
+\textbf{specific entropy}, or the entropy per unit mass.
+
+\subsubsection{The Unstable Case}
+\label{sec:unstable-case}
+
+Now we wish to understand what happens when the background model is
+unstable. The density in the bubble is
+\begin{equation}
+  \label{eq:21}
+  \rho_{2,b}=\rho_2\left(\frac{P_2}{P_1}\right)^{1/\gamma}
+\end{equation}
+and for the star,
+\begin{equation}
+  \label{eq:22}
+  \rho_{2,*}=\rho_1+\left.\Delta r\frac{d\rho}{dr}\right|_*
+\end{equation}
+The density contrast is then
+\begin{equation}
+  \label{eq:23}
+  \Delta \rho=\rho_{2,*}-\rho_{2,b}=\Delta r\left[\left.\frac{d\rho}{dr}\right|_*-\frac{1}{\gamma}\frac{\rho}{P}\left.\frac{dP}{dr}\right|_*\right]
+\end{equation}
+or
+\begin{equation}
+  \label{eq:24}
+  \Delta\rho=\rho\Delta r\left[\frac{d\ln\rho}{dr}+\frac{\rho g}{P\gamma}\right]
+\end{equation}
+where we have invoked hydrostatic equilibrium. Stability requires
+$\Delta<0$, or
+\begin{equation}
+  \label{eq:25}
+  \frac{d\ln\rho}{dr}<-\frac{\rho g}{\gamma P}
+\end{equation}
+In the unstable case, though, we require $\Delta\rho>0$. the
+acceleration, $a$, or the displaced element will be given by 
+\begin{equation}
+  \label{eq:26}
+  a=\frac{\Delta\rho}{\rho}g=g\Delta
+  r\left[\frac{d\ln\rho}{dr}+\frac{\rho g}{P\gamma}\right]
+\end{equation}
+This is the equation of mothion for the fluid element. Written in
+terms of the displacement coordinate $x$, \eqref{eq:26} is
+\begin{equation}
+  \label{eq:27}
+  \ddot{x}=gx\left(\frac{d\ln\rho}{dr}+\frac{\rho g}{P\gamma}\right)
+\end{equation}
+Strictly speaking this equation holds for unstable or stable
+cases. Clearly this is a harmonic oscillator, so the physics should be
+familiar. In any case, we have
+\begin{equation}
+  \label{eq:28}
+  -\omega^2=g\left(\frac{d\ln\rho}{dr}+\frac{\rho g}{P \gamma}\right)
+\end{equation}
+If $-\omega^2<0$, then the solution is stable, and the element
+oscillates at the Brunt V\"{u}is\"{u}l\"{u} frequency is 
+\begin{equation}
+  \label{eq:29}
+  N^2-g\left[\frac{d\ln\rho}{dr}+\frac{\rho g}{\gamma P}\right]
+\end{equation}
+This is the local frequency of oscillation of a fluid element in a
+convectively stable atmosphere. In the Earth's atmosphere, this
+frequency is around five or ten minutes.\\
+
+\n Now if this coefficient is negative, the solution is unstable
+(i.e., groes exponentially). Note that $N^2\sim g/h$, so 
+\begin{equation}
+  \label{eq:30}
+  N^2\sim\frac{gm_p
+    g}{kT}\sim g^2\frac{1}{v_{\mathrm{th}}^2}\quad\Rightarrow N\sim \frac{g}{v_{\mathrm{th}}}\sim\frac{g}{c_s}
+\end{equation}
+So our displacement solution looks like
+\begin{equation}
+  \label{eq:31}
+  x=x_0e^{t/\tau}
+\end{equation}
+where $1/\tau^2=-N^2$. So the speed is 
+\begin{equation}
+  \label{eq:32}
+  \dot{x}=\frac{x_0}{\tau}e^{t/\tau}=\ell/\tau=\textrm{speed after
+    moving a distance $\ell$}
+\end{equation}
+Generally, the speed is given by
+\begin{equation}
+  \label{eq:33}
+  v=\ell\sqrt{-N^2}
+\end{equation}
+Suppose that the stellar interior is strongly unstable, so that
+$N^2\sim-g/h$. Then the velocity after traveling some length $\ell$ is 
+\begin{equation}
+  \label{eq:34}
+  v=\ell\left(\frac{g}{h}\right)^{1/2}=\ell\left(\frac{gm_pg}{kT}\right)^{1/2}=\ell\frac{g}{v_{\mathrm{th}}}=\approx \frac{g}{v_{\mathrm{th}}}h=\frac{g}{v_{\mathrm{th}}}\frac{v_{\mathrm{th}}^2}{g}=v_{n\mathrm{th}}
+\end{equation}
+So if $N^2\sim -g/h$, i.e., the star is strongly unstable, then a runaway
+fluid element will reach the sound speed after traversing one scale
+height! Recall, though that the change in density is
+\begin{equation}
+  \label{eq:35}
+ \left. \frac{\Delta\rho}{\rho}\right|_{\mathrm{wt\ \ell}}\approx
+ \ell\left(\frac{d\ln \rho}{dr}+\frac{\rho g}{P\gamma}\right)
+\end{equation}
+and thus the velocity is
+\begin{equation}
+  \label{eq:36}
+  v=\ell\sqrt{\left.\frac{g}{\ell}\left(\frac{\Delta
+        \rho}{\rho}\right)\right|_{\ell}}=(g\ell)^{1/2}\left(\left.\frac{\Delta \rho}{\rho}\right|_{\ell}\right)^{1/2}
+\end{equation}
 \end{document}
 
 

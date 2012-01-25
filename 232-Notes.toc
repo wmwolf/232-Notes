@@ -21,3 +21,5 @@
 \contentsline {subsubsection}{\numberline {4.3.2}Polytropic Relations}{18}{subsubsection.4.3.2}
 \contentsline {subsubsection}{\numberline {4.3.3}Heat Transfer in the Outer Atmosphere}{18}{subsubsection.4.3.3}
 \contentsline {subsubsection}{\numberline {4.3.4}The Effective Temperature}{20}{subsubsection.4.3.4}
+\contentsline {subsection}{\numberline {4.4}Convection}{20}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}The Unstable Case}{21}{subsubsection.4.4.1}
