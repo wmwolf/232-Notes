@@ -849,6 +849,200 @@ and thus the velocity is
   v=\ell\sqrt{\left.\frac{g}{\ell}\left(\frac{\Delta
         \rho}{\rho}\right)\right|_{\ell}}=(g\ell)^{1/2}\left(\left.\frac{\Delta \rho}{\rho}\right|_{\ell}\right)^{1/2}
 \end{equation}
+\textit{Monday, January 30, 2012}\\
+
+\subsubsection{Convective Efficiency}
+\label{sec:conv-effic}
+
+  We left off last time with a rough relation between the velocity of
+  an upwardly rising fluid element and the density contrast between
+  the fluid element and the background material at some height $\ell$
+  above the element's original location. In the unstable case, we
+  found that the element was less dense than the surrounding fluid,
+  by examining the quantity $\Delta\rho/\rho|_{\ell}$. The velocity at
+  which the element traveled was given by
+  $v=(g\ell)^{1/2}(\Delta\rho/\rho|_\ell)^{1/2}$.\\
+
+  \n Inserting the scale height in for $\ell$,
+  \begin{equation}
+    \label{eq:37}
+    \ell=h=\frac{kT}{mg}=\frac{c_s^2}{g}
+  \end{equation}
+  Then the velocity would be
+  \begin{equation}
+    \label{eq:38}
+    v=c_s\left[\left.\frac{\Delta\rho}{\rho}\right|_h\right]6{1/2}
+  \end{equation}
+  Now we consider the flux due to convection. The flux is just the
+  velocity times the energy density, and so we can write
+  \begin{equation}
+    \label{eq:39}
+    F=v\rho v^2=\rho v^3
+  \end{equation}
+  Assuming $\Delta\rho/\rho\ll 1$, we may
+  assume that the element is moving subsonically.\\
+
+  \n The business of heat flux via convection is covered in
+  \textbf{Mixing Length Theory}. In this ``theory'', we imagine a
+  convective element traveling up a \textbf{mixing height}, $\ell$ and
+  then allowing the fluid element to equilibrate with the
+  surroundings. Since the preferred lengthscale in a star is the scale
+  height, we typically choose $\ell_{\mathrm{MT}}=\alpha h$ for some
+  dimensionless constant $\alpha$. Applying this to \eqref{eq:39},
+  \begin{equation}
+    \label{eq:40}
+    F_{\mathrm{conv}}=\rho\frac{kT}{m_p}c_s\left(\left.\frac{\Delta\rho}{\rho}\right|_{\ell=h}\right)^{3/2}=Pc_s\left(\left.\frac{\Delta\rho}{\rho}\right|_{\ell=h}\right)^{3/2}
+  \end{equation}
+  Now recall our result for the radiative flux:
+  \begin{equation}
+    \label{eq:41}
+    F_{\mathrm{rad}}=\frac{1}{3}\frac{c}{\kappa\rho}\frac{d}{dr}\left(aT^4\right)\approx \frac{cP_{\mathrm{rad}}}{\tau}
+  \end{equation}
+  where in the second equality, we're let $d/dr\to 1/h$. Now we find
+  the ratio in these two fluxes:
+  \begin{equation}
+    \label{eq:42}
+    \frac{F_{\mathrm{conv}}}{F_{\mathrm{rad}}}\sim \frac{\tau Pc_s\left(\left.\Delta\rho/\rho\right|_h\right)^{3/2}}{cP_{\mathrm{rad}}}\sim\frac{c_s}{c}\frac{P}{P_{\mathrm{rad}}}\tau\left(\left.\frac{\Delta\rho}{\rho}\right|_h\right){3/2}
+  \end{equation}
+  For typical, low-mass stars, we assume that $P/P_{\mathrm{rad}}\gg
+  1$, let's find when both fluxes give equal contributions (also
+  plugging in some solar values):
+  \begin{equation}
+    \label{eq:43}
+    \left(\frac{kT}{m_pc^2}\right)^{1/2}10^4\tau\left(\frac{\Delta\rho}{\rho}\right)^{1/2}\sim 1
+  \end{equation}
+  The requirement becomes
+  \begin{equation}
+    \label{eq:44}
+    \frac{\Delta\rho}{\rho}\approx 2\left(\frac{10^4}{T}\right)^{1/3}\frac{1}{\tau^{2/3}}
+  \end{equation}
+  Where $\tau$ and $T$ get smaller, the simple theory implies
+  convection at near the sound speed, $c_s$. In truth, you can't do
+  this problem correctly in one dimension, so this result isn't all
+  that good. What does this imply about the surface, though? Stellar
+  convection at or near the surface becomes sonic, which we say is
+  \textbf{inefficient} \emph{and} $\Delta\rho/\rho\to 1$.\\
+
+  \begin{quote}
+    What I'm trying to do here is to write a density model in 1-D that
+    doesn't make me blush.\hfill \emph{--Lars Bildsten}
+  \end{quote}
+  To find a situation where this \emph{does} work is deep in the
+  interior of the star, where $\tau \ggg 1$ (yes, three greater than
+  signs). The relevant lengthscale here is no longer the scale height,
+  which begins to approach the radial coordinate:
+  \begin{equation}
+    \label{eq:45}
+    h=\frac{P}{\rho g}\sim\frac{GM^2}{R^4M}\frac{R^3R^2}{GM}\sim R
+  \end{equation}
+  so we'll just use the radius of the star as our characteristic
+  length scale. The ratio of fluxes is now 
+  \begin{equation}
+    \label{eq:46}
+    \frac{F_{\mathrm{conv}}}{F_{\mathrm{rad}}}\sim \frac{c_s}{R}\left[\frac{P}{P_{\mathrm{rad}}}\tau\frac{R}{c}\right]\left(\left.\frac{\Delta\rho}{\rho}\right|_{R}\right)^{3/2}
+  \end{equation}
+  Note that the time it takes for a photon to diffuse from a star is
+  $t_{\mathrm{rw}}=\tau R/c$. Thus, that is the time it takes to
+  evacuate the radiation field of energy, so multiplying by the ratio
+  in pressures is actually the Kelvin-Helmholtz time. Using this fact,
+  \eqref{eq:46} can be written as
+  \begin{equation}
+    \label{eq:47}
+    \frac{F_{\mathrm{conv}}}{F_{\mathrm{rad}}}=\frac{t_{\mathrm{KH}}}{t_{\mathrm{dyn}}}\left(\left.\frac{\Delta\rho}{\rho}\right|_{R}\right)^{3/2}
+  \end{equation}
+  Deep in the star, $t_{\mathrm{KH}}\ggg t_{\mathrm{dyn}}$, so
+  convection is efficient when
+  \begin{equation}
+    \label{eq:48}
+    \left.\frac{\Delta\rho}{\rho}\right|_R\sim\left(\frac{t_{\mathrm{dyn}}}{t_{\mathrm{KH}}}\right)\lll 1
+  \end{equation}
+  When convection is efficient, then, the stellar model nearly follows
+  the adiabatic relation! Deep interior convection, in this limit,
+  only implies that we need to know the adiabatic relation very
+  well.\\
+
+  \n Note that the ratio of times scales like
+  \begin{equation}
+    \label{eq:49}
+    \frac{t_{\mathrm{dyn}}}{t_{\mathrm{KH}}}\approx 3\times
+    10^{-9}\left(\frac{M}{10\ M_\odot}\right)^{3.5}
+  \end{equation}
+  Noting that $L\propto M^{3.5}$ and $R=R_\odot(M/M_\odot)$ on the
+  main sequence, this gives us
+  \begin{equation}
+    \label{eq:50}
+    \frac{v}{c_s}\approx 10^{-3}\left(\frac{M}{10\ M_\odot}\right)^{7/6}
+  \end{equation}
+  Now remember the adiabatic condition for convection derived earlier:
+  \begin{equation}
+    \label{eq:51}
+    \left.\frac{d\ln T}{d\ln P}\right|_*=\left.\frac{d\ln T}{d\ln P}\right|_{\mathrm{adiabatic}}=\frac{2}{5}
+  \end{equation}
+  So in the convective zone, we must have $T\propto P^{2/5}\propto
+  (\rho T)^{2/5}$, or more directly, $T\propto \rho^{2/3}$. So far, we
+  have motivated \emph{two} distinct \textbf{polytropic relations}
+  (models where $P\propto \rho^{(n+1)/n}$ for some $n$):
+  \begin{enumerate}
+  \item[1.] \textbf{Fully Convective and Efficient}: $P\propto \rho^{5/3}$,
+    where the prefactor is the specific entropy of the star, which is
+    spatially constant. Thus if we have the mass of a star and the
+    entropy, we can calculate everything we want to know about this
+    star (in this simple model).
+  \item[2.] \textbf{Constant} $\bm{L/M}$ star with constant (electron scattering)
+    opacity, where $P\propto \rho^{4/3}$.
+  \end{enumerate}
+
+  \subsection{Fully Convective Star}
+  \label{sec:fully-conv-star}
+
+  Imagine a star of ideal gas \emph{and} from the core to the
+  photosphere is fully convective \emph{and} efficient (this will
+  likely be a bad approximation near the surface). Somewhere near the
+  surface, photons must be made to allow the energy to escape the
+  star. Near the photosphere, the pressure is
+  \begin{equation}
+    \label{eq:52}
+    P_{\mathrm{ph}}\approx \frac{g}{\kappa_{\mathrm{ph}}}
+  \end{equation}
+  If we were to plot $\ln T$ against $\ln P$ (as we did in lecture),
+  for this star, it would have a slope of $2/5$. Getting out towards
+  the surface, though, the curve would have to be a bit shallower. We
+  hope this only happens out towards one scale height in from the
+  surface. Incorporating this physics will change $R$, but only on the
+  order of $\left.h\right|_{\mathrm{location}}$. Noting that
+  \begin{equation}
+    \label{eq:53}
+    \frac{h}{R}\sim \frac{T}{T_c}
+  \end{equation}
+  we see this is an extremely small error, since $T/T_c$ is very small
+  out towards the surface. We assume $P\propto \rho^{5/3}$ (an $n=3/2$
+  polytrope). In this model, the central pressure is
+  \begin{equation}
+    \label{eq:54}
+    P_c=0.77\frac{GM^2}{R^4}
+  \end{equation}
+  The central temperature is
+  \begin{equation}
+    \label{eq:55}
+    T_c=0.54\frac{GM\mu m_p}{kR}
+  \end{equation}
+  Requiring the entropy be the same everywhere requires
+  \begin{equation}
+    \label{eq:56}
+    \frac{T_c}{P_c^{2/5}}=\frac{T_{\mathrm{ph}}}{P_{\mathrm{ph}}^{2/5}}\=\frac{T_{\mathrm{eff}}}{P_{\mathrm{ph}}^{2/5}}
+  \end{equation}
+  Since we've assumed the perfect adiabat (admittedly a lie\ldots\
+  also, $\mu$ is changing). The surface thermal energy is
+  \begin{equation}
+    \label{eq:57}
+    kT_{\mathrm{eff}}=0.6\left(\frac{GM\mum_p}{R}\right)\left(\frac{R^2}{M\kappa_{\mathrm{ph}}}\right)^{2/5}
+  \end{equation}
+  Putting in $\kappa_{\mathrm{ph}}=\kappa_{\mathrm{es}}$ gives us 
+  \begin{equation}
+    \label{eq:58}
+    T_{\mathrm{eff}}=200\ \mathrm{K}\left(\frac{M}{M_\odot}\right)^{3/5}\left(\frac{R_\odot}{R}\right)^{1/5}
+  \end{equation}
+  So we have a big problem with assumign electron scattering (or convection).
 \end{document}
 
 

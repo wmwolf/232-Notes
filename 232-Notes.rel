@@ -15,7 +15,7 @@
 
 (master-dir . "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/")
 
-(label-numbers ("eq:" . 8))
+(label-numbers ("eq:" . 58))
 
 (bof "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex")
 
@@ -330,6 +330,122 @@
 ("HTS.54" "e" "\\frac{d}{d\\tau}T^4=\\frac{3}{4}T_{\\mathrm{eff}}^4 " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
 ("HTS.55" "e" "T^4=\\frac{3}{4}T_{\\mathrm{eff}}^4\\tau " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+(toc "toc" "      4.4 Convection" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "4.4" "\\subsection{Convection}" 41229)
+
+("sec:conv" "s" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:9" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:10" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:11" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:12" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:13" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:14" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:15" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:16" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:17" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:18" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:19" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:20" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+(toc "toc" "        4.4.1 The Unstable Case" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "4.4.1" "\\subsubsection{The Unstable Case}" 44615)
+
+("sec:unstable-case" "s" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:21" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:22" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:23" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:24" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:25" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:26" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:27" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:28" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:29" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:30" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:31" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:32" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:33" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:34" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:35" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:36" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+(toc "toc" "      4.5 Convective Efficiency" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "4.5" "\\subsection{Convective Efficiency}" 48492)
+
+("sec:conv-effic" "s" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:37" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:38" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:39" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:40" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:41" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:42" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:43" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:44" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:45" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:46" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:47" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:48" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:49" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:50" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:51" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+(toc "toc" "        4.5.1 Fully Convective Star" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "4.5.1" "\\subsubsection{Fully Convective Star}" 55109)
+
+("sec:fully-conv-star" "s" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:52" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:53" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:54" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:55" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:56" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:57" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:58" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
 
 (eof "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex")
 ))
