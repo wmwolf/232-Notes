@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  30 JAN 2012 13:48
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  6 FEB 2012 13:47
 entering extended mode
  %&-line parsing enabled.
 **\input 232-Notes.tex
@@ -379,7 +379,7 @@ Notes.toc)
 \openout5 = `232-Notes.toc'.
 
 
-[2] <hr_local.pdf, id=156, 691.58376pt x 548.0475pt>
+[2] <hr_local.pdf, id=191, 691.58376pt x 548.0475pt>
 File: hr_local.pdf Graphic file (type pdf)
  <use hr_local.pdf>
 Overfull \hbox (3.61537pt too wide) in paragraph at lines 39--40
@@ -486,203 +486,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 958--963
 
  []
 
-[24]
+[24] [25]
+Underfull \hbox (badness 10000) in paragraph at lines 1044--1047
 
-LaTeX Warning: Command \= invalid in math mode on input line 1032.
+ []
 
-! You can't use a prefix with `\endgroup'.
-<to be read again> 
-                   \endgroup 
-l.1032 ...thrm{ph}}}{P_{\mathrm{ph}}^{2/5}}\=\frac
-                                                  {T_{\mathrm{eff}}}{P_{\mat...
-I'll pretend you didn't say \long or \outer or \global.
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 1103--1108
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1032 ...thrm{ph}}}{P_{\mathrm{ph}}^{2/5}}\=\frac
-                                                  {T_{\mathrm{eff}}}{P_{\mat...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+ []
 
-! Missing control sequence inserted.
-<inserted text> 
-                \inaccessible 
-l.1032 ...thrm{ph}}}{P_{\mathrm{ph}}^{2/5}}\=\frac
-                                                  {T_{\mathrm{eff}}}{P_{\mat...
-Please don't say `\def cs{...}', say `\def\cs{...}'.
-I've inserted an inaccessible control sequence so that your
-definition will be completed without mixing me up too badly.
-You can recover graciously from this error, if you're
-careful; see exercise 27.2 in The TeXbook.
 
-! Missing number, treated as zero.
-<to be read again> 
-                   }
-l.1032 ...thrm{ph}}}{P_{\mathrm{ph}}^{2/5}}\=\frac
-                                                  {T_{\mathrm{eff}}}{P_{\mat...
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
+Underfull \hbox (badness 10000) in paragraph at lines 1114--1125
 
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.1032 ...thrm{ph}}}{P_{\mathrm{ph}}^{2/5}}\=\frac
-                                                  {T_{\mathrm{eff}}}{P_{\mat...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+ []
 
-! You can't use `\spacefactor' in math mode.
-\add@accent ...f \accent@spacefactor \spacefactor 
-                                                  }\accent #1 #2\egroup \spa...
-l.1032 ...thrm{ph}}}{P_{\mathrm{ph}}^{2/5}}\=\frac
-                                                  {T_{\mathrm{eff}}}{P_{\mat...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+[27] [28]
+Underfull \hbox (badness 10000) in paragraph at lines 1276--1281
 
-! Extra }, or forgotten $.
-\add@accent ... \accent@spacefactor \spacefactor }
-                                                  \accent #1 #2\egroup \spac...
-l.1032 ...thrm{ph}}}{P_{\mathrm{ph}}^{2/5}}\=\frac
-                                                  {T_{\mathrm{eff}}}{P_{\mat...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+ []
 
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.1032 ...thrm{ph}}}{P_{\mathrm{ph}}^{2/5}}\=\frac
-                                                  {T_{\mathrm{eff}}}{P_{\mat...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Extra }, or forgotten \endgroup.
-<argument> \egroup 
-                   
-l.1032 ...thrm{ph}}}{P_{\mathrm{ph}}^{2/5}}\=\frac
-                                                  {T_{\mathrm{eff}}}{P_{\mat...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! You can't use `\spacefactor' in math mode.
-<argument> \spacefactor 
-                        
-l.1032 ...thrm{ph}}}{P_{\mathrm{ph}}^{2/5}}\=\frac
-                                                  {T_{\mathrm{eff}}}{P_{\mat...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `\eqno' in math mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.1033   \end{equation}
-                       
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no è in font cmex7!
-Missing character: There is no è in font cmex7!
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1033   \end{equation}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.1033   \end{equation}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.1033   \end{equation}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.1033   \end{equation}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1033   \end{equation}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.1033   \end{equation}
-                       
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-[25]
-! Undefined control sequence.
-<argument> GM\mum 
-                  _p
-l.1038 ...mathrm{eff}}=0.6\left(\frac{GM\mum_p}{R}
-                                                  \right)\left(\frac{R^2}{M\...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[26] (./232-Notes.aux)
+[29] [30] [31] (./232-Notes.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 5989 strings out of 493876
- 83346 string characters out of 1150567
- 168817 words of memory out of 3000000
- 8917 multiletter control sequences out of 10000+50000
+ 6107 strings out of 493876
+ 84688 string characters out of 1150567
+ 173573 words of memory out of 3000000
+ 8976 multiletter control sequences out of 10000+50000
  17758 words of font info for 68 fonts, out of 3000000 for 5000
  714 hyphenation exceptions out of 8191
  36i,16n,36p,928b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -703,9 +536,9 @@ sky/cm/cmsy7.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmt
 i10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/ams/msam10.pfb>
 </usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/ams/msbm10.pfb></usr/lo
 cal/texlive/2008/texmf-dist/fonts/type1/bluesky/ams/msbm7.pfb>
-Output written on 232-Notes.pdf (26 pages, 272677 bytes).
+Output written on 232-Notes.pdf (31 pages, 307702 bytes).
 PDF statistics:
- 607 PDF objects out of 1000 (max. 8388607)
- 235 named destinations out of 1000 (max. 131072)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 729 PDF objects out of 1000 (max. 8388607)
+ 294 named destinations out of 1000 (max. 131072)
+ 290 words of extra memory for PDF output out of 10000 (max. 10000000)
 

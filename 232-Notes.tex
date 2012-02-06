@@ -1029,20 +1029,376 @@ and thus the velocity is
   Requiring the entropy be the same everywhere requires
   \begin{equation}
     \label{eq:56}
-    \frac{T_c}{P_c^{2/5}}=\frac{T_{\mathrm{ph}}}{P_{\mathrm{ph}}^{2/5}}\=\frac{T_{\mathrm{eff}}}{P_{\mathrm{ph}}^{2/5}}
+    \frac{T_c}{P_c^{2/5}}=\frac{T_{\mathrm{ph}}}{P_{\mathrm{ph}}^{2/5}}=\frac{T_{\mathrm{eff}}}{P_{\mathrm{ph}}^{2/5}}
   \end{equation}
   Since we've assumed the perfect adiabat (admittedly a lie\ldots\
   also, $\mu$ is changing). The surface thermal energy is
   \begin{equation}
     \label{eq:57}
-    kT_{\mathrm{eff}}=0.6\left(\frac{GM\mum_p}{R}\right)\left(\frac{R^2}{M\kappa_{\mathrm{ph}}}\right)^{2/5}
+    kT_{\mathrm{eff}}=0.6\left(\frac{GM\mu m_p}{R}\right)\left(\frac{R^2}{M\kappa_{\mathrm{ph}}}\right)^{2/5}
   \end{equation}
   Putting in $\kappa_{\mathrm{ph}}=\kappa_{\mathrm{es}}$ gives us 
   \begin{equation}
     \label{eq:58}
     T_{\mathrm{eff}}=200\ \mathrm{K}\left(\frac{M}{M_\odot}\right)^{3/5}\left(\frac{R_\odot}{R}\right)^{1/5}
   \end{equation}
-  So we have a big problem with assumign electron scattering (or convection).
+  So we have a big problem with assumign electron scattering (or
+  convection).\\
+
+  \textit{Wednesday, February 1, 2012}
+
+  \subsection{Fully Convective Stars and the Hayashi Track}
+  \label{sec:fully-conv-stars}
+
+  MISSING DUE TO MY INABILITY TO WAKE UP BEFORE NOON
+
+\section{Star Formation and the Jean's Mass}
+\label{sec:star-formation-jeans}
+
+\subsection{The Jean's Mass}
+
+  In the interstellar medium, there are large masses of cold dust and
+  gas that can give rise to isolated regions of stellar formation. Often
+  these manifestations are called \textbf{cold cores}. Suppose one of
+  these cold cores is in the ISM with some density $\rho$ and
+  temperature $T$ (likely around 10-20 K). The gravitational energy is
+  something like
+  \begin{equation}
+    \label{eq:59}
+    E_{\mathrm{GR}}\approx -\frac{GM^2}{R}
+  \end{equation}
+  And the thermal content is something like
+  \begin{equation}
+    \label{eq:60}
+    E_{\mathrm{th}}=\frac{3}{2}\frac{M}{m_p}kT
+  \end{equation}
+  In order for this cloud to collapse, we must have the total energy
+  being less than zero. Thus, we must have
+  \begin{equation}
+    \label{eq:61}
+    \frac{GM^2}{R}>\frac{3}{2}\frac{M}{m_p}kT
+  \end{equation}
+  If we assume a constant density profile, this tells us that the mass
+  of the object must be
+  \begin{equation}
+    \label{eq:62}
+    M>500\ M_\odot\left(\frac{T}{10\
+        \mathrm{K}}\right)^{3/2}\left(\frac{1\ \mathrm{cm}^{-3}}{n}\right)^{1/2}
+  \end{equation}
+  This mass is called the \textbf{Jean's Mass}. If a cloud is more
+  massive than this, it is possible to collapse. Now, it may stay as
+  one large blob, or it may fragment\ldots we're not sure yet. The
+  question is then, ``How does the Jean's mass change in a collapsing
+  cloud?'' We know that the Jeans mass scales as
+  \begin{equation}
+    \label{eq:63}
+    M_\mathrm{J}\propto T^{3/2}\rho^{-1/2}
+  \end{equation}
+  As the star collapses the density must increase. \emph{If} the
+  material maintains its entropy, then we must have $T\propto
+  \rho^{2/3}$. Then the Jean's mass scales as
+  \begin{equation}
+    \label{eq:64}
+    M_{\mathrm{J}}\propto T^{3/2}\rho^{-1/2}\propto\rho^{1/2}
+  \end{equation}
+  So if the collapse is adiabatic, the collapse does not lead to
+  fragmentation. The cloud will reach some critical density, at which
+  point the Jean's mass is higher than the mass of the cloud, halting
+  collapse.\\
+
+  \n Cooling of the gas (i.e., the temperature remains constant) gives
+  the Jean's mass trivially scaling as
+  \begin{equation}
+    \label{eq:65}
+    M_{\mathrm{J}}\propto \frac{1}{\rho^{1/2}}
+  \end{equation}
+  This allows for the possibility of fragmentation since the mass will
+  remain above the Jean's mass. More likely, this will be the case at
+  earlier times, and then later the collapse becomes more adiabatic
+  until a freeze-out. What ends the fragmentation is that at high
+  density, the optical depths are increasing and the gas cannot
+  radiate on the contraction timescale. If we can analyze the
+  microphysics governing these processes, we could determine a minimum
+  Jean's mass, which would explain the fragmentation. At low metal
+  content, the minimum masses are much higher. This is thought to be
+  the reason why the first stars were so large.\\
+
+  \n When cooling is efficient, then the collapse and fragmentation
+  occurs on the dynamical timescale:
+  \begin{equation}
+    \label{eq:66}
+    t_{\mathrm{dyn}}\approx \frac{1}{\sqrt{G\rho}}=\frac{10^7\
+      \mathrm{years}}{(n/100\ \mathrm{cm^{-3}})^{1/2}}
+  \end{equation}
+  Then it typically takes $1-10\ \mathrm{Myrs}$ for the collapse to
+  occur. At the center, an object at hydrostatic balance forms. This
+  causes an \textbf{accretion luminosity}
+  \begin{equation}
+    \label{eq:67}
+    L\approx \dot{M}\frac{G M_c}{R_c}
+  \end{equation}
+  which is powered by a loss of gravitational potential energy. The
+  shocks on the core surface typically have energies of
+  \begin{equation}
+    \label{eq:68}
+    kT_{\mathrm{shock}}\approx \frac{GM_c m_p}{R_c}\approx 0.1\ \mathrm{keV}
+  \end{equation}
+
+  \subsection{Pre-Main Sequence Stars}
+  \label{sec:pre-main-sequence}
+
+  Recall the main equations of stellar structure:
+  \begin{align}
+    \label{eq:69}
+    \frac{dP}{dr}&=-\rho(r)g(r)\\
+    dm(r)&=4\pi r^2\rho(r)\,dr\\
+    \nonumber\textrm{Fluxes defined}&\textrm{ by temperature gradient}
+  \end{align}
+  We need to be able to have an equation describing energy (the next
+  moment, as it were). Looking at the second law of thermodynamics, we
+  have
+  \begin{equation}
+    \label{eq:70}
+    dQ=TdS=dE+PdV
+  \end{equation}
+  The corresponding time-dependent equation in the Lagrangian is
+  \begin{equation}
+    \label{eq:71}
+    T\frac{dS}{dt}=\frac{dE}{dt}+P\frac{dV}{dt}
+  \end{equation}
+  where $E$ is the internal energy per unit mass. In terms of the
+  specific units (per unit mass),
+  \begin{equation}
+    \label{eq:72}
+    dQ=dE+pd\left(\frac{1}{\rho}\right)=dE-\frac{P}{\rho^2}d\rho
+  \end{equation}
+  The Lagrangian equation becomes
+  \begin{equation}
+    \label{eq:73}
+    T\frac{ds}{dt}=\frac{dQ}{dt}\equiv\textrm{loss or gain}
+  \end{equation}
+  First we have heat gained via neuclear reactions,
+  $\varepsilon$. Secondly, there is heat gained or lost due to a
+  gradient in $\mathbf{F}$. Then \eqref{eq:73} becomes our last equation
+  for stellar evolution:
+  \begin{equation}
+    \label{eq:74}
+    \boxed{T\frac{ds}{dt}=\varepsilon_{\mathrm{nuc}}-\frac{\bm{\nabla}\cdot\mathbf{F}}{\rho}}
+  \end{equation}
+  Here we ahve $F\mathbf{F}=F_r\hat{r}$. Then
+  \begin{equation}
+    \label{eq:75}
+    \frac{\bm{\nabla}\cdot\mathbf{F}}{\rho}=\frac{1}{\rho}\frac{1}{r^2}\frac{\partial}{\partial
+      r}\left(r^2F_r\right)
+  \end{equation}
+  and the luminoisty is
+  \begin{equation}
+    \label{eq:76}
+    L(r)=4\pi r^2F_r
+  \end{equation}
+  Then we can rewrite \eqref{eq:75} as
+  \begin{equation}
+    \label{eq:77}
+    \frac{\bm{\nabla}\cdot\mathbf{F}}{\rho}=\frac{1}{\rho4\pi
+      r^2}\frac{\partial}{\partial r}L(r)=\frac{d L(r)}{dm(r)}
+  \end{equation}
+  So in the case of no nuclear burning (a pre-main sequence star), we
+  have
+  \begin{equation}
+    \label{eq:78}
+    T\frac{ds}{dt}=-\frac{d L(r)}{dm(r)}
+  \end{equation}
+  We assume that the lumonisty gradient is positive due to the
+  temperature gradient, so under the absence of an internal energy
+  source, the entropy will decrease. It will decrease at the rate set
+  by the heat loss to infinity. Adding on the rest to \eqref{eq:78},
+  \begin{equation}
+    \label{eq:79}
+    T\frac{ds}{dt}=-\frac{d L(r)}{dm(r)}=\frac{dE}{dt}-\frac{P}{\rho^2}\frac{d\rho}{dt}
+  \end{equation}
+  Note that the internal energy is
+  \begin{equation}
+    \label{eq:79a}
+    E=\frac{3}{2}\frac{kT}{\mu m_p}=\frac{3}{2}\frac{P}{\rho}
+  \end{equation}
+  Inserting this into \eqref{eq:79} gives us
+  \begin{equation}
+    \label{eq:5}
+    T\frac{ds}{dt}=\frac{3}{2}\frac{P}{\rho}\frac{d}{dt}\left(\ln P/\rho^{5/3}\right)=-\varepsilon_{\mathrm{grav}}
+  \end{equation}
+  Textbooks will often refer to this as
+  $-\varepsilon_{\mathrm{grav}}$. This is done so that
+  \begin{equation}
+    \label{eq:6}
+    \frac{\partial L(r)}{\partial
+      m(r)}=\varepsilon_{\mathrm{nuc}}+\varepsilon_{\mathrm{grav}}
+  \end{equation}
+%%%%%
+  \textit{Monday, February 6, 2012}\\
+  \n Let's do some dimensional analysis for a contracting star. The
+  pressure is
+  \begin{equation}
+    \label{eq:7}
+    P\sim\frac{GM^2}{R^4}\sim\frac{GM^2}{M^{4/3}}\rho^{4/3}
+  \end{equation}
+  Then the quantity in the log in \eqref{eq:6} would be
+  \begin{equation}
+    \label{eq:8}
+    \frac{P}{\rho^{5/3}}\approx C\frac{1}{\rho^{1/3}}
+  \end{equation}
+  If the star is fully convective, then $P/\rho^{5/3}$ must be
+  spatially constant, and we must have
+  \begin{equation}
+    \label{eq:80}
+    T\frac{ds}{dt}=\frac{3}{2}\frac{P}{\rho}\frac{d}{dt}\left[\ln\left(C\rho_c^{-1/3}\right)\right]=-\frac{1}{2}\frac{P}{\rho}\frac{d\ln\rho_c}{dt}
+  \end{equation}
+  Assuming that $\varepsilon_{\mathrm{nuc}}=0$, \eqref{eq:5} becomes
+  \begin{equation}
+    \label{eq:81}
+    -\frac{1}{2}\frac{P}{\rho}\frac{d\ln\rho_c}{dt}=-\frac{dL(r)}{dm(r)}\quad\Rightarrow\quad \frac{dL(r)}{dm(r)}=\frac{1}{2}\frac{P}{\rho}\frac{d\ln\rho_c}{dt}
+  \end{equation}
+  where $\rho_c\propto M/R^3$. Now we want to get \eqref{eq:81} in
+  terms of more physical variables. Assuming $M$ is constant in time,
+  \begin{equation}
+    \label{eq:82}
+    \frac{dL(r)}{dm(r)}=\frac{1}{2}\frac{P}{\rho}\frac{d}{dt}\left[\ln\left(\frac{1}{R^3}\right)\right]\quad\Rightarrow\quad
+    \frac{dL(r)}{dm(r)}=-\frac{3}{2}\frac{P}{\rho}\frac{d}{dt}\ln R
+  \end{equation}
+  So, assuming a fully-convective star with no mass loss, we have
+  \begin{equation}
+    \label{eq:83}
+    \boxed{\frac{dL(r)}{dm(r)}=-\frac{3}{2}\frac{P(r)}{\rho(r)}\frac{1}{R}\frac{dR}{dt}}
+  \end{equation}
+  Backtracking a bit, earlier we showed that
+  \begin{equation}
+    \label{eq:84}
+    \mathrm{entropy}\propto \frac{P}{\rho^{5/3}}\sim\frac{GM^2}{R^4}\frac{R^5}{M^{5/3}}\propto RM^{1/3}
+  \end{equation}
+  for a sta in hydrostatic balance. An adiabatic adjustment to this
+  star must require $R\propto 1/M^{1/3}$ (entropy must remain
+  constant). Thus if the mass decreases, the radius must increase
+  (like in white dwarfs).\\
+
+  \n Now we want to integrate \eqref{eq:83}. Multiplying both sides
+  by $dm/dr$ and integrating from the center to the surface gives
+  \begin{equation}
+    \label{eq:85}
+    L=-\frac{3}{2}\frac{1}{R}\frac{dR}{dt}\int_0^R\frac{P(r)}{\rho(r)}\rho(r)4\pi
+    r^2\,dr=-\frac{3}{2}\frac{1}{R}\frac{dR}{dt}\int_0^RP(r)4\pi r^2\,dr
+  \end{equation}
+  We know the last integral from the Virial theorem's relation to the
+  gravitational energy. The short answer is that
+  \begin{equation}
+    \label{eq:86}
+    \int d^3r\,P=\frac{2}{7}\frac{GM^2}{R}
+  \end{equation}
+  Then the luminosity is given by
+  \begin{equation}
+    \label{eq:87}
+    L=-\frac{3}{7}\frac{GM^2}{R^2}\frac{dR}{dt}
+  \end{equation}
+  This is essentially Kelving-Helmholtz contraction, but for a star
+  that is fully convective, we can derive the ``real equation'' (as
+  opposed to our more bogus results earlier).
+
+  \subsection{Low Mass Stars}
+  \label{sec:low-mass-stars}
+
+  Earlier we derived that as stars are on the Hayashi track,
+  \begin{equation}
+    \label{eq:88}
+    \frac{L}{L_\odot}\approx 0.03\ L_\odot\left(\frac{M}{M_\odot}\right)^{4/7}\left(\frac{R}{R_\odot}\right)^2
+  \end{equation}
+  Plugging this result in to our previous result can give us the
+  radius as a function of time:
+  \begin{equation}
+    \label{eq:89}
+    \frac{3}{7}\frac{GM^2}{R^2}\frac{dR}{dt}=-0.03\left(\frac{M}{M_\odot}\right)^{4/7}\left(\frac{R}{R_\odot}\right)^2
+  \end{equation}
+  We can now read off scalings: $\dot{R}\propto R^4$, $1/t\propto
+  R^3$, and so $R\propto t^{-1/3}$. Explicitly, the radius for a
+  fully-convective star coming down the Hayashi track
+  \begin{equation}
+    \label{eq:90}
+    \frac{R}{R_\odot}=\left(\frac{M}{M_\odot}\right)^{10/21}\left(\frac{130\ \mathrm{Myr}}{t}\right)^{1/3}
+  \end{equation}
+  For masses greater than about a half of a solar mass, convection
+  will dominate heat transport until the luminosity reaches the level
+  that was predicted by earlier opacity arguments that assumed
+  radiative diffusion. The onset of a radiative core is then roughly
+  when $L\lesssim L_{\mathrm{rad}}$. The time it takes for this to
+  happen, we have
+  \begin{equation}
+    \label{eq:91}
+    t>10^6\ \mathrm{years}\ \left(\frac{M_\odot}{M}\right)^2
+  \end{equation}
+  So massive stars become radiative at a very young age. For low-mass
+  stars, though,
+  \begin{equation}
+    \label{eq:92}
+    t>2.6\times 10^6\ \mathrm{years}\ \left(\frac{M_\odot}{M}\right)^{4.4}
+  \end{equation}
+  For very low mass stars, this time approaches the Hubble
+  time. However, very low mass stars will remain convective on the
+  main sequence.
+
+  \section{Nuclear Reactions in Stars}
+  \label{sec:nucl-react-stars}
+
+  The big bang only mad (by mass) 75\% protons and 25\% Helium. In
+  stars, we want to fuse protons into helium and release about 7 MeV
+  per baryon, or $7\times 10^18\ \mathrm{erg\ g^{-1}}$, which is
+  \emph{far} higher than the thermal energy content of matter in
+  stars. As it turns out, the thermal energy is too low to bring two
+  protons close enough together to fuse, so tunneling must take
+  place. Additionally, there is no stable nucleus with just two (or
+  more) protons, so weak interactions are required to have any stable
+  reactions. 
+
+  \subsection{Liquid Drop Model}
+  \label{sec:liquid-drop-model}
+
+  The ``size'' of a nucleus is approximately
+  \begin{equation}
+    \label{eq:93}
+    r_0=1.3\ \mathrm{fm}\ A^{1/3}
+  \end{equation}
+  where $A$ is the mass number ($A=N+Z$). Then the nuclear density is
+  approximately
+  \begin{equation}
+    \label{eq:94}
+    \rho=\frac{Am_p}{\frac{4\pi}{3}R^3}\approx2\times 10^{14}\ \mathrm{g\ cm^{-3}}
+  \end{equation}
+  There is an energy well with
+  \begin{equation}
+    \label{eq:95}
+    E_{\mathrm{volume}}=-14\ \mathrm{MeV}\ A
+  \end{equation}
+  There must also be a surface term, dictating that surface particles
+  are less bound than their counterparts deeper in
+  \begin{equation}
+    \label{eq:96}
+    N_{\mathrm{surf}}=A^{2/3}\sim\frac{\mathrm{surface}}{\mathrm{volume}}
+  \end{equation}
+  So then we have
+  \begin{equation}
+    \label{eq:97}
+    E_{\mathrm{surf}}=13\ \mathrm{MeV}\ A^{2/3}
+  \end{equation}
+  The Coulomb energy to assemble the nucleus is necessarily
+  \begin{equation}
+    \label{eq:98}
+    E_{\mathrm{Coulomb}}\sim\frac{e^2Z^2}{r}=\frac{3}{5}\frac{e^2
+      Z^2}{R}\approx 0.56\ \mathrm{MeV}\frac{Z^2}{A^{1/3}}
+  \end{equation}
+  Nuclei typically prefer to have roughly equal numbers of neutrons
+  and protons in order to minimize degeneracy pressure. Thus, often we
+  will have $N=Z$ since then the kinetic energy is lower. This gives
+  rise to a ``symmetry energy'',
+  \begin{equation}
+    \label{eq:99}
+    E_{\mathrm{sym}}=18\ \mathrm{MeV}\frac{(N-Z)^2}{A}
+  \end{equation}
 \end{document}
 
 
