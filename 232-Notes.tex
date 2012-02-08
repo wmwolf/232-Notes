@@ -3,8 +3,8 @@
 %%%%%%%%%%%%%%%%%%%%%
 % Package Inclusion %
 %%%%%%%%%%%%%%%%%%%%%
-\usepackage{geometry,amsmath,amsthm,mathrsfs,amssymb,graphicx,bm,hyperref,url,pdfsync}
-
+\usepackage{geometry,amsmath,amsthm,mathrsfs,amssymb,graphicx,bm,hyperref,url,pdfsync,fancyhdr}
+\pagestyle{fancy}
 %%%%%%%%%%%%%%%%%%%
 % Custom Commands %
 %%%%%%%%%%%%%%%%%%%
@@ -1399,6 +1399,306 @@ and thus the velocity is
     \label{eq:99}
     E_{\mathrm{sym}}=18\ \mathrm{MeV}\frac{(N-Z)^2}{A}
   \end{equation}
+  \textit{Wednesday, February 8, 2012}
+  \subsection{Tunneling through the Coulomb Barrier}
+  \label{sec:tunn-thro-coul}
+
+  In order for two positively charged nuclei to fuse, they must get
+  close enough so that the strong force can overpower the Coulomb
+  potential:
+  \begin{equation}
+    \label{eq:100}
+    V(r)=\frac{Z_1Z_2 e^2}{r}=1.4\ \mathrm{MeV}\frac{Z_1Z_2}{(r/1\ \mathrm{fm})}
+  \end{equation}
+  At the center of the sun, where $T_c\sim 10^7\ \mathrm{K}$, the
+  thermal energy is only about $kT\sim 8.6\ \mathrm{keV}\left(T/10^8\
+    \mathrm{K}\right)$. Then clearly the thermal energy in the sun is
+  nowhere near high enough to overcome the Coulomb barrier. If there
+  was no tunneling, we would need temperatures of order 
+  \begin{equation}
+    \label{eq:101}
+    T\sim\frac{Z_1Z_2e^2}{kR}\sim1.6\times 10^{10}\ \mathrm{K}\
+    \frac{Z_1Z_2}{(R/1\ \mathrm{fm})}
+  \end{equation}
+  Stars pretty much never reach this temperature, so clearly tunneling
+  is how fusion happens in stars.\\
+
+  \n There are two important ingredients for calculating reaction
+  rates:
+  \begin{enumerate}
+  \item[1.] Tunneling
+  \item[2.] Maxwell-Boltzmann distribution of particle energies
+  \end{enumerate}
+  The liklihood of a particle being able to tunnel through the Coulomb
+  barrier is proportional to its energy, which in turn is determined
+  by the Maxwell-Boltzmann statistics of the ensemble of particles. To
+  get a better handle on what's going on here, consider a simple
+  reaction:
+  \begin{equation}
+    \label{eq:102}
+    \mathrm{a+X\to Y+b}
+  \end{equation}
+  Sometimes this is written as X(a,b)Y in astrophysics (no clue
+  why). We define the \textbf{cross section} as 
+  \begin{equation}
+    \label{eq:103}
+    \sigma \equiv \frac{\mathrm{\# reactions/X\ nucleus/unit\
+        time}}{\mathrm{\#incident\ particles/cm^2/unit\ time}}
+  \end{equation}
+  which clearly has the dimension of length squared (area). Now
+  suppose the number density of a particles is given by $n_\mathrm{a}$
+  and the typical relative velocity is given by
+  $v_{\mathrm{rel}}$. Then the incoming flux of particles is just
+  $n_\mathrm{a}v_{\mathrm{rel}}$. From this logic, we may decuce that
+  \begin{equation}
+    \label{eq:104}
+    n_\mathrm{a}\sigma
+    v_{\mathrm{rel}}=\frac{\mathrm{\#reactions}}{\mathrm{X\ nucleus\times
+        unit\ time}}
+  \end{equation}
+  Usually we write the reaction rate in the number of reactions per
+  unit time per unit volume, or
+  \begin{equation}
+    \label{eq:105}
+    r_{\mathrm{aX}}=n_\mathrm{X}n_{\mathrm{a}}\sigma v_{\mathrm{rel}}
+  \end{equation}
+  Really we need to integrate over a relative velocity distribution to
+  get an understanding of the actual reaction rate, so
+  \begin{equation}
+    \label{eq:106}
+    r_{\mathrm{aX}}=\int_0^\infty dv\
+    n_\mathrm{a}n_{\mathrm{X}}\sigma(v)v\\phi(v)
+  \end{equation}
+  where $\phi(v)$ is the probability density of a pair of particles
+  having a relative velocity $v$. More often this is written as
+  \begin{equation}
+    \label{eq:107}
+    r_{\mathrm{aX}}=n_\mathrm{a}n_{\mathrm{X}}\avg{\sigma v}
+  \end{equation}
+  with
+  \begin{equation}
+    \label{eq:108}
+    \avg{\sigma v}=\int_0^\infty dv\
+    \sigma(v)v\phi(v)=4\pi\left(\frac{\mu}{2\pi kT}\right)^{3/2}
+int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
+  \end{equation}
+  where $\mu$ is now the reduced mass, $\mu=m_1m_2/(m_1+m2)$.Note that
+  if both reactants are the same species, \eqref{eq:105}
+  must be divided by a factor of 2 since we cannot imagine having a
+  ``target'' and a ``scatterer'' (this screws up relative velocities
+  and other things, see Clayton for the details). Similarly, if you
+  have $N$ like reactants, we must divide by $N!$ to adjust the
+  reaction rate appropriately. 
+
+  \subsubsection{Barrier Penetration}
+  \label{sec:barrier-penetration}
+
+  Recall the Schr\"odinger equation,
+  \begin{equation}
+    \label{eq:109}
+    \left[-\frac{\hbar^2}{2\mu}\nabla^2+V\right]\psi=E\psi
+  \end{equation}
+  For simplicity, we will only do a one-dimensional example to model
+  barrier penetration. We supose a free particle encounters a
+  finite-width and finite-height barrier. Outside the barrier, then,
+  \eqref{eq:109} reduces to
+  \begin{equation}
+    \label{eq:110}
+    -\frac{\hbar^2}{2\mu}\nabla^2\psi=E\psi\quad\Rightarrow\quad
+    \psi\propto e^{-\pm ikx}
+  \end{equation}
+  and the energy is given by $E=\hbar^2k^2/(2\mu)$. Inside the
+  barrier, though, we have decaying modes:
+  \begin{equation}
+    \label{eq:111}
+    -\frac{\hbar^2}{2\mu}\nabla^2\psi=(E_V)\psi\quad\Rightarrow\quad
+    \psi\propto e^{\pm\kappa x}
+  \end{equation}
+  Where the ``energy'' is $E-V=-\hbar^2\kappa^2/(2\mu)$. Now we use
+  this solution in solving for the actual Coulomb potential,
+  \begin{equation}
+    \label{eq:112}
+    V(r)=\frac{Z_1Z_2 e^2}{r}
+  \end{equation}
+  by using the WKB approximation. In this regime, we have
+  \begin{equation}
+    \label{eq:113}
+    \frac{\hbar^2\kappa^2}{2\mu}=\frac{Z_1Z_2 e^2}{r}-E
+  \end{equation}
+  Using the WKB approxiamtion to calculate the barrier penetration,
+  which assumes that the lengthscale of changes in $V(r)$ is much
+  larger than the DeBroglie wavelength of the particle, we get the
+  probability density being
+  \begin{equation}
+    \label{eq:114}
+    \psi^2\propto \exp\left(-2\int \kappa\ dr\right)
+  \end{equation}
+  where the integral is between the two classical turning points. In
+  this case, there is really only one turning point,
+  \begin{equation}
+    \label{eq:115}
+    r_c=\frac{Z_1Z_2 e^2}{E}
+  \end{equation}
+  Rewriting $\kappa$ in terms of the turning point,
+  \begin{equation}
+    \label{eq:116}
+    \kappa = \left(\frac{2\mu E}{\hbar^2}\right)^{1/2}\left[\frac{r_c}{r}-1\right]^{1/2}
+  \end{equation}
+  Then the integral in \eqref{eq:114} becomes
+  \begin{equation}
+    \label{eq:117}
+    \int_{r_c}^{r_{\mathrm{in}}}\kappa dr=
+      \int_{r_c}^0\frac{\pi\alpha}{2}Z_1Z_2\left(\frac{2\mu c^2}{E}\right)^{1/2}
+  \end{equation}
+  Here we've extended the upper limit to zero to make the integral
+  doable, but this is actually a pretty good approximation (see
+  Clayton for the details). This gives the probability of tunneling to
+  be
+  \begin{equation}
+    \label{eq:118}
+    P_{\mathrm{tunnel}}\propto \exp\left[-\pi\alpha
+      Z_1Z_2\left(\frac{2\mu c^2}{E}\right)^{1/2}\right]=\exp\left[-\sqrt{E_\mathrm{G}/E}\right]
+  \end{equation}
+  Where we have defined the \textbf{Gamow} energy via
+  \begin{equation}
+    \label{eq:119}
+    E_{\mathrm{G}}\equiv \left(\pi\alpha Z_1Z_2\right)^22\mu
+    c^2\approx 0.98\ \mathrm{MeV}\ Z_1^2Z_2^2\left(\frac{\mu}{m_p}\right)
+  \end{equation}
+  For a proton-proton interaction, $E_{\mathrm{G}}\sim 0.5\
+  \mathrm{MeV}$, and for a carbon-proton interaction,
+  $E_{\mathrm{G}}\sim 33\ \mathrm{MeV}$. These values are
+  significantly lower than that required for straight-up thermal
+  energy to do the work, but still pretty high compared to $kT_c$. The
+  probabiliy for a 1 keV proton to interact with another proton is
+  then
+  \begin{equation}
+    \label{eq:120}
+    P\propto \exp\left[-\left(\frac{500\ \mathrm{keV}}{1\
+          \mathrm{keV}}\right)^{1/2}\right]\sim 2\times 10^{-10}
+  \end{equation}
+  So we really need to be out on the Boltzmann tail for this to occur.
+
+  \subsubsection{Nuclear Reaction Rates}
+  \label{sec:nucl-react-rates}
+
+  The De Broglie waelength of a particle is 
+  \begin{equation}
+    \label{eq:121}
+    \lambda = \frac{h}{p}=\frac{h}{\left(kT\mu\right)^{1/2}}\approx
+    10^{-10}\ \mathrm{cm}\ \textrm{in solar core}
+  \end{equation}
+  While the ``size'' of the nucleus is
+  \begin{equation}
+    \label{eq:122}
+    r_{\mathrm{nuc}}\approx 1.3\times 10^{-13}\ \mathrm{cm}\ A^{1/3}
+  \end{equation}
+  Clearly, classical scattering just isn't going to cut it since the
+  De Broglie wavelength is much longer than the target size. Partial
+  wave analysis can get an effective cross-section given by
+  \begin{equation}
+    \label{eq:123}
+    \pi\lambda^2\left(\textrm{dimensionless stuff}\right)\exp\left[-\left(\frac{E_\mathrm{G}}{E}\right)^{1/2}\right]
+  \end{equation}
+  Where the ``dimensionless stuff'' comes from nasty nuclear
+  physics. Often this is written in terms of the reduced wavelenth,
+  $\lambda/2\pi$.
+  \begin{equation}
+    \label{eq:124}
+    \pi\lambda^2=4\pi^3\bar\lambda^2=\frac{4\pi^3}{k^2}
+  \end{equation}
+  So the energy is
+  \begin{equation}
+    \label{eq:125}
+    E\approx \frac{\hbar^2k^2}{2\mu}\quad\Rightarrow\quad
+    4\pi^3\bar{\lambda}^2=\frac{2\pi^3\hbar^2}{\mu E}=2000\
+    \mathrm{barns}\ \left(\mathrm{\frac{keV}{E}}\right)
+  \end{equation}
+  Then the cross section can be written as
+  \begin{equation}
+    \label{eq:126}
+    \sigma(E)=\frac{S(E)}{E}\exp\left[-\left(\frac{E_{\mathrm{G}}}{E}\right)^{1/2}\right]
+  \end{equation}
+  Where the ``stupid factor'', $S(E)$ is a slowly changing function of
+  the energy that takes into account the details of the nuclear
+  reaction. Typical values of $S(E)$ are around 2000 keV barns. One
+  important exception is the Deuterium synthesis reaction:
+  \begin{equation}
+    \label{eq:127}
+    \mathrm{p+p\to D+e^++\nu_e}
+  \end{equation}
+  where $S\sim 4\times 10^{-22}\ \mathrm{kev\ barns}$. This value is
+  so small because a weak interaction is involved. Now we return back
+  to calculating $\avg{\sigma v}$, using our newly found cross-section
+  and writing the energy as $E=\frac{1}{2}\mu v^2$ and $dE=\mu v\
+  dv$. (Note that the non-relativistic energies are fine for our
+  purposes.) Then we have
+  \begin{equation}
+    \label{eq:128}
+    \avg{\sigma
+      v}=\frac{1}{(kT)^{3/2}}\left(\frac{8}{\pi\mu}\right)^{1/2}\int_0^\infty
+    dE\ S(E)\exp\left[-\frac{E}{kT}-\left(\frac{E_\mathrm{G}}{E}\right)^{1/2}\right]
+  \end{equation}
+  Before evaluating this integral, we'll need to know how to use the
+  method of steppest descent. Suppose we have an integral with
+  \begin{equation}
+    \label{eq:129}
+    I=\int_{-1}^{\infty}g(x)e^{-f(x)}dx
+  \end{equation}
+  where $g(x)$ is slowly varying and $f(x)$ is sharply peaked. (In our
+  case, the Maxwell-Boltzmann distribution multiplied by the
+  probability of tunneling is sharply peaked. Particles far out on the
+  Maxwell-Boltzmann tail are very likely to tunnel, but incredibly
+  unlikely to exist. Likewise, particles with low energies are in
+  ample supply, but they aren't tunneling anytime soon, so there is
+  some magic window in the middle that is most relevant.) We Taylor
+  expand $f(x)$ about the peak (where $f'(x_0)=0$):
+  \begin{equation}
+    \label{eq:130}
+    f(x)\approx f(x_0)+\frac{1}{2}f''(x_0)(x-x_0)^2
+  \end{equation}
+  Then \eqref{eq:129} can be approximated by
+  \begin{equation}
+    \label{eq:131}
+    I=g(x_0)e^{-f(x_0)}\int_{-\infty}^{\infty}\exp\left[-\frac{f''(x_0)}{2}(x_0)^2\right]=g(x_0)e^{-f(x_0)}\sqrt{\frac{2\pi}{f''(x_0)}}
+  \end{equation}
+  Then for our uses, we have
+  \begin{equation}
+    \label{eq:132}
+    f(E)=\frac{E}{kT}+\left(\frac{E_{\mathrm{G}}}{E}\right)^{1/2}
+  \end{equation}
+  Solving for $E_0$ gives
+  $E_0^3=\frac{1}{4}E_{\mathrm{G}}(kT)^2$. Then the relevant functions
+  and derivatives are
+  \begin{align}
+    \label{eq:133}
+    f(E_0)&=3\left(\frac{E_{\mathrm{G}}}{4kT}\right)^{1/3}\\
+    \label{eq:133a}
+    f''(E_0)&=3\left[2E_{\mathrm{G}}(kT)^5\right]^{1/6}
+  \end{align}
+  Using this result in \eqref{eq:128}, we get
+  \begin{align}
+    \label{eq:134}
+    \avg{\sigma v} & \approx
+    \frac{1}{(kT)^{3/2}}\left(\frac{8}{\pi\mu}\right)^{1/2}S(E_0)\exp\left[-3\left(\frac{E_{\mathrm{G}}}{4kT}\right)^{1/3}\right]\int_0^\infty
+    \exp\left[-\frac{(E-E_0)^2}{(\Delta/2)^2}\right]\\
+    \label{eq:134a}
+    & \Rightarrow \boxed{\Delta =
+      \frac{4}{2^{1/3}\sqrt{3}}E_{\mathrm{G}}^{1/5}(kT)^{5/6}}\\
+    \label{eq:134b}
+    &=
+    \boxed{2.6\frac{E_{\mathrm{G}}^{1/6}}{\sqrt{\mu}}\frac{S(E_0)}{(kT)^{2/3}}\exp\left[-3\left(\frac{E_{\mathrm{G}}}{4kT}\right)^{1/3}\right]=\avg{\sigma v}}
+  \end{align}
+  Now for some numbers. For proton-proton reactions,
+  $E_{\mathrm{G}}=494\ \mathrm{keV}$, $E_0=4.5\ \mathrm{keV}\
+  \left(T/10^7\ \mathrm{K}\right)^{2/3}$, and $\Delta/E_0=1\cdot
+  (T/10^7\ \mathrm{K})^{1/6}$. These reactions are quite prevalent in
+  the solar core. However, for proton-carbon reactions,
+  $E_\mathrm{G}=36\ \mathrm{MeV}$, $E_0=18\ \mathrm{keV}(T/10^7\
+  \mathrm{K})^{2/3}$, and $\Delta/E_0=0.5(T/10^7\
+  \mathrm{K})^{1/6}$. These do happen in the sun, but not very
+  much. They are more prevalent in larger stars who derive their
+  energy from the CNO cycle (more on this later).
 \end{document}
 
 
