@@ -15,25 +15,25 @@
 
 (master-dir . "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/")
 
-(label-numbers ("sec:fully-conv-stars" . 1) ("eq:" . 99))
+(label-numbers)
 
 (bof "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex")
 
-(toc "toc" "    1 Introduction" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 2 "1" "\\section{Introduction}" 658)
+(toc "toc" "    1 Introduction" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 2 "1" "\\section{Introduction}" 684)
 
-(toc "toc" "      1.1 The HR Diagram" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "1.1" "\\subsection{The HR Diagram}" 714)
+(toc "toc" "      1.1 The HR Diagram" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "1.1" "\\subsection{The HR Diagram}" 740)
 
 ("HR.1f" "f" "An HR diagram for stars in the local neighborhood (shamelessly stolen from Google Images)" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "      1.2 Conditions for a Star on the HR Diagram" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "1.2" "\\subsection{Conditions for a Star on the HR Diagram}" 1681)
+(toc "toc" "      1.2 Conditions for a Star on the HR Diagram" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "1.2" "\\subsection{Conditions for a Star on the HR Diagram}" 1707)
 
-(toc "toc" "        1.2.1 Population I Stars" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "1.2.1" "\\subsubsection{Population I Stars}" 3231)
+(toc "toc" "        1.2.1 Population I Stars" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "1.2.1" "\\subsubsection{Population I Stars}" 3257)
 
-(toc "toc" "        1.2.2 Population II Stars" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "1.2.2" "\\subsubsection{Population II Stars}" 4160)
+(toc "toc" "        1.2.2 Population II Stars" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "1.2.2" "\\subsubsection{Population II Stars}" 4186)
 
-(toc "toc" "    2 The Isothermal, Plane Parallel Atmosphere" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 2 "2" "\\section{The Isothermal, Plane Parallel Atmosphere}" 4859)
+(toc "toc" "    2 The Isothermal, Plane Parallel Atmosphere" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 2 "2" "\\section{The Isothermal, Plane Parallel Atmosphere}" 4885)
 
-(toc "toc" "      2.1 Scale Height and Column Depth" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "2.1" "\\subsection{Scale Height and Column Depth}" 4913)
+(toc "toc" "      2.1 Scale Height and Column Depth" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "2.1" "\\subsection{Scale Height and Column Depth}" 4939)
 
 ("ippa.1" "e" "\\frac{dP}{dz}=-\\rho g " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -59,7 +59,7 @@
 
 ("ippa.12" "e" "y(z)\\equiv \\int_z^\\infty \\rho(z)\\,dz " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "      2.2 Mean Molecular Weights" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "2.2" "\\subsection{Mean Molecular Weights}" 9160)
+(toc "toc" "      2.2 Mean Molecular Weights" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "2.2" "\\subsection{Mean Molecular Weights}" 9186)
 
 ("mmw.1" "e" "P=\\sum_{i=1}^N n_ikT " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -73,7 +73,7 @@
 
 ("mmw.5" "e" "P=P_{\\mathrm{ion}}+P_e=\\frac{\\rho kT}{m_p}\\left(\\frac{1}{\\mu_e}+\\frac{1}{\\mu_i}\\right) " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "      2.3 Electric Fields in Stars" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "2.3" "\\subsection{Electric Fields in Stars}" 11176)
+(toc "toc" "      2.3 Electric Fields in Stars" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "2.3" "\\subsection{Electric Fields in Stars}" 11202)
 
 ("efs.2" "e" "P=2n_pkT " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -91,9 +91,9 @@
 
 ("efs.9" "e" "eE=\\frac{1}{2}\\left(m_p-m_e\\right)g \\quad \\textrm{or}\\quad e\\mathbf{E}\\approx -\\frac{m_p\\mathbf{g}}{" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "    3 Self-Gravitating Objects" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 2 "3" "\\section{Self-Gravitating Objects}" 12948)
+(toc "toc" "    3 Self-Gravitating Objects" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 2 "3" "\\section{Self-Gravitating Objects}" 12974)
 
-(toc "toc" "      3.1 Momentum Conservation and the Free-Fall Timescale" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "3.1" "\\subsection{Momentum Conservation and the Free-Fall Timescale}" 13409)
+(toc "toc" "      3.1 Momentum Conservation and the Free-Fall Timescale" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "3.1" "\\subsection{Momentum Conservation and the Free-Fall Timescale}" 13435)
 
 ("mc.1" "e" "\\rho\\frac{d\\mathbf{v}}{dt}=\\rho\\mathbf{g}-\\bm{\\nabla}P " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -109,7 +109,7 @@
 
 ("mc.7" "e" "t_{\\mathrm{ff}}=\\frac{1}{\\sqrt{G\\avg{\\rho}}} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "      3.2 The Virial Theorem" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "3.2" "\\subsection{The Virial Theorem}" 15531)
+(toc "toc" "      3.2 The Virial Theorem" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "3.2" "\\subsection{The Virial Theorem}" 15557)
 
 ("rss.1" "e" "\\frac{dP}{dr}=-\\rho\\frac{Gm(r)}{r^2} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -135,7 +135,7 @@
 
 ("rss.12" "e" "\\frac{E_{\\mathrm{KE}}}{\\mathrm{mass}}\\sim\\frac{GM}{R} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "      3.3 Applications of the Virial Theorm" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "3.3" "\\subsection{Applications of the Virial Theorm}" 18725)
+(toc "toc" "      3.3 Applications of the Virial Theorm" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "3.3" "\\subsection{Applications of the Virial Theorm}" 18751)
 
 ("avt.1" "e" "E_{\\mathrm{GR}}\\approx -\\frac{GM^2}{R} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -149,7 +149,7 @@
 
 ("avt.6" "e" "t_{\\mathrm{KH}}=\\frac{E_{\\mathrm{GR}}}{L}\\approx 3\\times 10^7\\ \\mathrm{years} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "      3.4 Gas Pressure and Radiation Pressure" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "3.4" "\\subsection{Gas Pressure and Radiation Pressure}" 20937)
+(toc "toc" "      3.4 Gas Pressure and Radiation Pressure" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "3.4" "\\subsection{Gas Pressure and Radiation Pressure}" 20963)
 
 ("GPRP.1" "e" "E_{\\mathrm{GR}}=-\\frac{3}{5}\\frac{GM^2}{R} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -183,13 +183,13 @@
 
 ("GPRP.16" "e" "M>m_p\\frac{1}{\\alpha_{\\mathrm{G}}^{3/2}}\\approx 2M_\\odot " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "      3.5 Summary" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "3.5" "\\subsection{Summary}" 24786)
+(toc "toc" "      3.5 Summary" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "3.5" "\\subsection{Summary}" 24812)
 
-(toc "toc" "    4 Heat Transfer in Stars" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 2 "4" "\\section{Heat Transfer in Stars}" 25527)
+(toc "toc" "    4 Heat Transfer in Stars" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 2 "4" "\\section{Heat Transfer in Stars}" 25553)
 
 ("HTS.1" "e" "F=\\mathrm{ergs\\,cm^{-2}\\,s^{-1}}=-\\frac{1}{3}v\\ell\\frac{d}{dx}(E) " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "      4.1 Heat Flux Derivation" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "4.1" "\\subsection{Heat Flux Derivation}" 26220)
+(toc "toc" "      4.1 Heat Flux Derivation" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "4.1" "\\subsection{Heat Flux Derivation}" 26246)
 
 ("eq:3" "e" "F_{\\mathrm{down}}\\approx \\frac{1}{6} vE(x+\\ell) " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -203,7 +203,7 @@
 
 ("eq:4" "e" "F_x=-\\frac{1}{3}v\\ell\\frac{dE}{dx} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "      4.2 Heat Transport by Electrons" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "4.2" "\\subsection{Heat Transport by Electrons}" 27551)
+(toc "toc" "      4.2 Heat Transport by Electrons" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "4.2" "\\subsection{Heat Transport by Electrons}" 27577)
 
 ("HTS.2" "e" "E=\\frac{3}{2} kT n_e " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -221,7 +221,7 @@
 
 ("HTS.9" "e" "L\\approx 5\\times 10^{31}\\,\\mathrm{erg\\,s^{-1}} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "      4.3 Heat Transport by Photons" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "4.3" "\\subsection{Heat Transport by Photons}" 28897)
+(toc "toc" "      4.3 Heat Transport by Photons" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "4.3" "\\subsection{Heat Transport by Photons}" 28923)
 
 ("HTS.10" "e" "\\frac{F_{\\gamma}}{F_e}=\\frac{c}{(kT/m_e)^{1/2}}\\frac{e^4/(kT)^2}{\\sigma_{\\mathrm{Th}}}\\frac{E_{\\math" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -237,7 +237,7 @@
 
 ("HTS.16" "e" "L\\approx \\frac{cm_pa(GMm_p)^4}{M\\sigma_{\\mathrm{Th}}k^4}\\propto M^3 " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "        4.3.1 The Eddington Limit and the Eddington Standard Model" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "4.3.1" "\\subsubsection{The Eddington Limit and the Eddington Standard Model}" 31286)
+(toc "toc" "        4.3.1 The Eddington Limit and the Eddington Standard Model" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "4.3.1" "\\subsubsection{The Eddington Limit and the Eddington Standard Model}" 31312)
 
 ("HTS.17" "e" "F=\\frac{1}{3} v\\ell\\frac{d}{dz}(aT^4) " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -275,7 +275,7 @@
 
 ("HTS.34" "e" "\\frac{dP_{\\mathrm{rad}}}{dP}=\\frac{L}{L_{\\mathrm{Edd}}}\\eta(r) " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "        4.3.2 Polytropic Relations" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "4.3.2" "\\subsubsection{Polytropic Relations}" 35528)
+(toc "toc" "        4.3.2 Polytropic Relations" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "4.3.2" "\\subsubsection{Polytropic Relations}" 35554)
 
 ("HTS.35" "e" "\\int_R^rdP_{\\mathrm{rad}}=\\frac{L}{L_{\\mathrm{Edd}}}\\int_R^r\\eta(r)\\,dP " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -291,7 +291,7 @@
 
 ("HTS.41" "e" "dm(r) &= \\rho 4\\pi r^2\\,dr " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "        4.3.3 Heat Transfer in the Outer Atmosphere" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "4.3.3" "\\subsubsection{Heat Transfer in the Outer Atmosphere}" 37765)
+(toc "toc" "        4.3.3 Heat Transfer in the Outer Atmosphere" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "4.3.3" "\\subsubsection{Heat Transfer in the Outer Atmosphere}" 37791)
 
 ("HTS.42" "e" "h=\\frac{kT}{\\mu m_p g} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -315,7 +315,7 @@
 
 ("HTS.52" "e" "F=\\frac{c}{3}\\frac{d}{d\\tau}\\left(aT^4\\right) " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "        4.3.4 The Effective Temperature" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "4.3.4" "\\subsubsection{The Effective Temperature}" 40200)
+(toc "toc" "        4.3.4 The Effective Temperature" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "4.3.4" "\\subsubsection{The Effective Temperature}" 40226)
 
 ("HTS.53" "e" "F=\\frac{L}{4\\pi R^2}\\equiv \\sigma_{\\mathrm{SB}}T_{\\mathrm{eff}}^4 " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -323,7 +323,7 @@
 
 ("HTS.55" "e" "T^4=\\frac{3}{4}T_{\\mathrm{eff}}^4\\tau " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "      4.4 Convection" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "4.4" "\\subsection{Convection}" 41229)
+(toc "toc" "      4.4 Convection" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "4.4" "\\subsection{Convection}" 41255)
 
 ("sec:conv" "s" "Another important form of heat transport in stars is that of convection, which is where an instabili" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -351,7 +351,7 @@
 
 ("eq:20" "e" "\\frac{d\\ln T}{d\\ln P}=\\frac{1}{4}<\\frac{2}{5} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "        4.4.1 The Unstable Case" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "4.4.1" "\\subsubsection{The Unstable Case}" 44615)
+(toc "toc" "        4.4.1 The Unstable Case" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "4.4.1" "\\subsubsection{The Unstable Case}" 44641)
 
 ("sec:unstable-case" "s" "Now we wish to understand what happens when the background model is unstable. The density in the bub" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -387,7 +387,7 @@
 
 ("eq:36" "e" "v=\\ell\\sqrt{\\left.\\frac{g}{\\ell}\\left(\\frac{\\Delta \\rho}{\\rho}\\right)\\right|_{\\ell}}=(g\\ell)^{1/2}\\l" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "        4.4.2 Convective Efficiency" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "4.4.2" "\\subsubsection{Convective Efficiency}" 48492)
+(toc "toc" "        4.4.2 Convective Efficiency" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "4.4.2" "\\subsubsection{Convective Efficiency}" 48518)
 
 ("sec:conv-effic" "s" "We left off last time with a rough relation between the velocity of an upwardly rising fluid element" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -421,7 +421,7 @@
 
 ("eq:51" "e" "\\left.\\frac{d\\ln T}{d\\ln P}\\right|_*=\\left.\\frac{d\\ln T}{d\\ln P}\\right|_{\\mathrm{adiabatic}}=\\frac{2" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "      4.5 Fully Convective Star" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "4.5" "\\subsection{Fully Convective Star}" 55109)
+(toc "toc" "      4.5 Fully Convective Star" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "4.5" "\\subsection{Fully Convective Star}" 55135)
 
 ("sec:fully-conv-star" "s" "Imagine a star of ideal gas \\emph{and} from the core to the photosphere is fully convective \\emph{an" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -433,21 +433,21 @@
 
 ("eq:55" "e" "T_c=0.54\\frac{GM\\mu m_p}{kR} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:56" "e" "%  % \\frac{T_c}{P_c^{2/5}}=\\frac{T_{\\mathrm{ph}}}{P_{\\mathrm{ph}}^{2/5}}\\=\\frac{T_{\\mathrm{eff}}}{P_" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" t)
+("eq:56" "e" "\\frac{T_c}{P_c^{2/5}}=\\frac{T_{\\mathrm{ph}}}{P_{\\mathrm{ph}}^{2/5}}=\\frac{T_{\\mathrm{eff}}}{P_{\\math" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
 ("eq:57" "e" "kT_{\\mathrm{eff}}=0.6\\left(\\frac{GM\\mu m_p}{R}\\right)\\left(\\frac{R^2}{M\\kappa_{\\mathrm{ph}}}\\right)^" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
 ("eq:58" "e" "T_{\\mathrm{eff}}=200\\ \\mathrm{K}\\left(\\frac{M}{M_\\odot}\\right)^{3/5}\\left(\\frac{R_\\odot}{R}\\right)^{" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "      4.6 Fully Convective Stars and the Hayashi Track" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "4.6" "\\subsection{Fully Convective Stars and the Hayashi Track}" 57358)
+(toc "toc" "      4.6 Fully Convective Stars and the Hayashi Track" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "4.6" "\\subsection{Fully Convective Stars and the Hayashi Track}" 57384)
 
 ("sec:fully-conv-stars" "s" "MISSING DUE TO MY INABILITY TO WAKE UP BEFORE NOON \\section{Star Formation and the Jean's Mass}  \\su" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "    5 Star Formation and the Jean's Mass" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 2 "5" "\\section{Star Formation and the Jean's Mass}" 57502)
+(toc "toc" "    5 Star Formation and the Jean's Mass" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 2 "5" "\\section{Star Formation and the Jean's Mass}" 57528)
 
 ("sec:star-formation-jeans" "s" "\\subsection{The Jean's Mass} In the interstellar medium, there are large masses of cold dust and gas" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "      5.1 The Jean's Mass" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "5.1" "\\subsection{The Jean's Mass}" 57581)
+(toc "toc" "      5.1 The Jean's Mass" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "5.1" "\\subsection{The Jean's Mass}" 57607)
 
 ("eq:59" "e" "E_{\\mathrm{GR}}\\approx -\\frac{GM^2}{R} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -469,7 +469,7 @@
 
 ("eq:68" "e" "kT_{\\mathrm{shock}}\\approx \\frac{GM_c m_p}{R_c}\\approx 0.1\\ \\mathrm{keV} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "      5.2 Pre-Main Sequence Stars" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "5.2" "\\subsection{Pre-Main Sequence Stars}" 61299)
+(toc "toc" "      5.2 Pre-Main Sequence Stars" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "5.2" "\\subsection{Pre-Main Sequence Stars}" 61325)
 
 ("sec:pre-main-sequence" "s" "Recall the main equations of stellar structure: \\begin{align}  \\frac{dP}{dr}&=-\\rho(r)g(r)" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -497,69 +497,149 @@
 
 ("eq:79a" "e" "E=\\frac{3}{2}\\frac{kT}{\\mu m_p}=\\frac{3}{2}\\frac{P}{\\rho} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:5" "e" " " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+("eq:5" "e" "T\\frac{ds}{dt}=\\frac{3}{2}\\frac{P}{\\rho}\\frac{d}{dt}\\left(\\ln P/\\rho^{5/3}\\right)=-\\varepsilon_{\\mat" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:6" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:6" "e" "\\frac{\\partial L(r)}{\\partial m(r)}=\\varepsilon_{\\mathrm{nuc}}+\\varepsilon_{\\mathrm{grav}} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "        5.2.1 Fully Convective Stars (Revisited)" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "5.2.1" "\\subsubsection{Fully Convective Stars (Revisited)}" 64500)
+("eq:7" "e" "P\\sim\\frac{GM^2}{R^4}\\sim\\frac{GM^2}{M^{4/3}}\\rho^{4/3} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("sec:fully-conv-stars-1" "s" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:8" "e" "\\frac{P}{\\rho^{5/3}}\\approx C\\frac{1}{\\rho^{1/3}} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:7" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:80" "e" "T\\frac{ds}{dt}=\\frac{3}{2}\\frac{P}{\\rho}\\frac{d}{dt}\\left[\\ln\\left(C\\rho_c^{-1/3}\\right)\\right]=-\\fr" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:8" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:81" "e" "-\\frac{1}{2}\\frac{P}{\\rho}\\frac{d\\ln\\rho_c}{dt}=-\\frac{dL(r)}{dm(r)}\\quad\\Rightarrow\\quad \\frac{dL(r" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:80" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:82" "e" "\\frac{dL(r)}{dm(r)}=\\frac{1}{2}\\frac{P}{\\rho}\\frac{d}{dt}\\left[\\ln\\left(\\frac{1}{R^3}\\right)\\right]\\" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:81" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:83" "e" "\\boxed{\\frac{dL(r)}{dm(r)}=-\\frac{3}{2}\\frac{P(r)}{\\rho(r)}\\frac{1}{R}\\frac{dR}{dt}} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:82" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:84" "e" "\\mathrm{entropy}\\propto \\frac{P}{\\rho^{5/3}}\\sim\\frac{GM^2}{R^4}\\frac{R^5}{M^{5/3}}\\propto RM^{1/3} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:83" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:85" "e" "L=-\\frac{3}{2}\\frac{1}{R}\\frac{dR}{dt}\\int_0^R\\frac{P(r)}{\\rho(r)}\\rho(r)4\\pi r^2\\,dr=-\\frac{3}{2}\\f" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:84" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:86" "e" "\\int d^3r\\,P=\\frac{2}{7}\\frac{GM^2}{R} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:85" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:87" "e" "L=-\\frac{3}{7}\\frac{GM^2}{R^2}\\frac{dR}{dt} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:86" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+(toc "toc" "      5.3 Low Mass Stars" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "5.3" "\\subsection{Low Mass Stars}" 67376)
 
-("eq:87" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("sec:low-mass-stars" "s" "Earlier we derived that as stars are on the Hayashi track, \\begin{equation}  \\frac{L}{L_\\odot}\\appro" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "      5.3 Low Mass Stars" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "5.3" "\\subsection{Low Mass Stars}" 67350)
+("eq:88" "e" "\\frac{L}{L_\\odot}\\approx 0.03\\ L_\\odot\\left(\\frac{M}{M_\\odot}\\right)^{4/7}\\left(\\frac{R}{R_\\odot}\\ri" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("sec:low-mass-stars" "s" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:89" "e" "\\frac{3}{7}\\frac{GM^2}{R^2}\\frac{dR}{dt}=-0.03\\left(\\frac{M}{M_\\odot}\\right)^{4/7}\\left(\\frac{R}{R_\\" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:88" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:90" "e" "\\frac{R}{R_\\odot}=\\left(\\frac{M}{M_\\odot}\\right)^{10/21}\\left(\\frac{130\\ \\mathrm{Myr}}{t}\\right)^{1/" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:89" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:91" "e" "t>10^6\\ \\mathrm{years}\\ \\left(\\frac{M_\\odot}{M}\\right)^2 " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:90" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:92" "e" "t>2.6\\times 10^6\\ \\mathrm{years}\\ \\left(\\frac{M_\\odot}{M}\\right)^{4.4} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:91" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+(toc "toc" "    6 Nuclear Reactions in Stars" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 2 "6" "\\section{Nuclear Reactions in Stars}" 69107)
 
-("eq:92" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("sec:nucl-react-stars" "s" "The big bang only mad (by mass) 75\\% protons and 25\\% Helium. In stars, we want to fuse protons into" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "    6 Nuclear Reactions in Stars" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 2 "6" "\\section{Nuclear Reactions in Stars}" 69081)
+(toc "toc" "      6.1 Liquid Drop Model" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "6.1" "\\subsection{Liquid Drop Model}" 69730)
 
-("sec:nucl-react-stars" "s" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("sec:liquid-drop-model" "s" "The ``size'' of a nucleus is approximately \\begin{equation}  r_0=1.3\\ \\mathrm{fm}\\ A^{1/3} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "      6.1 Liquid Drop Model" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "6.1" "\\subsection{Liquid Drop Model}" 69704)
+("eq:93" "e" "r_0=1.3\\ \\mathrm{fm}\\ A^{1/3} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("sec:liquid-drop-model" "s" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:94" "e" "\\rho=\\frac{Am_p}{\\frac{4\\pi}{3}R^3}\\approx2\\times 10^{14}\\ \\mathrm{g\\ cm^{-3}} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:93" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:95" "e" "E_{\\mathrm{volume}}=-14\\ \\mathrm{MeV}\\ A " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:94" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:96" "e" "N_{\\mathrm{surf}}=A^{2/3}\\sim\\frac{\\mathrm{surface}}{\\mathrm{volume}} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:95" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:97" "e" "E_{\\mathrm{surf}}=13\\ \\mathrm{MeV}\\ A^{2/3} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:96" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:98" "e" "E_{\\mathrm{Coulomb}}\\sim\\frac{e^2Z^2}{r}=\\frac{3}{5}\\frac{e^2 Z^2}{R}\\approx 0.56\\ \\mathrm{MeV}\\frac" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:97" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("eq:99" "e" "E_{\\mathrm{sym}}=18\\ \\mathrm{MeV}\\frac{(N-Z)^2}{A} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-("eq:98" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+(toc "toc" "      6.2 Tunneling through the Coulomb Barrier" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "6.2" "\\subsection{Tunneling through the Coulomb Barrier}" 71279)
 
-("eq:99" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+("sec:tunn-thro-coul" "s" "In order for two positively charged nuclei to fuse, they must get close enough so that the strong fo" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:100" "e" "V(r)=\\frac{Z_1Z_2 e^2}{r}=1.4\\ \\mathrm{MeV}\\frac{Z_1Z_2}{(r/1\\ \\mathrm{fm})} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:101" "e" "T\\sim\\frac{Z_1Z_2e^2}{kR}\\sim1.6\\times 10^{10}\\ \\mathrm{K}\\ \\frac{Z_1Z_2}{(R/1\\ \\mathrm{fm})} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:102" "e" "\\mathrm{a+X\\to Y+b} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:103" "e" "\\sigma \\equiv \\frac{\\mathrm{\\# reactions/X\\ nucleus/unit\\ time}}{\\mathrm{\\#incident\\ particles/cm^2/" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:104" "e" "n_\\mathrm{a}\\sigma v_{\\mathrm{rel}}=\\frac{\\mathrm{\\#reactions}}{\\mathrm{X\\ nucleus\\times unit\\ time}" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:105" "e" "r_{\\mathrm{aX}}=n_\\mathrm{X}n_{\\mathrm{a}}\\sigma v_{\\mathrm{rel}} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:106" "e" "r_{\\mathrm{aX}}=\\int_0^\\infty dv\\ n_\\mathrm{a}n_{\\mathrm{X}}\\sigma(v)v" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:107" "e" "r_{\\mathrm{aX}}=n_\\mathrm{a}n_{\\mathrm{X}}\\avg{\\sigma v} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:108" "e" "\\avg{\\sigma v}=\\int_0^\\infty dv\\ \\sigma(v)v\\phi(v)=4\\pi\\left(\\frac{\\mu}{2\\pi kT}\\right)^{3/2} int_0^" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+(toc "toc" "        6.2.1 Barrier Penetration" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "6.2.1" "\\subsubsection{Barrier Penetration}" 74993)
+
+("sec:barrier-penetration" "s" "Recall the Schr\\\"odinger equation, \\begin{equation}  \\left[-\\frac{\\hbar^2}{2\\mu}\\nabla^2+V\\right]\\ps" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:109" "e" "\\left[-\\frac{\\hbar^2}{2\\mu}\\nabla^2+V\\right]\\psi=E\\psi " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:110" "e" "-\\frac{\\hbar^2}{2\\mu}\\nabla^2\\psi=E\\psi\\quad\\Rightarrow\\quad \\psi\\propto e^{-\\pm ikx} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:111" "e" "-\\frac{\\hbar^2}{2\\mu}\\nabla^2\\psi=(E_V)\\psi\\quad\\Rightarrow\\quad \\psi\\propto e^{\\pm\\kappa x} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:112" "e" "V(r)=\\frac{Z_1Z_2 e^2}{r} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:113" "e" "\\frac{\\hbar^2\\kappa^2}{2\\mu}=\\frac{Z_1Z_2 e^2}{r}-E " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:114" "e" "\\psi^2\\propto \\exp\\left(-2\\int \\kappa\\ dr\\right) " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:115" "e" "r_c=\\frac{Z_1Z_2 e^2}{E} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:116" "e" "\\kappa = \\left(\\frac{2\\mu E}{\\hbar^2}\\right)^{1/2}\\left[\\frac{r_c}{r}-1\\right]^{1/2} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:117" "e" "\\int_{r_c}^{r_{\\mathrm{in}}}\\kappa dr= \\int_{r_c}^0\\frac{\\pi\\alpha}{2}Z_1Z_2\\left(\\frac{2\\mu c^2}{E}" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:118" "e" "P_{\\mathrm{tunnel}}\\propto \\exp\\left[-\\pi\\alpha Z_1Z_2\\left(\\frac{2\\mu c^2}{E}\\right)^{1/2}\\right]=\\" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:119" "e" "E_{\\mathrm{G}}\\equiv \\left(\\pi\\alpha Z_1Z_2\\right)^22\\mu c^2\\approx 0.98\\ \\mathrm{MeV}\\ Z_1^2Z_2^2\\l" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:120" "e" "P\\propto \\exp\\left[-\\left(\\frac{500\\ \\mathrm{keV}}{1\\ \\mathrm{keV}}\\right)^{1/2}\\right]\\sim 2\\times " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+(toc "toc" "        6.2.2 Nuclear Reaction Rates" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 4 "6.2.2" "\\subsubsection{Nuclear Reaction Rates}" 78490)
+
+("sec:nucl-react-rates" "s" "The De Broglie waelength of a particle is \\begin{equation}  \\lambda = \\frac{h}{p}=\\frac{h}{\\left(kT\\" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:121" "e" "\\lambda = \\frac{h}{p}=\\frac{h}{\\left(kT\\mu\\right)^{1/2}}\\approx 10^{-10}\\ \\mathrm{cm}\\ \\textrm{in so" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:122" "e" "r_{\\mathrm{nuc}}\\approx 1.3\\times 10^{-13}\\ \\mathrm{cm}\\ A^{1/3} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:123" "e" "\\pi\\lambda^2\\left(\\textrm{dimensionless stuff}\\right)\\exp\\left[-\\left(\\frac{E_\\mathrm{G}}{E}\\right)^" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:124" "e" "\\pi\\lambda^2=4\\pi^3\\bar\\lambda^2=\\frac{4\\pi^3}{k^2} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:125" "e" "E\\approx \\frac{\\hbar^2k^2}{2\\mu}\\quad\\Rightarrow\\quad 4\\pi^3\\bar{\\lambda}^2=\\frac{2\\pi^3\\hbar^2}{\\mu" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:126" "e" "\\sigma(E)=\\frac{S(E)}{E}\\exp\\left[-\\left(\\frac{E_{\\mathrm{G}}}{E}\\right)^{1/2}\\right] " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:127" "e" "\\mathrm{p+p\\to D+e^++\\nu_e} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:128" "e" "\\avg{\\sigma v}=\\frac{1}{(kT)^{3/2}}\\left(\\frac{8}{\\pi\\mu}\\right)^{1/2}\\int_0^\\infty dE\\ S(E)\\exp\\lef" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:129" "e" "I=\\int_{-1}^{\\infty}g(x)e^{-f(x)}dx " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:130" "e" "f(x)\\approx f(x_0)+\\frac{1}{2}f''(x_0)(x-x_0)^2 " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:131" "e" "I=g(x_0)e^{-f(x_0)}\\int_{-\\infty}^{\\infty}\\exp\\left[-\\frac{f''(x_0)}{2}(x_0)^2\\right]=g(x_0)e^{-f(x_" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:132" "e" "f(E)=\\frac{E}{kT}+\\left(\\frac{E_{\\mathrm{G}}}{E}\\right)^{1/2} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:133" "e" "f(E_0)&=3\\left(\\frac{E_{\\mathrm{G}}}{4kT}\\right)^{1/3}" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:133a" "e" "f''(E_0)&=3\\left[2E_{\\mathrm{G}}(kT)^5\\right]^{1/6} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:134" "e" " " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
 (eof "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex")
 ))

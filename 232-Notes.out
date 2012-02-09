@@ -3,7 +3,7 @@
 \BOOKMARK [2][-]{subsection.1.2}{Conditions for a Star on the HR Diagram}{section.1}
 \BOOKMARK [3][-]{subsubsection.1.2.1}{Population I Stars}{subsection.1.2}
 \BOOKMARK [3][-]{subsubsection.1.2.2}{Population II Stars}{subsection.1.2}
-\BOOKMARK [1][-]{section.2}{The Isothermal, Plane Parallel Atmosphere}{}
+\BOOKMARK [1][-]{section.2}{A Simple Hydrostatic Atmosphere}{}
 \BOOKMARK [2][-]{subsection.2.1}{Scale Height and Column Depth}{section.2}
 \BOOKMARK [2][-]{subsection.2.2}{Mean Molecular Weights}{section.2}
 \BOOKMARK [2][-]{subsection.2.3}{Electric Fields in Stars}{section.2}
@@ -16,7 +16,7 @@
 \BOOKMARK [1][-]{section.4}{Heat Transfer in Stars}{}
 \BOOKMARK [2][-]{subsection.4.1}{Heat Flux Derivation}{section.4}
 \BOOKMARK [2][-]{subsection.4.2}{Heat Transport by Electrons}{section.4}
-\BOOKMARK [2][-]{subsection.4.3}{Heat Transport by Photons}{section.4}
+\BOOKMARK [2][-]{subsection.4.3}{Radiative Diffusion}{section.4}
 \BOOKMARK [3][-]{subsubsection.4.3.1}{The Eddington Limit and the Eddington Standard Model}{subsection.4.3}
 \BOOKMARK [3][-]{subsubsection.4.3.2}{Polytropic Relations}{subsection.4.3}
 \BOOKMARK [3][-]{subsubsection.4.3.3}{Heat Transfer in the Outer Atmosphere}{subsection.4.3}
@@ -25,7 +25,7 @@
 \BOOKMARK [3][-]{subsubsection.4.4.1}{The Unstable Case}{subsection.4.4}
 \BOOKMARK [3][-]{subsubsection.4.4.2}{Convective Efficiency}{subsection.4.4}
 \BOOKMARK [2][-]{subsection.4.5}{Fully Convective Star}{section.4}
-\BOOKMARK [2][-]{subsection.4.6}{Fully Convective Stars and the Hayashi Track}{section.4}
+\BOOKMARK [2][-]{subsection.4.6}{The Hayashi Track}{section.4}
 \BOOKMARK [1][-]{section.5}{Star Formation and the Jean's Mass}{}
 \BOOKMARK [2][-]{subsection.5.1}{The Jean's Mass}{section.5}
 \BOOKMARK [2][-]{subsection.5.2}{Pre-Main Sequence Stars}{section.5}

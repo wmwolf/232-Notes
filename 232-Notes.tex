@@ -1,16 +1,17 @@
 \documentclass[10pt]{article}
 
-%%%%%%%%%%%%%%%%%%%%%
-% Package Inclusion %
-%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Package Inclusion and Document Formatting %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{geometry,amsmath,amsthm,mathrsfs,amssymb,graphicx,bm,hyperref,url,pdfsync,fancyhdr}
 \pagestyle{fancy}
+\numberwithin{equation}{section}
 %%%%%%%%%%%%%%%%%%%
 % Custom Commands %
 %%%%%%%%%%%%%%%%%%%
 \newcommand{\n}{\noindent}
-\newcommand{\norm}[1]{\left|#1\right|}
-\newcommand{\avg}[1]{\left<#1\right>}
+\newcommand{\norm}[1]{\lvert#1\rvert}
+\newcommand{\avg}[1]{\langle#1\rangle}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 % Title Page Information %
@@ -62,7 +63,7 @@
 
 %%%%%
 
-\section{The Isothermal, Plane Parallel Atmosphere}
+\section{A Simple Hydrostatic Atmosphere}
 	 \subsection{Scale Height and Column Depth}
 	 Before tackling the physics of stars, we first consider a simple toy model-- the isothermal, plane parallel atmosphere. This model is somewhat applicable to the thin stellar atmosphere near the surface of a star, where curvature can be neglected and the acceleration due to gravity is nearly uniform.\\
 	 
@@ -450,7 +451,7 @@ so
 		\label{HTS.9} L\approx 5\times 10^{31}\,\mathrm{erg\,s^{-1}}
 	\end{equation}
 	which is two orders of magnitude too small, so we conclude that the sun does not transmit its heat via conduction through electrons. Now we'll move on to photons
-	\subsection{Heat Transport by Photons}
+	\subsection{Radiative Diffusion}
 	For photons, the main scatterer will be electrons, so the cross section in question of the mean free path is the Thomson cross section. Additionally, the energy density is now $E=aT^4$. Additionally the speed of photons is obviously the speed of light. Then the ratio of the fluxes due to photons and electrons is
 	\begin{equation}
 		\label{HTS.10} \frac{F_{\gamma}}{F_e}=\frac{c}{(kT/m_e)^{1/2}}\frac{e^4/(kT)^2}{\sigma_{\mathrm{Th}}}\frac{E_{\mathrm{rad}}}{E_{\mathrm{gas}}}
@@ -1047,7 +1048,7 @@ and thus the velocity is
 
   \textit{Wednesday, February 1, 2012}
 
-  \subsection{Fully Convective Stars and the Hayashi Track}
+  \subsection{The Hayashi Track}
   \label{sec:fully-conv-stars}
 
   MISSING DUE TO MY INABILITY TO WAKE UP BEFORE NOON
@@ -1525,9 +1526,9 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
     \label{eq:113}
     \frac{\hbar^2\kappa^2}{2\mu}=\frac{Z_1Z_2 e^2}{r}-E
   \end{equation}
-  Using the WKB approxiamtion to calculate the barrier penetration,
+  Using the WKB approximation to calculate the barrier penetration,
   which assumes that the lengthscale of changes in $V(r)$ is much
-  larger than the DeBroglie wavelength of the particle, we get the
+  larger than the De Broglie wavelength of the particle, we get the
   probability density being
   \begin{equation}
     \label{eq:114}
@@ -1601,18 +1602,19 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
     \pi\lambda^2\left(\textrm{dimensionless stuff}\right)\exp\left[-\left(\frac{E_\mathrm{G}}{E}\right)^{1/2}\right]
   \end{equation}
   Where the ``dimensionless stuff'' comes from nasty nuclear
-  physics. Often this is written in terms of the reduced wavelenth,
-  $\lambda/2\pi$.
+  physics. Often this is written in terms of the reduced wavelength,
+  $\lambda/2\pi$, which I'll denote as $\bar{\lambda}$ (\LaTeX\ isn't
+  agreeing with ``\verb!\lambdabar!'').
   \begin{equation}
     \label{eq:124}
-    \pi\lambda^2=4\pi^3\bar\lambda^2=\frac{4\pi^3}{k^2}
+    \pi\lambda^2=4\pi^3\bar{\lambda}^2=\frac{4\pi^3}{k^2}
   \end{equation}
   So the energy is
   \begin{equation}
     \label{eq:125}
     E\approx \frac{\hbar^2k^2}{2\mu}\quad\Rightarrow\quad
     4\pi^3\bar{\lambda}^2=\frac{2\pi^3\hbar^2}{\mu E}=2000\
-    \mathrm{barns}\ \left(\mathrm{\frac{keV}{E}}\right)
+    \mathrm{barns}\ \left(\frac{\mathrm{keV}}{E}\right)
   \end{equation}
   Then the cross section can be written as
   \begin{equation}

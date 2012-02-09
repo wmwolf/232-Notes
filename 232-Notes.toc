@@ -3,7 +3,7 @@
 \contentsline {subsection}{\numberline {1.2}Conditions for a Star on the HR Diagram}{3}{subsection.1.2}
 \contentsline {subsubsection}{\numberline {1.2.1}Population I Stars}{3}{subsubsection.1.2.1}
 \contentsline {subsubsection}{\numberline {1.2.2}Population II Stars}{5}{subsubsection.1.2.2}
-\contentsline {section}{\numberline {2}The Isothermal, Plane Parallel Atmosphere}{5}{section.2}
+\contentsline {section}{\numberline {2}A Simple Hydrostatic Atmosphere}{5}{section.2}
 \contentsline {subsection}{\numberline {2.1}Scale Height and Column Depth}{5}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Mean Molecular Weights}{7}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Electric Fields in Stars}{7}{subsection.2.3}
@@ -16,7 +16,7 @@
 \contentsline {section}{\numberline {4}Heat Transfer in Stars}{13}{section.4}
 \contentsline {subsection}{\numberline {4.1}Heat Flux Derivation}{14}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Heat Transport by Electrons}{14}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Heat Transport by Photons}{15}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.3}Radiative Diffusion}{15}{subsection.4.3}
 \contentsline {subsubsection}{\numberline {4.3.1}The Eddington Limit and the Eddington Standard Model}{16}{subsubsection.4.3.1}
 \contentsline {subsubsection}{\numberline {4.3.2}Polytropic Relations}{18}{subsubsection.4.3.2}
 \contentsline {subsubsection}{\numberline {4.3.3}Heat Transfer in the Outer Atmosphere}{18}{subsubsection.4.3.3}
@@ -25,7 +25,7 @@
 \contentsline {subsubsection}{\numberline {4.4.1}The Unstable Case}{21}{subsubsection.4.4.1}
 \contentsline {subsubsection}{\numberline {4.4.2}Convective Efficiency}{23}{subsubsection.4.4.2}
 \contentsline {subsection}{\numberline {4.5}Fully Convective Star}{25}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Fully Convective Stars and the Hayashi Track}{26}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.6}The Hayashi Track}{26}{subsection.4.6}
 \contentsline {section}{\numberline {5}Star Formation and the Jean's Mass}{26}{section.5}
 \contentsline {subsection}{\numberline {5.1}The Jean's Mass}{26}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Pre-Main Sequence Stars}{28}{subsection.5.2}
