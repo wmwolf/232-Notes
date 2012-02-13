@@ -35,3 +35,6 @@
 \contentsline {subsection}{\numberline {6.2}Tunneling through the Coulomb Barrier}{34}{subsection.6.2}
 \contentsline {subsubsection}{\numberline {6.2.1}Barrier Penetration}{35}{subsubsection.6.2.1}
 \contentsline {subsubsection}{\numberline {6.2.2}Nuclear Reaction Rates}{36}{subsubsection.6.2.2}
+\contentsline {subsection}{\numberline {6.3}Proton-Proton Interactions}{38}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Sidebar: The Deuterium Main Sequence}{40}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}The PP Chain and the CN Cycle}{40}{subsection.6.5}
