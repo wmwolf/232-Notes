@@ -1,20 +1,8 @@
-This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  8 FEB 2012 17:35
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  12 FEB 2012 23:59
 entering extended mode
-\write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**232-Notes.tex
-(./232-Notes.tex
-LaTeX2e <2005/12/01>
-Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, german-x-2008-06-18, ngerman-x-2008-06-18, ancientgreek, ibycus, ar
-abic, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutc
-h, esperanto, estonian, farsi, finnish, french, galician, german, ngerman, mono
-greek, greek, hungarian, icelandic, indonesian, interlingua, irish, italian, la
-tin, lithuanian, mongolian, mongolian2a, bokmal, nynorsk, polish, portuguese, r
-omanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turki
-sh, ukenglish, ukrainian, uppersorbian, welsh, loaded.
-(/usr/local/texlive/2008/texmf-dist/tex/latex/base/article.cls
+**\input 232-Notes.tex
+(./232-Notes.tex (/usr/local/texlive/2008/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
 (/usr/local/texlive/2008/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
@@ -440,97 +428,151 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--223
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 259--261
+Underfull \hbox (badness 10000) in paragraph at lines 262--264
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 291--293
+Underfull \hbox (badness 10000) in paragraph at lines 294--296
 
  []
 
 [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 361--363
+Underfull \hbox (badness 10000) in paragraph at lines 371--373
 
  []
 
-[13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 482--484
+[13] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 494--496
 
  []
 
-[15] [16] [17] [18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 645--652
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 653--654
+[16] [17] [18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 657--664
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 657--661
+Underfull \hbox (badness 10000) in paragraph at lines 668--674
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 662--667
+Underfull \hbox (badness 10000) in paragraph at lines 675--680
 
  []
 
-[20] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 805--809
+[20]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 776.
+
+ (/usr/local/texlive/2008/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 776.
+
+Underfull \hbox (badness 10000) in paragraph at lines 774--782
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 783--788
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 852--854
+Underfull \hbox (badness 10000) in paragraph at lines 850--854
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 858--866
+Underfull \hbox (badness 10000) in paragraph at lines 897--899
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 882--885
+Underfull \hbox (badness 10000) in paragraph at lines 903--911
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 919--926
+Underfull \hbox (badness 10000) in paragraph at lines 927--930
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 959--964
+Underfull \hbox (badness 10000) in paragraph at lines 964--971
 
  []
 
-[24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 1045--1048
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1011
 
  []
 
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 1104--1109
+[25] [26]
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1115--1126
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1102
 
  []
 
-[27] [28]
-Underfull \hbox (badness 10000) in paragraph at lines 1277--1282
+! You can't use `\eqno' in math mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.1157   \end{equation}
+                       
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.1157   \end{equation}
+                       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 1168--1180
 
  []
 
-[29] [30] [31]
-Overfull \hbox (5.23274pt too wide) in paragraph at lines 1413--1419
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 1238--1243
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1249--1260
+
+ []
+
+[29] [30]
+Underfull \hbox (badness 10000) in paragraph at lines 1371--1374
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1413--1418
+
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 1436--1440
+
+ []
+
+[32] [33]
+Overfull \hbox (5.23274pt too wide) in paragraph at lines 1560--1566
 \OT1/cmr/m/n/10 At the cen-ter of the sun, where $[][]\OML/cmm/m/it/10 T[] \OMS
 /cmsy/m/n/10 ^^X \OT1/cmr/m/n/10 10[] K$, the ther-mal en-ergy is only about $[
 ][]\OML/cmm/m/it/10 kT \OMS/cmsy/m/n/10 ^^X \OT1/cmr/m/n/10 8\OML/cmm/m/it/10 :
@@ -538,45 +580,42 @@ Overfull \hbox (5.23274pt too wide) in paragraph at lines 1413--1419
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1423--1426
+Underfull \hbox (badness 10000) in paragraph at lines 1570--1573
 
  []
 
-[32] [33] [34] [35] [36] (./232-Notes.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[34] [35] [36] [37] [38] (./232-Notes.aux) ) 
 Here is how much of TeX's memory you used:
- 6328 strings out of 493876
- 86954 string characters out of 1150567
- 180024 words of memory out of 3000000
- 9145 multiletter control sequences out of 10000+50000
+ 6373 strings out of 493876
+ 87556 string characters out of 1150567
+ 180781 words of memory out of 3000000
+ 9172 multiletter control sequences out of 10000+50000
  18279 words of font info for 70 fonts, out of 3000000 for 5000
  714 hyphenation exceptions out of 8191
- 36i,29n,43p,921b,443s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbsy10.pfb></usr/
-local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx10.pfb></usr/local/tex
-live/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx12.pfb></usr/local/texlive/2008
-/texmf-dist/fonts/type1/bluesky/cm/cmex10.pfb></usr/local/texlive/2008/texmf-di
-st/fonts/type1/bluesky/cm/cmmi10.pfb></usr/local/texlive/2008/texmf-dist/fonts/
-type1/bluesky/cm/cmmi5.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/blue
-sky/cm/cmmi7.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmm
-ib10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr10.pfb><
-/usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr12.pfb></usr/local
-/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr17.pfb></usr/local/texlive/2
-008/texmf-dist/fonts/type1/bluesky/cm/cmr5.pfb></usr/local/texlive/2008/texmf-d
-ist/fonts/type1/bluesky/cm/cmr7.pfb></usr/local/texlive/2008/texmf-dist/fonts/t
-ype1/bluesky/cm/cmsl10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/blue
-sky/cm/cmsy10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cm
-sy7.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmti10.pfb><
-/usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmtt10.pfb></usr/loca
-l/texlive/2008/texmf-dist/fonts/type1/bluesky/ams/msam10.pfb></usr/local/texliv
-e/2008/texmf-dist/fonts/type1/bluesky/ams/msbm10.pfb></usr/local/texlive/2008/t
-exmf-dist/fonts/type1/bluesky/ams/msbm7.pfb>
-Output written on 232-Notes.pdf (36 pages, 358425 bytes).
+ 36i,29n,43p,928b,480s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2008/texmf-dist
+/fonts/type1/bluesky/cm/cmbsy10.pfb></usr/local/texlive/2008/texmf-dist/fonts/t
+ype1/bluesky/cm/cmbx10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/blue
+sky/cm/cmbx12.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cm
+ex10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmmi10.pfb>
+</usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmmi5.pfb></usr/loca
+l/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmmi7.pfb></usr/local/texlive/
+2008/texmf-dist/fonts/type1/bluesky/cm/cmmib10.pfb></usr/local/texlive/2008/tex
+mf-dist/fonts/type1/bluesky/cm/cmr10.pfb></usr/local/texlive/2008/texmf-dist/fo
+nts/type1/bluesky/cm/cmr12.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/
+bluesky/cm/cmr17.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm
+/cmr5.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr7.pfb><
+/usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmsl10.pfb></usr/loca
+l/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmsy10.pfb></usr/local/texlive
+/2008/texmf-dist/fonts/type1/bluesky/cm/cmsy5.pfb></usr/local/texlive/2008/texm
+f-dist/fonts/type1/bluesky/cm/cmsy7.pfb></usr/local/texlive/2008/texmf-dist/fon
+ts/type1/bluesky/cm/cmti10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/
+bluesky/cm/cmtt10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/a
+ms/msam10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/ams/msbm1
+0.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/ams/msbm7.pfb>
+Output written on 232-Notes.pdf (38 pages, 373172 bytes).
 PDF statistics:
- 824 PDF objects out of 1000 (max. 8388607)
- 340 named destinations out of 1000 (max. 131072)
+ 865 PDF objects out of 1000 (max. 8388607)
+ 355 named destinations out of 1000 (max. 131072)
  314 words of extra memory for PDF output out of 10000 (max. 10000000)
 

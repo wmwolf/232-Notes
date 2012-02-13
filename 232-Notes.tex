@@ -10,8 +10,8 @@
 % Custom Commands %
 %%%%%%%%%%%%%%%%%%%
 \newcommand{\n}{\noindent}
-\newcommand{\norm}[1]{\lvert#1\rvert}
-\newcommand{\avg}[1]{\langle#1\rangle}
+\newcommand{\norm}[1]{\left\lvert#1\right\rvert}
+\newcommand{\avg}[1]{\left\langle#1\right\rangle}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 % Title Page Information %
@@ -118,7 +118,7 @@
 	\begin{equation}
 		\label{ippa.12} y(z)\equiv \int_z^\infty \rho(z)\,dz
 	\end{equation}
-	On the surface of the earth, the column density is approximately $y=1000\,\mathrm{g\,cm^{-3}}$. Think of it as the amount of mass sitting above you per unit area at a given altitude. The column density is an important number (for us) to determine the details of heat transport. For now though, we can write the pressure in this isothermal atmosphere in a compact form: $P(z)=gy(z)$.
+	On the surface of the earth, the column density is approximately $y=1000\,\mathrm{g\,cm^{-2}}$. Think of it as the amount of mass sitting above you per unit area at a given altitude. The column density is an important number (for us) to determine the details of heat transport. For now though, we can write the pressure in this isothermal atmosphere in a compact form: $P(z)=gy(z)$.
 	\subsection{Mean Molecular Weights}
 	We'll now make a useful definition for calculating pressures and other useful quantities. For an ideal gas, the total pressure of a mixed gas is simply
 	\begin{equation}
@@ -199,7 +199,7 @@
 	\begin{equation}
 		\label{mc.2} \mathbf{g}=-\frac{Gm(r)}{r^2}\hat{r}
 	\end{equation}
-	For this derivation, we will be using a \textbf{Lagrangian coordinate systems}. This is a system where the coordinates follow a particular fluid element. In essence, we are making the substitution
+	For this derivation, we will be using a \textbf{Lagrangian coordinate system}. This is a system where the coordinates follow a particular fluid element. In essence, we are making the substitution
 	\begin{equation}
 		\label{mc.3} \frac{d}{dt}\to\frac{\partial}{\partial t}+\mathbf{v}\cdot\bm{\nabla}
 	\end{equation}
@@ -232,7 +232,7 @@
 	\end{equation}
 	Now we multiply both sides of \eqref{rss.1} by $4\pi r^3\,dr$:
 	\begin{align}
-		\label{rss.3} \int 4\pi r^3\,dP&=-\int \rho\frac{G}{r^2}4\pi r^3\,dr m(r)\\
+		\label{rss.3} \int 4\pi r^3\,dP&=-\int \rho\frac{Gm(r)}{r^2}4\pi r^3\,dr\\
 		\label{rss.4} &= -\int\frac{Gm(r)dm}{r} = E_{\mathrm{GR}}
 	\end{align}
 	where $E_{\mathrm{GR}}$ is the gravitational binding energy. Performing a similar analysis to the left side of \eqref{rss.3} gives
@@ -241,7 +241,10 @@
 		\label{rss.6} &= -3\int P4\pi  r^2\,dr\\
 		\label{rss.7}&=-3\avg{P}V
 	\end{align}
-	where we've defined the average pressure to be the pressure averaged over volume. Then the virial theorem tells us that
+	where we've defined the average pressure to be the pressure
+        averaged over volume. Also, in \eqref{rss.6} we've noted that
+        the boundary terms must vanish since $P(R)=0$. Then the virial
+        theorem tells us that
 	\begin{equation}
 		\label{rss.8}\boxed{\avg{P}=-\frac{1}{3}\frac{E_{\mathrm{GR}}}{V}}
 	\end{equation}
@@ -271,7 +274,7 @@
 	\end{equation}
 	Using the virial theorem, we have
 	\begin{equation}
-		\label{avt.2} E_{\mathrm{GR}}=3\avg{P}V=3Nk\avg{T}
+		\label{avt.2} -E_{\mathrm{GR}}=3\avg{P}V=3Nk\avg{T}
 	\end{equation}
 	Or,
 	\begin{equation}
@@ -287,7 +290,7 @@
 	\end{equation}
 	If we assume there is no energy source for the sun other than gravitational energy, we can come up with a timescale (called the \textbf{Kelvin-Helmholtz timescale})
 	\begin{equation}
-		\label{avt.6} t_{\mathrm{KH}}=\frac{E_{\mathrm{GR}}}{L}\approx 3\times 10^7\ \mathrm{years}
+		\label{avt.6} t_{\mathrm{KH}}=\norm{\frac{E_{\mathrm{GR}}}{L}}\approx 3\times 10^7\ \mathrm{years}
 	\end{equation}
 	for the sun. This has been known for awhile and since the Earth is known to have existed much longer than $t_{\mathrm{KH}}$, scientists deduced that another energy source within the sun was needed to explain its longevity. We now know that this energy source is, of course, fusion. Note that at the center of the sun, the temperature of $10^7\ \mathrm{K}$ corresponds to an energy per particle of about 1 keV. The binding energy of helium is approximately 7MeV, approximately 7000 times bigger than the thermal content. Thus, the sun could last approximately 7000 times longer, bringing the projected lifetime of the sun up to a more reasonable (but still wrong) number of about 200 billion years. We conclude that nuclear energy is a more promising form of energy for the sun than chemical energy.\\
 	
@@ -301,7 +304,9 @@
 		\begin{equation}
 			\label{GPRP.2} \avg{P}=-\frac{1}{3}\frac{E_{\mathrm{GR}}}{V}=(n_e+n_p)kT=2n_pkT=\frac{2\rho kT}{m_p}
 		\end{equation}
-		Here we've sort of assumed that the star is isothermal. This tells us that the average thermal energy is given by
+		Here we've sort of assumed that the star is
+                isothermal. This tells us that the average thermal
+                energy is given by
 		\begin{equation}
 			\label{GPRP.3} kT=\frac{1}{10}\frac{GMm_p}{R}
 		\end{equation}
@@ -315,7 +320,10 @@
 		\end{equation}
 		These scalings are actually recovered in simulations
                 (see MESA plot from class). Here we've only considered
-                the case of the pressure due to an ideal gas, thus far ignoring the contributions to radiation pressure. We then want to know when radiation pressure becomes comparable to gas pressure. That is,
+                the case of the pressure due to an ideal gas, thus far
+                ignoring the contributions from radiation pressure. We
+                then want to know when radiation pressure becomes
+                comparable to gas pressure. That is,
 		\begin{equation}
 			\label{GPRP.6} P_{\mathrm{rad}}=\frac{1}{3} aT^4\geq P_{\mathrm{gas}}
 		\end{equation}
@@ -333,7 +341,7 @@
 		\end{equation}
 		Interestingly, $R$ cancels in \eqref{GPRP.9}, so this condition is dependent only on the mass of the star. Thus, we can get a hard limit that is independent of any other properties of the star. Dropping tons more constants, this gives
 		\begin{equation}
-			\label{GPRP.10} M^2>\frac{k_b^4}{a G^3m_p^4}
+			\label{GPRP.10} M^2>\frac{k^4}{a G^3m_p^4}
 		\end{equation}
 		Recall that the radiation constant is given by $a=\frac{\pi^2}{15}\frac{k^4}{(\hbar c)^3}$. Putting this in \eqref{GPRP.10}, we have
 		\begin{equation}
@@ -351,7 +359,9 @@
 		\begin{equation}
 			\label{GPRP.14} E_{\mathrm{Coulomb}}=\frac{e^2}{r}
 		\end{equation}
-		Analagous to \eqref{GPRP.14}, we define a unit less measure of the strength of gravity, which appears in \eqref{GPRP.12}:
+		Analagous to \eqref{GPRP.14}, we define a
+                dimensionless measure of the strength of gravity,
+                which appears in \eqref{GPRP.12}:
 		\begin{equation}
 			\label{GPRP.15} \alpha_\mathrm{G}=\frac{Gm_p^2}{\hbar c}\approx 6\times 10^{-39}
 		\end{equation}
@@ -381,7 +391,7 @@
 	where here $E$ is the energy density. We'll start first with
         the energy density of an ideal gas of electrons, but before we
         do that, let's derive \eqref{HTS.1}.
-        \subsection{Heat Flux Derivation}
+        \subsection{Heat Flux Derivation (not done in class)}
         Imagine a medium with a gradient in temperature across a surface
 membrane. Let's say ``above'' the membrane, the temperature is $T_1$
 and ``below'' the membrane, the temperature is $T_2$, with
@@ -401,7 +411,9 @@ at
   \label{eq:1}
   F_{\mathrm{up}}\approx \frac{1}{6}vE(x-\ell)
 \end{equation}
-So the net flux in the positive $\hat{x}$ direction is
+Think of the factor of $1/6$ as being the portion of the flux moving
+through a particular face of a cube, in this case, the face pointing
+up or down. So the net flux in the positive $\hat{x}$ direction is
 \begin{equation}
   \label{eq:1a}
   F_x=-\frac{1}{6}vE(x+\ell)+\frac{1}{6}vE(x-\ell)
@@ -424,7 +436,7 @@ so
 	\end{equation}
 	Then the energy density gradient is
 	\begin{equation}
-		\label{HTS.3} \frac{dE}{dx}=\frac{dE}{dT}\frac{dT}{dx}\frac{dE}{dT}=\frac{3}{2}nk\frac{dT}{dx}
+		\label{HTS.3} \frac{dE}{dx}=\frac{dE}{dT}\frac{dT}{dx}=\frac{3}{2}nk\frac{dT}{dx}
 	\end{equation}
 	Then from Fick's Law, we have
 	\begin{equation}
@@ -650,14 +662,15 @@ so
         but our result in \eqref{HTS.55} essentially tells us that
         $F=acT^4/\tau$.\\
 
-        \n \textit{Wednesday, January 25, 2012}\\
-
+        \n \textit{Wednesday, January 25, 2012}
 \subsection{Convection}
 \label{sec:conv}
 Another important form of heat transport in stars is that of
 convection, which is where an instability causes the bulk movement of
 material (rather than the diffusion of photons or electrons) to
-transport heat throughout the star.\\
+transport heat throughout the star. Convection occurs only when the
+temperature gradient is very steep. Otherwise, radiative diffusion
+dominates heat transport.\\
 
 \n The origin of the instability is that a fluid element that rises
 adiabatically (faster than the heat transfer time scale) is
@@ -673,46 +686,56 @@ that
   \label{eq:9}
   T\,dS=dE+P\,dV=0
 \end{equation}
-for an adiabatic process. This is equivalent to the requirement that
+for an adiabatic process (here these quantities are related to the
+inside of the fluid element). This is equivalent to the requirement that
 the timescale of response is much less than that for heat to enter or
-leave the fluid element. We presume that hte timescale is longer than
+leave the fluid element. We presume that the timescale is longer than
 the time for pressure equilibrium as well:
 \begin{equation}
   \label{eq:10}
   t=\frac{h}{c_s}=\textrm{time for the pressure to
     equilibrate}\quad\Rightarrow\quad v\ll c_s
 \end{equation}
-where $h$ is agin the scale height. Suppose the element starts in
+where $h$ is agin the scale height. This requirement ensures that the
+fluid element remains in pressure equilibrium with its surroundings at
+all times Suppose the element starts in
 location 1 and travels to location 2. This adiabatic process requires
 that $PV^\gamma$ be a constant within the bubble, which means that
 \begin{equation}
   \label{eq:11}
   \frac{P_1}{\rho_1^\gamma}=\frac{P_2}{\rho_2^\gamma}
 \end{equation}
-where the subscripts refer to where the bubble is located. Rearranging
+where the subscripts refer to where the bubble is located (and the
+quantities are measured within the bubble, not the surrounding
+material). Rearranging
 \eqref{eq:11} gives us the new density
 \begin{equation}
   \label{eq:12}
   \rho_{2,b}^\gamma=\rho_1^\gamma\frac{P_2}{P_1}
 \end{equation}
-So we require $\rho_{2,b}>\rho_{2,*}$, where the * indicates the
+Clearly the bubble is now less dense than it was at its starting
+position, but how dense is it compared to the surrounding material?
+For \emph{stability}, we require $\rho_{2,b}>\rho_{2,*}$, where the * indicates the
 density of the star's ``background'' conditions. For the star, we
 require
 \begin{equation}
   \label{eq:13}
-  \rho_1\left(\frac{P_2}{P_1}\right)^{1/\gamma}>\rho_2
+  \rho_1\left(\frac{P_2}{P_1}\right)^{1/\gamma}>\rho_{2,*}
 \end{equation}
-For an infinitesimal change, this gives
+Note that $\rho_1$, $P_1$, and $P_2$ are the same for both the fluid
+element and the background. For an infinitesimal change, the pressures
+are related via
 \begin{equation}
   \label{eq:14}
   P_2=P_1+\Delta r\frac{dP}{dr}
 \end{equation}
-and
+and likewise the densities, 
 \begin{equation}
   \label{eq:15}
   \rho_2=\rho_1+\frac{d\rho}{dr}\Delta r
 \end{equation}
-Then \eqref{eq:13} requires
+(where all quantities are for the star, not the fluid element, as they
+shall be from now on unless otherwise noted). Then \eqref{eq:13} requires
 \begin{equation}
   \label{eq:16}
   \frac{1}{\gamma}\frac{d\ln P}{d\ln r}>\frac{d\ln\rho}{dr}
@@ -723,7 +746,7 @@ Now, we recall that
   P=\frac{\rho kT}{\mu m_p} \quad\Rightarrow \quad d\ln\rho=d\ln
   P-d\ln T
 \end{equation}
-and thus \eqref{eq:16} can be written as
+(assuming uniform composition) and thus \eqref{eq:16} can be written as
 \begin{equation}
   \label{eq:18}
   \frac{1}{\gamma}\frac{d\ln P}{dr}>\frac{d\ln P}{dr}-\frac{d\ln T}{dr}
@@ -742,11 +765,32 @@ $T\propto P^{1/4}$. Then computing the logarithmic derivative in
   \label{eq:20}
   \frac{d\ln T}{d\ln P}=\frac{1}{4}<\frac{2}{5}
 \end{equation}
-So stars folloiwng this model are stable and do not transport heat by
+Note that we could also include a gradient in the composition if we
+wanted. \eqref{eq:20} would become, more genrally,
+\begin{equation}
+  \label{eq:135}
+  \boxed{\left(\frac{1}{\gamma}-1\right)\frac{d\ln
+    P}{dr}-\frac{d\ln\mu}{dr}>-\frac{d\ln T}{dr}}
+\end{equation}
+This actually weakens the requirement on the temperature
+gradient. \S6.3 of Keppenhahn and Weigert discuss the strange
+consequences of being in the ``twilight zone'' between the conditions
+set up by \eqref{eq:135} and \eqref{eq:19}. It is possible, in this
+regime, to have a fluid element oscillate (as in a stable case), but
+have the oscillation grow in amplitude (not exactly what we would
+think of as stable).\\
+
+\n Barring these strange situations, stars that follow \eqref{eq:135}
+and certainly those following \eqref{eq:19} are stable and do not transport heat by
 convection. A model that is stable to convection has the entropy
 increasing with radius. Note that when we say ``entropy'', we mean the
-\textbf{specific entropy}, or the entropy per unit mass.
+\textbf{specific entropy}, or the entropy per unit mass.\\
 
+\n To put things in context, we recall the Eddington standard model,
+where we found that $\rho\propto T^3$, so $P\propto T^4$. Then we have
+$d\ln T/d\ln P=1/4<2/5$. So then the Eddington standard model star is
+stable to convection and thus transports heat primarily by radiative
+diffusion.
 \subsubsection{The Unstable Case}
 \label{sec:unstable-case}
 
@@ -754,7 +798,7 @@ Now we wish to understand what happens when the background model is
 unstable. The density in the bubble is
 \begin{equation}
   \label{eq:21}
-  \rho_{2,b}=\rho_2\left(\frac{P_2}{P_1}\right)^{1/\gamma}
+  \rho_{2,b}=\rho_1\left(\frac{P_2}{P_1}\right)^{1/\gamma}
 \end{equation}
 and for the star,
 \begin{equation}
@@ -772,19 +816,20 @@ or
   \Delta\rho=\rho\Delta r\left[\frac{d\ln\rho}{dr}+\frac{\rho g}{P\gamma}\right]
 \end{equation}
 where we have invoked hydrostatic equilibrium. Stability requires
-$\Delta<0$, or
+$\Delta\rho<0$, or
 \begin{equation}
   \label{eq:25}
-  \frac{d\ln\rho}{dr}<-\frac{\rho g}{\gamma P}
+  \boxed{\frac{d\ln\rho}{dr}<-\frac{\rho g}{\gamma P}\quad\textrm{(Stability)}}
 \end{equation}
-In the unstable case, though, we require $\Delta\rho>0$. the
+The is the same result we obtained previously, just phrased a bit
+differently. In the unstable case, though, we require $\Delta\rho>0$. the
 acceleration, $a$, or the displaced element will be given by 
 \begin{equation}
   \label{eq:26}
   a=\frac{\Delta\rho}{\rho}g=g\Delta
   r\left[\frac{d\ln\rho}{dr}+\frac{\rho g}{P\gamma}\right]
 \end{equation}
-This is the equation of mothion for the fluid element. Written in
+This is the equation of motion for the fluid element. Written in
 terms of the displacement coordinate $x$, \eqref{eq:26} is
 \begin{equation}
   \label{eq:27}
@@ -798,10 +843,10 @@ familiar. In any case, we have
   -\omega^2=g\left(\frac{d\ln\rho}{dr}+\frac{\rho g}{P \gamma}\right)
 \end{equation}
 If $-\omega^2<0$, then the solution is stable, and the element
-oscillates at the Brunt V\"{u}is\"{u}l\"{u} frequency is 
+oscillates at the Brunt V\"{a}is\"{a}l\"{a} frequency is 
 \begin{equation}
   \label{eq:29}
-  N^2-g\left[\frac{d\ln\rho}{dr}+\frac{\rho g}{\gamma P}\right]
+  N^2=-g\left[\frac{d\ln\rho}{dr}+\frac{\rho g}{\gamma P}\right]
 \end{equation}
 This is the local frequency of oscillation of a fluid element in a
 convectively stable atmosphere. In the Earth's atmosphere, this
@@ -834,7 +879,7 @@ Suppose that the stellar interior is strongly unstable, so that
 $N^2\sim-g/h$. Then the velocity after traveling some length $\ell$ is 
 \begin{equation}
   \label{eq:34}
-  v=\ell\left(\frac{g}{h}\right)^{1/2}=\ell\left(\frac{gm_pg}{kT}\right)^{1/2}=\ell\frac{g}{v_{\mathrm{th}}}=\approx \frac{g}{v_{\mathrm{th}}}h=\frac{g}{v_{\mathrm{th}}}\frac{v_{\mathrm{th}}^2}{g}=v_{n\mathrm{th}}
+  v=\ell\left(\frac{g}{h}\right)^{1/2}=\ell\left(\frac{gm_pg}{kT}\right)^{1/2}=\ell\frac{g}{v_{\mathrm{th}}}\approx \frac{g}{v_{\mathrm{th}}}h=\frac{g}{v_{\mathrm{th}}}\frac{v_{\mathrm{th}}^2}{g}=v_{\mathrm{th}}
 \end{equation}
 So if $N^2\sim -g/h$, i.e., the star is strongly unstable, then a runaway
 fluid element will reach the sound speed after traversing one scale
@@ -872,7 +917,7 @@ and thus the velocity is
   Then the velocity would be
   \begin{equation}
     \label{eq:38}
-    v=c_s\left[\left.\frac{\Delta\rho}{\rho}\right|_h\right]6{1/2}
+    v=c_s\left[\left.\frac{\Delta\rho}{\rho}\right|_h\right]^{1/2}
   \end{equation}
   Now we consider the flux due to convection. The flux is just the
   velocity times the energy density, and so we can write
@@ -903,14 +948,14 @@ and thus the velocity is
   the ratio in these two fluxes:
   \begin{equation}
     \label{eq:42}
-    \frac{F_{\mathrm{conv}}}{F_{\mathrm{rad}}}\sim \frac{\tau Pc_s\left(\left.\Delta\rho/\rho\right|_h\right)^{3/2}}{cP_{\mathrm{rad}}}\sim\frac{c_s}{c}\frac{P}{P_{\mathrm{rad}}}\tau\left(\left.\frac{\Delta\rho}{\rho}\right|_h\right){3/2}
+    \frac{F_{\mathrm{conv}}}{F_{\mathrm{rad}}}\sim \frac{\tau Pc_s\left(\left.\Delta\rho/\rho\right|_h\right)^{3/2}}{cP_{\mathrm{rad}}}\sim\frac{c_s}{c}\frac{P}{P_{\mathrm{rad}}}\tau\left(\left.\frac{\Delta\rho}{\rho}\right|_h\right)^{3/2}
   \end{equation}
-  For typical, low-mass stars, we assume that $P/P_{\mathrm{rad}}\gg
+  For typical, low-mass stars, we assume that $P/P_{\mathrm{rad}}\sim 10^4\gg
   1$, let's find when both fluxes give equal contributions (also
   plugging in some solar values):
   \begin{equation}
     \label{eq:43}
-    \left(\frac{kT}{m_pc^2}\right)^{1/2}10^4\tau\left(\frac{\Delta\rho}{\rho}\right)^{1/2}\sim 1
+    \left(\frac{kT}{m_pc^2}\right)^{1/2}10^4\tau\left(\frac{\Delta\rho}{\rho}\right)^{3/2}\sim 1
   \end{equation}
   The requirement becomes
   \begin{equation}
@@ -960,7 +1005,9 @@ and thus the velocity is
   When convection is efficient, then, the stellar model nearly follows
   the adiabatic relation! Deep interior convection, in this limit,
   only implies that we need to know the adiabatic relation very
-  well.\\
+  well. The punchline here is that in the deep interior of a star, if
+  the temperature gradient is even slightly super-adiabatic,
+  convection becomes an incredibly powerful form of heat transport.\\
 
   \n Note that the ratio of times scales like
   \begin{equation}
@@ -974,7 +1021,10 @@ and thus the velocity is
     \label{eq:50}
     \frac{v}{c_s}\approx 10^{-3}\left(\frac{M}{10\ M_\odot}\right)^{7/6}
   \end{equation}
-  Now remember the adiabatic condition for convection derived earlier:
+  This relatively slow speed reinforces our assumption that convective
+  bubbles move slow enough to maintain pressure equilibrium with their
+  surroundings. Now remember the adiabatic condition for convection
+  derived earlier:
   \begin{equation}
     \label{eq:51}
     \left.\frac{d\ln T}{d\ln P}\right|_*=\left.\frac{d\ln T}{d\ln P}\right|_{\mathrm{adiabatic}}=\frac{2}{5}
@@ -1033,7 +1083,8 @@ and thus the velocity is
     \frac{T_c}{P_c^{2/5}}=\frac{T_{\mathrm{ph}}}{P_{\mathrm{ph}}^{2/5}}=\frac{T_{\mathrm{eff}}}{P_{\mathrm{ph}}^{2/5}}
   \end{equation}
   Since we've assumed the perfect adiabat (admittedly a lie\ldots\
-  also, $\mu$ is changing). The surface thermal energy is
+  also, $\mu$ is changing due to varying ionization conditions in the
+  outer layers of the star). The surface thermal energy is
   \begin{equation}
     \label{eq:57}
     kT_{\mathrm{eff}}=0.6\left(\frac{GM\mu m_p}{R}\right)\left(\frac{R^2}{M\kappa_{\mathrm{ph}}}\right)^{2/5}
@@ -1043,19 +1094,102 @@ and thus the velocity is
     \label{eq:58}
     T_{\mathrm{eff}}=200\ \mathrm{K}\left(\frac{M}{M_\odot}\right)^{3/5}\left(\frac{R_\odot}{R}\right)^{1/5}
   \end{equation}
-  So we have a big problem with assumign electron scattering (or
-  convection).\\
+  So we have a big problem with assuming electron scattering (or
+  convection) since this is obviously too low for a star like the
+  sun.\\
 
-  \textit{Wednesday, February 1, 2012}
-
+  \n\textit{Wednesday, February 1, 2012}\\
   \subsection{The Hayashi Track}
   \label{sec:fully-conv-stars}
+  \n It turns out that in this case, the outer body sets the
+  temperature. Electron scattering is \emph{not} the primary source of
+  opacity. Typically $\mathrm{H^-}$ opacity is much more
+  important. This is where a very loosely bound ion (ionization energy
+  oround 0.75\ eV) ``ionized'' by a photon (really, it's un-ionized)
+  in the reaction
+  \begin{equation}
+    \label{eq:136}
+    \gamma+\mathrm{H^-}\to e^{-}+\mathrm{H}
+  \end{equation}
+  Hansen, Kawaler, and Trimble give the value of this opacity as
+  \begin{equation}
+    \label{eq:137}
+    \kappa_{\mathrm{H^-}}=2.5\times 10^{-31}\rho^{1/2} T^9\
+    \mathrm{cm^2\ g^{-1}}
+  \end{equation}
+  Now with the pressure given by
+  \begin{equation}
+    \label{eq:138}
+    P=\frac{\rho kT}{\mu m_p}
+  \end{equation}
+  and the density at the photosphere given by
+  \begin{equation}
+    \label{eq:139}
+    \rho=\frac{g}{\kappa}\frac{\mu m_p}{kT}
+  \end{equation}
+  Combining \eqref{eq:138} and \eqref{eq:139} gives the density as
+  \begin{equation}
+    \label{eq:140}
+    \rho=\frac{g\mu m_p}{kT \kappa_0 \rho^{1/2}T^9}
+  \end{equation}
+  Or we could have 
+  \begin{equation}
+    \label{eq:141}
+    \rho^{3/2}=\frac{g\mu m_p}{kT^{10}\kappa_0}\quad\Rightarrow\quad
+    \rho=\left(\frac{g\mu m_p}{kT^{10}\kappa_0}\right)^{2/3}
+  \end{equation}
+  Comparing these two values for the densities gives an opacity of
+  \begin{equation}
+    \label{eq:142}
+    \kappa_{\mathrm{H^-}}=\kappa_0 T^9\left(\frac{g\mu m_p}{k T^{10}\kappa_0}\right)^{1/3}
+  \end{equation}
+  or more succinctly,
+  \begin{equation}
+    \label{eq:143}
+    \boxed
+    \kappa_{\mathrm{H^-}}=\kappa_0^{2/3}T^{17/3}\left(\frac{g\mu m_p}{k}\right)^{1/3}
+  \end{equation}
+  Using this opacity in \eqref{eq:57}, we obtain (omitting some
+  algebra), the more reasonable result of
+  \begin{equation}
+    \label{eq:144}
+    T_{\mathrm{eff}}\approx 2500\ \mathrm{K}\left(\frac{M}{M_{\odot}}\right)^{1/7}\left(\frac{R}{R_\odot}right)^{1/49}
+  \end{equation}
+  So the luminosity oges as
+  \begin{equation}
+    \label{eq:145}
+    \frac{L}{L_\odot}=0.034\left(\frac{M}{M_\odot}\right)^{4/7}\left(\frac{R}{R_\odot}\right)^{102/49}
+  \end{equation}
+  Writing the effective temperature as a function of the mass and the
+  luminosity gives us
+  \begin{equation}
+    \label{eq:146}
+    T_{\mathrm{eff}}\approx 2600\ \mathrm{K}\left(\frac{L}{L_\odot}\right)^{1/102}\left(\frac{M}{M_\odot}\right)^{7/51}
+  \end{equation}
+  Note that this is nearly independent of the luminosity, so it is
+  nearly a straight vertical line on the HR diagram. As a molecular
+  cloud contracts, heat transport is dominated by convection and the
+  opacity in the photosphere is dominated by $\mathrm{H}^{-}$
+  opacity. This explains how we see stars descending a vertical line
+  in the HR diagram called the \textbf{Hayashi Track} that corresponds
+  to \eqref{eq:146}. Note, however, that there is a lower limit on the
+  effective temperature below which no hydrostatic radiating solutions
+  exist because it is impossible to have the same entropy in the
+  photosphere as in the core (recall that that was a requirement for
+  convection to take place).\\
 
-  MISSING DUE TO MY INABILITY TO WAKE UP BEFORE NOON
+  \n The contraction of a protostar and its corresponding trip down
+  the Hayashi Track is rather quick at the high-luminosity end but
+  changes as the star contracts. So the initial evolution is down the
+  Hayashi Track until a radiative solution exists, after which point
+  the star evolves along a nearly constant constant luminosity track
+  (the less-famous Henyey Track).
 
 \section{Star Formation and the Jean's Mass}
 \label{sec:star-formation-jeans}
-
+After discussing a star's trip down the Hayashi track, we take a
+moment to investigate a bit more about the physics of star formation,
+which is still a field with many unanswered questions.
 \subsection{The Jean's Mass}
 
   In the interstellar medium, there are large masses of cold dust and
@@ -1132,8 +1266,9 @@ and thus the velocity is
       \mathrm{years}}{(n/100\ \mathrm{cm^{-3}})^{1/2}}
   \end{equation}
   Then it typically takes $1-10\ \mathrm{Myrs}$ for the collapse to
-  occur. At the center, an object at hydrostatic balance forms. This
-  causes an \textbf{accretion luminosity}
+  occur. At the center, an object at hydrostatic balance forms while
+  the outer layers are still collapsing (the collapse is not
+  homologous). This causes an \textbf{accretion luminosity} of
   \begin{equation}
     \label{eq:67}
     L\approx \dot{M}\frac{G M_c}{R_c}
@@ -1167,11 +1302,11 @@ and thus the velocity is
     \label{eq:71}
     T\frac{dS}{dt}=\frac{dE}{dt}+P\frac{dV}{dt}
   \end{equation}
-  where $E$ is the internal energy per unit mass. In terms of the
-  specific units (per unit mass),
+  In terms of the specific units (per unit mass), where now $E$ is the
+  specific internal energy,
   \begin{equation}
     \label{eq:72}
-    dQ=dE+pd\left(\frac{1}{\rho}\right)=dE-\frac{P}{\rho^2}d\rho
+    dQ=dE+Pd\left(\frac{1}{\rho}\right)=dE-\frac{P}{\rho^2}d\rho
   \end{equation}
   The Lagrangian equation becomes
   \begin{equation}
@@ -1186,7 +1321,7 @@ and thus the velocity is
     \label{eq:74}
     \boxed{T\frac{ds}{dt}=\varepsilon_{\mathrm{nuc}}-\frac{\bm{\nabla}\cdot\mathbf{F}}{\rho}}
   \end{equation}
-  Here we ahve $F\mathbf{F}=F_r\hat{r}$. Then
+  Here we have $\mathbf{F}=F_r\hat{r}$. Then
   \begin{equation}
     \label{eq:75}
     \frac{\bm{\nabla}\cdot\mathbf{F}}{\rho}=\frac{1}{\rho}\frac{1}{r^2}\frac{\partial}{\partial
@@ -1225,7 +1360,7 @@ and thus the velocity is
   Inserting this into \eqref{eq:79} gives us
   \begin{equation}
     \label{eq:5}
-    T\frac{ds}{dt}=\frac{3}{2}\frac{P}{\rho}\frac{d}{dt}\left(\ln P/\rho^{5/3}\right)=-\varepsilon_{\mathrm{grav}}
+    T\frac{ds}{dt}=\frac{3}{2}\frac{P}{\rho}\frac{d}{dt}\ln \left( P/\rho^{5/3}\right)=-\varepsilon_{\mathrm{grav}}
   \end{equation}
   Textbooks will often refer to this as
   $-\varepsilon_{\mathrm{grav}}$. This is done so that
@@ -1236,6 +1371,7 @@ and thus the velocity is
   \end{equation}
 %%%%%
   \textit{Monday, February 6, 2012}\\
+
   \n Let's do some dimensional analysis for a contracting star. The
   pressure is
   \begin{equation}
@@ -1275,7 +1411,7 @@ and thus the velocity is
     \label{eq:84}
     \mathrm{entropy}\propto \frac{P}{\rho^{5/3}}\sim\frac{GM^2}{R^4}\frac{R^5}{M^{5/3}}\propto RM^{1/3}
   \end{equation}
-  for a sta in hydrostatic balance. An adiabatic adjustment to this
+  for a star in hydrostatic balance. An adiabatic adjustment to this
   star must require $R\propto 1/M^{1/3}$ (entropy must remain
   constant). Thus if the mass decreases, the radius must increase
   (like in white dwarfs).\\
@@ -1298,9 +1434,19 @@ and thus the velocity is
     \label{eq:87}
     L=-\frac{3}{7}\frac{GM^2}{R^2}\frac{dR}{dt}
   \end{equation}
-  This is essentially Kelving-Helmholtz contraction, but for a star
+  This is essentially Kelvin-Helmholtz contraction, but for a star
   that is fully convective, we can derive the ``real equation'' (as
-  opposed to our more bogus results earlier).
+  opposed to our more bogus results earlier).\\
+
+  \n NOte that for stars that are not changing much on the
+  Kelvin-Helmholtz timescale, we may neglect $T\frac{ds}{dt}$ and
+  simply write
+  \begin{equation}
+    \label{eq:147}
+    \varepsilon_{\mathrm{nuc}}=\frac{\partial L_r}{\partial m_r}
+  \end{equation}
+  This is a good approximation for stars on the main sequence, where
+  the burning time is much longer than the Kelvin-Helmholtz time.
 
   \subsection{Low Mass Stars}
   \label{sec:low-mass-stars}
@@ -1308,13 +1454,13 @@ and thus the velocity is
   Earlier we derived that as stars are on the Hayashi track,
   \begin{equation}
     \label{eq:88}
-    \frac{L}{L_\odot}\approx 0.03\ L_\odot\left(\frac{M}{M_\odot}\right)^{4/7}\left(\frac{R}{R_\odot}\right)^2
+    \frac{L}{L_\odot}\approx 0.03\left(\frac{M}{M_\odot}\right)^{4/7}\left(\frac{R}{R_\odot}\right)^2
   \end{equation}
   Plugging this result in to our previous result can give us the
   radius as a function of time:
   \begin{equation}
     \label{eq:89}
-    \frac{3}{7}\frac{GM^2}{R^2}\frac{dR}{dt}=-0.03\left(\frac{M}{M_\odot}\right)^{4/7}\left(\frac{R}{R_\odot}\right)^2
+    \frac{3}{7}\frac{GM^2}{R^2}\frac{dR}{dt}=-0.03\ L_\odot\left(\frac{M}{M_\odot}\right)^{4/7}\left(\frac{R}{R_\odot}\right)^2
   \end{equation}
   We can now read off scalings: $\dot{R}\propto R^4$, $1/t\propto
   R^3$, and so $R\propto t^{-1/3}$. Explicitly, the radius for a
@@ -1328,7 +1474,7 @@ and thus the velocity is
   that was predicted by earlier opacity arguments that assumed
   radiative diffusion. The onset of a radiative core is then roughly
   when $L\lesssim L_{\mathrm{rad}}$. The time it takes for this to
-  happen, we have
+  happen is
   \begin{equation}
     \label{eq:91}
     t>10^6\ \mathrm{years}\ \left(\frac{M_\odot}{M}\right)^2
@@ -1341,7 +1487,8 @@ and thus the velocity is
   \end{equation}
   For very low mass stars, this time approaches the Hubble
   time. However, very low mass stars will remain convective on the
-  main sequence.
+  main sequence, so nuclear reactions will likely halt the contraction
+  anyway.
 
   \section{Nuclear Reactions in Stars}
   \label{sec:nucl-react-stars}
