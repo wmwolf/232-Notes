@@ -219,7 +219,7 @@
 	\begin{equation}
 		\label{mc.7} t_{\mathrm{ff}}=\frac{1}{\sqrt{G\avg{\rho}}}
 	\end{equation}
-	This is also the same as the Keplerian orbital period, modulo some uninteresting constants. The punchline of this whole argument is that a star that is \emph{not} in hydrostatic balance will respond on a timescale of the free-fall timescale. From this alone, we may conclude that the sun (and all other stars not currently exploding) is in hydrostatic balance. We will then assume that all stars are always in hydrostatic balance.\\
+	This is also the same as the Keplerian orbital period, modulo some uninteresting constants. The punchline of this whole argument is that a star that is \emph{not} in hydrostatic balance will respond on a timescale of the free-fall timescale. From this alone, we may conclude that the sun (and any other star not currently exploding) is in hydrostatic balance. We will then assume that all stars are always in hydrostatic balance.\\
 	
 	\subsection{The Virial Theorem}
 	Stars are held up by gas pressure, radiation pressure, or both. The pressure gradients are what will be the ``restoring forces'' against gravity for our cases. In spherical symmetry, hydrostatic balance tells us
@@ -284,7 +284,15 @@
 	\begin{equation}
 		\label{avt.4} \boxed{kT\sim \frac{GMm_p}{R}}
 	\end{equation}
-	This temperature is the temperature of most of the material and is $T\sim T_c\sim \mathrm{core}$. For the sun, we then have $T\sim 10^7\ \mathrm{K}$. Interestingly, assuming hydrostatic equilibrium was all we needed to get a rough estimate of the sun's core temperature! One might note, though, that the surface temperature is significantly lower than the core temperature, so we must assume that there is heat loss taking place in the sun. Today the luminosity of the sun is
+	This temperature is the temperature of most of the material
+        and is $T\sim T_c$ (temperature in the core). For the sun, we
+        then have $T\sim 10^7\ \mathrm{K}$. Interestingly, assuming
+        hydrostatic equilibrium was all we needed to get a rough
+        estimate of the sun's core temperature! One might note,
+        though, that the surface temperature is significantly lower
+        than the core temperature, so we must assume that there is
+        heat loss taking place in the sun. Today the luminosity of the
+        sun is
 	\begin{equation}
 		\label{avt.5} L_\odot = 4\times 10^{33}\ \mathrm{erg/s}
 	\end{equation}
@@ -535,7 +543,7 @@ so
 	\end{equation}
 	and the result we just derived
 	\begin{equation}
-		\label{HTS.26} \frac{Gm(r)}{r^2}
+		\label{HTS.26} \frac{dP}{dy}=\frac{Gm(r)}{r^2}
 	\end{equation}
 	Taking the ratio of \eqref{HTS.25} and \eqref{HTS.26} gives us
 	\begin{equation}
@@ -555,7 +563,7 @@ so
 	\end{equation}
 	Also recall how luminosity scales with mass:
 	\begin{equation}
-		\label{HTS.31} L=L_\odot\left(\frac{M}{M_\odot}\right)
+		\label{HTS.31} L=L_\odot\left(\frac{M}{M_\odot}\right)^3
 	\end{equation}
 	So we see that for low-mass stars, their luminosities are indeed much smaller than the Eddington Luminosity. Now let's investigate the ratio of the luminosity to the Eddington Luminosity:
 	\begin{equation}
@@ -591,7 +599,7 @@ so
 	\begin{equation}
 		\label{HTS.39} \boxed{T(r)^3=\frac{L}{L_{\mathrm{Edd}}}\frac{3k}{a\mu m_p}\rho(r)}
 	\end{equation}
-	So we have gone from a situation where we had only typical or central values to an actual equation that let's us find $T(r)$, $\rho(r)$, and $P(r)$. It appears then, that in our low radiation pressure limit, $\rho\propto T^3$. Additionally, for the ideal gas law, we see that $P\propto \rho^{4/3}$. For some given $L/L_{\mathrm{Edd}}$, we have a relation between pressure and density via
+	So we have gone from a situation where we had only typical or central values to an actual equation that lets us find $T(r)$, $\rho(r)$, and $P(r)$. It appears then, that in our low radiation pressure limit, $\rho\propto T^3$. Additionally, for the ideal gas law, we see that $P\propto \rho^{4/3}$. For some given $L/L_{\mathrm{Edd}}$, we have a relation between pressure and density via
 	\begin{align}
 		\label{HTS.40} \frac{dP}{dr}&=-\rho(r)\frac{Gm(r)}{r^2}\\
 		\label{HTS.41} dm(r) &= \rho 4\pi r^2\,dr
@@ -618,7 +626,11 @@ so
 	\begin{equation}
 		\label{HTS.46} P_{\mathrm{gas}}\leq \frac{g}{\kappa}
 	\end{equation}
-	This argument assumed a constant opacity. In general, we must do a line integral through the depth of the outer atmosphere. Imagine we ask the probably for a photon to reach some depth in the star. We define the \textbf{optical depth} to be
+	This argument assumed a constant opacity. In general, we must
+        do a line integral through the depth of the outer
+        atmosphere. Imagine we ask the probability for a photon to
+        reach some depth in the star. We define the \textbf{optical
+          depth} to be
 	\begin{equation}
 		\label{HTS.47} d\tau = \frac{dr}{\ell}=dr\ \kappa(r)\rho(r)
 	\end{equation}
@@ -678,7 +690,7 @@ adiabatically (faster than the heat transfer time scale) is
 ``runs away''. This is a linear instability, in that a displacement
 exponentially grows in time. \\
 
-\n Suppose we ahve a fluid element in hydrostatic balance. We imagine
+\n Suppose we have a fluid element in hydrostatic balance. We imagine
 displacing this fluid element from $r$ to $r+dr$. So we assume that
 the displaced element responds adiabatically. Thermodynamcis tells us
 that
@@ -821,7 +833,7 @@ $\Delta\rho<0$, or
   \label{eq:25}
   \boxed{\frac{d\ln\rho}{dr}<-\frac{\rho g}{\gamma P}\quad\textrm{(Stability)}}
 \end{equation}
-The is the same result we obtained previously, just phrased a bit
+This is the same result we obtained previously, just phrased a bit
 differently. In the unstable case, though, we require $\Delta\rho>0$. the
 acceleration, $a$, or the displaced element will be given by 
 \begin{equation}
@@ -853,7 +865,7 @@ convectively stable atmosphere. In the Earth's atmosphere, this
 frequency is around five or ten minutes.\\
 
 \n Now if this coefficient is negative, the solution is unstable
-(i.e., groes exponentially). Note that $N^2\sim g/h$, so 
+(i.e., grows exponentially). Note that $N^2\sim g/h$, so 
 \begin{equation}
   \label{eq:30}
   N^2\sim\frac{gm_p
@@ -886,7 +898,7 @@ fluid element will reach the sound speed after traversing one scale
 height! Recall, though that the change in density is
 \begin{equation}
   \label{eq:35}
- \left. \frac{\Delta\rho}{\rho}\right|_{\mathrm{wt\ \ell}}\approx
+ \left. \frac{\Delta\rho}{\rho}\right|_{\mathrm{at\ \ell}}\approx
  \ell\left(\frac{d\ln \rho}{dr}+\frac{\rho g}{P\gamma}\right)
 \end{equation}
 and thus the velocity is
@@ -1097,17 +1109,18 @@ and thus the velocity is
   So we have a big problem with assuming electron scattering (or
   convection) since this is obviously too low for a star like the
   sun.\\
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Wednesday, February 1, 2012 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \n\textit{Wednesday, February 1, 2012}\\
+  \n\textit{Wednesday, February 1, 2012}
   \subsection{The Hayashi Track}
   \label{sec:fully-conv-stars}
   \n It turns out that in this case, the outer body sets the
   temperature. Electron scattering is \emph{not} the primary source of
   opacity. Typically $\mathrm{H^-}$ opacity is much more
   important. This is where a very loosely bound ion (ionization energy
-  oround 0.75\ eV) ``ionized'' by a photon (really, it's un-ionized)
+  oround 0.75\ eV) is ``ionized'' by a photon (really, it's un-ionized)
   in the reaction
   \begin{equation}
     \label{eq:136}
@@ -1148,8 +1161,8 @@ and thus the velocity is
   or more succinctly,
   \begin{equation}
     \label{eq:143}
-    \boxed
-    \kappa_{\mathrm{H^-}}=\kappa_0^{2/3}T^{17/3}\left(\frac{g\mu m_p}{k}\right)^{1/3}
+    \boxed{
+    \kappa_{\mathrm{H^-}}=\kappa_0^{2/3}T^{17/3}\left(\frac{g\mu m_p}{k}\right)^{1/3}}
   \end{equation}
   Using this opacity in \eqref{eq:57}, we obtain (omitting some
   algebra), the more reasonable result of
@@ -1157,7 +1170,7 @@ and thus the velocity is
     \label{eq:144}
     T_{\mathrm{eff}}\approx 2500\ \mathrm{K}\left(\frac{M}{M_{\odot}}\right)^{1/7}\left(\frac{R}{R_\odot}\right)^{1/49}
   \end{equation}
-  So the luminosity oges as
+  So the luminosity goes as
   \begin{equation}
     \label{eq:145}
     \frac{L}{L_\odot}=0.034\left(\frac{M}{M_\odot}\right)^{4/7}\left(\frac{R}{R_\odot}\right)^{102/49}
@@ -1315,7 +1328,7 @@ which is still a field with many unanswered questions.
     \label{eq:73}
     T\frac{ds}{dt}=\frac{dQ}{dt}\equiv\textrm{loss or gain}
   \end{equation}
-  First we have heat gained via neuclear reactions,
+  First we have heat gained via nuclear reactions,
   $\varepsilon$. Secondly, there is heat gained or lost due to a
   gradient in $\mathbf{F}$. Then \eqref{eq:73} becomes our last equation
   for stellar evolution:
@@ -1360,10 +1373,20 @@ which is still a field with many unanswered questions.
     E=\frac{3}{2}\frac{kT}{\mu m_p}=\frac{3}{2}\frac{P}{\rho}
   \end{equation}
   Inserting this into \eqref{eq:79} gives us
-  \begin{equation}
+  \begin{align}
     \label{eq:5}
-    T\frac{ds}{dt}=\frac{3}{2}\frac{P}{\rho}\frac{d}{dt}\ln \left( P/\rho^{5/3}\right)=-\varepsilon_{\mathrm{grav}}
-  \end{equation}
+    T\frac{ds}{dt} &=
+    \frac{3}{2}\frac{1}{\rho}\frac{dP}{dt}-\frac{5}{2}\frac{P}{\rho^2}\frac{d\rho}{dt}\\
+    \label{eq:5a}
+    &= \frac{P}{\rho}\left[\frac{3}{2}\frac{d\ln
+        P}{dt}-\frac{5}{2}\frac{d\ln \rho}{dt}\right]\\
+    \label{eq:5b}
+    &= \frac{3}{2}\frac{P}{\rho}\left[\frac{d\ln
+        P}{dt}-\frac{5}{3}\frac{d\ln\rho}{dt}\right]\\
+    \label{eq:5c}
+    &=\frac{3}{2}\frac{P}{\rho}\frac{d}{dt}\ln \left(
+      P/\rho^{5/3}\right)=-\varepsilon_{\mathrm{grav}}
+  \end{align}
   Textbooks will often refer to this as
   $-\varepsilon_{\mathrm{grav}}$. This is done so that
   \begin{equation}
@@ -1382,7 +1405,7 @@ which is still a field with many unanswered questions.
     \label{eq:7}
     P\sim\frac{GM^2}{R^4}\sim\frac{GM^2}{M^{4/3}}\rho^{4/3}
   \end{equation}
-  Then the quantity in the log in \eqref{eq:6} would be
+  Then the quantity in the log in \eqref{eq:5c} would be
   \begin{equation}
     \label{eq:8}
     \frac{P}{\rho^{5/3}}\approx C\frac{1}{\rho^{1/3}}
@@ -1393,7 +1416,7 @@ which is still a field with many unanswered questions.
     \label{eq:80}
     T\frac{ds}{dt}=\frac{3}{2}\frac{P}{\rho}\frac{d}{dt}\left[\ln\left(C\rho_c^{-1/3}\right)\right]=-\frac{1}{2}\frac{P}{\rho}\frac{d\ln\rho_c}{dt}
   \end{equation}
-  Assuming that $\varepsilon_{\mathrm{nuc}}=0$, \eqref{eq:5} becomes
+  Assuming that $\varepsilon_{\mathrm{nuc}}=0$, \eqref{eq:6} becomes
   \begin{equation}
     \label{eq:81}
     -\frac{1}{2}\frac{P}{\rho}\frac{d\ln\rho_c}{dt}=-\frac{dL(r)}{dm(r)}\quad\Rightarrow\quad \frac{dL(r)}{dm(r)}=\frac{1}{2}\frac{P}{\rho}\frac{d\ln\rho_c}{dt}
@@ -1442,7 +1465,7 @@ which is still a field with many unanswered questions.
   that is fully convective, we can derive the ``real equation'' (as
   opposed to our more bogus results earlier).\\
 
-  \n NOte that for stars that are not changing much on the
+  \n Note that for stars that are not changing much on the
   Kelvin-Helmholtz timescale, we may neglect $T\frac{ds}{dt}$ and
   simply write
   \begin{equation}
