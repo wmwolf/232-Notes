@@ -1,40 +1,45 @@
-\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
-\contentsline {subsection}{\numberline {1.1}The HR Diagram}{3}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Conditions for a Star on the HR Diagram}{3}{subsection.1.2}
-\contentsline {subsubsection}{\numberline {1.2.1}Population I Stars}{3}{subsubsection.1.2.1}
-\contentsline {subsubsection}{\numberline {1.2.2}Population II Stars}{5}{subsubsection.1.2.2}
-\contentsline {section}{\numberline {2}A Simple Hydrostatic Atmosphere}{5}{section.2}
-\contentsline {subsection}{\numberline {2.1}Scale Height and Column Depth}{5}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Mean Molecular Weights}{7}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Electric Fields in Stars}{7}{subsection.2.3}
-\contentsline {section}{\numberline {3}Self-Gravitating Objects}{8}{section.3}
-\contentsline {subsection}{\numberline {3.1}Momentum Conservation and the Free-Fall Timescale}{8}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}The Virial Theorem}{9}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Applications of the Virial Theorm}{11}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Gas Pressure and Radiation Pressure}{11}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Summary}{13}{subsection.3.5}
-\contentsline {section}{\numberline {4}Heat Transfer in Stars}{13}{section.4}
-\contentsline {subsection}{\numberline {4.1}Heat Flux Derivation (not done in class)}{14}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Heat Transport by Electrons}{14}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Radiative Diffusion}{15}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}The Eddington Limit and the Eddington Standard Model}{16}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Polytropic Relations}{18}{subsubsection.4.3.2}
-\contentsline {subsubsection}{\numberline {4.3.3}Heat Transfer in the Outer Atmosphere}{18}{subsubsection.4.3.3}
-\contentsline {subsubsection}{\numberline {4.3.4}The Effective Temperature}{20}{subsubsection.4.3.4}
-\contentsline {subsection}{\numberline {4.4}Convection}{20}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}The Unstable Case}{22}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}Convective Efficiency}{24}{subsubsection.4.4.2}
-\contentsline {subsection}{\numberline {4.5}Fully Convective Star}{26}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}The Hayashi Track}{27}{subsection.4.6}
-\contentsline {section}{\numberline {5}Star Formation and the Jean's Mass}{28}{section.5}
-\contentsline {subsection}{\numberline {5.1}The Jean's Mass}{28}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Pre-Main Sequence Stars}{30}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Low Mass Stars}{32}{subsection.5.3}
-\contentsline {section}{\numberline {6}Nuclear Reactions in Stars}{33}{section.6}
-\contentsline {subsection}{\numberline {6.1}Liquid Drop Model}{33}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Tunneling through the Coulomb Barrier}{34}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Barrier Penetration}{35}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Nuclear Reaction Rates}{37}{subsubsection.6.2.2}
-\contentsline {subsection}{\numberline {6.3}Proton-Proton Interactions}{38}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Sidebar: The Deuterium Main Sequence}{40}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}The PP Chain and the CN Cycle}{40}{subsection.6.5}
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}The HR Diagram}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Conditions for a Star on the HR Diagram}{4}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Population I Stars}{4}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Population II Stars}{6}{subsubsection.1.2.2}
+\contentsline {section}{\numberline {2}A Simple Hydrostatic Atmosphere}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Scale Height and Column Depth}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Mean Molecular Weights}{8}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Electric Fields in Stars}{8}{subsection.2.3}
+\contentsline {section}{\numberline {3}Self-Gravitating Objects}{9}{section.3}
+\contentsline {subsection}{\numberline {3.1}Momentum Conservation and the Free-Fall Timescale}{9}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}The Virial Theorem}{10}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Applications of the Virial Theorm}{12}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Gas Pressure and Radiation Pressure}{12}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Summary}{14}{subsection.3.5}
+\contentsline {section}{\numberline {4}Heat Transfer in Stars}{14}{section.4}
+\contentsline {subsection}{\numberline {4.1}Heat Flux Derivation (not done in class)}{15}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Heat Transport by Electrons}{15}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Radiative Diffusion}{16}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}The Eddington Limit and the Eddington Standard Model}{17}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Polytropic Relations}{19}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Heat Transfer in the Outer Atmosphere}{19}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}The Effective Temperature}{21}{subsubsection.4.3.4}
+\contentsline {subsection}{\numberline {4.4}Convection}{21}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}The Unstable Case}{23}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Convective Efficiency}{25}{subsubsection.4.4.2}
+\contentsline {subsection}{\numberline {4.5}Fully Convective Star}{27}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}The Hayashi Track}{28}{subsection.4.6}
+\contentsline {section}{\numberline {5}Star Formation and the Jean's Mass}{29}{section.5}
+\contentsline {subsection}{\numberline {5.1}The Jean's Mass}{29}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Pre-Main Sequence Stars}{31}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Low Mass Stars}{33}{subsection.5.3}
+\contentsline {section}{\numberline {6}Nuclear Reactions in Stars}{34}{section.6}
+\contentsline {subsection}{\numberline {6.1}Liquid Drop Model}{34}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Tunneling through the Coulomb Barrier}{35}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Barrier Penetration}{36}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Nuclear Reaction Rates}{38}{subsubsection.6.2.2}
+\contentsline {subsection}{\numberline {6.3}Proton-Proton Interactions}{39}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Sidebar: The Deuterium Main Sequence}{41}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}The PP Chain and the CN Cycle}{41}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Power Generation on the Upper Main Sequence}{43}{subsection.6.6}
+\contentsline {subsubsection}{\numberline {6.6.1}Scaling Relations on the Upper Main Sequence}{44}{subsubsection.6.6.1}
+\contentsline {subsubsection}{\numberline {6.6.2}Convection in Large Stars}{44}{subsubsection.6.6.2}
+\contentsline {subsubsection}{\numberline {6.6.3}Main Sequence Burning Summary}{45}{subsubsection.6.6.3}
+\contentsline {section}{\numberline {7}Stellar Evolution}{46}{section.7}
