@@ -2288,7 +2288,7 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
     by the CN(O) cycle. They typically have convective cores and
     radiative envelopes with the opacity set by Thomson scattering.
 
-    \section{Stellar Evolution}
+    \subsection{Stellar Evolution}
     \label{sec:stellar-evolution}
 
     As a star burns hydrogen to helium, its composition naturally
@@ -2314,6 +2314,283 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
 
     \n For a lower mass star, there is no convection in the core, so
     the composition changes much more gradually until the majority of
-    the fuel is expired.
-\end{document}
+    the fuel is expired.\\
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Monday, February 22, 2012  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \n \textit{Monday, February 22, 2012}
+
+    \section{State of the Stellar Interior}
+    \label{sec:state-stell-inter}
+
+    When studying stellar interiors, often we assume that the gas is
+    in \textbf{Local Thermodynamic Equilibirum}, which is where most
+    thermodynamic variables follow a Maxwell-Boltzmann distribution
+    and thus that all areas of the star are locally in thermodynamic
+    equilibrium.
+
+    \subsection{The Saha Equation}
+    \label{sec:saha-equation}
+ 
+    Suppose we have two energy states separated by a energy gap
+    $\Delta E$. Then from Boltzmann statistics, the ratio of the
+    probility of particles residing in these two states is given by
+    \begin{equation}
+      \label{eq:194}
+      \frac{n_1}{n_2}=\frac{g_1}{g_0}e^{-\Delta E/(kT)}
+    \end{equation}
+    where $g_1$ and $g_0$ are the statsitical weights of the two
+    configurations. This equation actually describes the ionization
+    states in the stellar interior, though for electrons, it's more
+    accurate to use Fermi-Dirac statistics:
+    \begin{equation}
+      \label{eq:195}
+      \boxed{n(p)=\frac{g}{h^3}\frac{1}{\exp\left[(E-p-\mu)/(kT)\right]+1}}
+    \end{equation}
+    where
+    \begin{equation}
+      \label{eq:196}
+      \boxed{E_p=\frac{p^2}{2m_p}+m_pc^2}
+    \end{equation}
+    assuming nonrelativistic particles. To find the number density, we
+    need to integrate this phase space density over all momenta:
+    \begin{equation}
+      \label{eq:197}
+      n=\frac{g}{h^3}\int_0^\infty\frac{4\pi p^2\,dp}{\exp\left[(E-p-\mu)/(kT)\right]+1}
+    \end{equation}
+    Here we are assuming that the mean free path is much longer than
+    the de Broglie wavelength,
+    \begin{equation}
+      \label{eq:198}
+      \ell\gg \lambda_{\mathrm{DB}}=\frac{h}{p}
+    \end{equation}
+    This is equivalent to stating that
+    \begin{equation}
+      \label{eq:199}
+      \exp\left[(E_p-\mu)/(kT)\right]\gg 1
+    \end{equation}
+    So the integral in \eqref{eq:197} simplifies considerably to
+    (missing some explanation here)
+    \begin{equation}
+      \label{eq:200}
+      n=\frac{g 4\pi}{h^3}\int_0^\infty p^2 \exp\left[(E_p-\mu)/(kT)\right]\,dp
+    \end{equation}
+    \begin{equation}
+      \label{eq:201}
+      \exp\left(\frac{\mu-m_pc^2}{kT}\right)=\frac{mh^3}{g(2m_pk T\pi)^{3/2}}=\frac{m}{2m_\alpha}
+    \end{equation}
+    Here, we are using $m_\alpha\equiv (2\pi mkT/h^2)^{3/2}$. Then the
+    chemical potential is necessarily
+    \begin{equation}
+      \label{eq:202}
+      \boxed{\mu_e=kT\ln\left(\frac{m_e}{2m_\alpha}\right)+m_ec^2}
+    \end{equation}
+    Now the ionization of Hydrogen is given by
+    \begin{equation}
+      \label{eq:203}
+      e^{-}+\mathrm{p\to H+\gamma}
+    \end{equation}
+    Equating the chemical potentials (the condition for LTE) tells us
+    that
+    \begin{equation}
+      \label{eq:204}
+      \mu_e+\mu_\mathrm{p}=\mu_\mathrm{H}
+    \end{equation}
+    where we've noted that photons have no chemical potential. The
+    chemical potentials are thus
+    \begin{align}
+      \label{eq:205}
+      \mu_\mathrm{p} &=
+      m_\mathrm{p}c^2-kT\ln\left(\frac{g_\mathrm{p}m_{\alpha,p}}{m_{\mathrm{p}}}\right)\\
+      \label{eq:205a}
+      \mu_e &= m_ec^2-kT\ln\left(\frac{g_e m_{\alpha,e}}{m_e}\right)\\
+      \label{eq:205b}
+      \mu_\mathrm{H} &=
+      m_\mathrm{H}c^2-kT\ln\left(\frac{g_\mathrm{H}m_{\alpha,H}}{m_{\mathrm{H}}}\right)
+    \end{align}
+    An important fact here is the difference between the rest mass of
+    hydrogen and that of the proton and electron, which is just the
+    ionization energy of the hydrogen atom:
+    \begin{equation}
+      \label{eq:206}
+      m_\mathrm{H}c^2=(m_\mathrm{p}+m_e)c^2-13.6\ \mathrm{eV}
+    \end{equation}
+    Then the condition that the chemical potentials are equal can be
+    reduced to
+    \begin{equation}
+      \label{eq:207}
+      \ln\left[\frac{g_e m_{\alpha,e}}{m_e}\frac{g_{\mathrm{p}}
+          m_{\alpha,\mathrm{p}}}{m_{\mathrm{p}}}\frac{m_{\mathrm{H}}}{g_{\mathrm{H}}
+          m_{\alpha,\mathrm{H}}}\right]=\frac{13.6\ \mathrm{eV}}{kT}
+    \end{equation}
+    Rearranging this, we get the \textbf{Saha Equation}
+    \begin{equation}
+      \label{eq:208}
+      \boxed{\frac{n^-n^+}{n}=\frac{g_eg_\mathrm{p}}{g_{\mathrm{H}}}\left[\frac{2\pi
+          m_ekT}{h^2}\right]^{3/2}\exp\left(-\frac{13.6\ \mathrm{eV}}{kT}\right)}
+    \end{equation}
+    Often times we'll see this in terms of the \textbf{Quantum
+      Concentration}:
+    \begin{equation}
+      \label{eq:225}
+      n_Q=\left[\frac{2\pi mkT}{h}\right]^{3/2}
+    \end{equation}
+    Now, suppose we are in a state where exactly half of the hydrogen
+    is ionized. In this case,
+    $n_{\mathrm{p}}=n_e=n_\mathrm{H}$. Solving the Saha equation for
+    temperatures gives us
+    \begin{equation}
+      \label{eq:209}
+      T_{1/2}\approx 12400\ \mathrm{K}
+    \end{equation}
+    If we define the ionization fraction via
+    \begin{equation}
+      \label{eq:210}
+      y\equiv \frac{n_\mathrm{p}}{n}=\frac{n_e}{n}
+    \end{equation}
+    Then the Saha equation is reduced to
+    \begin{equation}
+      \label{eq:211}
+      \boxed{\frac{y^2}{1-y}=\frac{4\times 10^{-9}}{\rho}T^{3/2}e^{-1.6\times 10^5/T}}
+    \end{equation}
+    Solving for $y$ at the center of the sun, we find that $y\sim
+    0.75$, which is not good since we ``know'' that the solar core is
+    completely ionized. The problem is that the central density is
+    sufficiently high that ignoring the $+1$ in the denominator of the
+    Fermi-Dirac distribution cannot be ignored. In this regime, things
+    like presure ionization become important, which helps cause the
+    interior to be completely ionized.
+
+    \subsection{Stellar Spectra}
+    \label{sec:stellar-spectra}
+
+    Recall the pressure scale height, which in the photosphere, is
+    \begin{equation}
+      \label{eq:212}
+      h=\frac{kT}{m_p g}\ll R
+    \end{equation}
+    where the local acceleration due ot gravity is (again, in the
+    photosphere),
+    \begin{equation}
+      \label{eq:213}
+      g=\frac{GM}{R^2}=2.7\times 10^4\frac{M}{R_\odot}=2.7\times
+      10^4\left(\frac{M_\odot}{M}\right)^{1/2}
+    \end{equation}
+    Where we have used the fact that $R\propto M^{0.75}$. Recalling
+    the optical depth, $\tau=\int \rho\kappa dr$, we will say that at
+    the photosphere, $\tau_{\mathrm{ph}}=2/3$. Then we find
+    \begin{equation}
+      \label{eq:214}
+      \tau_{\mathrm{ph}}=\kappa\underbrace{\int \rho dr}_{x}=\kappa
+      x\quad\Rightarrow\quad x_{\mathrm{ph}}=\frac{2}{3\kappa}
+    \end{equation}
+    Then the pressure at the photosphere is
+    \begin{equation}
+      \label{eq:215}
+      P_{\mathrm{ph}}=gx_{\mathrm{ph}}=n_{\mathrm{ph}}kT_{\mathrm{ph}}
+    \end{equation}
+    So the density in the photosphere is
+    \begin{equation}
+      \label{eq:216}
+      n_{\mathrm{ph}}=\frac{2g m_\mathrm{p}}{3\sigma k T} \approx
+      10^{16}\
+        \mathrm{cm^{-3}}\left(\frac{\kappa_{\mathrm{es}}}{\kappa}\right)\left(\frac{10^4\
+          \mathrm{K}}{T}\right)\left(\frac{g}{2.7\times 10^4}\right)
+    \end{equation}
+    For various spectral types, we have a range of masses and
+    effective temperatures\\
+    \begin{center}
+    \begin{tabular}[h]{c c c}
+      Spectral Type & $T_{\mathrm{eff}}$ & $M/M\odot$\\
+      \hline\hline
+      O3 & 52000 K & 120\\
+      B0 & 30000 K & 17\\
+      A0 & 9500 K & 3\\
+      G0 & 6000 K & $\sim 1$
+    \end{tabular}
+    \end{center}
+    So there is around a factor of ten spread in these effective
+    temperatures. Thus, the differend emission and absorption lines
+    that we see will vary greatly among these classes (hence their
+    name of \textbf{spectral classes}). Elements with first
+    ionization potential less than $5\ \mathrm{eV}$ include Li, Na,
+    Mg, and Al. Those between 10 and 20 eV include H, C, N, and
+    O. Those higher than 20 eV include He and Ne. Depending on the
+    effective temperature and composition of a photosphere, we will
+    observe different relative strengths in these lines.\\
+
+    \n Going back to the hydrogen atom, recall how transitions to the
+    $n=1$ state for an electron are called \textbf{Lyman
+      Transitions}. The transtion from 1 to 2 corresponds to a
+    wavelength of 1215 \AA, and the Lyman limit, from 1 out to infinity
+    is at 911 \AA. Probaly more well-known are transitions to and from the
+    $n=2$, called the \textbf{Balmer Transitions}. The most famous of
+    these is the H$\alpha$ line, which is the $n=2$ to $n=3$
+    transition, at a wavelength of 6563 \AA. Note that this is in the
+    visible and thus easily observable, whereas the Lyman transitions
+    are all in the ultraviolet.\\
+
+    \n We can predict the relative numbers of electrons in various
+    energy levels using the Boltzmann equation. For instance, the
+    ratio of electrons in the $n=2$ state to the $n=1$ state is 
+    \begin{equation}
+      \label{eq:217}
+      \frac{n_2}{n_1}=\exp\left(-\frac{E_{12}\approx 10.2\ \mathrm{eV}}{kT}\right)=10^{-5}
+    \end{equation}
+    at a temperature of $10^4\ \mathrm{K}$. Is this strong enough to
+    produce an observable line? First we look at the corss section of
+    scattering:
+    \begin{equation}
+      \label{eq:218}
+      \pi\lambda^2\sim 10^{-16}\ \mathrm{cm^{-2}}=\sigma_{\mathrm{line}}\gg \sigma_{\mathrm{Th}}=6.65\times
+      10^{-25}\ \mathrm{cm^{-2}}
+    \end{equation}
+    So comparing this cross section to the Thomson cross section, we
+    have
+    \begin{equation}
+      \label{eq:219}
+      \frac{\sigma_{\mathrm{line}}}{\sigma_{\mathrm{Th}}}\sim 10^8
+    \end{equation}
+    Now we can determine the relative strenth of this source of
+    opacity to electron scattering via
+    \begin{equation}
+      \label{eq:220}
+      \exp\left(-\frac{10.2\
+          \mathrm{eV}}{kT}\right)\frac{\sigma_{\mathrm{line}}}{\sigma_{\mathrm{Th}}}\frac{m_\mathrm{H}}{m_{\mathrm{p}}}>1
+    \end{equation}
+    Or,
+    \begin{equation}
+      \label{eq:221}
+      \exp\left(-\frac{10.2\
+          \mathrm{eV}}{kT}\right)>\frac{\sigma_{\mathrm{Th}}}{\sigma_{\mathrm{line}}}\quad\Rightarrow\quad
+      T>6000\ \mathrm{K}
+    \end{equation}
+    So for stars with effective temperatures above 6000 K, this
+    transition creates an observable line. Different emission and
+    absorption sources in stars peak at various temperatures (and thus
+    are unique to specific spectral classes), so we can identify stars
+    quite well from their spectra alone.
+
+    \subsubsection{H${}^-$ Opacity}
+    \label{sec:mathrmh--opacity}
+    With the Boltzmann equation, we can compute what fraction of
+    hydrogen atoms are actually ionized into the $\mathrm{H}^-$ ion:
+    \begin{equation}
+      \label{eq:222}
+      \frac{n(\mathrm{H})}{n(\mathrm{H}^-)}=\frac{n_Q}{n_e}\exp\left(-\frac{0.75\ \mathrm{eV}}{kT}\right)
+    \end{equation}
+    or
+    \begin{equation}
+      \label{eq:223}
+      \frac{n(\mathrm{H^-})}{n(\mathrm{H})}=\frac{n_e}{n_Q}\exp\left[\frac{8700}{T}\right]
+    \end{equation}
+    For the sun, this gives $n_e=10^{13}\ \mathrm{cm^{-3}}$ and thus
+    \begin{equation}
+      \label{eq:224}
+      \frac{n(\mathrm{H}^-)}{n(\mathrm{H})}\approx 10^{-8}e^{8700/T}
+    \end{equation}
+    This source also peaks at a particular effective temperature and
+    is actually the dominant soource of opacity in the sun's photosphere.
+    
+\end{document}

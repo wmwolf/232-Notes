@@ -42,4 +42,8 @@
 \contentsline {subsubsection}{\numberline {6.6.1}Scaling Relations on the Upper Main Sequence}{44}{subsubsection.6.6.1}
 \contentsline {subsubsection}{\numberline {6.6.2}Convection in Large Stars}{44}{subsubsection.6.6.2}
 \contentsline {subsubsection}{\numberline {6.6.3}Main Sequence Burning Summary}{45}{subsubsection.6.6.3}
-\contentsline {section}{\numberline {7}Stellar Evolution}{46}{section.7}
+\contentsline {subsection}{\numberline {6.7}Stellar Evolution}{46}{subsection.6.7}
+\contentsline {section}{\numberline {7}State of the Stellar Interior}{46}{section.7}
+\contentsline {subsection}{\numberline {7.1}The Saha Equation}{46}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Stellar Spectra}{48}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}H${}^-$ Opacity}{50}{subsubsection.7.2.1}
