@@ -12,7 +12,7 @@
 \newcommand{\n}{\noindent}
 \newcommand{\norm}[1]{\left\lvert#1\right\rvert}
 \newcommand{\avg}[1]{\left\langle#1\right\rangle}
-
+\newcommand{\figref}[1]{Figure \ref{#1}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 % Title Page Information %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2572,8 +2572,8 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
     are unique to specific spectral classes), so we can identify stars
     quite well from their spectra alone.
 
-    \subsubsection{H${}^-$ Opacity}
-    \label{sec:mathrmh--opacity}
+    \paragraph{H${}^-$ Opacity}
+    \label{par:mathrmh--opacity}
     With the Boltzmann equation, we can compute what fraction of
     hydrogen atoms are actually ionized into the $\mathrm{H}^-$ ion:
     \begin{equation}
@@ -2591,6 +2591,238 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
       \frac{n(\mathrm{H}^-)}{n(\mathrm{H})}\approx 10^{-8}e^{8700/T}
     \end{equation}
     This source also peaks at a particular effective temperature and
-    is actually the dominant soource of opacity in the sun's photosphere.
+    is actually the dominant soource of opacity in the sun's
+    photosphere.\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wednesday, February 24, 2012 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \n \textit{Wednesday, February 24, 2012}
+
+    \section{Stellar Evolution}
     
+    Now we wish to know what happens to a star as $X$ decreases and
+    $Y$ increases.  This change in composition will require a change
+    in the overall behavior of the star. The time a star spends on the
+    main sequence,
+    \begin{equation}
+      \label{eq:226}
+      t_{\mathrm{MS}}=\frac{E_{\mathrm{nuc}}}{L}
+    \end{equation}
+    is much larger than the Kelvin Helmholtz time since
+    $E_{\mathrm{nuc}}\gg E_{\mathrm{th}}$. This is because the
+    reaction converting hydrogen to helium liberates around 7 MeV per
+    hydrogen atom burned, whereas the thermal energy of each atom is
+    around 1 keV. Thus, it makes sense that the main sequence time is
+    on the order of $10^3$ times longer than the Kelvin-Helmholtz
+    time.\\
+
+    \n In fact, even if the star only burns 10\% of the available
+    hydrogen, we still have $t_{\mathrm{MS}}>1000
+    t_{\mathrm{KH}}$. This contrast in timescales allowed for early
+    calculations of stellar evolution because at each time step needed
+    to resolve $X$, the star would be in complete thermal balance. One
+    big caveat to what we will do today is that the concentration of
+    the fusion to the center of the star ``breaks'' our homogeneous
+    assumptions.
+
+    \subsection{Main Sequence Evolution for Massive Stars}
+    \label{sec:main-sequ-evol}
+
+    We want to construct stellar models as a function of the hydrogen
+    abundance, $X$, which will necessarily change as burning occurs in
+    the star as hydrogen is burned to helium on the main sequence. For
+    now, we will in the regime of massive stars (say, $M=2M_\odot$),
+    so we have
+    \begin{itemize}
+    \item Convective core, so there is a ``ball'' in teh center with
+      an evolving composition.
+    \item $\kappa=\kappa_{\mathrm{es}}$
+    \item CNO Burning
+    \end{itemize}
+    Simplifying the helium synthesis to
+    \begin{equation}
+      \label{eq:227}
+      4\mathrm{p}+2e^-\to {}^4\mathrm{He}
+    \end{equation}
+    We see that, all other things being held constant, this reaction
+    will cause the number density, and thus the pressure to
+    decrease. Due to the high sensitivity of CNO burning to changes in
+    temperature, the star ``wants'' to keep the temperature
+    constant. To compensate for the loss in pressure, then, the star
+    will have to dynamically adjust its radius. Writing out the
+    pressure explicitly, we have
+    \begin{equation}
+      \label{eq:228}
+      P=\frac{\rho kT}{m_p}\left(2X+\frac{3}{4}Y\right)=\frac{\rho
+        kT}{\mu m_p}
+    \end{equation}
+    Then the thermal energy in the core,
+    \begin{equation}
+      \label{eq:229}
+      k_B T_c\sim\frac{GM\mu m_p}{R}
+    \end{equation}
+    Where the composition is, from \eqref{eq:228},
+    \begin{equation}
+      \label{eq:230}
+      \mu = \frac{1}{2X+\frac{3}{4}Y}
+    \end{equation}
+    For a cosmic mix, $X=0.7$ and $Y=0.25$, giving $\mu_0=0.63$. When
+    the core is fully helium, we trivially have $\mu=4/3$. Let's look
+    at how the luminosity is affected:
+    \begin{equation}
+      \label{eq:231}
+      L\sim R^2\frac{c}{3\kappa\rho}\frac{d}{dr}\left(aT^4\right)
+    \end{equation}
+    where the opacity is given by
+    \begin{equation}
+      \label{eq:232}
+      \kappa = 0.2(1+X)\ \mathrm{cm^2\ g^{-1}}
+    \end{equation}
+    Then the luminosity is
+    \begin{equation}
+      \label{eq:233}
+      L\propto R^2\frac{R^3}{(1+X)M}\frac{1}{R}\frac{\mu^4M^4}{R^4}\propto\frac{\mu^4M^3}{1+X}
+    \end{equation}
+    This factor increases by a factor of 40 from a cosmic composition
+    to the pure helium composition. Thus, we recover the fact that
+    lumionsity tends to \emph{increase} as a star progresses through
+    the main sequence. Perhaps the factor of 40 is an idealization,
+    but we can be certain that the luminsoity \emph{must increase as
+      hydrogen is used up}.\\
+
+    \n Now recall that the nuclear luminosity goes as
+    \begin{equation}
+      \label{eq:235}
+      L_{\mathrm{nuc}}\propto T_c^{15\to 20}
+    \end{equation}
+    And as the luminosity increases, the temperature will only
+    increase by, at most, 20\%. Some scaline relations of importance
+    for the radius can then be obtained:
+    \begin{equation}
+      \label{eq:236}
+      T_c\propto\frac{\mu}{R}
+    \end{equation}
+    So the radius goes as
+    \begin{equation}
+      \label{eq:237}
+      R\propto\frac{\mu}{T_c}
+    \end{equation}
+    And so the final radius is given by
+    \begin{equation}
+      \label{eq:238}
+      \frac{R_f}{R_i}\approx \frac{4/3}{0.6}\approx 2
+    \end{equation}
+    Thus the star doubles in radius as it proceeds through the main sequence.
+
+    \subsection{Main Sequence Evolution for Less Massive Stars}
+    \label{sec:main-sequ-evol-1}
+
+    For stars less massive than the sun, we have
+    \begin{itemize}
+    \item Radiative Core
+    \item $L_{\mathrm{nuc}}\propto T^\nu$ for $\nu\sim 4-7$ for p-p
+      chain.
+      \item Kramers' Law Opacity
+    \end{itemize}
+    Again, as the mass increases, the luminosity increases. However,
+    due to the weaker dependence on temperature, the core temperature
+    will rise more significantly than for the high-mass stars to match
+    the luminosity. Again the evolution of the radius is governed via
+    \begin{equation}
+      \label{eq:239}
+      kT_c\sim\frac{Gm_pM\mu}{R}
+    \end{equation}
+    Due to the increased dynamicism of $T_c$, it is no longer clear
+    what will happen to the radius. Without proof, we say that the
+    radius does not change nearly as significantly in low-mass stars
+    as it does in high-mass stars.
+
+    \subsection{Post-Main Sequence Evolution}
+    \label{sec:post-main-sequence}
+
+    For high mass stars, see \figref{fig:2} for a qualitiative
+    description of the evolution of high-mass stars as they leave the
+    main sequence. \\
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[width = 4in]{MSDiagram.pdf}
+      \caption{Evolution of a massive star. From $A$ to $B$, the star
+        is undergoing Main Sequence hydrogen burning. Temperature is
+        increasing as $X$ is decreasing until finally all hydrogen is
+        depleted in the core. From $B$ to $C$, the pure helium core
+        undergoes Kelvin-Helmholtz contraction (this is called the
+        ``Henyey Hook''). Beyond $C$, hydrogen is burning in a shell.}
+      \label{fig:2}
+    \end{figure}
+
+    \n For stars less than $1.5\ M_\odot$, there is no abrupt transition
+    (the Henyey Hook). Rather, it develops a growing (in mass) helium
+    core. 
+
+    \subsubsection{The Red Giant Branch (RGB)}
+    \label{sec:red-giant-branch}
+
+    For stars less than about $2\ M_\odot$, as the star leaves the
+    main sequence, it travels horizontally on the HR diagram and
+    eventually starts making its way back up the Hayashi track. This
+    portion of the star's life is called the \textbf{Red Giant Branch}
+    (RGB). After hydrogen is depleted in the core, hydrogen continues
+    burning in a shell around the helium core. The radius of this core
+    is much less than the radius of the star. When a one solar mass
+    star ``leaves'' the main sequence, we typically have
+    $M_{\mathrm{He}}=0.1 M_\odot$. However, the helium core, once
+    degenerate, will \emph{decrease} in radius as the mass increases
+    (where the mass gain is fueld by the hydrogen shell burning).\\
+    
+    \n Then the temperature in the shell is given by
+    \begin{equation}
+      \label{eq:240}
+      kT_s\approx \frac{GM_c}{R_c}m_p
+    \end{equation}
+    for a shell where the pressure scale height is $R_c$. Now,
+    assuming electron scattering sets the opacity, the luminoity is
+    \begin{equation}
+      \label{eq:241}
+      L_{\mathrm{rad}}=4\pi R_c^2\left[\frac{1}{3}\frac{c}{\kappa\rho}\frac{1}{R_c}aT_s^4\right]
+    \end{equation}
+    or more succinctly,
+    \begin{equation}
+      \label{eq:242}
+      \boxed{L_{\mathrm{rad}}=\frac{4\pi}{3}\frac{R_c}{\kappa\rho_s}acT_s^4}
+    \end{equation}
+    Now requiring that $L_{\mathrm{nuc}}=\varepsilon
+    M_{\mathrm{shell}}=L_{\mathrm{rad}}$ actually tells us that at
+    this stage, CNO burning dominates pp burning. Assuming again that
+    the nitrogen proton scatter is the slow step, we get
+    \begin{equation}
+      \label{eq:243}
+      \varepsilon_{\mathrm{CNO}}=6.6\times
+      10^{24}\frac{\rho}{T_7^{2/3}}\exp\left(-70.7
+        T_7^{-1/3}\right)=\varepsilon_0\rho T^\nu
+    \end{equation}
+    In this case, $\nu=24/T_7^{1/3}\sim 16$. Using this to find the
+    density in the shell allows us to get the luminosity. The
+    punchline is that 
+    \begin{equation}
+      \label{eq:244}
+      \rho=\left[\frac{4}{3}\frac{\sigma T_5^{4-\nu}}{\varepsilon_0R_c^2\kappa}\right]^{1/3}
+    \end{equation}
+    Then the luminosity scales as
+    \begin{equation}
+      \label{eq:245}
+      L\propto R_c^{5/3}T_5^{(8+\nu)/3}
+    \end{equation}
+    But since $T_s\propto M_c/R_c$, we get
+    \begin{equation}
+      \label{eq:246}
+      L\propto R_c^{-(1+\nu/3)}M_c^{(8+\nu)/3}
+    \end{equation}
+    Plugging in fiducial values for scaling relations gives us
+    \begin{equation}
+      \label{eq:247}
+      L=5\times 10^{31}\ \mathrm{erg\ s^{-1}}\left(\frac{0.1R_\odot}{R}\right)^{25/3}\left(\frac{M_c}{0.2M_\odot}\right)^{10}
+    \end{equation}
+    Since the helium core is degenerate, $R_c\propto M_c^{-1/3}$. This
+    would make the mass dependence of $L$ even stronger. 
 \end{document}

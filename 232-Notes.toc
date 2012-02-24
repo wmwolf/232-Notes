@@ -46,4 +46,9 @@
 \contentsline {section}{\numberline {7}State of the Stellar Interior}{46}{section.7}
 \contentsline {subsection}{\numberline {7.1}The Saha Equation}{46}{subsection.7.1}
 \contentsline {subsection}{\numberline {7.2}Stellar Spectra}{48}{subsection.7.2}
-\contentsline {subsubsection}{\numberline {7.2.1}H${}^-$ Opacity}{50}{subsubsection.7.2.1}
+\contentsline {paragraph}{H${}^-$ Opacity}{50}{section*.2}
+\contentsline {section}{\numberline {8}Stellar Evolution}{50}{section.8}
+\contentsline {subsection}{\numberline {8.1}Main Sequence Evolution for Massive Stars}{51}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Main Sequence Evolution for Less Massive Stars}{52}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Post-Main Sequence Evolution}{52}{subsection.8.3}
+\contentsline {subsubsection}{\numberline {8.3.1}The Red Giant Branch (RGB)}{53}{subsubsection.8.3.1}
