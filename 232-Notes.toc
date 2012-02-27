@@ -52,3 +52,4 @@
 \contentsline {subsection}{\numberline {8.2}Main Sequence Evolution for Less Massive Stars}{52}{subsection.8.2}
 \contentsline {subsection}{\numberline {8.3}Post-Main Sequence Evolution}{52}{subsection.8.3}
 \contentsline {subsubsection}{\numberline {8.3.1}The Red Giant Branch (RGB)}{53}{subsubsection.8.3.1}
+\contentsline {subsection}{\numberline {8.4}The Sch\"onberg-Chadrasekhar Limit}{54}{subsection.8.4}
