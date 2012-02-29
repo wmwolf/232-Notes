@@ -2980,6 +2980,202 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
     burning occrs. Now $q$ will increase until $q>q_c$ and the core
     undergoes Kelvin-Helmholtz contraction. For stars with less than
     $2\,M_\odot$, the core will become degenerate before helium
-    burning can star.
+    burning can star.\\
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wednesday, February 29, 2012 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \n \textit{Monday, February 29, 2012}
+    \subsection{Helium and Higher Burning}
+    \label{sec:helium-burning}
+
+    Helium burns in advanced stars via the triple-alpha process,
+    according to
+    \begin{align}
+      \label{eq:264}
+      \mathrm{{}^4He+{}^4He\to{}^8Be+\gamma}\\
+    \end{align}
+    However, $\mathrm{{}^8Be}$ is unstable with a decay time of around
+    $\tau\sim 2\times 10^{-16}\ \mathrm{sec}$.  The Gamow energy for
+    this interaction is $E_{\mathrm{G}}=31.4\ \mathrm{MeV}$, so the
+    Gamow peak occurs at
+    \begin{equation}
+      \label{eq:265}
+      E_0=\left(\frac{E_{\mathrm{G}}(kT)^2}{4}\right)=83\mathrm{keV}T_8^{2/3}
+    \end{equation}
+    So once $T>8\times 10^7\ \mathrm{K}$ or so, the reaction to make
+    $\mathrm{{}^8Be}$ proceeds rapidly and can achieve thermal and
+    chemical equilibrium.\\
+
+    \n Equating the chemical potentials, we have
+    \begin{equation}
+      \label{eq:266}
+      \frac{n_8}{n_4^2}=2^{3/2}\left(\frac{h^2}{2\pi m_\alpha
+          kT}\right)^{3/2}\exp\left(-\frac{m_8-2m_\alpha c^2}{kT}\right)
+    \end{equation}
+    Normalizing to $\rho=10^4\ \mathrm{g\,cm^{-3}}$ of pure helium (at
+    the core, obviously), we get
+    \begin{equation}
+      \label{eq:267}
+      \frac{n_8}{n_4}=3\times
+      10^{-6}T_8^{-3/2}\left(\frac{\rho}{10^4\,\mathrm{g\,cm^{-3}}}\right)\exp\left(-\frac{10.64}{T_8}\right) 
+    \end{equation}
+    At $T_8=2$, about 1 in $10^{-8}$ of the nuclei at any given time
+    are ${}^8\mathrm{Be}$. Then another alpha particle can combine
+    this a ${}^8\mathrm{Be}$ nucleus creating a ${}^{12}\mathrm{C}$
+    nucleus. However, this is actually a carbon nucleus in an excited
+    state of carbon that will eventually decay to the ground state
+    through a strange prcess. First though, we note the Gamow energy
+    and Gamow peak energy for the Carbon synthesis reaction:
+    \begin{align}
+      \label{eq:268}
+      E_\mathrm{G}&=\left(\pi\alpha(2)(4)\right)^22m_rc^2=168\,\mathrm{MeV}\\
+      \label{eq:268a}
+      E_0&=146\,\mathrm{keV}T_8^{2/3}
+    \end{align}
+    This is for the reaction
+    \begin{equation}
+      \label{eq:269}
+      \mathrm{\alpha+{}^8Be\to{}^{12}C^*+\gamma}
+    \end{equation}
+    Now let us assume that the temperature is high enough so that the
+    excited state of ${}^{12}\mathrm{C}$ becomes populated via a
+    chemical equilibrium of \eqref{eq:269}. Now equating
+    \textit{these} chemical potentials and noting that that of the Be
+    isotope is just twice that of the alpha particles:
+    \begin{equation}
+      \label{eq:270}
+      3\mu_4=\mu_{12^*}
+    \end{equation}
+    Messy algebra ensures, with the result that
+    \begin{equation}
+      \label{eq:271}
+      \frac{n_{\mathrm{12^*}}}{n_4}=5\times
+      10^{-10}\left(\frac{\rho}{10^5}\right)^2T_8^3\exp\left(-\frac{44}{T_8}\right)
+    \end{equation}
+    Where we have implicitly used the binding energy of
+    ${}^{12}\mathrm{C}^*$, which is $7.644\,\mathrm{MeV}$ (notably
+    higher than that of the reactants, Be and the alpha particles, at
+    $7.366\,\mathrm{MeV}$). Note that so far, this reaction has
+    actually \emph{lost} energy. The only way this reaction provides
+    energy is in the two decays it takes for ${}^{12}\mathrm{C}^*$ to
+    get down to the ground state of Carbon. For these decays, we have
+    \begin{equation}
+      \label{eq:272}
+      \Gamma_{\mathrm{rad}}=3.67\,\mathrm{MeV}
+    \end{equation}
+    and thus the decay rate is
+    \begin{equation}
+      \label{eq:273}
+      r=\frac{\Gamma}{\hbar}=5.5 \times 10^{12}\,\mathrm{s^{-1}}
+    \end{equation}
+    Putting all of this together, we have that the nuclear energy
+    generation rate is
+    \begin{equation}
+      \label{eq:274}
+      \varepsilon = \frac{n_{12^*}E}{\tau}\frac{1}{\rho}=5.3\times 10^{21}\mathrm{erg\,g^{-1}\,s^{-1}}\rho_5^2T_8^{-3}\exp\left(-\frac{44}{T_8}\right)
+    \end{equation}
+    In order to determine this, we had to know the mass difference
+    between ${}^{12}C^*$ and three alpha particle, as well as the
+    photon decay rate of ${}^{12}C^*$ into plain old
+    $^{12}\mathrm{C}$. Note that this reaction is even more
+    temperature sensitive than either hydrogen burning source, and the
+    energy per reaction per nucleon is about a tenth of what it is for
+    hydrogen burning. Thus, we expect helium burning to end much
+    faster than hydrogen burning since more reactions have to happen
+    per unit time to match the luminosity, \emph{and} the luminosity
+    is higher due to the change in composition that we found earlier.\\
+    
+    \subsubsection{Higher Burning}
+    \label{sec:higher-burning-1}
+
+    Once carbon is present in the core, it can burn to oxygen by the
+    synthesis of an alpha particle and a carbon nucleus. Similarly,
+    the Oxygen can be burned to Neon. The relevant values are shown in
+    Table \ref{tab:1}
+    \begin{table}[h!]
+      \centering
+      \begin{tabular}{l c c}
+        Reaction & $E_0(T_8=2)$ &
+        $\exp\left[-3\left(\frac{E_\mathrm{G}}{4kT}\right)^{1/2}\right]$\\
+        \hline\hline
+        $\alpha+{}^{12}\mathrm{C}$ & 315 keV & $1.3\times 10^{-24}$\\
+        $\alpha+{}^{16}\mathrm{O}$ & 390 keV & $5.5\times 10^{-38}$\\
+        $\alpha+{}^{20}\mathrm{Ne}$& 460 keV & $1.5\times 10^{-44}$
+      \end{tabular}
+      \caption{Parameters controlling the burning of carbon, oxygen, and neon.}
+      \label{tab:1}
+    \end{table}
+    The first reaction in Table \ref{tab:1} does occur fast enough to
+    compete with the triple alpha process, so advanced stars typically
+    have a core consisting of both carbon and oxygen.
+
+    \subsubsection{Helium Burning in a Massive Star}
+    \label{sec:heli-burn-mass}
+    In a convective core, helium burning starts at
+    $T=10^8\,\mathrm{K}$ due to the high temperature sensitivity of
+    the triple alpha process. Now recall that the luminosity of an
+    evolved star is higher than it was as a ZAMS star, so the burn
+    time is
+    \begin{equation}
+      \label{eq:276}
+      t_{\mathrm{He\,burn}}=\frac{E_{\mathrm{nuc}}M_{\mathrm{burn}}}{L}
+    \end{equation}
+    which is shorter than the hydrogen-burning main sequence burn
+    time. For stars above around $6\ M_\odot$, carbon burning will
+    eventually occur, and as we move on up to higher and higher
+    masses, more and more heavy elements will get their turn at
+    burning, with the most massive stars stopping at Fe/Si burning
+    (since the binding energy per nucelon peaks there).\\
+
+    \n For stars greater than around $2 M_\odot$, the helium ignites
+    when the electron gas in the core is nondegnenerate. Solar mass
+    stars, however, are not so lucky.
+
+    \subsubsection{Helium Core Flash}
+    \label{sec:helium-core-flash}
+
+    For stars with masses less than around $2\,M_\odot$, the helium
+    cores have degenerate electrons. Meanwhile, the CN cycle burning
+    increase the mass of the He core. Before we delve into the details
+    of the dynamics of the degenerate core, here's a quick refresher
+    of degeneracy.\\
+
+    \n The DeBroglie wavelength of particles in a gas of temperature
+    $T$ is
+
+    \begin{equation}
+      \label{eq:277}
+      \lambda=\frac{h}{p}=\frac{h}{\sqrt{mkT}}
+    \end{equation}
+    The quantum mechanics impacts the equation of state when $\lambda
+    \gtrsim n^{-1/3}$. Then the condition becomes
+    \begin{equation}
+      \label{eq:278}
+      n^{1/3}>\frac{\sqrt{mkT}}{h}
+    \end{equation}
+    Note that this is the quantum concentration found in our previous
+    discussion of the Saha equation. And so $n^{2/3}\propto T$. As
+    $T\to 0$, then the DeBroglie wavelenth is going to $\lambda\propto
+    n^{1/3}$ since they are degenerate and that is necessarily the
+    separation distance. Now the pressure for a nonrelativistic gas is
+    given by
+    \begin{equation}
+      \label{eq:279}
+      P=\frac{2}{3}E
+    \end{equation}
+    where $E$ is the energy density. The energy is primarily in
+    kinetic energy,
+    \begin{equation}
+      \label{eq:280}
+      E_k=\frac{p^2}{2m_e}=\frac{(\hbar n_e^{1/3})^2}{2m_e}
+    \end{equation}
+    So the Fermi energy follows $E_F\propto \rho^{2/3}$, and so the
+    presure is $P=\rho E_f\propto \rho^{5/3}$. For hydrostatics, we
+    have
+    \begin{equation}
+      \label{eq:281}
+      P=\frac{GM^2}{R^4}\propto
+      \left(\frac{M}{R^3}\right)^{5/3}\quad\Rightarrow \quad R\propto M^{-1/3}
+    \end{equation}
 \end{document}

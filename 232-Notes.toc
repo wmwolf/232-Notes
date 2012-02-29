@@ -53,3 +53,7 @@
 \contentsline {subsection}{\numberline {8.3}Post-Main Sequence Evolution}{52}{subsection.8.3}
 \contentsline {subsubsection}{\numberline {8.3.1}The Red Giant Branch (RGB)}{53}{subsubsection.8.3.1}
 \contentsline {subsection}{\numberline {8.4}The Sch\"onberg-Chadrasekhar Limit}{54}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.5}Helium and Higher Burning}{58}{subsection.8.5}
+\contentsline {subsubsection}{\numberline {8.5.1}Higher Burning}{59}{subsubsection.8.5.1}
+\contentsline {subsubsection}{\numberline {8.5.2}Helium Burning in a Massive Star}{60}{subsubsection.8.5.2}
+\contentsline {subsubsection}{\numberline {8.5.3}Helium Core Flash}{60}{subsubsection.8.5.3}
