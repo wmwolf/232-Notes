@@ -3177,5 +3177,170 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
       \label{eq:281}
       P=\frac{GM^2}{R^4}\propto
       \left(\frac{M}{R^3}\right)^{5/3}\quad\Rightarrow \quad R\propto M^{-1/3}
+    \end{equation} 
+    Thus more massive degenerate objects have \emph{smaller}
+    radii.\\   
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friday, March 2, 2011 %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+    \n \textit{Friday, March 2, 2011}\\
+
+    \n Now returning to our intermediate mass star with a helium
+    core, the temperature in the hydrogen burning shell located at
+    about $R_c$ (the radius of the core) is
+    \begin{equation}
+      \label{eq:282}
+      kT_s\approx\frac{G M_sm_p}{\mu_e R_c}\quad\Rightarrow \quad
+      T_S\propto \frac{M_c}{R_c}\propto M_c^{4/3}
     \end{equation}
+    So as the shell deposits more and more helium into the core, the
+    temperature on the outer edge is rising in time. In the degenerate core,
+    the dominant form of heat transport is electron conduction from
+    electron scattering off of the ions. This mode is so efficient
+    that the core is nearly isothermal (though it's actually a bit
+    hotter out towards the hydrogen burning shell since neutrino
+    cooling is lowering the temperature at the center).\\
+
+    \n When the star is in hydrostatic balance and has an ideal gas
+    equation of state, an injection of entropy would lead to a
+    temperature (negative heat capacity). For a star, this means that
+    the pressure drops when entropy is added. Here are some ways to
+    cause trouble in such a star:
+    \begin{itemize}
+    \item Make the electrons degenerate so that the pressure is
+      independent of temperature. 
+    \item Thin Shell Instability
+    \end{itemize}
+    The \textbf{Thin Shell Instability} was discovered in 1965 and is
+    a thermonuclear instability that occurs when temperature sensitive
+    burning is in a geometrically thin shell. By ``geometrically
+    thin'', we mean that at the location of the shell, $\Delta r\ll
+    R$. To get a better handle on this mechanism, recall the condition
+    for hydrostatic balance (again):
+    \begin{equation}
+      \label{eq:283}
+      \frac{dP}{dr}=-\rho(r)\frac{GM(r)}{r^2}
+    \end{equation}
+    Integrating this over a thin shell gives us the plane-parallel
+    atmosphere result:
+    \begin{equation}
+      \label{eq:284}
+      \int_{P_{\mathrm{sh}}}^0dP=-\int_{R_{\mathrm{sh}}}^\infty
+      \frac{GM(r) \rho(r)}{r^2}dr
+    \end{equation}
+    Or, switching to the mass coordinate,
+    \begin{equation}
+      \label{eq:285}
+      P_{\mathrm{sh}}=\int_m^M\frac{Gm(r)}{4\pi r^4}dm=\frac{G
+        M_{\mathrm{sh}}}{R_{\mathrm{sh}}^2}\frac{\Delta m}{4\pi R_{\mathrm{sh}}^2}
+    \end{equation}
+    where $dm=4\pi r^2 \rho(r)\,dr$ and $\Delta m= M-m$, which is
+    the mass in the shell (approximately, since we are ignoring the
+    contribution of the envelope).\\
+
+    \n When the pressure is constant, 
+    \begin{equation}
+      \label{eq:286}
+      T\frac{ds}{dt}=c_P\frac{dT}{dt}=\varepsilon-\frac{1}{\rho}\bm{\nabla}\cdot\mathbf{F}
+    \end{equation}
+    Then this becomes positive, hence the instability (heat capacity
+    has become positive). The flux term, from radiative diffusion, is
+    \begin{equation}
+      \label{eq:287}
+      \frac{1}{\rho}\bm{\nabla}\cdot\mathbf{F}=\frac{1}{dy}\frac{c}{3\kappa}\frac{d}{dy}aT^4\propto
+      \frac{ac T^4}{3\kappa y^2}
+    \end{equation}
+    where $y$ is the column depth introduced earlier, $y=\int
+    \rho(r)\,dr$, of the shell. So then \eqref{eq:287} becomes
+    \begin{equation}
+      \label{eq:288}
+      c_P\frac{dT}{dt}=\varepsilon-\frac{acT^4}{3\kappa y^2}
+    \end{equation}
+    For most nuclear energy generation rates, $\varepsilon\propto
+    T^\nu$ with $\nu \gg 4$, so this becomes highly unstable. This
+    occurs in stellar evolution as the helium shell flashed in
+    asymptotic giant branch (AGB) stars. A limit cycle can be formed
+    where a thin shell piles up until it burns unstably, starting the
+    process over again. In an accretion context, white dwwarfs accrete
+    hydrogen in a thin shell and burn unstably, which is a
+    \textbf{Classical Nova}. They can also do this with helium, which
+    causes a larger nova or \textbf{.Ia} explosion. Neutron stars
+    accrete hydrogen and burn to make a \textbf{Type I X-Ray Burst}
+    (hydrogen burns to helium, helium burns to carbon and
+    oxygen). Additionally, this process can fuel superbursts, where
+    carbon is burned to heavy elements.\\
+
+    \n Returning to the degenerate electron source of instability,
+    an extremely degenerate electron gas can be the cause of unstable
+    burning. In this regime, the pressure is insensitive to the
+    temperature, so the pressue is constant. The same equation that
+    was releven to the thin shell instability applies:
+    \begin{equation}
+      \label{eq:289}
+      c_P\frac{dT}{dt}=\varepsilon-\frac{dL(r)}{dm(r)}
+    \end{equation}
+    but the reason that $c_P$ is positive is now different (degeneracy
+    versus plane-parallel). Due to the fact that the temperature in
+    the core isn't monotonic, helium ignition starts off-center
+    (remember, the neutrino cooling keeps the center of the core
+    cooler than surrounding areas). In a 1-D model, a convective zone
+    forms at the ignition point. The temperature continues to rise
+    until such a time where the degeneracy is broken and the shell
+    isn't geometrically thin. At this degeneracy breaking-point, we
+    have $kT\sim E_F$. The Fermi energy follows the virial form,
+    \begin{equation}
+      \label{eq:290}
+      E_F\sim \frac{G M_c}{R_c}m_{\mathrm{He}}\sim kT
+    \end{equation}
+    At this point, the scale height will now be of the order of the
+    radius of the star, so it is \emph{not} geometrically thin. Then
+    the heat capacity returns to being negative, ending the unstable
+    burning. After this event has passed, degeneracy in the local area
+    has been lifted. A succession of flashes follows, slowly removing
+    the degeneracy and paving the way for stable ``main sequence''
+    helium burning.
+
+    \subsection{The Horizontal Branch and The Asymptotic Giant Branch}
+    \label{sec:horizontal-branch}
+
+    The core flash lifts degeneracy, leaving behind a nondegenerate
+    helium-burning star. Recalling that $L\propto \mu^4$, the
+    luminosity increases dramatically ($L_\odot\to 10L_\odot$). Once
+    the core flash is over, we would expect stellar evolution to slow
+    down or stop due to the stable nature of helium core
+    burning. The envelope is expanded by a large factor, eseentially
+    shutting off the hydrogen shell burning. The luminosity then
+    decreasese quickly, creating a tip on an HR diagram (called the
+    tip of the red giant branch, or TRGB). Kelvin-Helmholtz
+    contraction occurs until stable helium core burning is occuring at
+    a rate that balances radiative losses. Essentially the star has
+    become a helium-burning main sequence star, often called a
+    \textbf{Red Clump} star. If the star loses part or all of its
+    hydrogen shell, the luminosity is unaffected, but the radius
+    obviously does, so there is a range of colors of red clump stars,
+    depending on how much hydrogen they have retained, forming the
+    \textbf{Horizontal Branch} on the HR diagram.\\
+
+    \n The helium core burning lifetime is somewhere around 65-100
+    million years. This is shorter than the hydrogen burning main
+    sequence since the triple alpha process is less efficient in
+    energy generation \emph{and} the luminosity is greater. After the
+    helium core is spent, there is a carbon/oxygen core and the star
+    with masses between 2 and 6 $M_\odot$ ascend up the
+    \textbf{Asymptotic Giant Branch} (AGB), where only hydrogen and helium
+    shell burning can power them. A series of helium shell flashes
+    occur, but they never get hot enough to ignite
+    carbon, so will ened their lives as C/O white dwarfs.\\
+
+    \n Stars traveling up the AGB will have a stable hydrogen burning
+    shell dumping helium onto an unstable helium burning shell. That
+    is, the rate of helium supplied by the hydrogen shell cannot be
+    the rate at which helium stably burns in the helium shell. There
+    is a net increase of mass entering the core,
+    $\dot{M}_{\mathrm{in}}$. Additionally, the weakly bound envelope
+    is losing mass due to a wind taking mass to infinity,
+    $\dot{M}_{\mathrm{wind}}$. In the end, mass loss wins the game,
+    and the degenerate core is left behind as a white dwarf, with most
+    of the envelope mass lost into a nebula.
 \end{document}

@@ -57,3 +57,4 @@
 \contentsline {subsubsection}{\numberline {8.5.1}Higher Burning}{59}{subsubsection.8.5.1}
 \contentsline {subsubsection}{\numberline {8.5.2}Helium Burning in a Massive Star}{60}{subsubsection.8.5.2}
 \contentsline {subsubsection}{\numberline {8.5.3}Helium Core Flash}{60}{subsubsection.8.5.3}
+\contentsline {subsection}{\numberline {8.6}The Horizontal Branch and The Asymptotic Giant Branch}{62}{subsection.8.6}

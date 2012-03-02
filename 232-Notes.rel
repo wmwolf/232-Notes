@@ -15,7 +15,7 @@
 
 (master-dir . "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/")
 
-(label-numbers ("sec:higher-burning" . 1) ("eq:" . 280))
+(label-numbers ("sec:higher-burning" . 1) ("eq:" . 290))
 
 (bof "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex")
 
@@ -1003,7 +1003,7 @@
 
 ("eq:263" "e" "t\\approx \\frac{GM_{\\mathrm{core}}^2/R_{\\mathrm{core}}}{L}=10^6\\ \\mathrm{years}\\left(\\frac{6\\,M_\\odot" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
-(toc "toc" "      8.5 Helium Burning" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "8.5" "\\subsection{Helium Burning}" 137445)
+(toc "toc" "      8.5 Helium Burning" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "8.5" "\\subsection{Helium Burning}" 137302)
 
 ("sec:helium-burning" "s" "Helium burns in advanced stars via the triple-alpha process, according to \\begin{align}  \\mathrm{{}^" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
@@ -1035,7 +1035,7 @@
 
 ("sec:higher-burning-1" "s" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
 
-(toc "toc" "      8.6 Higher Burning" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "8.6" "\\subsection{Higher Burning}" 141922)
+(toc "toc" "      8.6 Higher Burning" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "8.6" "\\subsection{Higher Burning}" 141917)
 
 ("sec:higher-burning" "s" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
 
@@ -1057,7 +1057,31 @@
 
 ("eq:280" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
 
-(toc "toc" "      8.7 Helium Burning in a Massive Star" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "8.7" "\\subsection{Helium Burning in a Massive Star}" 142966)
+("eq:281" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:282" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:283" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:284" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:285" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:286" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:287" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:288" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:289" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:290" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+(toc "toc" "      8.7 The Horizontal Branch" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "8.7" "\\subsection{The Horizontal Branch}" 151617)
+
+("sec:horizontal-branch" "s" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+(toc "toc" "      8.7 Helium Burning in a Massive Star" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "8.7" "\\subsection{Helium Burning in a Massive Star}" 142901)
 
 ("eq:275" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
 
