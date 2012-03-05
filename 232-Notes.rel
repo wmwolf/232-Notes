@@ -15,7 +15,7 @@
 
 (master-dir . "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/")
 
-(label-numbers ("sec:higher-burning" . 1) ("eq:" . 290))
+(label-numbers ("sec:higher-burning" . 1) ("eq:" . 316))
 
 (bof "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex")
 
@@ -1080,6 +1080,70 @@
 (toc "toc" "      8.7 The Horizontal Branch" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "8.7" "\\subsection{The Horizontal Branch}" 151617)
 
 ("sec:horizontal-branch" "s" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+(toc "toc" "    9 Endpoints of Stellar Evolution" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 2 "9" "\\section{Endpoints of Stellar Evolution}" 154236)
+
+("sec:endp-stell-evol" "s" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+(toc "toc" "      9.1 White Dwarf Cooling" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "9.1" "\\subsection{White Dwarf Cooling}" 154314)
+
+("sec:white-dwarf-cooling" "s" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:291" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:292" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:293" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:294" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:295" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:296" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:297" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:298" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:299" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:300" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:301" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:302" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:303" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:304" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:305" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:306" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+(toc "toc" "      9.2 The Chandrasekhar Mass" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "9.2" "\\subsection{The Chandrasekhar Mass}" 159325)
+
+("sec:chandrasekhar-mass" "s" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:307" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:308" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:309" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:310" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:311" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:312" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:313" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:314" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:315" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:316" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
 
 (toc "toc" "      8.7 Helium Burning in a Massive Star" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "8.7" "\\subsection{Helium Burning in a Massive Star}" 142901)
 
