@@ -3617,6 +3617,257 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
     order at $\Gamma\sim1$ and $C_V$ increases relative to
     $\frac{3}{2}N_i kT$. Lindimann in the 1920's discovered the
     following rule: when the average displacement at a given site in a
-    lattice is bigeer than $0.1a$, the solid melts.
+    lattice is bigeer than $0.1a$, the solid melts.\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wednesday, March 7, 2012 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \n \textit{Wednesday, March 7, 2012}
+    \subsection{Evolution of Larger Stars}
+    \label{sec:evolution-gt-6}
+    In stars larger than about 6 $M_\odot$, helium is ignited while
+    the core is non degenerate. There is complete helium burning into
+    a carbon/oxygen core. After that, carbon begins burning to
+    magnesium via
+    \begin{align}
+      \label{eq:336}
+      \mathrm{{}^{12}C+{}^{12}C}&\to \mathrm{{}^{24}Mg}\\
+      &\to \mathrm{\alpha+{}^{20}Ne}\\
+      &\to \mathrm{p+{}^{23}Na}\\
+      &\to \mathrm{n+{}^{23}Mg}
+    \end{align}
+    Note that for heilum burning to take place, we needed a
+    temperature of about $T=2\times 10^8\,\mathrm{K}$. The Coulomb
+    barrier for the double carbon ignition will require a higher
+    temperature than helium burning did, but these stars do ge hot
+    enough for this to occur. 
+
+    \subsubsection{Onset of Neutrino Emission}
+    \label{sec:onset-neutr-emiss}
+
+    These stars, since they are massive enough, gain an additional
+    means of cooling (rather than radiative diffusion): neutrino
+    cooling. Remember our equation of stellar structure
+    \begin{align}
+      \label{eq:337}
+      T\frac{ds}{dt}=\varepsilon_{\mathrm{nuc}}-\frac{dL(r)}{dm(r)}-\varepsilon_\nu
+    \end{align}
+    where $\varepsilon_\nu$ is the power emitted by the parcel of
+    fluid as neutrinos that leave the star. Since the material in the
+    star is optically thin to neutrinos, their is no transport
+    problem, and so the local rate enters into the entropy equation
+    (i.e., surface conditions are irrelevant, unlinke the situation
+    with radiative diffusion).\\
+
+    \n Now if we have $\varepsilon_\nu\gg dL(r)/dm(r)$, then the time
+    scale for stellar evolution gets set by $\varepsilon_\nu$ rather
+    than the photon luminosity!\\
+
+    \n The cross section for neutrinos is approximately
+    \begin{align}
+      \label{eq:338}
+      \sigma_\nu\sim 10^{-44}\,\mathrm{cm^2}\left(\frac{E_\nu}{\mathrm{MeV}}\right)^2
+    \end{align}
+    So we're interested in when
+    \begin{equation}
+      \label{eq:339}
+      \frac{M}{m_pR^2}\sigma_\nu>1
+    \end{equation}
+    It turns out that this condition is equivalient to
+    \begin{equation}
+      \label{eq:341}
+      R<30\,\mathrm{km}\left(\frac{E_\nu}{\mathrm{MeV}}\right)
+    \end{equation}
+    Interestingly, neutron stars follow this criterion \emph{and} they
+    are optically thick to neutrinos, so you will often hear in the
+    lecture about the ``neutrinosphere'' on neutron star. Stars are
+    not this dense at this stage, though.\\
+
+    \n How are neutrnos created, though? The primary source is through
+    positron-electron annihilation:
+    \begin{equation}
+      \label{eq:342}
+      e^++e^-\to\nu_e+\overline{\nu}_e
+    \end{equation}
+    The temperature and density do get high enough at late times that
+    there is a population of positrons where
+    \begin{equation}
+      \label{eq:343}
+      \frac{e^++d^-\to \nu_e+\overline{\nu}_e}{e^++e^-\to 2\gamma}\sim 10^{-19}
+    \end{equation}
+    It is of interest, then, to calculate the equilibrium abundance of
+    positrons from
+    \begin{equation}
+      \label{eq:344}
+      e^++e^-\to 2\gamma
+    \end{equation}
+    by equating the chemical potentials:
+    \begin{equation}
+      \label{eq:345}
+      \mu_{e^+}+\mu_{e-}=0
+    \end{equation}
+    The chemical potentials are given by the usual formula (see Section
+    \ref{sec:state-stell-inter}) and we get
+    \begin{equation}
+      \label{eq:346}
+      n_{e^+}=g_e^2n_{e,Q}^2\frac{1}{n_e}\exp\left(-\frac{2m_e c^2}{kT}\right)
+    \end{equation}
+    Scaling this result, we get
+    \begin{equation}
+      \label{eq:347}
+      n_{e+}=7.7\times 10^{30}\left(\frac{10^4}{\rho}\right)T_9^3\exp\left(-\frac{11.84}{T_9}\right)
+    \end{equation}
+    \begin{table}[h]
+      \centering
+      \begin{tabular}{c c}
+        $T_9$ & $n_{e+}/n_{e^-}$\\
+        \hline \hline
+        1 & 0.02\\
+        2 & >1
+      \end{tabular}
+      \caption{Relative densities of positrons and electrons at various temperatures}
+      \label{tab:positron}
+    \end{table}
+    In the second entry in Table \ref{tab:positron}, the density of
+    the electrons are set positrons rather than the ions, so our
+    previous considerations are invalid. When does this happen?
+    I.e., when does $n_{e^+}=n_e=Zn_i$? Well, it's when this
+    happens:
+    \begin{equation}
+      \label{eq:348}
+      \rho_4^2=2566 T_9^3\exp\left(-\frac{11.84}{T_9}\right)
+    \end{equation}
+    Which is satisfied at $\rho_4=1$ and $T_9=1.35$. Going back to
+    our ``Saha'' equation, 
+    \begin{equation}
+      \label{eq:349}
+      n_{e^+}n_{e^-}=4\left(\frac{2\pi m_e kT}{h^3}\right)^3\exp\left(-\frac{2m_ec^2}{kT}\right)
+    \end{equation}
+    And so the rate of energy from neutrinos is
+    \begin{equation}
+      \label{eq:350}
+      \frac{dU_\nu}{dt}=n_{e^+}n_{e^-}\avg{\sigma v}W
+    \end{equation}
+    where $\avg{\sigma v}$ is the ``reaction rate'' and $W$ is the
+    energy loss from a pair of neutrinos leaving. Writing out the
+    cross section of the neutrinos again,
+    \begin{equation}
+      \label{eq:351}
+      \sigma = 1.4\times 10^{-45}\frac{c}{v}\left[\left(\frac{W}{m_ec^2}\right)^2-1\right]\,\mathrm{cm^2}
+    \end{equation}
+    Thus $\avg{\sigma v}$ is just a constant:
+    \begin{equation}
+      \label{eq:352}
+      \avg{\sigma v}=4\times 10^{-45}c
+    \end{equation}
+    Then the cooling rate is, more explicitly
+    \begin{equation}
+      \label{eq:353}
+      \frac{dU_\nu}{dt}=5\times 10^{18}T_9^3\exp\left(-\frac{11.84}{T_9}\right)\mathrm{erg\,cm^{-3}\,s^{-1}}
+    \end{equation}
+    Since the thermal energy is just
+    \begin{equation}
+      \label{eq:354}
+      E_{\mathrm{th}}=nkT=7\times 10^{19}\,\mathrm{erg\,cm^{-3}}\,T_9\rho^4
+    \end{equation}
+    and thus the cooling timescale is
+    \begin{equation}
+      \label{eq:355}
+      t_{\mathrm{cool}}\sim\frac{E_{\mathrm{th}}}{dU_\nu/dt}=14\,\mathrm{s}\,\frac{\rho_4}{T_9^2}\exp\left(\frac{11.84}{T_9}\right)
+    \end{equation}
+    \begin{table}[h]
+      \centering
+      \begin{tabular}{c c}
+        $T_9$ & $t_{\mathrm{cool}}$\\
+        \hline \hline
+        0.6 & 160 years\\
+        1 & 0.74 months\\
+        2 & 0.4 hours
+      \end{tabular}
+      \caption{Neutrino cooling time scale for various temperature assuiming $\rho_4=1$.}
+      \label{tab:cooling}
+    \end{table}
+    The neutrino cooling, once ``available'' quickly becomes the
+    driver for energy losses and ``resets'' the evolution timescales
+    to \emph{much} shorter values.
+
+    \subsubsection{Plasmon Decay}
+    \label{sec:plasmon-decay}
+
+    one other important neutrino emission process is \textbf{plasmon
+      decay}. In a plasma, the dispersion relation for photons becomes
+    \begin{equation}
+      \label{eq:356}
+      \omega^2=(ck)^2+\omega_0^2
+    \end{equation}
+    where 
+    \begin{equation}
+      \label{eq:357}
+      \omega_0^2=\frac{4\pi n_e e^2}{m_e}=\textrm{Plasma Frequency}
+    \end{equation}
+    Interestingly, \eqref{eq:356} looks a lot like the relativistic
+    finite mass energy relation:
+    \begin{equation}
+      \label{eq:358}
+      E^2=p^2c^2+m^2 c^4
+    \end{equation}
+    We can solve for energy and momentum conservation for this particle
+    to decay to two particles. It turns out that the decay $\gamma\to
+    \nu_e\overline{\nu}_e$ is an available decay. This then gives
+    another source of neutrino losses. We haven't derived a specific
+    rate or anything, so if you'd like to know more, see Clayton.
+
+    \subsubsection{Back to Stellar Evolution}
+    \label{sec:back-stell-evol}
+
+    When neutrino cooling is dominant, we have
+    \begin{equation}
+      \label{eq:359}
+      L_\nu=\int \varepsilon_\nu\,dM\gg L_\gamma
+    \end{equation}
+    Then we have
+    \begin{equation}
+      \label{eq:360}
+      T\frac{ds}{dt}=\varepsilon_{\mathrm{nuc}}-\varepsilon_\nu
+    \end{equation}
+    This can become a local condition, so we need to rethink of what
+    we think of as our ``main sequence'' for massive, carbon-burning
+    stars. We'd like to find where, in the $T_c-\rho_c$ plane, that
+    $\varepsilon_{\mathrm{nuc}}=\varepsilon_\nu$. See
+    \figref{fig:cooling} for an idea of what's going on here.\\
+
+    \begin{figure}[h]
+      \centering
+      \includegraphics{neutrinoCool.pdf}
+      \caption{Rough sketch of the limits where neutrino cooling becomes dominant.}
+      \label{fig:cooling}
+    \end{figure}
+    \n If there is just carbon burning taking place, all of the carbon
+    will eventually be burned, leaving oxygen unburned. Then oxygen,
+    neon, and magnesium are the dominant elements. For stars between
+    $6\,M_\odot$ and $8\,M_\odot$ where carbon is burned, electron
+    degeneracy sets in, and they will die as white dwarfs.\\
+
+    \n After carbon burning, we have ${}^{16}\mathrm{O}$,
+    ${}^{20}\mathrm{Ne}$, and ${}^{23}\mathrm{Na}$ available. The
+    ${}^{16}\mathrm{O}+{}^{16}\mathrm{O}$ reaction requires such a
+    high temperature that prior to this, we have photodisintegration
+    of neon:
+    \begin{equation}
+      \label{eq:361}
+      \mathrm{\gamma+{}^{20}Ne\to \alpha+{}^{16}O}
+    \end{equation}
+    These alpha particle laying around get scooped up by neon (before
+    Oxygen!):
+    \begin{equation}
+      \label{eq:362}
+      \mathrm{\alpha+{}^{20}Ne\to\gamma+{}^{24}Mg}
+    \end{equation}
+    This leads to magnesium burning:
+    \begin{equation}
+      \label{eq:363}
+      \mathrm{\alpha+{}^{24}Mg\to \gamma+{}^{28}Si}
+    \end{equation}
+    This process leaves us with oxygen, magnesium, and silicon.
 \end{document}
 
