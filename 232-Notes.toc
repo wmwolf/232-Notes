@@ -58,6 +58,6 @@
 \contentsline {subsubsection}{\numberline {8.5.2}Helium Burning in a Massive Star}{60}{subsubsection.8.5.2}
 \contentsline {subsubsection}{\numberline {8.5.3}Helium Core Flash}{60}{subsubsection.8.5.3}
 \contentsline {subsection}{\numberline {8.6}The Horizontal Branch and The Asymptotic Giant Branch}{62}{subsection.8.6}
-\contentsline {section}{\numberline {9}Endpoints of Stellar Evolution}{63}{section.9}
-\contentsline {subsection}{\numberline {9.1}White Dwarf Cooling}{63}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}The Chandrasekhar Mass}{65}{subsection.9.2}
+\contentsline {section}{\numberline {9}White Dwarfs}{63}{section.9}
+\contentsline {subsection}{\numberline {9.1}The Physics of Degenerate Objects and the Chandrasekhar Mass}{63}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}White Dwarf Cooling}{65}{subsection.9.2}

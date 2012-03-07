@@ -3349,14 +3349,157 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
 %%%%%%%%%%%%%%%%%%%%%%%%%
     \n\textit{Monday, March 5, 2012}
 
-    \section{Endpoints of Stellar Evolution}
+    \section{White Dwarfs}
     \label{sec:endp-stell-evol}
+
+    \subsection{The Physics of Degenerate Objects and the
+      Chandrasekhar Mass}
+    \label{sec:white-dwarf-cooling}
+
+    At the late stages of stellar eolution, the electrons become more
+    and more degenerate, eventually dominating the pressure. We now
+    work out the resulting $M(R)$ relation in this limit. The equation
+    of state is just
+    \begin{equation}
+      \label{eq:317}
+      n_e=\frac{2}{h^3}\int_0^{p_F} 4\pi p^2\,dp=\frac{8\pi}{3h^3}p_F^3
+    \end{equation}
+    in the fully degenerate limit (that is, electrons are filling all
+    of momentum space up to the Fermi momentum of the gas). Then the
+    pressure is just (as derived earlier)
+    \begin{equation}
+      \label{eq:318}
+      P_e=\frac{2}{5}n_e E_F
+    \end{equation}
+    when things are non-relativistic as we presume for now. Expanding
+    out \eqref{eq:318}, we get
+    \begin{equation}
+      \label{eq:319}
+      P=\frac{2}{5}n_e\frac{1}{2 m_e}p_F^2=\frac{n_e}{5
+        m_e}\left(\frac{3h^3n_e}{8\pi}\right)^{2/3}=n_e^{5/3}\left(\frac{3h^2}{8\pi}\right)^{2/3}\frac{1}{5 m_e}
+    \end{equation}
+    If we typically have $\rho=A m_pn_i$ and $n_e=Zn_i$, so that
+    \begin{equation}
+      \label{eq:320}
+      n_e=Z\frac{\rho}{Am_p}\approx \frac{\rho}{2m_p}\qquad
+      \textrm{(where $A=2Z$)}
+    \end{equation}
+    Then the pressure is
+    \begin{equation}
+      \label{eq:321}
+      P=\left(\frac{\rho}{2m_p}\right)^{5/3}\left(\frac{3h^3}{8\pi}\right)^{2/3}\frac{1}{5 m_e}
+    \end{equation}
+    Now, let's just ask what the rough properties are of an object
+    supported by degenerate electrons. Yet agin, let's just write the
+    pressure as
+    \begin{equation}
+      \label{eq:322}
+      \frac{dP}{dr}=-\rho\frac{Gm(r)}{r^2}\quad\Rightarrow\quad P\sim G\frac{M}{R^2}\frac{M}{R^2}=\frac{GM^2}{R^4}
+    \end{equation}
+    But now let's set $\rho R^3=M$, or equivalently,
+    $R=(M/\rho)^{1/3}$ to eliminate the radius from the pressure. Then
+    linking the pressures from hydrostatic balance and degeneracy
+    pressure, we get
+    \begin{equation}
+      \label{eq:323}
+      P_c\sim\frac{GM^2}{M^{4/3}}\rho^{4/3}=\frac{1}{5m_e}\left(\frac{\rho}{2m_p}\right)^{5/3}\left(\frac{3h^3}{8\pi}\right)^{2/3}
+    \end{equation}
+    Solving this for the density gives
+    \begin{equation}
+      \label{eq:324}
+      \rho\sim 4\times 10^5\,\mathrm{g\,cm^{-3}}\left(\frac{M}{0.1\,M_\odot}\right)^2\left(\frac{m_x}{m_e}\right)^3
+    \end{equation}
+    where $m_x$ is presumably the mass of the degenerate particle (in
+    our case, the electron mass).Now this is the crude scaling at low masses and it is important to
+    ask what happens as the mass increases. according to our relation,
+    the density increases. We can get the radius as well from the
+    density, so
+    \begin{equation}
+      \label{eq:325}
+      R\sim 8\times 10^8\,\mathrm{cm}\left(\frac{0.1\,M_\odot}{M}\right)^{1/3}\left(\frac{m_e}{m_x}\right)
+    \end{equation}
+    So the star gets smaller as the mass increases. Note that the more
+    proper formula is
+    \begin{equation}
+      \label{eq:326}
+      R=2\times 10^9\,\mathrm{cm}\left(\frac{0.1\,M_\odot}{M}\right)^{1/3}\left(\frac{m_e}{m_x}\right)
+    \end{equation}
+    So for for a neutron star ($m_x\approx m_p$) we find $R\approx
+    10^6\,\mathrm{cm}=10\,\mathrm{km}$.\\
+
+    \n Anyway, returning to white dwarfs, as the mass increases,
+    eventually the electrons start to become relativistic. In
+    particular, we can just ask when the Fermi momentum is just the
+    mass times the speed of light, $p_F\approx m_ec$, which means
+    \begin{equation}
+      \label{eq:327}
+      m_ec=p_F=\left(\frac{3h^3n_e}{8\pi}\right)^{1/3}=\left(\frac{3h^3\rho}{2m_p8\pi}\right)^{1/3}
+    \end{equation}
+    Solving \eqref{eq:327} for the density gives us
+    \begin{equation}
+      \label{eq:328}
+      \rho= (m_e c)^3\frac{2m_p 8\pi}{3 h^3}\approx \frac{16
+        \pi}{3}m_p\left(\frac{m_e c}{h}\right)^3
+    \end{equation}
+    Where we have phrased this in a suggestive way, noting that the De
+    Broglie wavelength in the relativistic limit is
+    $\lambda_c=h/(m_ec)$. This implies that the density reaches a
+    critical level that is independent of any parameter:
+    \begin{equation}
+      \label{eq:329}
+      \boxed{\rho_{\mathrm{crit}}=2\times 10^6\,\mathrm{g\,cm^{-3}}}
+    \end{equation}
+    So at these densities, things get weird. The first important point
+    is that the relativistic gas we know of will be unstable and thus
+    it is impossible to build such an object. In the extreme
+    relativistic limit, the electron gass pressure is
+    \begin{equation}
+      \label{eq:330}
+      P=\frac{1}{4}n_e E_F=\frac{1}{4}n_e p_F c=\frac{1}{4} n_ec\left(\frac{3h^3n_e}{8\pi}\right)^{1/3}=n_e^{4/3}\frac{c}{4}\left(\frac{3h^3}{8\pi}\right)^{1/3}
+    \end{equation}
+    Relating this to our hydrostatic approximation for the central
+    pressure, we find
+    \begin{equation}
+      \label{eq:331}
+      M^{2/3}=\frac{1}{G}\frac{c}{4}\frac{1}{(2m_p)^{4/3}}\left(\frac{3h^3}{8\pi}\right)^{1/3}
+    \end{equation}
+    Which predicts a characteristic mass of such objects of
+    \begin{equation}
+      \label{eq:332}
+      M+\frac{1}{G^{3/2}}\left(\frac{c}{4}\right)^{3/2}\frac{1}{(2m_p)^2}\left(\frac{3h^3}{8\pi}\right)^{1/2}
+      \approx 0.3 M_\odot
+    \end{equation}
+    In reality, the properly detailed calculation using the polytropic
+    relations puts in new factors giving the proper
+    \textbf{Chandrasekhar Mass}:
+    \begin{equation}
+      \label{eq:333}
+      \boxed{M_{\mathrm{Ch}}=1.456\left(\frac{2}{\mu_e}\right)^2\,M_\odot}
+    \end{equation}
+    Where $\mu_e$ is, as always, the number of baryons per electron.
+    If the star gets heavier than this mass, it undergoes catastrophic
+    collapse, the outcome of which most likely depends on the (GARBLED
+    TEXT (possibly the contents of the atmosphere?))
 
     \subsection{White Dwarf Cooling}
     \label{sec:white-dwarf-cooling}
-
-    [MISSING DUE TO INABILITY TO BE UP BEFORE NOON.]\\
-
+    The white dwarf is ``burn'' hot, with $T\approx 2\times
+    10^8\,\mathrm{K}$ or so, with the interior being completely
+    isothermal due to the efficient conductive heat transfer of the
+    degenerate electrons. There is some transition point at $E_F=kT$
+    which gives a bottom boundary condition of degeneracy. Looking at
+    the Fermi Energy,
+    \begin{equation}
+      \label{eq:334}
+      E_F=\frac{1}{2m_e}\left(\frac{3h^3\rho}{8\pi
+          2m_p}\right)^{2/3}=16\,\mathrm{eV}\,\rho^{2/3} =k T\quad
+      \Rightarrow \quad 8625 T_8=16\rho^{2/3}
+    \end{equation}
+    So the transition density is
+    \begin{equation}
+      \label{eq:335}
+      \rho_{\mathrm{tr}}=1.2\times 10^4\,\mathrm{g\,cm^{-3}}T_8^{3/2}
+    \end{equation}
     \n In the outer, non degenerate layer of the white dwarf, the
     material is geometrically thin and $M_{\mathrm{outer}}\ll
     M$. Thus, the plane-parallel atmosphere precription is valid. The
@@ -3366,7 +3509,7 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
       g=\frac{GM}{R^2}=1.6\times 10^8\,\mathrm{cm\,s^{-2}}
     \end{equation}
     where we have assumed $R=7\times 10^8\,\mathrm{cm}$ and
-    $M=0.6\,M_odot$. Then the pressure is
+    $M=0.6\,M_\odot$. Then the pressure is
     \begin{equation}
       \label{eq:292}
       P=g\frac{\Delta m}{4\pi R^2}=\frac{\rho kT}{\mu m_p}
@@ -3375,7 +3518,7 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
     degenerate. We find
     \begin{equation}
       \label{eq:293}
-      \Delta M=10^{-3}M_\odot T-8^{5/2}
+      \Delta M=10^{-3}M_\odot T_8^{5/2}
     \end{equation}
     In the hydrogen and helium layer. Now assuming that the flux is
     constant, and that the opacity follows a Kramers' Law form,
@@ -3450,104 +3593,30 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
     So as the density goes up, the gravity goes up (and thus the mass
     goes up). And indeed, as the
     pressure increases, the line widths in a spectrum increase. This
-    phenomenon is called \textbf{Pressure Broadening}. (This is so
-    cool!). \\
+    phenomenon is called \textbf{Pressure Broadening}. \\
 
-    \n There are some caveats to this theory, though. 
-    \begin{enumerate}
-    \item[1.] Ions do interact via Coulomb physics. We typically have
-      \begin{equation}
-        \label{eq:305}
-        \frac{e^2}{\avg{r}}\gtrsim kT
-      \end{equation}
-      Then we have
-      \begin{equation}
-        \label{eq:306}
-        \Gamma = \frac{Z^2 e^2}{a kT}
-      \end{equation}
-      where $a$ is the average ion spacing. When $\Gamma>1$, ions
-      interact strongly via Coulomb interactions. 
-    \end{enumerate}
-    When in a Coulomg solid, $E_{\mathrm{th}}=3kT$, since each
+    \n There are some caveats to this theory, though. Primarily, we
+    have ignored that ions do interact via Coulomb physics. We
+    typically have 
+    \begin{equation}
+      \label{eq:305}
+      \frac{e^2}{\avg{r}}\gtrsim kT
+    \end{equation}
+    Then we have
+    \begin{equation}
+      \label{eq:306}
+      \Gamma = \frac{Z^2 e^2}{a kT}
+    \end{equation}
+    where $a$ is the average ion spacing. When $\Gamma>1$, ions
+    interact strongly via Coulomb interactions. \\
+
+    \n When in a Coulomb solid, $E_{\mathrm{th}}=3kT$, since each
     positional degree of freedom now has an energy. This phase
     transition introduces a latent heat. The WD goes crystalline at
-    $\Gamma\approx 173$. In a coulomg liquid, we have short-range
+    $\Gamma\approx 173$. In a Coulomb liquid, we have short-range
     order at $\Gamma\sim1$ and $C_V$ increases relative to
-    $\frac{3}{2}N-i kT$. Lindimann in the 1920's discovered the
+    $\frac{3}{2}N_i kT$. Lindimann in the 1920's discovered the
     following rule: when the average displacement at a given site in a
     lattice is bigeer than $0.1a$, the solid melts.
-
-    \subsection{The Chandrasekhar Mass}
-    \label{sec:chandrasekhar-mass}
-
-    There is a maximum mass for an object that is held up in
-    hydrostatic balance with degenerate electrons. Remember that the
-    number of quantum states is given by
-    \begin{equation}
-      \label{eq:307}
-      N=\frac{2}{h^3}\int d^3x\,d^3p
-    \end{equation}
-    So the number density is
-    \begin{equation}
-      \label{eq:308}
-      n_e=\frac{2}{h^3}\int_0^{p_F}4\pi p^2\,dp=\frac{8\pi}{3h^3}p_F^3
-    \end{equation}
-    So the number density of the electrons \emph{set} the Fermi
-    momentum. Now in thnon-relativistic limit, we suppose that
-    $p_F<m_ec$., the pressure is
-    \begin{equation}
-      \label{eq:309}
-      P=n_e^{5/3}\left(\frac{3h^2}{8\pi}\right)^{2/3}\frac{1}{5m_e}
-    \end{equation}
-    For electrons, we typically have $n_e=\rho/2m_p$ in a C/O white
-    dwarf. Then expressing this in terms of the density (rather than
-    number density), we get
-    \begin{equation}
-      \label{eq:310}
-      P=\left(\frac{\rho}{2m_p}\right)^{5/3}\left(\frac{3h^2}{8\pi}\right){2/3}\frac{1}{5m_e}
-    \end{equation}
-    From hydrostatic balance, we have
-    \begin{equation}
-      \label{eq:311}
-      P_c\sim \frac{GM^2}{R^4}\propto \rho^{5/3}
-    \end{equation}
-    This gives us a mass-radius relation,
-    \begin{equation}
-      \label{eq:312}
-      R\propto M^{-1/3}
-    \end{equation}
-    Which can be re-expressed in terms of the density, $\rho\sim
-    MR^{-3}\propto M^2$ when the electrons are non-relativistic.  But
-    what happens if the electrons \emph{are} relativistic? The
-    pressure is
-    \begin{equation}
-      \label{eq:313}
-      P=\frac{1}{4}n_e E_{\mathrm{F}}=\frac{1}{4}n_e p_{\mathrm{F}}
-        c\propto \rho^{4/3}
-    \end{equation}
-    since 
-    \begin{equation}
-      \label{eq:314}
-      p_{\mathrm{F}}=\left(\frac{3h^3n_e}{8\pi}\right)^{1/3}
-    \end{equation}
-    (Recall in the relativistic limit, $E=pc$.) Then in this case, the
-    pressure follows
-    \begin{equation}
-      \label{eq:315}
-      P\propto \rho^{4/3}\propto \left(\frac{M}{R^3}\right)^{4/3}\propto\frac{M^2}{R^4}
-    \end{equation}
-    Interestingly, the radius cancels, so this relation of pressure
-    defines a mass, which is the \textbf{Chandrasekhar Mass}:
-    \begin{equation}
-      \label{eq:316}
-      M_{\mathrm{Ch}}=1.45\,M_\odot\left(\frac{2}{\mu_e}\right)^2
-    \end{equation}
-    where gain, $\mu_e$ is the number of baryons per electron. Then
-    the maximum possible mass for a white dwarf is this Chandrasekhar
-    mass. As the mass approaches this limit, effectively $\rho$ is
-    going to infinity much faster than $\rho\propto M^2$.\\
-
-    \n If the outer conditions increase above $M_{\mathrm{Ch}}$, then
-    the object will collapse.
 \end{document}
 
