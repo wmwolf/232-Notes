@@ -1867,65 +1867,247 @@ which is still a field with many unanswered questions.
   \section{Nuclear Reactions in Stars}
   \label{sec:nucl-react-stars}
 
-  The big bang only mad (by mass) 75\% protons and 25\% Helium. In
+  The big bang only made (by mass) 75\% protons and 25\% helium nuclei. As
+  stars evolved, they created heavier elements and later relased them
+  into the universe, causing stars like the sun to have a metallicity
+  of around $Z=0.02$. In hydrogen-burning main sequence
   stars, we want to fuse protons into helium and release about 7 MeV
-  per baryon, or $7\times 10^18\ \mathrm{erg\ g^{-1}}$, which is
+  per baryon, or $7\times 10^{18}\ \mathrm{erg\ g^{-1}}$, which is
   \emph{far} higher than the thermal energy content of matter in
   stars. As it turns out, the thermal energy is too low to bring two
   protons close enough together to fuse, so tunneling must take
   place. Additionally, there is no stable nucleus with just two (or
   more) protons, so weak interactions are required to have any stable
-  reactions. 
-
+  reactions. For example, in the simplest chain of reacitons that fuse
+  hydrogen to helium, the first interaction is a weak interaction
+  between two protons to create a deuteron and a neutrino:
+  \begin{equation}
+    \label{eq:364}
+    \mathrm{p+p\to d+}e^++\nu_e
+  \end{equation}
+  followed rapidly by the coulomb interaction that creates
+  ${}^3\mathrm{He}$:
+  \begin{equation}
+    \label{eq:365}
+    \mathrm{p+d\to{}^3He+\gamma}
+  \end{equation}
+  and typically closed via
+  \begin{equation}
+    \label{eq:366}
+    \mathrm{{}^3He+{}^3He\to{}^4He+2p}
+  \end{equation}
+  which is again, not a weak interaction. The Coulomb potential is
+  obviously crucial in terms of tunneling and we will investigate the
+  exact physics of these processes shortly. First, though, we talk
+  about a general theory of nuclear physics.
   \subsection{Liquid Drop Model}
   \label{sec:liquid-drop-model}
 
-  The ``size'' of a nucleus is approximately
+  We know from experiment that a large nucleus is basically at
+  constant density, with the radius scaling as $r_n\sim A^{1/3}$ where
+  $A$ is the \textbf{mass number} (total number of baryons,
+  $A=N+Z$). More precisely we've found that the ``size'' of a nucleus
+  is approximately
   \begin{equation}
     \label{eq:93}
-    r_0=1.3\ \mathrm{fm}\ A^{1/3}
+    r_n=1.3\ \mathrm{fm}\ A^{1/3}
   \end{equation}
-  where $A$ is the mass number ($A=N+Z$). Then the nuclear density is
-  approximately
+  Then the nuclear density is approximately
   \begin{equation}
     \label{eq:94}
-    \rho=\frac{Am_p}{\frac{4\pi}{3}R^3}\approx2\times 10^{14}\ \mathrm{g\ 
-cm^{-3}}
+    \rho=\frac{Am_p}{\frac{4\pi}{3}r_n^3}\approx2\times 10^{14}\
+    \mathrm{g\  cm^{-3}} 
   \end{equation}
-  There is an energy well with
+  Now, let's describe the binding energy of a nucleus with $Z$
+  protons, $N$ neutrons, and a mass number $A=N+Z$. The main term in
+  the binding energy is a volume term that is
   \begin{equation}
     \label{eq:95}
     E_{\mathrm{volume}}=-14\ \mathrm{MeV}\ A
   \end{equation}
-  There must also be a surface term, dictating that surface particles
-  are less bound than their counterparts deeper in
+  The next term is a ``surface'' term, due to the phenomenon that a
+  nucleon at the surface of the nucleus is not as ``bound'' since it
+  interacts with fewer nucleons. Since the volume term is known, the
+  best way to calculate this is to say we are overestimating the
+  volume piece as those at the surface are \emph{less} bound. The
+  nuclear surface area is
+  \begin{equation}
+    \label{eq:367}
+    A_{\mathrm{nuc}}=4\pi r_n^2
+  \end{equation}
+  Then the number of particles on the surface is given by
   \begin{equation}
     \label{eq:96}
-    N_{\mathrm{surf}}=A^{2/3}\sim\frac{\mathrm{surface}}{\mathrm{volume}}
+    N_{\mathrm{surf}}=\frac{\textrm{surface area of
+        nucleus}}{\textrm{cross-sectional area of nucleon}}=\frac{4\pi
+      r_n^2}{\pi r_0^2}\approx 4A^{2/3}\propto A^{2/3}
   \end{equation}
-  So then we have
+  We find the surface energy term to be about
   \begin{equation}
     \label{eq:97}
     E_{\mathrm{surf}}=13\ \mathrm{MeV}\ A^{2/3}
   \end{equation}
-  The Coulomb energy to assemble the nucleus is necessarily
+  which is positive since we presume this correction acts to unbind
+  the nucleus (a correction to the strongly negative volume term).\\
+
+  \n We must also consider the energy stored in the electrostatic
+  energy of the assembly of nuclei. Imagine a nucleus of radius
+  $r_n=r_0A^{1/3}$ that has charge
+  \begin{equation}
+    \label{eq:368}
+    n_Q=\frac{Z}{V}\qquad\textrm{where}\qquad V=\frac{4\pi}{3}r_n^3
+  \end{equation}
+  spread uniformly throughout. The total Coulomb energy is then
+  \begin{equation}
+    \label{eq:369}
+    E_{\mathrm{Coulomb}}=\int \frac{e^2}{r}q(r)\,dq
+  \end{equation}
+  where $q(r)=n_Q\, 4\pi r^3/3$ and $dq=n_Q\,4\pi
+  r^2\,dr$. Re-expressing the radius interms of the charge variables,
+  we get
+  \begin{equation}
+    \label{eq:370}
+    r=\left(\frac{3q}{4\pi n_Q}\right)^{1/3}
+  \end{equation}
+  Then \eqref{eq:369} can be re-expressed as
+  \begin{equation}
+    \label{eq:371}
+    E_{\mathrm{Coulomb}}\approx
+      e^2\int_0^Z\frac{q\,dq}{q^{1/3}}\left(\frac{3}{4\pi
+          n_Q}\right)^{-1/3}=e^2\left(\frac{3}{4\pi
+          n_Q}\right)^{-1/3}\int_0^Q q^{2/3}\,dq
+  \end{equation}
+  so we get
+  \begin{equation}
+    \label{eq:372}
+    E_{\mathrm{Coulomb}}=e^2\left(\frac{3}{4\pi
+        n_Q}\right)^{-1/3}\frac{3}{5}Q^{5/3}=e^2\left(\frac{3\frac{4\pi}{3}r_n}{4\pi
+        Z}\right)^{-1/3}\frac{3}{5}Q^{5/3}\approx \frac{3}{5}\frac{e^2Q^2}{r_n}
+  \end{equation}
+  Re-expressing everything in terms of the mass number and the atomic
+  number, we get
   \begin{equation}
     \label{eq:98}
-    E_{\mathrm{Coulomb}}\sim\frac{e^2Z^2}{r}=\frac{3}{5}\frac{e^2
-      Z^2}{R}\approx 0.56\ \mathrm{MeV}\frac{Z^2}{A^{1/3}}
+    E_{\mathrm{Coulomb}}=\frac{3}{5}\frac{e^2
+      Z^2}{R}\approx 0.66\ \mathrm{MeV}\frac{Z^2}{A^{1/3}}
   \end{equation}
-  Nuclei typically prefer to have roughly equal numbers of neutrons
-  and protons in order to minimize degeneracy pressure. Thus, often we
-  will have $N=Z$ since then the kinetic energy is lower. This gives
-  rise to a ``symmetry energy'',
+  Now, in reality, there are a few problems with this, namely that
+  \begin{enumerate}
+  \item[1.] Protons do know about each other and thus correlations
+    enter in and reduce the probabilities
+  \item[2.] Protons might prefer to just live at the edge of the
+    nucleus rather than stay in the middle.
+  \end{enumerate}
+  Then making a more careful calculation taking the above into account
+  adjusts the result quoted in \eqref{eq:98} to
   \begin{equation}
-    \label{eq:99}
-    E_{\mathrm{sym}}=18\ \mathrm{MeV}\frac{(N-Z)^2}{A}
+    \label{eq:373}
+    E_{\mathrm{Coulomb}}=0.56\ \mathrm{MeV}\frac{Z^2}{A^{1/3}}
   \end{equation}
+  It is observed that the radius of a nucleus increases with
+  $r_n\approx 1.3\ \mathrm{fm}\ A^{1/3}$
+  so that the number mass density of nucleons is
+  \begin{equation}
+    \label{eq:374}
+    \rho=\frac{3 A m_p}{4\pi A\left(1.3\times
+        10^{-13}\right)^3}=C=2\times 10^{14}\ \mathrm{g\ cm^{-3}}
+  \end{equation}
+  Now the neutrons and protons are degenerate particles at these types
+  of densities, and if we just consider that, we find that the number
+  density of neutrons in the nucleus is
+  \begin{equation}
+    \label{eq:375}
+    n_n=\frac{8\pi}{3h^3}p_f^3=\frac{\rho_N}{2m_p}
+  \end{equation}
+  where $\rho_N$ is the number density of all baryons. So the fermi momentum is
+  \begin{equation}
+    \label{eq:376}
+    p_f=\left(\frac{3h^3\rho_N}{16\pi m_p}\right)^{1/3}=0.26 m_nC=\hbar k_f=\frac{h}{\lambda}
+  \end{equation}
+  so the fermi energy and fermi wavelength are simply
+  \begin{equation}
+    \label{eq:377}
+    E_f=32\ \mathrm{MeV}\qquad \lambda_f\approx 5\ \mathrm{fm}
+  \end{equation}
+  where we've used the fact that $E_f=p_f^2/(2m)=h^2/(\lambda^2
+  2m)$. The average kinetic energy of these nucleons is then
+  $\frac{3}{5}E_f=20\ \mathrm{MeV}$, so then
+  \begin{equation}
+    \label{eq:378}
+    \avg{T}\approx 20\ \mathrm{MeV}\quad\Rightarrow \quad U=-40\ \mathrm{MeV}
+  \end{equation}
+  The Pauli Exclusion Principle requires that we move filled to
+  unfilled (?). Let's see how this changes the kinetic energy content
+  in the nucleus relative to $Z=N=A/2$.\\
+
+  \n Imagine we go to
+  \begin{equation}
+    \label{eq:379}
+    Z'=\frac{A}{2}(1-f)\qquad N'=\frac{A}{2}(1+f)
+  \end{equation}
+  where $f$ is the fraction of protons we have changed to
+  neutrons. For a non-relativistic gas, we know that $E_f\propto
+  p_f^2$ and $p_f^3\propto n$, so the fermi energy and the number
+  density are related via $E_f\propto n^{2/3}$. So let us write
+  \begin{equation}
+    \label{eq:380}
+    \avg{T}_n=\frac{3}{5}E_{f,n}N
+  \end{equation}
+  and
+  \begin{equation}
+    \label{eq:381}
+    \avg{T}_p=\frac{3}{5}E_{f,p}Z
+  \end{equation}
+  Initially, $E_{f,n}=E_{f,p}=E_f$ when $N=Z$, so the initial kinetic
+  energy is
+  \begin{equation}
+    \label{eq:382}
+    \avg{T}=\frac{3}{5}E_fA
+  \end{equation}
+  Afterwards, though, we have
+  \begin{align}
+    \label{eq:383}
+    \avg{T}&=\frac{3}{5}\frac{A}{2}(1+f)E_{f,n}+\frac{3}{5}\frac{A}{2}(1-f)E_{f,p}\\
+    \label{eq:383a}
+    &=
+    \frac{3}{5}\frac{A}{2}E_f\left[\left(\frac{n_n}{n_0}\right)^{2/3}(1+f)+\left(\frac{n_p}{n_0}\right)^{2/3}(1-f)\right]\\
+    \label{eq:383b}
+    &= \frac{3}{5}\frac{A}{2}E_f\left[(1+f)^{5/3}+(1-f)^{5/3}\right]\\
+    \label{eq:383c}
+    &\approx
+    \frac{3}{5}\frac{A}{2}E_f\left[1+\frac{5}{3}f+\frac{\frac{5}{3}\frac{2}{3}}{2}f^2+1-\frac{5}{3}f+\frac{\frac{5}{3}\frac{2}{3}}{2}f^2\right]\\
+      \label{eq:383d}
+      &= \frac{3}{5}\frac{A}{2}E_f\left[2+\frac{10}{9}f^2\right]
+  \end{align}
+  So to second order in the fractional change, $f$, the change in
+  energy due to the change in composition is
+  \begin{equation}
+    \label{eq:384}
+    \Delta E=\frac{1}{3}AE_f f^2\approx 10\ \mathrm{MeV}\left(\frac{(N'-Z')^2}{A}\right)
+  \end{equation}
+  Actually, this is only about half of the symmetry correction. After
+  a full-blown calculation of the ramifications of unequal numbers of
+  protons and neutrons, we find the ``symmetry energy'' contribution
+  to be
+  \begin{equation}
+    \label{eq:275}
+    E_{\mathrm{sym}}=18.1\ \mathrm{MeV}\ \frac{(N-Z)^2}{A}
+  \end{equation}
+  And thus the total binding energy of the nucleus is given by
+  \begin{equation}
+    \label{eq:304}
+    \boxed{E=\left[-14A+18.1\frac{(N-Z)^2}{A}+0.56\frac{Z^2}{A^{1/3}}+13.1
+    A^{2/3}\right]\, \mathrm{MeV}}
+  \end{equation}
+  Now, this tells us much that we need to know as we can calculate the
+  curve of binding energy and all other relevant quantities. What we
+  must first sort out is how fusion can possibly occur at these very
+  low energies.\\
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Wednesday, February 8, 2012%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \textit{Wednesday, February 8, 2012}
+  \n\textit{Wednesday, February 8, 2012}
   \subsection{Tunneling through the Coulomb Barrier}
   \label{sec:tunn-thro-coul}
 
@@ -1937,7 +2119,19 @@ cm^{-3}}
     V(r)=\frac{Z_1Z_2 e^2}{r}=1.4\ \mathrm{MeV}\frac{Z_1Z_2}{(r/1\ \mathrm
 {fm})}
   \end{equation}
-  At the center of the sun, where $T_c\sim 10^7\ \mathrm{K}$, the
+  This is schematically shown in \figref{fig:energyPlot}
+  \begin{figure}[h!]
+    \centering
+    \includegraphics{energyPlot.pdf}
+    \caption{Schematic diagram of the potential of a two-particle
+      interaction. The Coulomb potential rises steadly until the
+      strong force takes over. A typical particle is
+      shown with an energy $E$ less than the peak of the Coulomb
+      potential, so it may only fuse with the target particle if it
+      tunnels through the barrier.}
+    \label{fig:energyPlot}
+  \end{figure}
+  At the center of the sun, where $T_c\sim 10^8\ \mathrm{K}$, the
   thermal energy is only about $kT\sim 8.6\ \mathrm{keV}\left(T/10^8\
     \mathrm{K}\right)$. Then clearly the thermal energy in the sun is
   nowhere near high enough to overcome the Coulomb barrier. If there
@@ -1994,10 +2188,11 @@ cm^{-3}}
   \begin{equation}
     \label{eq:106}
     r_{\mathrm{aX}}=\int_0^\infty dv\
-    n_\mathrm{a}n_{\mathrm{X}}\sigma(v)v\\phi(v)
+    n_\mathrm{a}n_{\mathrm{X}}\sigma(v)v\phi(v)
   \end{equation}
   where $\phi(v)$ is the probability density of a pair of particles
-  having a relative velocity $v$. More often this is written as
+  having a relative velocity $v$ (assumed to be Maxwellian). More
+  often this is written as
   \begin{equation}
     \label{eq:107}
     r_{\mathrm{aX}}=n_\mathrm{a}n_{\mathrm{X}}\avg{\sigma v}
@@ -2007,15 +2202,16 @@ cm^{-3}}
     \label{eq:108}
     \avg{\sigma v}=\int_0^\infty dv\
     \sigma(v)v\phi(v)=4\pi\left(\frac{\mu}{2\pi kT}\right)^{3/2}
-int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
+    \int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
   \end{equation}
-  where $\mu$ is now the reduced mass, $\mu=m_1m_2/(m_1+m2)$.Note that
+  where $\mu$ is now the reduced mass, $\mu=m_1m_2/(m_1+m2)$ .Note that
   if both reactants are the same species, \eqref{eq:105}
   must be divided by a factor of 2 since we cannot imagine having a
   ``target'' and a ``scatterer'' (this screws up relative velocities
   and other things, see Clayton for the details). Similarly, if you
   have $N$ like reactants, we must divide by $N!$ to adjust the
-  reaction rate appropriately. 
+  reaction rate appropriately. Often the problem of determining
+  nuclear reactio rates boils down to calculating $\avg{\sigma v}$.
 
   \subsubsection{Barrier Penetration}
   \label{sec:barrier-penetration}
@@ -2026,7 +2222,7 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
     \left[-\frac{\hbar^2}{2\mu}\nabla^2+V\right]\psi=E\psi
   \end{equation}
   For simplicity, we will only do a one-dimensional example to model
-  barrier penetration. We supose a free particle encounters a
+  barrier penetration. We suppose a free particle encounters a
   finite-width and finite-height barrier. Outside the barrier, then,
   \eqref{eq:109} reduces to
   \begin{equation}
@@ -2038,7 +2234,7 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
   barrier, though, we have decaying modes:
   \begin{equation}
     \label{eq:111}
-    -\frac{\hbar^2}{2\mu}\nabla^2\psi=(E_V)\psi\quad\Rightarrow\quad
+    -\frac{\hbar^2}{2\mu}\nabla^2\psi=(E-V)\psi\quad\Rightarrow\quad
     \psi\propto e^{\pm\kappa x}
   \end{equation}
   Where the ``energy'' is $E-V=-\hbar^2\kappa^2/(2\mu)$. Now we use
@@ -2061,7 +2257,7 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
     \psi^2\propto \exp\left(-2\int \kappa\ dr\right)
   \end{equation}
   where the integral is between the two classical turning points. In
-  this case, there is really only one turning point,
+  this case, there is really only one turning point (where $E=V(r_c)$),
   \begin{equation}
     \label{eq:115}
     r_c=\frac{Z_1Z_2 e^2}{E}
@@ -2075,11 +2271,12 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
   Then the integral in \eqref{eq:114} becomes
   \begin{equation}
     \label{eq:117}
-    \int_{r_c}^{r_{\mathrm{in}}}\kappa dr=
-      \int_{r_c}^0\frac{\pi\alpha}{2}Z_1Z_2\left(\frac{2\mu c^2}{E}\right)^
-{1/2}
+    \int_{r_c}^{r_{\mathrm{in}}}\kappa\, dr= \left(\frac{2\mu
+        E}{\hbar^2}\right)^{1/2}
+    \int_{r_c}^{r_{\mathrm{in}}}\left[\frac{r_c}{r}-1\right]^{1/2}dr\approx
+    \frac{\pi \alpha}{2}Z_1Z_2\left(\frac{2\mu c^2}{E}\right)^{1/2}
   \end{equation}
-  Here we've extended the upper limit to zero to make the integral
+  where $\alpha=e^2/(\hbar c)$. Here we've extended the upper limit to zero to make the integral
   doable, but this is actually a pretty good approximation (see
   Clayton for the details). This gives the probability of tunneling to
   be
@@ -2146,7 +2343,7 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
     4\pi^3\bar{\lambda}^2=\frac{2\pi^3\hbar^2}{\mu E}=2000\
     \mathrm{barns}\ \left(\frac{\mathrm{keV}}{E}\right)
   \end{equation}
-  Then the cross section can be written as
+  where $1\ \mathrm{barn}=10^{-24}\ \mathrm{cm}$. Then the cross section can be written as
   \begin{equation}
     \label{eq:126}
     \sigma(E)=\frac{S(E)}{E}\exp\left[-\left(\frac{E_{\mathrm{G}}}{E}
@@ -2161,7 +2358,9 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
     \mathrm{p+p\to D+e^++\nu_e}
   \end{equation}
   where $S\sim 4\times 10^{-22}\ \mathrm{kev\ barns}$. This value is
-  so small because a weak interaction is involved. Now we return back
+  so small because a weak interaction is involved. For comparison, a
+  strong reaction typically has a stupid factor about 25 orders of
+  magnitued larger. Now we return back
   to calculating $\avg{\sigma v}$, using our newly found cross-section
   and writing the energy as $E=\frac{1}{2}\mu v^2$ and $dE=\mu v\
   dv$. (Note that the non-relativistic energies are fine for our
@@ -2175,7 +2374,7 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
 {1/2}\right]
   \end{equation}
   Before evaluating this integral, we'll need to know how to use the
-  method of steppest descent. Suppose we have an integral with
+  method of steepest descent. Suppose we have an integral with
   \begin{equation}
     \label{eq:129}
     I=\int_{-1}^{\infty}g(x)e^{-f(x)}dx
@@ -2203,32 +2402,38 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
     \label{eq:132}
     f(E)=\frac{E}{kT}+\left(\frac{E_{\mathrm{G}}}{E}\right)^{1/2}
   \end{equation}
-  Solving for $E_0$ gives
+  Solving for $E_0$ (where $f'(E_0)\equiv 0$) gives
   $E_0^3=\frac{1}{4}E_{\mathrm{G}}(kT)^2$. Then the relevant functions
   and derivatives are
   \begin{align}
     \label{eq:133}
     f(E_0)&=3\left(\frac{E_{\mathrm{G}}}{4kT}\right)^{1/3}\\
     \label{eq:133a}
-    f''(E_0)&=3\left[2E_{\mathrm{G}}(kT)^5\right]^{1/6}
+    f''(E_0)&=3\left[2E_{\mathrm{G}}(kT)^5\right]^{-1/3}
   \end{align}
   Using this result in \eqref{eq:128}, we get
   \begin{align}
     \label{eq:134}
     \avg{\sigma v} & \approx
     \frac{1}{(kT)^{3/2}}\left(\frac{8}{\pi\mu}\right)^{1/2}S(E_0)\exp\left
-[-3\left(\frac{E_{\mathrm{G}}}{4kT}\right)^{1/3}\right]\int_0^\infty
+[-3\left(\frac{E_{\mathrm{G}}}{4kT}\right)^{1/3}\right]\int_0^\infty dE\,
     \exp\left[-\frac{(E-E_0)^2}{(\Delta/2)^2}\right]\\
     \label{eq:134a}
     & \Rightarrow \boxed{\Delta =
-      \frac{4}{2^{1/3}\sqrt{3}}E_{\mathrm{G}}^{1/5}(kT)^{5/6}}\\
+      \frac{4}{2^{1/3}\sqrt{3}}E_{\mathrm{G}}^{1/6}(kT)^{5/6}}\\
     \label{eq:134b}
     &=
     \boxed{2.6\frac{E_{\mathrm{G}}^{1/6}}{\sqrt{\mu}}\frac{S(E_0)}{(kT)^
 {2/3}}\exp\left[-3\left(\frac{E_{\mathrm{G}}}{4kT}\right)^{1/3}\right]=\avg
 {\sigma v}}
   \end{align}
-  Now for some numbers. For proton-proton reactions,
+  Note that $\Delta$ was introudce strctly as a matter of
+  convenience. YOu can think of it as an effective width of the
+  Gaussian or something like that. Now \eqref{eq:134b} is valid for
+  pretty much any \emph{non-resonant} reaction that we might
+  encounter.\\
+
+  \n Now for some numbers. For proton-proton reactions,
   $E_{\mathrm{G}}=494\ \mathrm{keV}$, $E_0=4.5\ \mathrm{keV}\
   \left(T/10^7\ \mathrm{K}\right)^{2/3}$, and $\Delta/E_0=1\cdot
   (T/10^7\ \mathrm{K})^{1/6}$. These reactions are quite prevalent in
@@ -2262,9 +2467,9 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
   \end{equation}
   This requires two things:
   \begin{itemize}
-  \item Fusion requires getting the two protons within a fermi of each
+  \item The two protons must be within a fermi of each
     other
-  \item While within one fermi, the reaction needs to have a weak
+  \item While within one fermi, the system needs to undergo a weak
     interaction:
     \begin{equation}
       \label{eq:149}
@@ -2316,13 +2521,19 @@ int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
     S_{\mathrm{pp}}=4\times 10^{-22}\ \mathrm{keV\ barns}=2\times
     10^{-25}S_{\mathrm{Strong}}
   \end{equation}
+  This gives a nuclear energy generation rate of
+  \begin{equation}
+    \label{eq:307}
+    \varepsilon_{\mathrm{pp}}=5.6\times 10^5 \mathrm{erg\ s^{-1}\ g^{-1}}\frac{\rho_1}{T_7^{2/3}}\exp\left(-\frac{15.7}{T_7^{1/3}}\right)
+  \end{equation}
   As a first-order estimate, suppose that \emph{all} the mass is
   available for burning, so 
   \begin{equation}
     \label{eq:156}
     L_{\mathrm{nuc}}=M\varepsilon(T_c)
   \end{equation}
-  For a fully-convective star, the central temperature is given by
+  For a fully-convective star, the polytropic relations and $\mu=0.6$
+  gives us the central temperature as
   \begin{equation}
     \label{eq:157}
     T_c=0.54\frac{GM\mu m_p}{k}
@@ -2358,13 +2569,32 @@ m^{1/2}r^4
     T_c=3.4\times 10^6\ \mathrm{K}
   \end{equation}
   So the radius is ``chosen'' so that the nuclear burning is adequate
-  to match the heat losses due to radiative diffusion and convection.
+  to match the heat losses due to radiative diffusion and
+  convection.\\
+
+  \n An important trick in dealing with nuclear luminosities is to
+  expand the exponential into a local power law for some sensible
+  range of temperatures. For instance, if we want to write
+  \begin{equation}
+    \label{eq:308}
+    \exp\left(-\frac{a}{T_7^{1/3}}\right)\approx T^{\nu}
+  \end{equation}
+  We take the log of both sides:
+  \begin{equation}
+    \label{eq:309}
+    -\frac{a}{T_7^{1/3}}=-a\exp\left(-\frac{\ln T_7}{3}\right)=\nu\ln T
+  \end{equation}
+  Now we just differentiate both sides with respect to $\ln T$:
+  \begin{equation}
+    \label{eq:310}
+    \boxed{\frac{a}{3T_7}=\nu}
+  \end{equation}
 
   \subsection{Sidebar: The Deuterium Main Sequence}
   \label{sec:deut-main-sequ}
 
   Before the onset of main sequence hydrogen burning, protostars will
-  undergoe Deuteriume burning via
+  undergoe Deuterium burning via
   \begin{equation}
     \label{eq:163}
     \mathrm{p+D\to {}^3He+\gamma}
