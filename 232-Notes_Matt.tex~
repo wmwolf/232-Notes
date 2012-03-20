@@ -4807,9 +4807,9 @@ accelerating the burning phases. Additionally, for nearly all these phases
 	\label{eq:364} t_{\mathrm{dyn}}\sim\frac{1}{\sqrt{G\rho}}=4\,\mathrm{s}
 \,\left(\frac{10^{6}\,\mathrm{g\,cm^{-3}}}{\rho_{c}}\right)^{1/2}
 	\end{equation}
-	Meanwhile, the star is building up an onion skin shell structure of 
+	Meanwhile, the star is building up an onion skin shell struture of 
 overlying layers of different elements. The burning up to ${}^{28}\mathrm
-{Si}$ is still fusion driven. However, we find that ${}^{28}\mathrm{Si}$ actually burns via 
+{Si}$ is still fusion driven. ${}^{28}\mathrm{Si}$ actually burns via 
 \textbf{photodisintegration}:
 %Matt - It is not clear that the above statement refers to \ref{eq:366}
 	\begin{equation}
@@ -4821,9 +4821,8 @@ reaction is favored
 	\begin{equation}
 	\label{eq:366} \gamma+{}^{28}\mathrm{Si}\to\alpha+{}^{24}\mathrm{Mg}
 	\end{equation}
-	This is the photodisintegration of $\mathrm{{}^{28}Si}$
-        mentioned above. Remember that at $T_{9}\sim 1$, we have
-        $E_{\gamma}\sim 100\,\mathrm{keV}$.\\
+	Remember that at $T_{9}\sim 1$, we have $E_{\gamma}\sim 100\,\mathrm
+{keV}$.\\
 	
 	\n The most stable element at fixed mass number $A$ are neutron rich 
 ($N>Z$). During silicon ``burning'', there is time for weak interactions, 

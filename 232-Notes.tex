@@ -376,9 +376,9 @@ r^3\,dr\\
 	where $E_{\mathrm{GR}}$ is the gravitational binding energy. Performing 
 a similar analysis to the left side of \eqref{rss.3} gives
 	\begin{align}
-		\label{rss.5} \int 4\pi r^3\,dr\frac{dP}{dr} &= \left.4\pi r^2P
+		\label{rss.5} \int 4\pi r^3\,dr\frac{dP}{dr} &= \left.4\pi r^3P
 \right|_{0}^R-3\left[4\pi\int Pr^2\,dr\right]\\
-		\label{rss.6} &= -3\int P4\pi  r^2\,dr\\
+		\label{rss.6} &= -3\int P\,4\pi  r^2\,dr\\
 		\label{rss.7}&=-3\avg{P}V
 	\end{align}
 	where we've defined the average pressure to be the pressure
@@ -1062,6 +1062,7 @@ Now, we recall that
 (assuming uniform composition) and thus \eqref{eq:16} can be written as
 \begin{equation}
   \label{eq:18}
+  %Matt - should these be d\ln r as well?
   \frac{1}{\gamma}\frac{d\ln P}{dr}>\frac{d\ln P}{dr}-\frac{d\ln T}{dr}
 \end{equation}
 For an ideal, monatomic gas, this becomes
@@ -1160,7 +1161,7 @@ familiar. In any case, we have
   -\omega^2=g\left(\frac{d\ln\rho}{dr}+\frac{\rho g}{P \gamma}\right)
 \end{equation}
 If $-\omega^2<0$, then the solution is stable, and the element
-oscillates at the Brunt V\"{a}is\"{a}l\"{a} frequency is 
+oscillates at the Brunt V\"{a}is\"{a}l\"{a} frequency, which is 
 \begin{equation}
   \label{eq:29}
   N^2=-g\left[\frac{d\ln\rho}{dr}+\frac{\rho g}{\gamma P}\right]
@@ -1305,7 +1306,7 @@ and thus the velocity is
   \end{quote}
   To find a situation where this \emph{does} work is deep in the
   interior of the star, where $\tau \ggg 1$ (yes, three greater than
-  signs). The relevant lengthscale here is no longer the scale height,
+  signs). The relevant lengthscale here is still the scale height,
   which begins to approach the radial coordinate:
   \begin{equation}
     \label{eq:45}
@@ -1686,7 +1687,7 @@ which is still a field with many unanswered questions.
   Then we can rewrite \eqref{eq:75} as
   \begin{equation}
     \label{eq:77}
-    \frac{\bm{\nabla}\cdot\mathbf{F}}{\rho}=\frac{1}{\rho4\pi
+    \frac{\bm{\nabla}\cdot\mathbf{F}}{\rho}=\frac{1}{\rho\,4\pi
       r^2}\frac{\partial}{\partial r}L(r)=\frac{d L(r)}{dm(r)}
   \end{equation}
   So in the case of no nuclear burning (a pre-main sequence star), we
@@ -1960,17 +1961,17 @@ which is still a field with many unanswered questions.
   \end{equation}
   spread uniformly throughout. The total Coulomb energy is then
   \begin{equation}
-    \label{eq:369}
+    \label{eq:369a}
     E_{\mathrm{Coulomb}}=\int \frac{e^2}{r}q(r)\,dq
   \end{equation}
   where $q(r)=n_Q\, 4\pi r^3/3$ and $dq=n_Q\,4\pi
-  r^2\,dr$. Re-expressing the radius interms of the charge variables,
+  r^2\,dr$. Re-expressing the radius in terms of the charge variables,
   we get
   \begin{equation}
     \label{eq:370}
     r=\left(\frac{3q}{4\pi n_Q}\right)^{1/3}
   \end{equation}
-  Then \eqref{eq:369} can be re-expressed as
+  Then \eqref{eq:369a} can be re-expressed as
   \begin{equation}
     \label{eq:371}
     E_{\mathrm{Coulomb}}\approx
@@ -4810,6 +4811,7 @@ accelerating the burning phases. Additionally, for nearly all these phases
 overlying layers of different elements. The burning up to ${}^{28}\mathrm
 {Si}$ is still fusion driven. However, we find that ${}^{28}\mathrm{Si}$ actually burns via 
 \textbf{photodisintegration}:
+%Matt - It is not clear that the above statement refers to \ref{eq:366}
 	\begin{equation}
 	\label{eq:365}{}^{28}\mathrm{Si}+{}^{28}\mathrm{Si}\to{}^{56}\mathrm
 {Ni}

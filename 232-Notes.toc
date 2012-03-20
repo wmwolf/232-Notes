@@ -28,10 +28,10 @@
 \contentsline {subsection}{\numberline {4.6}The Hayashi Track}{28}{subsection.4.6}
 \contentsline {section}{\numberline {5}Star Formation and the Jean's Mass}{29}{section.5}
 \contentsline {subsection}{\numberline {5.1}The Jean's Mass}{29}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Pre-Main Sequence Stars}{31}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.2}Pre-Main Sequence Stars}{30}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Low Mass Stars}{33}{subsection.5.3}
 \contentsline {section}{\numberline {6}Nuclear Reactions in Stars}{34}{section.6}
-\contentsline {subsection}{\numberline {6.1}Liquid Drop Model}{35}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.1}Liquid Drop Model}{34}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Tunneling through the Coulomb Barrier}{38}{subsection.6.2}
 \contentsline {subsubsection}{\numberline {6.2.1}Barrier Penetration}{40}{subsubsection.6.2.1}
 \contentsline {subsubsection}{\numberline {6.2.2}Nuclear Reaction Rates}{41}{subsubsection.6.2.2}

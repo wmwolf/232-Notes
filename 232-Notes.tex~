@@ -3252,10 +3252,10 @@ m^{1/2}r^4
     reduced to
     \begin{equation}
       \label{eq:207}
-      \ln\left[\frac{g_e m_{\alpha,e}}{m_e}\frac{g_{\mathrm{p}}
-          m_{\alpha,\mathrm{p}}}{m_{\mathrm{p}}}\frac{m_{\mathrm{H}}}{g_
+      \ln\left[\frac{g_e n_{Q,e}}{n_e}\frac{g_{\mathrm{p}}
+          n_{Q,\mathrm{p}}}{n_{\mathrm{p}}}\frac{n_{\mathrm{H}}}{g_
 {\mathrm{H}}
-          m_{\alpha,\mathrm{H}}}\right]=\frac{13.6\ \mathrm{eV}}{kT}
+          n_{Q,\mathrm{H}}}\right]=\frac{13.6\ \mathrm{eV}}{kT}
     \end{equation}
     Rearranging this, we get the \textbf{Saha Equation}
     \begin{equation}
@@ -3318,13 +3318,14 @@ m^{1/2}r^4
     the photosphere, $\tau_{\mathrm{ph}}=2/3$. Then we find
     \begin{equation}
       \label{eq:214}
-      \tau_{\mathrm{ph}}=\kappa\underbrace{\int \rho\, dr}_{x}=\kappa
-      x\quad\Rightarrow\quad x_{\mathrm{ph}}=\frac{2}{3\kappa}
+      %Matt - x->y, for consistency with previous sections
+      \tau_{\mathrm{ph}}=\kappa\underbrace{\int \rho\, dr}_{y}=\kappa
+      y\quad\Rightarrow\quad y_{\mathrm{ph}}=\frac{2}{3\kappa}
     \end{equation}
     Then the pressure at the photosphere is
     \begin{equation}
       \label{eq:215}
-      P_{\mathrm{ph}}=gx_{\mathrm{ph}}=n_{\mathrm{ph}}kT_{\mathrm{ph}}
+      P_{\mathrm{ph}}=gy_{\mathrm{ph}}=n_{\mathrm{ph}}kT_{\mathrm{ph}}
     \end{equation}
     So the density in the photosphere is
     \begin{equation}
@@ -3434,7 +3435,7 @@ m^{1/2}r^4
       \frac{n(\mathrm{H}^-)}{n(\mathrm{H})}\approx 10^{-8}e^{8700/T}
     \end{equation}
     This source also peaks at a particular effective temperature and
-    is actually the dominant soource of opacity in the sun's
+    is actually the dominant source of opacity in the sun's
     photosphere.\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Wednesday, February 24, 2012 %
@@ -3475,10 +3476,10 @@ m^{1/2}r^4
     We want to construct stellar models as a function of the hydrogen
     abundance, $X$, which will necessarily change as burning occurs in
     the star as hydrogen is burned to helium on the main sequence. For
-    now, we will in the regime of massive stars (say, $M=2M_\odot$),
+    now, we will consider the regime of massive stars (say, $M\gtrsim 2M_\odot$),
     so we have
     \begin{itemize}
-    \item Convective core, so there is a ``ball'' in teh center with
+    \item Convective core, so there is a ``ball'' in the center with
       an evolving composition.
     \item $\kappa=\kappa_{\mathrm{es}}$
     \item CNO Burning
@@ -3697,9 +3698,9 @@ acT_s^4}
       \label{fig:3}
     \end{figure}
     \n This change in hydrogen mass fraction is the source of the
-    ``Henyey Hook'' seen in large mass evolutionary trackds. After the
-    hydrogen burning shell is extinguished undergoes Kelvin-Helmholtz
-    contraction until the Helium ignites. This heilum core is nearly
+    ``Henyey Hook'' seen in large mass evolutionary tracks. After the
+    hydrogen burning shell is extinguished it undergoes Kelvin-Helmholtz
+    contraction until the Helium ignites. This helium core is nearly
     isothermal, so using hydrostatic equilibrium and the same old
     Virial theorem trick,
     \begin{equation}
@@ -3744,7 +3745,7 @@ acT_s^4}
 ^3}-\frac{1}{4\pi}\frac{GM_{\mathrm{core}}^2}{R_{\mathrm{core}}}
     \end{equation}
     Note that this equation has a well-defined maximum at some
-    critical core radius. The radius is
+    critical core radius. This radius is
     \begin{equation}
       \label{eq:253}
       R_{\mathrm{core,
@@ -3897,7 +3898,7 @@ is shown, and barely (if ever) reaches hydrogen ignition.}
     this a ${}^8\mathrm{Be}$ nucleus creating a ${}^{12}\mathrm{C}$
     nucleus. However, this is actually a carbon nucleus in an excited
     state of carbon that will eventually decay to the ground state
-    through a strange prcess. First though, we note the Gamow energy
+    through a strange process. First though, we note the Gamow energy
     and Gamow peak energy for the Carbon synthesis reaction:
     \begin{align}
       \label{eq:268}
@@ -4048,7 +4049,7 @@ neon.}
       E_k=\frac{p^2}{2m_e}=\frac{(\hbar n_e^{1/3})^2}{2m_e}
     \end{equation}
     So the Fermi energy follows $E_F\propto \rho^{2/3}$, and so the
-    presure is $P=\rho E_f\propto \rho^{5/3}$. For hydrostatics, we
+    pressure is $P=\rho E_f\propto \rho^{5/3}$. For hydrostatics, we
     have
     \begin{equation}
       \label{eq:281}
@@ -4082,7 +4083,7 @@ core,
     cooling is lowering the temperature at the center).\\
 
     \n When the star is in hydrostatic balance and has an ideal gas
-    equation of state, an injection of entropy would lead to a
+    equation of state, an injection of entropy would lead to a decrease in
     temperature (negative heat capacity). For a star, this means that
     the pressure drops when entropy is added. Here are some ways to
     cause trouble in such a star:
@@ -4144,7 +4145,7 @@ core,
     occurs in stellar evolution as the helium shell flashed in
     asymptotic giant branch (AGB) stars. A limit cycle can be formed
     where a thin shell piles up until it burns unstably, starting the
-    process over again. In an accretion context, white dwwarfs accrete
+    process over again. In an accretion context, white dwarfs accrete
     hydrogen in a thin shell and burn unstably, which is a
     \textbf{Classical Nova}. They can also do this with helium, which
     causes a larger nova or \textbf{.Ia} explosion. Neutron stars
@@ -4156,8 +4157,8 @@ core,
     \n Returning to the degenerate electron source of instability,
     an extremely degenerate electron gas can be the cause of unstable
     burning. In this regime, the pressure is insensitive to the
-    temperature, so the pressue is constant. The same equation that
-    was releven to the thin shell instability applies:
+    temperature, so the pressure is constant. The same equation that
+    was relevant to the thin shell instability applies:
     \begin{equation}
       \label{eq:289}
       c_P\frac{dT}{dt}=\varepsilon-\frac{dL(r)}{dm(r)}
@@ -4191,16 +4192,16 @@ core,
     luminosity increases dramatically ($L_\odot\to 10L_\odot$). Once
     the core flash is over, we would expect stellar evolution to slow
     down or stop due to the stable nature of helium core
-    burning. The envelope is expanded by a large factor, eseentially
+    burning. The envelope is expanded by a large factor, essentially
     shutting off the hydrogen shell burning. The luminosity then
-    decreasese quickly, creating a tip on an HR diagram (called the
+    decreases quickly, creating a tip on an HR diagram (called the
     tip of the red giant branch, or TRGB). Kelvin-Helmholtz
-    contraction occurs until stable helium core burning is occuring at
+    contraction occurs until stable helium core burning is occurring at
     a rate that balances radiative losses. Essentially the star has
     become a helium-burning main sequence star, often called a
     \textbf{Red Clump} star. If the star loses part or all of its
     hydrogen shell, the luminosity is unaffected, but the radius
-    obviously does, so there is a range of colors of red clump stars,
+    obviously is, so there is a range of colors of red clump stars,
     depending on how much hydrogen they have retained, forming the
     \textbf{Horizontal Branch} on the HR diagram.\\
 
@@ -4360,7 +4361,7 @@ masses and it is important to
     Which predicts a characteristic mass of such objects of
     \begin{equation}
       \label{eq:332}
-      M+\frac{1}{G^{3/2}}\left(\frac{c}{4}\right)^{3/2}\frac{1}{(2m_p)
+      M=\frac{1}{G^{3/2}}\left(\frac{c}{4}\right)^{3/2}\frac{1}{(2m_p)
 ^2}\left(\frac{3h^3}{8\pi}\right)^{1/2}
       \approx 0.3 M_\odot
     \end{equation}
@@ -4466,8 +4467,16 @@ masses and it is important to
       \label{eq:301}
       \frac{T_8^{7/2}}{\tau}=-\frac{dT_8}{dt}
     \end{equation}
-    where $\tau=4\times 10^{6}\,\mathrm{yrs}$. If we ignore $t\gg
-    \tau$, this gives
+    where $\tau=4\times 10^{6}\,\mathrm{yrs}$.
+    We then integrate Equation \ref{eq:301}
+    \begin{equation}
+     -\int_0^t \dfrac{dt}{\tau} = \int_{T_i}^{T_f} \dfrac{dT_8}{T_8^{7/2}}
+    \end{equation}
+    giving
+    \begin{equation}
+     -\dfrac{t}{\tau}=-\dfrac{2}{5}\left[ \dfrac{1}{T_f^{5/2}}-\dfrac{1}{T_i^{5/2}} \right].
+    \end{equation}    
+    After a short while $T_f^{-5/2} \gg T_i^{-5/2}$, thus
     \begin{equation}
       \label{eq:302}
       T_8=\left(\frac{2}{5}\frac{\tau}{t}\right)^{2/5}
@@ -4627,14 +4636,14 @@ masses and it is important to
         $T_9$ & $n_{e+}/n_{e^-}$\\
         \hline \hline
         1 & 0.02\\
-        2 & >1
+        2 & $>1$
       \end{tabular}
       \caption{Relative densities of positrons and electrons at various 
 temperatures}
       \label{tab:positron}
     \end{table}
     In the second entry in Table \ref{tab:positron}, the density of
-    the electrons are set positrons rather than the ions, so our
+    the electrons are set by positrons rather than the ions, so our
     previous considerations are invalid. When does this happen?
     I.e., when does $n_{e^+}=n_e=Zn_i$? Well, it's when this
     happens:
@@ -4797,9 +4806,9 @@ accelerating the burning phases. Additionally, for nearly all these phases
 	\label{eq:364} t_{\mathrm{dyn}}\sim\frac{1}{\sqrt{G\rho}}=4\,\mathrm{s}
 \,\left(\frac{10^{6}\,\mathrm{g\,cm^{-3}}}{\rho_{c}}\right)^{1/2}
 	\end{equation}
-	Meanwhile, the star is building up an onion skin shell struture of 
+	Meanwhile, the star is building up an onion skin shell structure of 
 overlying layers of different elements. The burning up to ${}^{28}\mathrm
-{Si}$ is still fusion driven. ${}^{28}\mathrm{Si}$ actually burns via 
+{Si}$ is still fusion driven. However, we find that ${}^{28}\mathrm{Si}$ actually burns via 
 \textbf{photodisintegration}:
 	\begin{equation}
 	\label{eq:365}{}^{28}\mathrm{Si}+{}^{28}\mathrm{Si}\to{}^{56}\mathrm
@@ -4809,9 +4818,10 @@ overlying layers of different elements. The burning up to ${}^{28}\mathrm
 reaction is favored
 	\begin{equation}
 	\label{eq:366} \gamma+{}^{28}\mathrm{Si}\to\alpha+{}^{24}\mathrm{Mg}
-	\end{equation}¥
-	Remember that at $T_{9}\sim 1$, we have $E_{\gamma}\sim 100\,\mathrm
-{keV}$.\\
+	\end{equation}
+	This is the photodisintegration of $\mathrm{{}^{28}Si}$
+        mentioned above. Remember that at $T_{9}\sim 1$, we have
+        $E_{\gamma}\sim 100\,\mathrm{keV}$.\\
 	
 	\n The most stable element at fixed mass number $A$ are neutron rich 
 ($N>Z$). During silicon ``burning'', there is time for weak interactions, 
