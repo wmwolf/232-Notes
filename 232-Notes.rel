@@ -15,7 +15,7 @@
 
 (master-dir . "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/")
 
-(label-numbers ("eq:" . 304))
+(label-numbers ("eq:" . 310))
 
 (bof "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex")
 
@@ -753,6 +753,8 @@
 
 ("eq:155" "e" "S_{\\mathrm{pp}}=4\\times 10^{-22}\\ \\mathrm{keV\\ barns}=2\\times 10^{-25}S_{\\mathrm{Strong}} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
+("eq:307" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
 ("eq:156" "e" "L_{\\mathrm{nuc}}=M\\varepsilon(T_c) " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
 ("eq:157" "e" "T_c=0.54\\frac{GM\\mu m_p}{k} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
@@ -766,6 +768,12 @@
 ("eq:161" "e" "r=m\\left[1.58+0.048\\ln m-0.36\\ln r\\right]^3 " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
 
 ("eq:162" "e" "T_c=3.4\\times 10^6\\ \\mathrm{K} " "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil)
+
+("eq:308" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:309" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
+
+("eq:310" "e" nil "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil "")
 
 (toc "toc" "      6.4 Sidebar: The Deuterium Main Sequence" "/Users/wolfey6/Dropbox/School 2012/PHYS 232/232-Notes/232-Notes.tex" nil 3 "6.4" "\\subsection{Sidebar: The Deuterium Main Sequence}" 103882)
 

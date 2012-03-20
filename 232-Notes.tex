@@ -14,6 +14,7 @@ fancyhdr}
 \newcommand{\n}{\noindent}
 \newcommand{\norm}[1]{\left\lvert#1\right\rvert}
 \newcommand{\avg}[1]{\left\langle#1\right\rangle}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
 \newcommand{\figref}[1]{Figure \ref{#1}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 % Title Page Information %
@@ -1050,7 +1051,7 @@ and likewise the densities,
 shall be from now on unless otherwise noted). Then \eqref{eq:13} requires
 \begin{equation}
   \label{eq:16}
-  \frac{1}{\gamma}\frac{d\ln P}{d\ln r}>\frac{d\ln\rho}{dr}
+  \frac{1}{\gamma}\frac{d\ln P}{dr}>\frac{d\ln\rho}{dr}
 \end{equation}
 Now, we recall that
 \begin{equation}
@@ -1446,7 +1447,7 @@ scattering)
   temperature. Electron scattering is \emph{not} the primary source of
   opacity. Typically $\mathrm{H^-}$ opacity is much more
   important. This is where a very loosely bound ion (ionization energy
-  oround 0.75\ eV) is ``ionized'' by a photon (really, it's un-ionized)
+  around 0.75\ eV) is ``ionized'' by a photon (really, it's un-ionized)
   in the reaction
   \begin{equation}
     \label{eq:136}
@@ -2428,7 +2429,7 @@ which is still a field with many unanswered questions.
 {\sigma v}}
   \end{align}
   Note that $\Delta$ was introudce strctly as a matter of
-  convenience. YOu can think of it as an effective width of the
+  convenience. You can think of it as an effective width of the
   Gaussian or something like that. Now \eqref{eq:134b} is valid for
   pretty much any \emph{non-resonant} reaction that we might
   encounter.\\
@@ -2590,21 +2591,226 @@ m^{1/2}r^4
     \boxed{\frac{a}{3T_7}=\nu}
   \end{equation}
 
-  \subsection{Sidebar: The Deuterium Main Sequence}
+  \subsection{Sidebar: Fusion Before Hydrogen Burning}
   \label{sec:deut-main-sequ}
 
-  Before the onset of main sequence hydrogen burning, protostars will
-  undergoe Deuterium burning via
+  Before hydrogen burning takes place, the ``easier'' Deuterium is
+  usually burned. This process effectively delays gravitational
+  contraction for stars that will eventually move on to the
+  ZAMS. However, for brown dwarfs, this is the only nuclear reaction
+  they will undergo before descending to degeneracy. The reaction in
+  question is
   \begin{equation}
     \label{eq:163}
     \mathrm{p+D\to {}^3He+\gamma}
   \end{equation}
-  Interestingly, the enrgy released per gram of the fusion is
-  comparable to the thermal energy. When D ``burns'', the energy
-  relased per gram is $kT/m_p$. This energy release slows the
-  contraction for a finite time until all of the Deuterium is burned
-  up.
+  The ``stupid factor'' for this reaction is $S\approx 2.5\times
+  10^{-4}\ \mathrm{keV\ barn}$, and the other relevant quantities are
+  \begin{equation}
+    \label{eq:311}
+    \mu=m_r=\frac{1\cdot 2}{3}m_p
+  \end{equation}
+  \begin{equation}
+    \label{eq:312}
+    E_\mathrm{G}=\left(\pi\alpha
+      Z_1Z_2\right)^2\left(2m_rc^2\right)=655\ \mathrm{keV}
+  \end{equation}
+  And thus, from our developed theory, the reaction rate is
+  \begin{equation}
+    \label{eq:313}
+    \avg{\sigma v}=8\times
+    10^{-20}\frac{1}{T_7^{2/3}}\exp\left(-\frac{17.24}{T_7^{1/3}}\right)\
+    \mathrm{cm^{3}\ s^{-1}}
+  \end{equation}
+  Then the nuclear energy generation rate due to Deuterium burning is
+  \begin{equation}
+    \label{eq:314}
+    \varepsilon_\mathrm{D}=\frac{E}{\rho}n_pn_\mathrm{D}\avg{\sigma
+      v}=\frac{E_{\mathrm{nuc}}}{m_p}n_\mathrm{D}\avg{\sigma v}
+  \end{equation}
+  However, we know that from big bang nucleosynthesis,
+  $n_\mathrm{D}=10^{-5}n_p$, so we may write
+  \begin{equation}
+    \label{eq:315}
+    \varepsilon_{\mathrm{D}}=\frac{E_{\mathrm{nuc}}\times
+      10^{-5}}{m_p}n_p\avg{\sigma v}
+  \end{equation}
+  The lifetime of Deuterium burning is then approximately
+  \begin{equation}
+    \label{eq:316}
+    t_{\mathrm{D}}=\frac{1}{n_p\sigma v}=\frac{2\times
+      10^{-5}}{\rho}T_7^{2/3}\exp\left(\frac{17.24}{T_7^{1/3}}\right)
+  \end{equation}
+  Suppose we want to know when $t_\mathrm{D}=t_{\mathrm{collapse}}$,
+  and since we want to burn all of the deuterium, we will presume for
+  now that it all occurs at the center, where for an $n=3/2$ polytrope
+  (fully convective protostar), we know that
+  \begin{equation}
+    \label{eq:340}
+    \rho_c=6\avg{\rho}=6\frac{3M}{4\pi R^3}=8.3\frac{M}{R^3}
+  \end{equation}
+  and the central temperature is
+  \begin{equation}
+    \label{eq:385}
+    T_c=0.54\frac{GM\mu m_p}{k R}=7.43\times 10^6\left(\frac{M}{M_\odot}\right)\left(\frac{R}{R_\odot}\right)^{-1}
+  \end{equation}
+  Our earlier calcuations gave us
+  \begin{equation}
+    \label{eq:386}
+    t_{\mathrm{collapse}}=\frac{R}{\abs{\frac{dR}{dt}}}=\frac{\frac{3}{7}\frac{GM^2}{R}}{L}
+  \end{equation}
+  with effective temperature
+  \begin{equation}
+    \label{eq:387}
+    T_{\mathrm{eff}}=4000 \left(\frac{M}{M_\odot}\right)^{7/51}\mathrm{K}
+  \end{equation}
+  and luminosity
+  \begin{equation}
+    \label{eq:388}
+    L=9\times
+    10^{32}\left(\frac{R}{R_\odot}\right)^2\left(\frac{M}{M_\odot}\right)^{28/51}\
+    \mathrm{erg\ s^{-1}}
+  \end{equation}
+  Putting this all together, we get
+  \begin{equation}
+    \label{eq:389}
+    \boxed{t_{\mathrm{collapse}}=1.8\times 10^{15}\ \mathrm{s}\
+    \left(\frac{M}{M_\odot}\right)^{3/2}\left(\frac{R}{R_\odot}\right)^{-3}}
+  \end{equation}
+  as ealier derived. For the temperature scaling, we'll use
+  \begin{equation}
+    \label{eq:390}
+    T_7=0.74\left(\frac{M}{M_\odot}\right)\left(\frac{R}{R_\odot}\right)^{-1}
+  \end{equation}
+  Then our condition that $t_\mathrm{D}=t_{\mathrm{collapse}}$ gives
+  us (now letting $r=R/R_\odot$ and $m=M/M_\odot$ for brevity)
+  \begin{equation}
+    \label{eq:391}
+    \frac{2\times 10^{-5}}{8.3
+      m}r^3\left(0.74\right)^{2/3}\frac{m^{2/3}}{r^{2/3}}\exp\left[\frac{17.24
+        r^{1/3}}{(0.74)^{1/3}m^{1/3}}\right]=1.8\times 10^{15}\frac{m^{3/2}}{r^3}
+  \end{equation}
+  Simplifying, this gives
+  \begin{equation}
+    \label{eq:392}
+    9.1\times
+    10^{20}\frac{m^{3/2}}{r^3}\frac{mr^{2/3}}{m^{2/3}r^3}=\exp\left(19.06 r^{1/3}/m^{1/3}\right)
+  \end{equation}
+  Taking natural logs on both sides gives
+  \begin{equation}
+    \label{eq:393}
+    18.26 +\frac{11}{6}\ln m-\frac{16}{3}\ln r=19.06\frac{r^{1/3}}{m^{1/3}}
+  \end{equation}
+  and, ``solving'' for $r$ gives
+  \begin{equation}
+    \label{eq:394}
+    r=m\left[2.53+0.096\ln m-0.28 \ln r\right]^3
+  \end{equation}
+  \begin{table}[htb]
+    \centering
+    \begin{tabular}{ccccc}
+      $M$ & $R$ & $T_c$ & $0.13 r/m$ & $t_\mathrm{D}$ (years)\\
+      \hline \hline
+      0.03 & 0.430 & $5.16\times 10^{5}$ & 1.86 & $7.5\times 10^6$\\
+      0.1 & 1.17 & $6.3\times 10^5$ & 1.52 & $1.7\times 10^6$\\
+      0.3 & 2.86 & $7.7\times 10^5$ & 1.24 & $5\times 10^5$\\
+      1.0 & 7.58 & $9.76\times 10^5$ & 0.98 & $1.3\times 10^5$
+    \end{tabular}
+    \caption{Parameters for various protostars and brown dwarfs undergoing Deuterium burning.}
+    \label{tab:deuterium}
+  \end{table}
+  Parameters for vaious contracting, fully-convective models are shown
+  in Table \ref{tab:deuterium}.\\
 
+  \n We might ask whether or not deuterium can even support a star. It
+  can, as we can see by comparing the available nuclear energy,
+  \begin{equation}
+    \label{eq:395}
+    E_{\mathrm{nuc}}=(5.5\ \mathrm{MeV})N_p(2\times
+    10^{-5})=\frac{M}{m_p}\left(2\times 10^{-5}\right)\left(5.5\ \mathrm{MeV}\right)
+  \end{equation}
+  to the gravitational potential energy,
+  \begin{equation}
+    \label{eq:396}
+    E_{\mathrm{GR}}=\frac{3}{7}\frac{GM}{R}
+  \end{equation}
+  The stable deuterium burning time (time spent burning Deuterium in
+  hydrostatic balance) is, compared to the overall contraction time,
+  given by
+  \begin{equation}
+    \label{eq:397}
+    t_{\mathrm{D, MS}}=t_{\mathrm{cont}}\frac{(2\times 10^{-5})(5.5\
+      \mathrm{MeV})}{\frac{3}{7}G\mu m_p/R}=t_{\mathrm{cont}}\left[0.13\left(\frac{R}{R_\odot}\right)\left(\frac{M}{M_\odot}\right)^{-1}\right]
+  \end{equation}
+  So the star sits on the Deuterium main sequence for a time less than
+  about $10^7$ years. The lowest mass star which can do this is about
+  $0.015\ M_\odot$, while those of lower mass collapse into degeneracy before
+  igniting Deuterium.\\
+
+  \n It is a bit of a coincidence that the D/H ratio is large enough so
+  that this burning can temporarily hold the star up. Obvioulsy
+  Deuterium-rich environments can lead to longer lifetimes. However,
+  the pre-hydrogen burning doesn't stop there. Next up are
+  ${}^6\mathrm{Li}$ and ${}^7\mathrm{Li}$. via
+  \begin{equation}
+    \label{eq:398}
+    \mathrm{p+{}^7Li\to 2{}^4He}
+  \end{equation}
+  With $S_0=120\ \mathrm{keV\ barn}$ and $m_r=\frac{7}{8}m_p$. Then
+  the Gamow energy for this reaction is
+  \begin{equation}
+    \label{eq:399}
+    E_{\mathrm{G}}=(\pi\alpha Z_1Z_2)^2(2m_rc^2)=7.736\ \mathrm{MeV}
+  \end{equation}
+  and the reaction rate is
+  \begin{equation}
+    \label{eq:400}
+    \avg{\sigma v}=\frac{5.1\times
+      10^{-14}}{T_7^{2/3}}\exp\left(-\frac{39.27}{T_7^{1/3}}\right)
+  \end{equation}
+  \begin{table}[htb]
+    \centering
+    \begin{tabular}{cccc}
+      $M$ & $R$ & $T$ & $t_{\mathrm{cont}}$\\
+      \hline\hline
+      0.08 & 0.26 & $2.27\times 10^{6}\ \mathrm{K}$ & 74 Myr\\
+      0.20 & 0.57 & $2.6\times 10^6\ \mathrm{K}$ & 26 Myr\\
+      1.0 & 2.286 & $3.2\times 10^6\ \mathrm{K}$ & -
+    \end{tabular}
+    \caption{Parameters for vaious protostars and brown dwarfs undergoing Lithium burning.}
+    \label{tab:lithium}
+  \end{table}
+  Again, everything is still convective, but it is clear that the
+  higher Gamow peak means we must have a higher core
+  temperature. Going through much of the same song and dance as we did
+  with Deuterium, we find
+  \begin{equation}
+    \label{eq:401}
+    t_{\mathrm{cont}}=1.8\times 10^{15}\ \mathrm{s}\ \frac{m^{3/2}}{r^3}
+  \end{equation}
+  (still) and 
+  \begin{equation}
+    \label{eq:402}
+    t_{\mathrm{Li}}=\frac{1}{n_p\avg{\sigma
+          v}}=\frac{m_p}{\rho\avg{\sigma v}}=\left(4\times 10^{-12}\frac{r^3}{m}\right)(0.74)^{2/3}\frac{m^{2/3}}{r^{2/3}}\exp\left(\frac{43.4}{m^{1/3}}r^{1/3}\right)
+  \end{equation}
+  Doing the same algebra and logarithm tricks, we find that for
+  lithium burning,
+  \begin{equation}
+    \label{eq:403}
+    r=m\left[1.419+4.2\times 10^{-2}\ln m-0.123 \ln r\right]^3
+  \end{equation}
+  And the corresponding table can be found in Table
+  \ref{tab:lithium}. Clearly we are still not on the main sequence,
+  but much closer, as the low mass main sequence stars have
+  $T_c=4\times 10^6\ \mathrm{K}$ and hence all ${}^7\mathrm{Li}$ is
+  depleted. The ${}^7\mathrm{Li}$ abundance is not large enough to
+  supply the star with any energy  at this time to halt collapse, so
+  there is no equivalent Lithium main sequence. What \emph{is}
+  critical about lithium is that it acts as a thermometer, since the
+  burning is so temperature sensitive. If lithium is gone, then we
+  already know that the core temperature has passed a critical point.
+  
   \subsection{The PP Chain and the CN Cycle}
   \label{sec:pp-chain}
 
@@ -2705,7 +2911,7 @@ m^{1/2}r^4
   \label{sec:power-gener-upper}
 
   This catalytic chain of carbon and nitrogen reactions allow for
-  the creation of long-lived (in the nuclear sense) $\beta$-unstalbe
+  the creation of long-lived (in the nuclear sense) $\beta$-unstable
   elements. Thus proton captures on high $Z$ elements is then
   competitive with the PP chain. Since the rate-limiting step is
   \eqref{eq:170c}, we would expect an excess of $\mathrm{{}^{14}N}$
@@ -2736,7 +2942,7 @@ m^{1/2}r^4
         g^{-1}\ s^{-1}}\rho T_7^{-2/3}\exp\left(-\frac{72.2}{T_7^{1/3}}
 \right)
     \end{equation}
-    Nos using our equation of stellar structure,
+    Now using our equation of stellar structure,
     \begin{equation}
       \label{eq:177}
       T\frac{ds}{dt}=\varepsilon-\frac{dL(r)}{dm(r)}
@@ -2746,7 +2952,7 @@ m^{1/2}r^4
       \label{eq:178}
       L=\int \varepsilon(r)\,dm(r)=M\varepsilon(T_c)
     \end{equation}
-    Thus the nuclear luminosity is given approximately by
+    (that integral is obviously a bit of a lie.) Thus the nuclear luminosity is given approximately by
     \begin{equation}
       \label{eq:179}
       L_{\mathrm{nuc}}=\int \varepsilon\, dm=\frac{M^2}{R^3}5\times
@@ -2762,7 +2968,7 @@ m^{1/2}r^4
     What we want to derive is
     the dependence on stellar mass of $R$, since we are asking for
     $T_c$. This process is simplified by expanding the exponential
-    term into a local power law. Then we define the quantity by
+    term into a local power law. Then we define the quantity $I$ by
     \begin{equation}
       \label{eq:180}
       I=\exp\left(-\frac{72.19}{T_7^{1/3}}\right)\propto T^\nu
@@ -2790,7 +2996,7 @@ m^{1/2}r^4
       \label{eq:184}
       R\propto \frac{M}{T}\propto M^{0.8}
     \end{equation}
-    as quoted from the literature, this exponent is quoted as
+    In the literature, this exponent is often quoted as
     0.75. Then the luminosity is given by
     \begin{equation}
       \label{eq:185}
@@ -2815,7 +3021,7 @@ m^{1/2}r^4
     \label{sec:conv-large-stars}
 
     The cores of large, zero-age main sequence stars are
-    convective. We found earlier that nuclear energy generatin is very
+    convective. We found earlier that nuclear energy generation is very
     temperature sensitive, with $\varepsilon\propto T^{20}$, where
     most of the energy is being generated close to the center. If we
     were to plot the luminosity coming out of a shell of radius r
@@ -2894,7 +3100,7 @@ m^{1/2}r^4
     by the CN(O) cycle. They typically have convective cores and
     radiative envelopes with the opacity set by Thomson scattering.
 
-    \subsection{Stellar Evolution}
+    \subsection{Introduction to Stellar Evolution}
     \label{sec:stellar-evolution}
 
     As a star burns hydrogen to helium, its composition naturally
@@ -2930,7 +3136,21 @@ m^{1/2}r^4
     \section{State of the Stellar Interior}
     \label{sec:state-stell-inter}
 
-    When studying stellar interiors, often we assume that the gas is
+    Virtually all information about stars come from the observation of
+    their light. Photons reaching the observer transport information
+    about the conditions of the gas they had their last interaction
+    with before leaving the star. This region of ``last interaction''
+    is called the \textbf{photosphere}. The information about the
+    physical condition of the photosphere (and hence properties of the
+    star like gravity and surface temperature) can be retreived by
+    studying the stellar spectra.\\
+
+    \n To understand and describe the formation of spectral lines, we
+    must link the degree of ionization and the occupation over orbital
+    energy levels in the gas to the large-scale thermodynamics
+    variables. \\
+
+    \n When studying stellar interiors, often we assume that the gas is
     in \textbf{Local Thermodynamic Equilibirum}, which is where most
     thermodynamic variables follow a Maxwell-Boltzmann distribution
     and thus that all areas of the star are locally in thermodynamic
@@ -2952,7 +3172,7 @@ m^{1/2}r^4
     accurate to use Fermi-Dirac statistics:
     \begin{equation}
       \label{eq:195}
-      \boxed{n(p)=\frac{g}{h^3}\frac{1}{\exp\left[(E-p-\mu)/(kT)\right]+1}}
+      \boxed{n(p)=\frac{g}{h^3}\frac{1}{\exp\left[(E_p-\mu)/(kT)\right]+1}}
     \end{equation}
     where
     \begin{equation}
@@ -2963,7 +3183,7 @@ m^{1/2}r^4
     need to integrate this phase space density over all momenta:
     \begin{equation}
       \label{eq:197}
-      n=\frac{g}{h^3}\int_0^\infty\frac{4\pi p^2\,dp}{\exp\left[(E-p-\mu)/
+      n=\frac{g}{h^3}\int_0^\infty\frac{4\pi p^2\,dp}{\exp\left[(E_p-\mu)/
 (kT)\right]+1}
     \end{equation}
     Here we are assuming that the mean free path is much longer than
@@ -2977,28 +3197,29 @@ m^{1/2}r^4
       \label{eq:199}
       \exp\left[(E_p-\mu)/(kT)\right]\gg 1
     \end{equation}
-    So the integral in \eqref{eq:197} simplifies considerably to
-    (missing some explanation here)
+    So the integral in \eqref{eq:197} simplifies considerably to (you
+    remember how to do $\int_0^\infty x^2 e^{-\alpha^2x^2}$, right?)
     \begin{equation}
       \label{eq:200}
-      n=\frac{g 4\pi}{h^3}\int_0^\infty p^2 \exp\left[(E_p-\mu)/(kT)\right]
+      n=\frac{g 4\pi}{h^3}\int_0^\infty p^2 \exp\left[\frac{-(E_p-\mu)}{kT}\right]
 \,dp
     \end{equation}
     \begin{equation}
       \label{eq:201}
-      \exp\left(\frac{\mu-m_pc^2}{kT}\right)=\frac{mh^3}{g(2m_pk T\pi)^
-{3/2}}=\frac{m}{2m_\alpha}
+      \exp\left(\frac{\mu-m_pc^2}{kT}\right)=\frac{nh^3}{g(2m_pk T\pi)^
+{3/2}}=\frac{n}{2n_Q}
     \end{equation}
-    Here, we are using $m_\alpha\equiv (2\pi mkT/h^2)^{3/2}$. Then the
+    Here, we are using $n_Q\equiv (2\pi mkT/h^2)^{3/2}$. This is the
+    so-called \textbf{quantum concentration}, at which particles are degenerate. Then the
     chemical potential is necessarily
     \begin{equation}
       \label{eq:202}
-      \boxed{\mu_e=kT\ln\left(\frac{m_e}{2m_\alpha}\right)+m_ec^2}
+      \boxed{\mu_e=kT\ln\left(\frac{n_e}{2n_Q}\right)+m_ec^2}
     \end{equation}
     Now the ionization of Hydrogen is given by
     \begin{equation}
       \label{eq:203}
-      e^{-}+\mathrm{p\to H+\gamma}
+      e^{-}+\mathrm{p\rightleftharpoons H+\gamma}
     \end{equation}
     Equating the chemical potentials (the condition for LTE) tells us
     that
@@ -3011,13 +3232,13 @@ m^{1/2}r^4
     \begin{align}
       \label{eq:205}
       \mu_\mathrm{p} &=
-      m_\mathrm{p}c^2-kT\ln\left(\frac{g_\mathrm{p}m_{\alpha,p}}{m_{\mathrm
+      m_\mathrm{p}c^2-kT\ln\left(\frac{g_\mathrm{p}n_{Q,p}}{n_{\mathrm
 {p}}}\right)\\
       \label{eq:205a}
-      \mu_e &= m_ec^2-kT\ln\left(\frac{g_e m_{\alpha,e}}{m_e}\right)\\
+      \mu_e &= m_ec^2-kT\ln\left(\frac{g_e n_{Q,e}}{n_e}\right)\\
       \label{eq:205b}
       \mu_\mathrm{H} &=
-      m_\mathrm{H}c^2-kT\ln\left(\frac{g_\mathrm{H}m_{\alpha,H}}{m_{\mathrm
+      m_\mathrm{H}c^2-kT\ln\left(\frac{g_\mathrm{H}n_{Q,\mathrm{H}}}{n_{\mathrm
 {H}}}\right)
     \end{align}
     An important fact here is the difference between the rest mass of
@@ -3044,8 +3265,8 @@ m^{1/2}r^4
           m_ekT}{h^2}\right]^{3/2}\exp\left(-\frac{13.6\ \mathrm{eV}}{kT}
 \right)}
     \end{equation}
-    Often times we'll see this in terms of the \textbf{Quantum
-      Concentration}:
+    Often times we'll see this in terms of the quantum
+      concentration:
     \begin{equation}
       \label{eq:225}
       n_Q=\left[\frac{2\pi mkT}{h}\right]^{3/2}
@@ -3093,11 +3314,11 @@ m^{1/2}r^4
       10^4\left(\frac{M_\odot}{M}\right)^{1/2}
     \end{equation}
     Where we have used the fact that $R\propto M^{0.75}$. Recalling
-    the optical depth, $\tau=\int \rho\kappa dr$, we will say that at
+    the optical depth, $\tau=\int \rho\kappa\, dr$, we will say that at
     the photosphere, $\tau_{\mathrm{ph}}=2/3$. Then we find
     \begin{equation}
       \label{eq:214}
-      \tau_{\mathrm{ph}}=\kappa\underbrace{\int \rho dr}_{x}=\kappa
+      \tau_{\mathrm{ph}}=\kappa\underbrace{\int \rho\, dr}_{x}=\kappa
       x\quad\Rightarrow\quad x_{\mathrm{ph}}=\frac{2}{3\kappa}
     \end{equation}
     Then the pressure at the photosphere is
@@ -3127,7 +3348,7 @@ m^{1/2}r^4
     \end{tabular}
     \end{center}
     So there is around a factor of ten spread in these effective
-    temperatures. Thus, the differend emission and absorption lines
+    temperatures. Thus, the different emission and absorption lines
     that we see will vary greatly among these classes (hence their
     name of \textbf{spectral classes}). Elements with first
     ionization potential less than $5\ \mathrm{eV}$ include Li, Na,
@@ -3156,7 +3377,7 @@ m^{1/2}r^4
 \right)=10^{-5}
     \end{equation}
     at a temperature of $10^4\ \mathrm{K}$. Is this strong enough to
-    produce an observable line? First we look at the corss section of
+    produce an observable line? First we look at the cross section of
     scattering:
     \begin{equation}
       \label{eq:218}
