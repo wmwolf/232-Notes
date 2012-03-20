@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.2.21)  20 MAR 2012 11:09
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.2.21)  20 MAR 2012 11:55
 entering extended mode
  %&-line parsing enabled.
 **232-Notes.tex
@@ -921,10 +921,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7187 strings out of 493848
- 96198 string characters out of 1152823
- 205367 words of memory out of 3000000
- 9606 multiletter control sequences out of 15000+50000
+ 7185 strings out of 493848
+ 96151 string characters out of 1152823
+ 205263 words of memory out of 3000000
+ 9604 multiletter control sequences out of 15000+50000
  18270 words of font info for 70 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  38i,32n,43p,584b,480s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -948,7 +948,7 @@ sfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symb
 ols/msam10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm7.pf
 b>
-Output written on 232-Notes.pdf (81 pages, 922158 bytes).
+Output written on 232-Notes.pdf (81 pages, 922176 bytes).
 PDF statistics:
  1829 PDF objects out of 2073 (max. 8388607)
  730 named destinations out of 1000 (max. 500000)
