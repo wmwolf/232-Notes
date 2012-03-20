@@ -64,8 +64,8 @@
 \contentsline {subsection}{\numberline {9.3}Evolution of Larger Stars}{74}{subsection.9.3}
 \contentsline {subsubsection}{\numberline {9.3.1}Onset of Neutrino Emission}{75}{subsubsection.9.3.1}
 \contentsline {subsubsection}{\numberline {9.3.2}Plasmon Decay}{77}{subsubsection.9.3.2}
-\contentsline {subsubsection}{\numberline {9.3.3}Back to Stellar Evolution}{77}{subsubsection.9.3.3}
+\contentsline {subsubsection}{\numberline {9.3.3}Back to Stellar Evolution}{78}{subsubsection.9.3.3}
 \contentsline {section}{\numberline {10}Core Collapse and Stellar Death}{79}{section.10}
 \contentsline {subsection}{\numberline {10.1}The March to Collapse}{79}{subsection.10.1}
 \contentsline {subsection}{\numberline {10.2}Stellar Core Collapse}{79}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}Neutron Star and Black Hole Formation}{80}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.3}Neutron Star and Black Hole Formation}{81}{subsection.10.3}
