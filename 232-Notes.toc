@@ -50,12 +50,12 @@
 \contentsline {section}{\numberline {8}Stellar Evolution}{57}{section.8}
 \contentsline {subsection}{\numberline {8.1}Main Sequence Evolution for Massive Stars}{58}{subsection.8.1}
 \contentsline {subsection}{\numberline {8.2}Main Sequence Evolution for Less Massive Stars}{59}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Post-Main Sequence Evolution}{59}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.3}Post-Main Sequence Evolution}{60}{subsection.8.3}
 \contentsline {subsubsection}{\numberline {8.3.1}The Red Giant Branch (RGB)}{60}{subsubsection.8.3.1}
 \contentsline {subsection}{\numberline {8.4}The Sch\"onberg-Chadrasekhar Limit}{61}{subsection.8.4}
 \contentsline {subsection}{\numberline {8.5}Helium and Higher Burning}{65}{subsection.8.5}
 \contentsline {subsubsection}{\numberline {8.5.1}Higher Burning}{66}{subsubsection.8.5.1}
-\contentsline {subsubsection}{\numberline {8.5.2}Helium Burning in a Massive Star}{67}{subsubsection.8.5.2}
+\contentsline {subsubsection}{\numberline {8.5.2}Helium Burning in a Massive Star}{66}{subsubsection.8.5.2}
 \contentsline {subsubsection}{\numberline {8.5.3}Helium Core Flash}{67}{subsubsection.8.5.3}
 \contentsline {subsection}{\numberline {8.6}The Horizontal Branch and The Asymptotic Giant Branch}{69}{subsection.8.6}
 \contentsline {section}{\numberline {9}White Dwarfs}{70}{section.9}

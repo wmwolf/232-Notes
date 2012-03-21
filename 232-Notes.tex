@@ -3147,7 +3147,7 @@ m^{1/2}r^4
     studying the stellar spectra.\\
 
     \n To understand and describe the formation of spectral lines, we
-    must link the degree of ionization and the occupation over orbital
+    must link the degree of ionization and the occupation of orbital
     energy levels in the gas to the large-scale thermodynamics
     variables. \\
 
@@ -3165,9 +3165,9 @@ m^{1/2}r^4
     probility of particles residing in these two states is given by
     \begin{equation}
       \label{eq:194}
-      \frac{n_1}{n_2}=\frac{g_1}{g_0}e^{-\Delta E/(kT)}
+      \frac{n_1}{n_2}=\frac{g_1}{g_2}e^{-\Delta E/(kT)}
     \end{equation}
-    where $g_1$ and $g_0$ are the statsitical weights of the two
+    where $g_1$ and $g_2$ are the statsitical weights of the two
     configurations. This equation actually describes the ionization
     states in the stellar interior, though for electrons, it's more
     accurate to use Fermi-Dirac statistics:
@@ -3270,7 +3270,7 @@ m^{1/2}r^4
       concentration:
     \begin{equation}
       \label{eq:225}
-      n_Q=\left[\frac{2\pi mkT}{h}\right]^{3/2}
+      n_Q=\left[\frac{2\pi mkT}{h^2}\right]^{3/2}
     \end{equation}
     Now, suppose we are in a state where exactly half of the hydrogen
     is ionized. In this case,
@@ -3338,18 +3338,22 @@ m^{1/2}r^4
           \mathrm{K}}{T}\right)\left(\frac{g}{2.7\times 10^4}\right)
     \end{equation}
     For various spectral types, we have a range of masses and
-    effective temperatures\\
-    \begin{center}
-    \begin{tabular}[h]{c c c}
-      Spectral Type & $T_{\mathrm{eff}}$ & $M/M\odot$\\
-      \hline\hline
-      O3 & 52000 K & 120\\
-      B0 & 30000 K & 17\\
-      A0 & 9500 K & 3\\
-      G0 & 6000 K & $\sim 1$
-    \end{tabular}
-    \end{center}
-    So there is around a factor of ten spread in these effective
+    effective temperatures summarized in Table \ref{tab:spectral}.\\
+
+    \begin{table}[h]
+      \centering
+      \begin{tabular}[h]{c c c}
+        Spectral Type & $T_{\mathrm{eff}}$ & $M/M\odot$\\
+        \hline\hline
+        O3 & 52000 K & 120\\
+        B0 & 30000 K & 17\\
+        A0 & 9500 K & 3\\
+        G0 & 6000 K & $\sim 1$
+      \end{tabular}
+      \caption{Parameters of selected spectral types.}
+      \label{tab:spectral}
+    \end{table}
+    \n So there is around a factor of ten spread in these effective
     temperatures. Thus, the different emission and absorption lines
     that we see will vary greatly among these classes (hence their
     name of \textbf{spectral classes}). Elements with first
@@ -3364,7 +3368,7 @@ m^{1/2}r^4
       Transitions}. The transtion from 1 to 2 corresponds to a
     wavelength of 1215 \AA, and the Lyman limit, from 1 out to infinity
     is at 911 \AA. Probaly more well-known are transitions to and from the
-    $n=2$, called the \textbf{Balmer Transitions}. The most famous of
+    $n=2$ state, called the \textbf{Balmer Transitions}. The most famous of
     these is the H$\alpha$ line, which is the $n=2$ to $n=3$
     transition, at a wavelength of 6563 \AA. Note that this is in the
     visible and thus easily observable, whereas the Lyman transitions
@@ -3393,7 +3397,7 @@ m^{1/2}r^4
       \label{eq:219}
       \frac{\sigma_{\mathrm{line}}}{\sigma_{\mathrm{Th}}}\sim 10^8
     \end{equation}
-    Now we can determine the relative strenth of this source of
+    Now we can determine the relative strength of this source of
     opacity to electron scattering via
     \begin{equation}
       \label{eq:220}
@@ -3417,7 +3421,7 @@ m^{1/2}r^4
 
     \paragraph{H${}^-$ Opacity}
     \label{par:mathrmh--opacity}
-    With the Boltzmann equation, we can compute what fraction of
+    With the Saha equation (or at least something like it), we can compute what fraction of
     hydrogen atoms are actually ionized into the $\mathrm{H}^-$ ion:
     \begin{equation}
       \label{eq:222}
@@ -3543,7 +3547,7 @@ m^{1/2}r^4
       L_{\mathrm{nuc}}\propto T_c^{15\to 20}
     \end{equation}
     And as the luminosity increases, the temperature will only
-    increase by, at most, 20\%. Some scaline relations of importance
+    increase by, at most, 20\%. Some scaling relations of importance
     for the radius can then be obtained:
     \begin{equation}
       \label{eq:236}
@@ -3730,7 +3734,7 @@ acT_s^4}
 {R_c}r^2P(r)\,dr=-\frac{GM_{\mathrm{core}}}{R_{\mathrm{core}}}
     \end{equation}
     Since we have
-    $P(r)=\rho(r)kT_{\mathrm{core}}/(\mu_{\mathrm{core}}m_p)$. Then we
+    $P(r)=\rho(r)kT_{\mathrm{core}}/(\mu_{\mathrm{core}}m_p)$, we
     can recast \eqref{eq:250} quite easily to
     \begin{equation}
       \label{eq:251}
@@ -3788,7 +3792,7 @@ acT_s^4}
       0.68\frac{1}{\mu_{\mathrm{core}}^4}\frac{1}{M_{\mathrm{core}}}>\frac
 {1}{\mu_{\mathrm{envelope}}}\frac{1}{M^2}
     \end{equation}
-    So then the requirment on the core mass is
+    So then the requirement on the core mass is
     \begin{equation}
       \label{eq:259}
       M_{\mathrm{core}}<M\left(\frac{\mu_{\mathrm{envelope}}}{\mu_{\mathrm
@@ -3865,7 +3869,7 @@ is shown, and barely (if ever) reaches hydrogen ignition.}
     according to
     \begin{align}
       \label{eq:264}
-      \mathrm{{}^4He+{}^4He\to{}^8Be+\gamma}\\
+      \mathrm{{}^4He+{}^4He\to{}^8Be+\gamma}
     \end{align}
     However, $\mathrm{{}^8Be}$ is unstable with a decay time of around
     $\tau\sim 2\times 10^{-16}\ \mathrm{sec}$.  The Gamow energy for
@@ -3923,7 +3927,7 @@ is shown, and barely (if ever) reaches hydrogen ignition.}
       \label{eq:270}
       3\mu_4=\mu_{12^*}
     \end{equation}
-    Messy algebra ensures, with the result that
+    Messy algebra ensues, with the result that
     \begin{equation}
       \label{eq:271}
       \frac{n_{\mathrm{12^*}}}{n_4}=5\times
@@ -3971,7 +3975,8 @@ is shown, and barely (if ever) reaches hydrogen ignition.}
     Once carbon is present in the core, it can burn to oxygen by the
     synthesis of an alpha particle and a carbon nucleus. Similarly,
     the Oxygen can be burned to Neon. The relevant values are shown in
-    Table \ref{tab:1}
+    Table \ref{tab:1}.\\
+
     \begin{table}[h!]
       \centering
       \begin{tabular}{l c c}
@@ -3986,7 +3991,7 @@ is shown, and barely (if ever) reaches hydrogen ignition.}
 neon.}
       \label{tab:1}
     \end{table}
-    The first reaction in Table \ref{tab:1} does occur fast enough to
+    \n The first reaction in Table \ref{tab:1} does occur fast enough to
     compete with the triple alpha process, so advanced stars typically
     have a core consisting of both carbon and oxygen.
 
@@ -3999,7 +4004,7 @@ neon.}
     time is
     \begin{equation}
       \label{eq:276}
-      t_{\mathrm{He\,burn}}=\frac{E_{\mathrm{nuc}}M_{\mathrm{burn}}}{L}
+      t_{\mathrm{He\,burn}}=\frac{\varepsilon_{\mathrm{nuc}}M_{\mathrm{burn}}}{L}
     \end{equation}
     which is shorter than the hydrogen-burning main sequence burn
     time. For stars above around $6\ M_\odot$, carbon burning will
@@ -4050,7 +4055,7 @@ neon.}
       \label{eq:280}
       E_k=\frac{p^2}{2m_e}=\frac{(\hbar n_e^{1/3})^2}{2m_e}
     \end{equation}
-    So the Fermi energy follows $E_F\propto \rho^{2/3}$, and so the
+    So the Fermi energy follows $E_f\propto \rho^{2/3}$, and so the
     pressure is $P=\rho E_f\propto \rho^{5/3}$. For hydrostatics, we
     have
     \begin{equation}
@@ -4073,7 +4078,7 @@ neon.}
     \begin{equation}
       \label{eq:282}
       kT_s\approx\frac{G M_sm_p}{\mu_e R_c}\quad\Rightarrow \quad
-      T_S\propto \frac{M_c}{R_c}\propto M_c^{4/3}
+      T_s\propto \frac{M_c}{R_c}\propto M_c^{4/3}
     \end{equation}
     So as the shell deposits more and more helium into the core, the
     temperature on the outer edge is rising in time. In the degenerate 
@@ -4549,7 +4554,7 @@ masses and it is important to
     Note that for heilum burning to take place, we needed a
     temperature of about $T=2\times 10^8\,\mathrm{K}$. The Coulomb
     barrier for the double carbon ignition will require a higher
-    temperature than helium burning did, but these stars do ge hot
+    temperature than helium burning did, but these stars do get hot
     enough for this to occur. 
 
     \subsubsection{Onset of Neutrino Emission}
@@ -4595,7 +4600,7 @@ masses and it is important to
     lecture about the ``neutrinosphere'' on neutron star. Stars are
     not this dense at this stage, though.\\
 
-    \n How are neutrnos created, though? The primary source is through
+    \n How are neutrinos created, though? The primary source is through
     positron-electron annihilation:
     \begin{equation}
       \label{eq:342}
@@ -4644,7 +4649,8 @@ masses and it is important to
 temperatures}
       \label{tab:positron}
     \end{table}
-    In the second entry in Table \ref{tab:positron}, the density of
+
+    \n In the second entry in Table \ref{tab:positron}, the density of
     the electrons are set by positrons rather than the ions, so our
     previous considerations are invalid. When does this happen?
     I.e., when does $n_{e^+}=n_e=Zn_i$? Well, it's when this
@@ -4715,7 +4721,7 @@ assuiming $\rho_4=1$.}
     \subsubsection{Plasmon Decay}
     \label{sec:plasmon-decay}
 
-    one other important neutrino emission process is \textbf{plasmon
+   One other important neutrino emission process is \textbf{plasmon
       decay}. In a plasma, the dispersion relation for photons becomes
     \begin{equation}
       \label{eq:356}
@@ -4795,8 +4801,7 @@ dominant.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 % Monday, March 12, 2012 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-    \n \textit{Monday, March 12, 2012}\\
-    
+    \n \textit{Monday, March 12, 2012}    
 \section{Core Collapse and Stellar Death}
 	\label{sec:core-collapse} 
 	\subsection{The March to Collapse}
@@ -4809,50 +4814,57 @@ accelerating the burning phases. Additionally, for nearly all these phases
 \,\left(\frac{10^{6}\,\mathrm{g\,cm^{-3}}}{\rho_{c}}\right)^{1/2}
 	\end{equation}
 	Meanwhile, the star is building up an onion skin shell structure of 
-overlying layers of different elements. The burning up to ${}^{28}\mathrm
-{Si}$ is still fusion driven. However, we find that ${}^{28}\mathrm{Si}$ actually burns via 
-\textbf{photodisintegration}:
-%Matt - It is not clear that the above statement refers to \ref{eq:366}
+        overlying layers of different elements. The burning up to ${}^{28}\mathrm
+        {Si}$ is still fusion driven. However, we find that ${}^{28}\mathrm{Si}$ actually burns via 
+        \textbf{photodisintegration}:
+        % Matt - It is not clear that the above statement refers to \ref{eq:366}
 	\begin{equation}
-	\label{eq:365}{}^{28}\mathrm{Si}+{}^{28}\mathrm{Si}\to{}^{56}\mathrm
-{Ni}
+          \label{eq:365}{}^{28}\mathrm{Si}+{}^{28}\mathrm{Si}\to{}^{56}\mathrm
+          {Ni}
 	\end{equation}
 	This reaction has a prohibitive Coulomb barrier, so the following 
-reaction is favored
+        reaction is favored
 	\begin{equation}
-	\label{eq:366} \gamma+{}^{28}\mathrm{Si}\to\alpha+{}^{24}\mathrm{Mg}
+          \label{eq:366} \gamma+{}^{28}\mathrm{Si}\to\alpha+{}^{24}\mathrm{Mg}
 	\end{equation}
 	This is the photodisintegration of $\mathrm{{}^{28}Si}$
         mentioned above. Remember that at $T_{9}\sim 1$, we have
         $E_{\gamma}\sim 100\,\mathrm{keV}$.\\
 	
 	\n The most stable element at fixed mass number $A$ are neutron rich 
-($N>Z$). During silicon ``burning'', there is time for weak interactions, 
-yielding more neutron-rich isotopes. Using beta captures, the pressure 
-support is decreased.
+        ($N>Z$). During silicon ``burning'', there is time for weak interactions, 
+        yielding more neutron-rich isotopes. Using beta captures, the pressure 
+        support is decreased.
 	\subsection{Stellar Core Collapse}
 	As the electrons in the core become relativistic, the mass of the core 
-approaches the Chandrasekhar mass (appropriately corrected for temperature 
-and the electrons per baryon, so lower than that for white dwarf). As the 
-mass increases, the core compresses, making the electrons become more 
-relativistic and also increasing the temperature. The electrons are 
-captured by nuclei, and the photons photodisintegrate the nuclei, starting 
-the undoing of all of the nucleosynthesis that has been going on in the 
-star.\\
+        approaches the Chandrasekhar mass (appropriately corrected for temperature 
+        and the electrons per baryon, so lower than that for white dwarf). As the 
+        mass increases, the core compresses, making the electrons become more 
+        relativistic and also increasing the temperature. The electrons are 
+        captured by nuclei, and the photons photodisintegrate the nuclei, starting 
+        the undoing of all of the nucleosynthesis that has been going on in
+        the star.\\ 
 
-	\n Now we have to worry about energy \emph{sinks} in the star, since these reactions are endothermic. One such reaction is
+	\n Now we have to worry about energy \emph{sinks} in the star,
+        since these reactions are endothermic. One such reaction  is
 	\begin{equation}
 	\label{eq:367} \gamma+{}^{56}\mathrm{Fe}\to 13\alpha+4n
 	\end{equation}
-	Which requires an energy of 124 MeV. This energy comes from the ambient thermal energy, so the core is cooled, and thus contracts. The energy lost per unit mass is
+	Which requires an energy of 124 MeV. This energy comes from
+        the ambient thermal energy, so the core is cooled, and thus
+        contracts. The energy lost per unit mass is 
 	\begin{equation}
-	\label{eq:368} \frac{124\,\mathrm{MeV}}{56m_{p}}=2\,\mathrm{MeV/baryon}
+	\label{eq:368}
+        \frac{124\,\mathrm{MeV}}{56m_{p}}=2\,\mathrm{MeV/baryon} 
 	\end{equation}
 	The Contraction must get to
 	\begin{equation}
 	\frac{GM}{R}\approx 2\,\mathrm{MeV/baryon}
 	\end{equation}
-	Which gives for a star the mass of the sun being $R=1000\,\mathrm{km}$! Just considering the case where half of the ${}^{56}\mathrm{Fe}$ is destroyed, we get the data shown in Table \ref{tab:iron}.\\
+	Which gives for a star the mass of the sun being
+        $R=1000\,\mathrm{km}$! Just considering the case where half of
+        the ${}^{56}\mathrm{Fe}$ is destroyed, we get the data shown
+        in Table \ref{tab:iron}.\\ 
 	\begin{table}[h!]
 	\centering
 	\begin{tabular}{cc}
@@ -4862,28 +4874,63 @@ star.\\
 		1 & 0.95\\
 		10 & 1.2
 	\end{tabular}
-	\caption{Density and temperature of a degenerate core at half iron disintegration}
+	\caption{Density and temperature of a degenerate core at half
+          iron disintegration} 
 	\label{tab:iron}
 	\end{table}
 	
-	\n Photodisintegration gets the radius down to less than 1000 km and the density up to $\rho_{10}\sim 1$. Since the electrons are relativistic, the Fermi energy is $E_{F}\sim m_{e}c^{2}$ (for the electrons). Now recall the Chandrasekhar mass,
+	\n Photodisintegration gets the radius down to less than 1000
+        km and the density up to $\rho_{10}\sim 1$. Since the
+        electrons are relativistic, the Fermi energy is $E_{F}\sim
+        m_{e}c^{2}$ (for the electrons). Now recall the Chandrasekhar
+        mass, 
 	\begin{equation}
-	\label{eq:369} M_{\mathrm{Ch}}=1.46\,M_{\odot}\left[\frac{Y_{e}}{1/2}\right]^{2}
+	\label{eq:369}
+        M_{\mathrm{Ch}}=1.46\,M_{\odot}\left[\frac{Y_{e}}{1/2}\right]^{2} 
 	\end{equation}
-	Where $Y_{e}$ is the number of electrons per baryon. For a pure C/O object, $Y_{e}=1/2$. For ${}^{56}\mathrm{Fe}$, though, $Y_{e}=0.46$, which introduces a correction for a \emph{cold} iron core, bringing the mass down to $1.26\,M_{\odot}$. As the Fermi energy increases, more electron captures occur, increasing the neutron-richness of the plasma.\\
+	Where $Y_{e}$ is the number of electrons per baryon. For a
+        pure C/O object, $Y_{e}=1/2$. For ${}^{56}\mathrm{Fe}$,
+        though, $Y_{e}=0.46$, which introduces a correction for a
+        \emph{cold} iron core, bringing the mass down to
+        $1.26\,M_{\odot}$. As the Fermi energy increases, more
+        electron captures occur, increasing the neutron-richness of
+        the plasma.\\ 
 	
-	\n During the rest of the collapse, the nuclei are being broken up and more and more protons are converted to neutrons via electron capture, which also causes a flurry of neutrino emission. The collapse suddenly ``halts'' when a density is reached that implies the mean spacing is of order of the neutron radius, or 1 fm (fermi). Here we have the onset of an incompressible equation of state. That is, the pressure rises dramatically as the density approaches the nuclear density of about $\rho\approx \rho_{\mathrm{nuc}}\approx 10^{14}\,\mathrm{g\,cm^{-3}}$.\\
+	\n During the rest of the collapse, the nuclei are being
+        broken up and more and more protons are converted to neutrons
+        via electron capture, which also causes a flurry of neutrino
+        emission. The collapse suddenly ``halts'' when a density is
+        reached that implies the mean spacing is of order of the
+        neutron radius, or 1 fm (fermi). Here we have the onset of an
+        incompressible equation of state. That is, the pressure rises
+        dramatically as the density approaches the nuclear density of
+        about $\rho\approx \rho_{\mathrm{nuc}}\approx
+        10^{14}\,\mathrm{g\,cm^{-3}}$.\\ 
 	
-	\n At this point, the radius is about 15 km and the collapsed core ``halts'' at about 10 km. The gravitational potential energy is
+	\n At this point, the radius is about 15 km and the collapsed
+        core ``halts'' at about 10 km. The gravitational potential
+        energy is 
 	\begin{equation}
 	E_{\mathrm{GR}}=\frac{GM^{2}}{R}=10^{53}\,\mathrm{ergs}
 	\end{equation}
-	So if a fraction of this energy is tapped, it would be enough to unbind the envelope (around $10^{51}\,\mathrm{ergs}$). As it turns out, the outgoing shock \emph{does} contain about $10^{52}\,\mathrm{ergs}$.
+	So if a fraction of this energy is tapped, it would be enough
+        to unbind the envelope (around $10^{51}\,\mathrm{ergs}$). As
+        it turns out, the outgoing shock \emph{does} contain about
+        $10^{52}\,\mathrm{ergs}$. 
 	
 	\subsection{Neutron Star and Black Hole Formation}
 	\label{sec:neutron-star} 
-	The collapsed core is essentially a proto-neutron star with $E_{\mathrm{th}}=E_{\mathrm{GR}}=10^{53}\,\mathrm{ergs}$, which is strying to cool via thermal neutrino emission. The open question is how the outgoing shock succeeds in ``punching through'' the infalling matter.\\
+	The collapsed core is essentially a proto-neutron star with
+        $E_{\mathrm{th}}=E_{\mathrm{GR}}=10^{53}\,\mathrm{ergs}$,
+        which is trying to cool via thermal neutrino emission. The
+        open question is how the outgoing shock succeeds in ``punching
+        through'' the infalling matter.\\
 	
-	\n Cores in massive stars collapse when $M_{\mathrm{core}}>M_{\mathrm{crit}}$, where $M_{\mathrm{crit}}$ depends on the evolution of the star, details of the star's rotation, and the mass of the star. Collapses lead to a dense proto-neutron star with a radius of around 20 km and an outgoing shock.
+	\n Cores in massive stars collapse when
+        $M_{\mathrm{core}}>M_{\mathrm{crit}}$, where
+        $M_{\mathrm{crit}}$ depends on the evolution of the star,
+        details of the star's rotation, and the mass of the
+        star. Collapses lead to a dense proto-neutron star with a
+        radius of around 20 km and an outgoing shock. 
 	\end{document}
 
