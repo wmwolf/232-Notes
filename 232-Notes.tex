@@ -35,7 +35,50 @@ fancyhdr}
 %%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
-	\emph{Monday, January 9, 2012}
+\emph{Monday, September 30, 2013}
+\subsection{The Magnitude Scale} % (fold)
+	\label{sub:the_magnitude_scale}
+	The magnitude is a logarithmic scale detailing the relative brightnesses of
+objects. It is based on the star Vega ($\approx 8$ pc away). It is defined such
+that its magnitude in the $U$, $B$, and $V$ magnitudes is zero. This
+corresponds to a flux definition as
+	\begin{equation}
+		\label{mag:1} 3.5\times 10^{-20}\ \mathrm{erg\,cm^{-2}\,s^{-1}\,Hz^{-1}}
+	\end{equation}
+	for $M = 0$ (where $M$ is the magnitude). Or, in terms of a simple photon
+flux, we have
+	\begin{equation}
+		\label{mag:2} N_\lambda = 10^3\ \mathrm{\gamma\,cm^{-2}\,s^{-1}\,\AA}
+	\end{equation}
+	at the $V$ band for $V=0$. A useful fact to know is that a magnitude
+difference of 5 corresponds to a brightness ratio of 100. The classic filters
+have centers and widths given approximately by Table~\ref{tab:mag:1}
+	\begin{table}[b]
+		\centering
+		\begin{tabular}{cccc}
+		Band & $\lambda_0\ (\AA)$ & FWHM\ (\AA) & Flux ($\mathrm{\#\
+		 cm^{-2}\,s^{-1}\,\AA^{-1}}$)\\
+		 \hline
+		 $U$ & 3650 & 680 & 780 \\
+		 $B$ & 4400 & 980 & 1450 \\
+		 $V$ & 5500 & 890 & 1000 \\
+		 $R$ & 7000 & 2200 & 610 \\
+		 $I$ & 9000 & 2400 & 380
+		\end{tabular}
+		\caption{Basic filter band information used in optical astronomy.}
+		\label{tab:mag:1}
+	\end{table}
+	
+	\n The \textbf{Absolute Magnitude} is the apparent magnitude of the star if
+it were located at a distance of 10 pc. A \textbf{parsec} (pc) is the distance
+at which a star appears to move one arcsecond in the sky over a half of a year
+due to the motion of the earth around the sun. In cgs, it's approximatione
+	\begin{equation}
+		\label{eq:pc:1} 1\ \mathrm{pc} \approx 3\times 10^{18}\ \mathrm{cm}
+	\end{equation}
+	
+	% subsection the_magnitude_scale (end)
+
 	\subsection{The HR Diagram} 
 	Most stars shine predominantly in the optical range of the 
 electromagnetic spectrum. As a result, we get most of our information about 
@@ -47,7 +90,15 @@ it turns out, the controlling parameter for these quantities is the mass of
 the star, at least while the star is on the \textbf{Main Sequence} (stars 
 burning hydrogen to helium). The correlation between the mass of a main-
 sequence star and its luminosity is incredibly strong (see HR diagram 
-examples).
+examples).\\
+
+\n Surveys of all nearby stars within 22 pc have found 2241 stars, which
+corresponds to a number density of stars as
+\begin{equation}
+	\label{eq:hr:1} n_* = \frac{2241}{\frac{4\pi}{3}(22\ \mathrm{pc})^2} = 0.05\
+\mathrm{pc}^{-3}
+\end{equation}
+which gives an average separation of $\avg{r}\approx 1.7\ \mathrm{pc}$
 	\begin{figure}
 		\centering
 		\includegraphics[width=6in]{hr_local.pdf}
@@ -79,7 +130,7 @@ amount of mass contained in these stars per unit volume):
 A, F, G, K, M, L, T, which are roughly in decreasing order of size and 
 temperature (the reasoning for this scale is historical rather than 
 logical, and the ordering is often remembered by the mnemonic, ``Oh Be A 
-Fine Gal/Guy, Kiss Me! Less Talk!''). We see that the big, bright stars 
+Fine Gal/Guy, Kiss Me! Less Tongue!''). We see that the big, bright stars 
 form an exceedingly small portion of the amount of stellar mass in our 
 galaxy. We will find that this is because large stars exhaust their fuel 
 much more quickly than smaller stars, and thus live and die much faster. 
@@ -157,7 +208,7 @@ molecular mass (measured in AMU), and $\rho$ is the density in $\mathrm{g
 (0)\exp\left(-\frac{z}{h}\right)
 	\end{equation}
 	where we have defined the \textbf{scale height} $h\equiv kT/(\mu m_pg)
-$, which is the e-folding distance in number density. As it turns out, the 
+$, which is the $e$-folding distance in number density. As it turns out, the 
 scale height for earth's atmosphere is approximately 10 km. This model is 
 really only valid in cases where $h\ll R$, (where $R$ is the size of the 
 object), so we now investigate the ratio of these two quantities:
