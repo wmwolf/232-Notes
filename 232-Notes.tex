@@ -526,7 +526,7 @@ still wrong) number of about 200 billion years. We conclude that nuclear
 energy is a more promising form of energy for the sun than chemical energy.
 \\
 	
-\n\textit{Wednesday, January 18, 2012}
+\n\textit{Monday, October 7, 2013 (No updates)}
 	\subsection{Gas Pressure and Radiation Pressure}
 		Recall from the case of the constant density star that the 
 gravitational energy is given by
@@ -784,7 +784,7 @@ than a solar mass. Note that we have derived the stellar luminosity with
 modes of heat transport available to the star.\\
 	
 %%%%%	
-	\n \textit{Monday, January 23, 2012}
+	\n \textit{Wednesday, October 9, 2013}
 	\subsubsection{The Eddington Limit and the Eddington Standard Model}
 	Continuing with heat transfer via radiation with electron scattering 
 being the primary source of opacity, the flux is given via Fick's law as
@@ -800,7 +800,7 @@ these in to \eqref{HTS.17}, the flux becomes
 	where we've defined the \textbf{opacity} via
 	\begin{equation}
 		\label{HTS.19} \kappa_{\mathrm{es}}\equiv\frac{\sigma_{\mathrm
-{Th}}}{m_p}
+{Th}}}{m_p} \approx 0.4\ \mathrm{cm^2\ g^{-1}}
 	\end{equation}
 	The opacity is measured in units of area per unit mass, indicating it 
 is the cross-sectional area per unit mass. For electron scattering, it is 
@@ -890,8 +890,42 @@ the luminosity to the Eddington Luminosity:
 	Aside: this model of stars is the called the ``Eddington Standard 
 Model'' and was used to describe stars before their source of energy was 
 known. 
+	\subsubsection{Aside: Alternate Derivation of the Eddington Luminosity} % (fold)
+	\label{ssub:alternate_derivation_of_the_eddington_luminosity}
+		Cosnider a situaton where photons are streaming through a medium of protons
+		and electrons with a number density of photons $n_\gamma$ with the Thomson
+		cross section (they interact primarily with electrons),
+		$\sigma_{\mathrm{es}}$. Then the collision time (the average time between
+		interactions with electrons) is
+		\begin{equation}
+			\label{eq:tcollision} t_{\mathrm{coll}} =
+			\frac{1}{\sigma_{\mathrm{es}}n_\gamma c}
+		\end{equation}
+		And the momentum change from such collisions is given simply by
+		\begin{equation}
+			\label{eq:ledd:1} \Delta p = \frac{E_\gamma}{c}=\frac{h\nu}{c}
+		\end{equation}
+		With the impulse and the time between interactions we can define a force:
+		\begin{equation}
+			\label{eq:ledd:2} F=\frac{\Delta p}{\Delta t} =
+			\sigma_{\mathrm{es}}n_\gamma E_\gamma = \sigma_{\mathrm{es}} \frac{F}{c}
+		\end{equation}
+		where the second $F$ is now the flux. Now when this force is greater than
+		local gravity, $\sigma_{\mathrm{es}} F/c > m_p g$ (now we use the proton
+		mass since we assume the electrons ``pull'' the protons along for the ride),
+		we get radiative levitation with the condition
+		\begin{equation}
+			\label{eq:ledd:3} \frac{\sigma_{\mathrm{es}}L}{4\pi r^2 c} > m_p \frac{G
+			M}{r^2} \qquad \Rightarrow \qquad L > L_{\mathrm{Edd}} = \frac{4\pi G m_p
+			c}{\kappa}
+		\end{equation}
+		So this is the luminosity at which the radiation field drives a mass loss
+		from the star. The details of what actually happens in these conditions is
+		still an active area of research.
+	% subsubsection alternate_derivation_of_the_eddington_luminosity (end)
 	\subsubsection{Polytropic Relations}
-	Now integrating \eqref{HTS.34}, we have
+	Returning now to the Eddinton standard model, we integrate \eqref{HTS.34} and
+get
 	\begin{equation}
 		\label{HTS.35} \int_R^rdP_{\mathrm{rad}}=\frac{L}{L_{\mathrm{Edd}}}
 \int_R^r\eta(r)\,dP
@@ -926,8 +960,13 @@ kT}{\mu m_p}
 values to an actual equation that lets us find $T(r)$, $\rho(r)$, and $P(r)
 $. It appears then, that in our low radiation pressure limit, $\rho\propto 
 T^3$. Additionally, for the ideal gas law, we see that $P\propto \rho^
-{4/3}$. For some given $L/L_{\mathrm{Edd}}$, we have a relation between 
-pressure and density via
+{4/3}$. This is an example of the more general idea of a \textbf{polytrope}, which is a gas whose pressue and density are related simply by
+\begin{equation}
+	\label{eq:polytrope} P\propto \rho^{1+\frac{1}{n}}
+\end{equation}
+Here $n$ is the \textbf{polytropic index}. These will be important later,
+especially for white dwarf stars. For our $n=3$ polytrope we can take a given
+$L/L_{\mathrm{Edd}}$ and recover a relation between pressure and density via
 	\begin{align}
 		\label{HTS.40} \frac{dP}{dr}&=-\rho(r)\frac{Gm(r)}{r^2}\\
 		\label{HTS.41} dm(r) &= \rho 4\pi r^2\,dr
@@ -938,7 +977,27 @@ ideal gas, $\gamma=5/3$, so we have $P\propto \rho^{5/3}$ and $\rho T
 \propto P$, so $T\propto \rho^{2/3}$. Then we'll call the ``entropy'' $T/
 \rho^{2/3}$. For our star, we have $T^3\propto \rho\Rightarrow T\propto 
 \rho^{1/3}$. In our case, the ``entropy'' is then $a/\rho^{1/3}$. Thus the 
-entropy is highest in the outer layers and smallest in the center.
+entropy is highest in the outer layers and smallest in the center.\\
+
+\n At this time we should also introduce another parameter often used in
+stellar astrophysics, $\beta$. Typically we designate
+\begin{equation}
+	\label{eq:beta:1} \beta \equiv \frac{P_\mathrm{gas}}{P_{\mathrm{tot}}}
+\end{equation}
+This parameter gives us a sense of how radiation dominated the gas is at a
+given location. We can write the radiation pressure in terms of $\beta$ and
+$P_{\mathrm{gas}}$ via
+\begin{equation}
+	\label{eq:beta:2} P_{\mathrm{rad}} = \left(\frac{1-\beta}{\beta}\right)
+P_{\mathrm{gas}}
+\end{equation}
+And so the pressure run in the star is given by
+\begin{equation}
+	\label{eq:beta:3} P(r) = \frac{1}{\beta}\frac{k}{\mu
+m_p}\left[\frac{3k}{a\mu m_p}\frac{1-\beta}{\beta}\right]^{1/3}
+\rho(r)^{4/3}
+\end{equation}
+where \eqref{eq:beta:3} comes from combining the definition of $\beta$ with hydrostatic equilibrium and radiative diffusion.
 	\subsubsection{Heat Transfer in the Outer Atmosphere}
 	Near the surface of the star, photons naturally leave (which is why we 
 see them!) We want to know what the place or condition is like. Near the 
