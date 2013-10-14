@@ -1,71 +1,73 @@
 \contentsline {section}{\numberline {1}Introduction}{4}{section.1}
-\contentsline {subsection}{\numberline {1.1}The HR Diagram}{4}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Conditions for a Star on the HR Diagram}{4}{subsection.1.2}
-\contentsline {subsubsection}{\numberline {1.2.1}Population I Stars}{4}{subsubsection.1.2.1}
-\contentsline {subsubsection}{\numberline {1.2.2}Population II Stars}{6}{subsubsection.1.2.2}
+\contentsline {subsection}{\numberline {1.1}The Magnitude Scale}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}The HR Diagram}{4}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Conditions for a Star on the HR Diagram}{5}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}Population I Stars}{6}{subsubsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.2}Population II Stars}{6}{subsubsection.1.3.2}
 \contentsline {section}{\numberline {2}A Simple Hydrostatic Atmosphere}{6}{section.2}
 \contentsline {subsection}{\numberline {2.1}Scale Height and Column Depth}{6}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Mean Molecular Weights}{8}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Electric Fields in Stars}{8}{subsection.2.3}
-\contentsline {section}{\numberline {3}Self-Gravitating Objects}{9}{section.3}
-\contentsline {subsection}{\numberline {3.1}Momentum Conservation and the Free-Fall Timescale}{9}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}The Virial Theorem}{10}{subsection.3.2}
+\contentsline {subsection}{\numberline {2.3}Electric Fields in Stars}{9}{subsection.2.3}
+\contentsline {section}{\numberline {3}Self-Gravitating Objects}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1}Momentum Conservation and the Free-Fall Timescale}{10}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}The Virial Theorem}{11}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Applications of the Virial Theorm}{12}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Gas Pressure and Radiation Pressure}{12}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Summary}{14}{subsection.3.5}
-\contentsline {section}{\numberline {4}Heat Transfer in Stars}{14}{section.4}
+\contentsline {subsection}{\numberline {3.4}Gas Pressure and Radiation Pressure}{13}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Summary}{15}{subsection.3.5}
+\contentsline {section}{\numberline {4}Heat Transfer in Stars}{15}{section.4}
 \contentsline {subsection}{\numberline {4.1}Heat Flux Derivation (not done in class)}{15}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Heat Transport by Electrons}{15}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Radiative Diffusion}{16}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.2}Heat Transport by Electrons}{16}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Radiative Diffusion}{17}{subsection.4.3}
 \contentsline {subsubsection}{\numberline {4.3.1}The Eddington Limit and the Eddington Standard Model}{17}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Polytropic Relations}{19}{subsubsection.4.3.2}
-\contentsline {subsubsection}{\numberline {4.3.3}Heat Transfer in the Outer Atmosphere}{19}{subsubsection.4.3.3}
-\contentsline {subsubsection}{\numberline {4.3.4}The Effective Temperature}{21}{subsubsection.4.3.4}
-\contentsline {subsection}{\numberline {4.4}Convection}{21}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}The Unstable Case}{23}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}Convective Efficiency}{25}{subsubsection.4.4.2}
-\contentsline {subsection}{\numberline {4.5}Fully Convective Star}{27}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}The Hayashi Track}{28}{subsection.4.6}
-\contentsline {section}{\numberline {5}Star Formation and the Jean's Mass}{29}{section.5}
-\contentsline {subsection}{\numberline {5.1}The Jean's Mass}{29}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Pre-Main Sequence Stars}{30}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Low Mass Stars}{33}{subsection.5.3}
-\contentsline {section}{\numberline {6}Nuclear Reactions in Stars}{34}{section.6}
-\contentsline {subsection}{\numberline {6.1}Liquid Drop Model}{34}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Tunneling through the Coulomb Barrier}{38}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Barrier Penetration}{40}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Nuclear Reaction Rates}{41}{subsubsection.6.2.2}
-\contentsline {subsection}{\numberline {6.3}Proton-Proton Interactions}{43}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Sidebar: Fusion Before Hydrogen Burning}{45}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}The PP Chain and the CN Cycle}{48}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Power Generation on the Upper Main Sequence}{50}{subsection.6.6}
-\contentsline {subsubsection}{\numberline {6.6.1}Scaling Relations on the Upper Main Sequence}{50}{subsubsection.6.6.1}
-\contentsline {subsubsection}{\numberline {6.6.2}Convection in Large Stars}{51}{subsubsection.6.6.2}
-\contentsline {subsubsection}{\numberline {6.6.3}Main Sequence Burning Summary}{52}{subsubsection.6.6.3}
-\contentsline {subsection}{\numberline {6.7}Introduction to Stellar Evolution}{52}{subsection.6.7}
-\contentsline {section}{\numberline {7}State of the Stellar Interior}{53}{section.7}
-\contentsline {subsection}{\numberline {7.1}The Saha Equation}{53}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Stellar Spectra}{55}{subsection.7.2}
-\contentsline {paragraph}{H${}^-$ Opacity}{57}{section*.2}
-\contentsline {section}{\numberline {8}Stellar Evolution}{57}{section.8}
-\contentsline {subsection}{\numberline {8.1}Main Sequence Evolution for Massive Stars}{58}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Main Sequence Evolution for Less Massive Stars}{59}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Post-Main Sequence Evolution}{60}{subsection.8.3}
-\contentsline {subsubsection}{\numberline {8.3.1}The Red Giant Branch (RGB)}{60}{subsubsection.8.3.1}
-\contentsline {subsection}{\numberline {8.4}The Sch\"onberg-Chadrasekhar Limit}{61}{subsection.8.4}
-\contentsline {subsection}{\numberline {8.5}Helium and Higher Burning}{65}{subsection.8.5}
-\contentsline {subsubsection}{\numberline {8.5.1}Higher Burning}{66}{subsubsection.8.5.1}
-\contentsline {subsubsection}{\numberline {8.5.2}Helium Burning in a Massive Star}{66}{subsubsection.8.5.2}
-\contentsline {subsubsection}{\numberline {8.5.3}Helium Core Flash}{67}{subsubsection.8.5.3}
-\contentsline {subsection}{\numberline {8.6}The Horizontal Branch and The Asymptotic Giant Branch}{69}{subsection.8.6}
-\contentsline {section}{\numberline {9}White Dwarfs}{70}{section.9}
-\contentsline {subsection}{\numberline {9.1}The Physics of Degenerate Objects and the Chandrasekhar Mass}{70}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}White Dwarf Cooling}{72}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}Evolution of Larger Stars}{74}{subsection.9.3}
-\contentsline {subsubsection}{\numberline {9.3.1}Onset of Neutrino Emission}{75}{subsubsection.9.3.1}
-\contentsline {subsubsection}{\numberline {9.3.2}Plasmon Decay}{77}{subsubsection.9.3.2}
-\contentsline {subsubsection}{\numberline {9.3.3}Back to Stellar Evolution}{78}{subsubsection.9.3.3}
-\contentsline {section}{\numberline {10}Core Collapse and Stellar Death}{79}{section.10}
-\contentsline {subsection}{\numberline {10.1}The March to Collapse}{79}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Stellar Core Collapse}{79}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}Neutron Star and Black Hole Formation}{81}{subsection.10.3}
+\contentsline {subsubsection}{\numberline {4.3.2}Aside: Alternate Derivation of the Eddington Luminosity}{19}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Polytropic Relations}{20}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}Heat Transfer in the Outer Atmosphere}{21}{subsubsection.4.3.4}
+\contentsline {subsubsection}{\numberline {4.3.5}The Effective Temperature}{22}{subsubsection.4.3.5}
+\contentsline {subsection}{\numberline {4.4}Convection}{23}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}The Unstable Case}{25}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Convective Efficiency}{26}{subsubsection.4.4.2}
+\contentsline {subsection}{\numberline {4.5}Fully Convective Star}{29}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}The Hayashi Track}{30}{subsection.4.6}
+\contentsline {section}{\numberline {5}Star Formation and the Jean's Mass}{31}{section.5}
+\contentsline {subsection}{\numberline {5.1}The Jean's Mass}{31}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Pre-Main Sequence Stars}{32}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Low Mass Stars}{35}{subsection.5.3}
+\contentsline {section}{\numberline {6}Nuclear Reactions in Stars}{36}{section.6}
+\contentsline {subsection}{\numberline {6.1}Liquid Drop Model}{36}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Tunneling through the Coulomb Barrier}{40}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Barrier Penetration}{42}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Nuclear Reaction Rates}{43}{subsubsection.6.2.2}
+\contentsline {subsection}{\numberline {6.3}Proton-Proton Interactions}{45}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Sidebar: Fusion Before Hydrogen Burning}{47}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}The PP Chain and the CN Cycle}{50}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Power Generation on the Upper Main Sequence}{52}{subsection.6.6}
+\contentsline {subsubsection}{\numberline {6.6.1}Scaling Relations on the Upper Main Sequence}{52}{subsubsection.6.6.1}
+\contentsline {subsubsection}{\numberline {6.6.2}Convection in Large Stars}{53}{subsubsection.6.6.2}
+\contentsline {subsubsection}{\numberline {6.6.3}Main Sequence Burning Summary}{54}{subsubsection.6.6.3}
+\contentsline {subsection}{\numberline {6.7}Introduction to Stellar Evolution}{54}{subsection.6.7}
+\contentsline {section}{\numberline {7}State of the Stellar Interior}{55}{section.7}
+\contentsline {subsection}{\numberline {7.1}The Saha Equation}{55}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Stellar Spectra}{57}{subsection.7.2}
+\contentsline {paragraph}{H${}^-$ Opacity}{59}{section*.2}
+\contentsline {section}{\numberline {8}Stellar Evolution}{59}{section.8}
+\contentsline {subsection}{\numberline {8.1}Main Sequence Evolution for Massive Stars}{60}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Main Sequence Evolution for Less Massive Stars}{61}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Post-Main Sequence Evolution}{62}{subsection.8.3}
+\contentsline {subsubsection}{\numberline {8.3.1}The Red Giant Branch (RGB)}{62}{subsubsection.8.3.1}
+\contentsline {subsection}{\numberline {8.4}The Sch\"onberg-Chadrasekhar Limit}{63}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.5}Helium and Higher Burning}{67}{subsection.8.5}
+\contentsline {subsubsection}{\numberline {8.5.1}Higher Burning}{68}{subsubsection.8.5.1}
+\contentsline {subsubsection}{\numberline {8.5.2}Helium Burning in a Massive Star}{68}{subsubsection.8.5.2}
+\contentsline {subsubsection}{\numberline {8.5.3}Helium Core Flash}{69}{subsubsection.8.5.3}
+\contentsline {subsection}{\numberline {8.6}The Horizontal Branch and The Asymptotic Giant Branch}{71}{subsection.8.6}
+\contentsline {section}{\numberline {9}White Dwarfs}{72}{section.9}
+\contentsline {subsection}{\numberline {9.1}The Physics of Degenerate Objects and the Chandrasekhar Mass}{72}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}White Dwarf Cooling}{74}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Evolution of Larger Stars}{76}{subsection.9.3}
+\contentsline {subsubsection}{\numberline {9.3.1}Onset of Neutrino Emission}{77}{subsubsection.9.3.1}
+\contentsline {subsubsection}{\numberline {9.3.2}Plasmon Decay}{79}{subsubsection.9.3.2}
+\contentsline {subsubsection}{\numberline {9.3.3}Back to Stellar Evolution}{80}{subsubsection.9.3.3}
+\contentsline {section}{\numberline {10}Core Collapse and Stellar Death}{81}{section.10}
+\contentsline {subsection}{\numberline {10.1}The March to Collapse}{81}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Stellar Core Collapse}{81}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}Neutron Star and Black Hole Formation}{83}{subsection.10.3}

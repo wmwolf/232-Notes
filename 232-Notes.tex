@@ -1083,7 +1083,7 @@ the fact that $a=4\sigma_{\mathrm{SB}}/c$ and \eqref{HTS.52} to get
         but our result in \eqref{HTS.55} essentially tells us that
         $F=acT^4/\tau$.\\
 
-        \n \textit{Wednesday, January 25, 2012}
+        \n \textit{Monday, October 14, 2013}
 \subsection{Convection}
 \label{sec:conv}
 Another important form of heat transport in stars is that of
@@ -1188,8 +1188,9 @@ $T\propto P^{1/4}$. Then computing the logarithmic derivative in
   \label{eq:20}
   \frac{d\ln T}{d\ln P}=\frac{1}{4}<\frac{2}{5}
 \end{equation}
-Note that we could also include a gradient in the composition if we
-wanted. \eqref{eq:20} would become, more genrally,
+so this model is stable to convection. Note that we could also include a
+gradient in the composition if we wanted. \eqref{eq:20} would become, more
+genrally,
 \begin{equation}
   \label{eq:135}
   \boxed{\left(\frac{1}{\gamma}-1\right)\frac{d\ln
@@ -1249,7 +1250,7 @@ $\Delta\rho<0$, or
 {(Stability)}}
 \end{equation}
 This is the same result we obtained previously, just phrased a bit
-differently. In the unstable case, though, we require $\Delta\rho>0$. the
+differently. In the unstable case, though, we require $\Delta\rho>0$. The
 acceleration, $a$, or the displaced element will be given by 
 \begin{equation}
   \label{eq:26}
@@ -1277,7 +1278,20 @@ oscillates at the Brunt V\"{a}is\"{a}l\"{a} frequency, which is
 \end{equation}
 This is the local frequency of oscillation of a fluid element in a
 convectively stable atmosphere. In the Earth's atmosphere, this
-frequency is around five or ten minutes.\\
+frequency is around five or ten minutes. We should check to see that this
+formalism doesn't cause supersonic velocities in a stable model, so let's check
+the velocity of such an oscillating element, which is roughly
+\begin{equation}
+	\label{eq:conv_vel:1} v_{\mathrm{stable}} \approx N\delta x \approx \delta
+x\frac{c_s^2}{g}
+\end{equation}
+Requiring that this be subsonic gives
+\begin{equation}
+	\label{eq:conv_vel:2} \delta x\frac{c_s^2}{g} < c_s \qquad \Rightarrow \delta
+x < \frac{g}{c_s} = h
+\end{equation}
+where $h$ is again the scale height. So as long as perturbations are smaller
+than the local scale height, our assumptions are valid.\\
 
 \n Now if this coefficient is negative, the solution is unstable
 (i.e., grows exponentially). Note that $N^2\sim g/h$, so 
