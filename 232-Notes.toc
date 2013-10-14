@@ -25,7 +25,7 @@
 \contentsline {subsubsection}{\numberline {4.3.5}The Effective Temperature}{22}{subsubsection.4.3.5}
 \contentsline {subsection}{\numberline {4.4}Convection}{23}{subsection.4.4}
 \contentsline {subsubsection}{\numberline {4.4.1}The Unstable Case}{25}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}Convective Efficiency}{26}{subsubsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2}Convective Efficiency}{27}{subsubsection.4.4.2}
 \contentsline {subsection}{\numberline {4.5}Fully Convective Star}{29}{subsection.4.5}
 \contentsline {subsection}{\numberline {4.6}The Hayashi Track}{30}{subsection.4.6}
 \contentsline {section}{\numberline {5}Star Formation and the Jean's Mass}{31}{section.5}

@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.8.27)  14 OCT 2013 10:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.7.17)  14 OCT 2013 11:40
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **232-Notes.tex
 (./232-Notes.tex
 LaTeX2e <2011/06/27>
-Babel <3.9f> and hyphenation patterns for 43 languages loaded.
+Babel <3.9f> and hyphenation patterns for 44 languages loaded.
 (/opt/local/share/texmf-texlive/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/opt/local/share/texmf-texlive/tex/latex/base/size10.clo
@@ -299,7 +299,14 @@ Package: pdfsync 2008/01/26 v1.1
 \f@ncyO@olf=\skip57
 \f@ncyO@orf=\skip58
 )
-(./232-Notes.aux
+(/opt/local/share/texmf-texlive/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen126
+\WF@size=\dimen127
+\c@WF@wrappedlines=\count113
+\WF@box=\box28
+\WF@everypar=\toks27
+Package: wrapfig 2003/01/31  v 3.6
+) (./232-Notes.aux
 
 LaTeX Warning: Label `sec:white-dwarf-cooling' multiply defined.
 
@@ -372,17 +379,17 @@ LaTeX Font Info:    ... okay on input line 27.
 
 (/opt/local/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count113
-\scratchdimen=\dimen126
-\scratchbox=\box28
-\nofMPsegments=\count114
-\nofMParguments=\count115
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count116
-\MPscratchDim=\dimen127
-\MPnumerator=\count117
-\makeMPintoPDFobject=\count118
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count114
+\scratchdimen=\dimen128
+\scratchbox=\box29
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen129
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
+\everyMPtoPDFconversion=\toks29
 ) (/opt/local/share/texmf-texlive/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -398,7 +405,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box29
+\AtBeginShipoutBox=\box30
 Package hyperref Info: Link coloring OFF on input line 27.
 
 (/opt/local/share/texmf-texlive/tex/latex/hyperref/nameref.sty
@@ -407,7 +414,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/opt/local/share/texmf-texlive/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count119
+\c@section@level=\count120
 )
 LaTeX Info: Redefining \ref on input line 27.
 LaTeX Info: Redefining \pageref on input line 27.
@@ -421,16 +428,16 @@ Configuring pdfsync
 \PDFSYNC@ut=\write4
 \openout4 = `232-Notes.pdfsync'.
 
-\PDFSYNCf@li@=\count120
-\PDFSYNC@rder=\count121
+\PDFSYNCf@li@=\count121
+\PDFSYNC@rder=\count122
 **** pdfsync.sty: Synchronizing at \everypar
-\PDFSYNCeveryp@r=\toks29
+\PDFSYNCeveryp@r=\toks30
 **** pdfsync.sty: Synchronizing at \everymath
-\PDFSYNCeverym@th=\toks30
+\PDFSYNCeverym@th=\toks31
 **** pdfsync.sty: Synchronizing at \everyhbox
-\PDFSYNCeveryhb@x=\toks31
+\PDFSYNCeveryhb@x=\toks32
 **** pdfsync.sty: Synchronizing at \everyvbox
-\PDFSYNCeveryvb@x=\toks32
+\PDFSYNCeveryvb@x=\toks33
 **** pdfsync.sty: started
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 29.
 
@@ -475,7 +482,7 @@ Package pdftex.def Info: hr_local.pdf used on input line 104.
 (pdftex.def)             Requested size: 433.62pt x 343.63269pt.
 
 Overfull \hbox (3.61537pt too wide) in paragraph at lines 104--106
- [][][][] 
+ [][] 
  []
 
 [4] [5 <./hr_local.pdf>]
@@ -548,295 +555,303 @@ Underfull \hbox (badness 10000) in paragraph at lines 1096--1101
 
  []
 
-[23]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1200
+<figures/convection_scheme.pdf, id=665, 597.50786pt x 401.5pt>
+File: figures/convection_scheme.pdf Graphic file (type pdf)
+
+<use figures/convection_scheme.pdf>
+Package pdftex.def Info: figures/convection_scheme.pdf used on input line 1104.
+
+(pdftex.def)             Requested size: 206.40038pt x 138.68918pt.
+ [23 <./figures/convection_scheme.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1210
 .
- (/opt/local/share/texmf-texlive/tex/latex/base/omscmr.fd
+
+(/opt/local/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1200.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1210.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1198--1206
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1207--1213
-
- []
-
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 1278--1282
-
- []
-
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 1329--1331
+Underfull \hbox (badness 10000) in paragraph at lines 1208--1216
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1335--1343
+Underfull \hbox (badness 10000) in paragraph at lines 1217--1223
+
+ []
+
+[24] [25]
+Underfull \hbox (badness 10000) in paragraph at lines 1302--1305
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1359--1362
+Underfull \hbox (badness 10000) in paragraph at lines 1352--1354
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1358--1366
 
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 1405--1412
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1385
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1428--1435
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 1449--1456
+Underfull \hbox (badness 10000) in paragraph at lines 1472--1479
 
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 1546--1550
+Underfull \hbox (badness 10000) in paragraph at lines 1569--1573
 
  []
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 1626--1638
+Underfull \hbox (badness 10000) in paragraph at lines 1649--1661
 
  []
 
 [30] [31]
-Underfull \hbox (badness 10000) in paragraph at lines 1697--1702
+Underfull \hbox (badness 10000) in paragraph at lines 1720--1725
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1708--1719
+Underfull \hbox (badness 10000) in paragraph at lines 1731--1742
 
  []
 
 [32] [33]
-Underfull \hbox (badness 10000) in paragraph at lines 1845--1850
+Underfull \hbox (badness 10000) in paragraph at lines 1868--1873
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1895--1900
+Underfull \hbox (badness 10000) in paragraph at lines 1918--1923
 
  []
 
 [34]
-Underfull \hbox (badness 10000) in paragraph at lines 1919--1923
+Underfull \hbox (badness 10000) in paragraph at lines 1942--1946
 
  []
 
 [35] [36]
-Underfull \hbox (badness 10000) in paragraph at lines 2061--2064
+Underfull \hbox (badness 10000) in paragraph at lines 2084--2087
 
  []
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 2150--2154
+Underfull \hbox (badness 10000) in paragraph at lines 2173--2177
 
  []
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 2213--2218
+Underfull \hbox (badness 10000) in paragraph at lines 2236--2241
 
  []
 
-[39] <energyPlot.pdf, id=907, 289.08pt x 289.08pt>
+[39] <energyPlot.pdf, id=913, 289.08pt x 289.08pt>
 File: energyPlot.pdf Graphic file (type pdf)
  <use energyPlot.pdf>
-Package pdftex.def Info: energyPlot.pdf used on input line 2237.
+Package pdftex.def Info: energyPlot.pdf used on input line 2260.
 (pdftex.def)             Requested size: 289.07928pt x 289.07928pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2255--2258
+Underfull \hbox (badness 10000) in paragraph at lines 2278--2281
 
  []
 
 [40 <./energyPlot.pdf>] [41] [42] [43]
-Underfull \hbox (badness 10000) in paragraph at lines 2541--2547
+Underfull \hbox (badness 10000) in paragraph at lines 2564--2570
 
  []
 
 [44]
-Underfull \hbox (badness 10000) in paragraph at lines 2548--2561
+Underfull \hbox (badness 10000) in paragraph at lines 2571--2584
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2562--2563
+Underfull \hbox (badness 10000) in paragraph at lines 2585--2586
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2567--2572
+Underfull \hbox (badness 10000) in paragraph at lines 2590--2595
 
  []
 
 [45]
-Underfull \hbox (badness 10000) in paragraph at lines 2682--2686
+Underfull \hbox (badness 10000) in paragraph at lines 2705--2709
 
  []
 
 [46] [47]
-Underfull \hbox (badness 10000) in paragraph at lines 2819--2835
+Underfull \hbox (badness 10000) in paragraph at lines 2842--2858
 
  []
 
 [48]
-Underfull \hbox (badness 10000) in paragraph at lines 2855--2860
+Underfull \hbox (badness 10000) in paragraph at lines 2878--2883
 
  []
 
 [49] [50]
-Underfull \hbox (badness 10000) in paragraph at lines 3008--3015
+Underfull \hbox (badness 10000) in paragraph at lines 3031--3038
 
  []
 
 [51]
-Underfull \hbox (badness 10000) in paragraph at lines 3092--3094
+Underfull \hbox (badness 10000) in paragraph at lines 3115--3117
 
  []
 
 [52] [53]
-Underfull \hbox (badness 10000) in paragraph at lines 3177--3185
+Underfull \hbox (badness 10000) in paragraph at lines 3200--3208
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3191--3194
+Underfull \hbox (badness 10000) in paragraph at lines 3214--3217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3205--3209
+Underfull \hbox (badness 10000) in paragraph at lines 3228--3232
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3225--3237
+Underfull \hbox (badness 10000) in paragraph at lines 3248--3260
 
  []
 
 [54]
-Underfull \hbox (badness 10000) in paragraph at lines 3238--3241
+Underfull \hbox (badness 10000) in paragraph at lines 3261--3264
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3250--3258
+Underfull \hbox (badness 10000) in paragraph at lines 3273--3281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3259--3263
+Underfull \hbox (badness 10000) in paragraph at lines 3282--3286
 
  []
 
 [55] [56] [57]
-Underfull \hbox (badness 10000) in paragraph at lines 3449--3452
+Underfull \hbox (badness 10000) in paragraph at lines 3472--3475
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3466--3475
+Underfull \hbox (badness 10000) in paragraph at lines 3489--3498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3476--3486
+Underfull \hbox (badness 10000) in paragraph at lines 3499--3509
 
  []
 
 [58]
-Underfull \hbox (badness 10000) in paragraph at lines 3551--3558
+Underfull \hbox (badness 10000) in paragraph at lines 3574--3581
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3570--3578
+Underfull \hbox (badness 10000) in paragraph at lines 3593--3601
 
  []
 
 [59]
-Underfull \hbox (badness 10000) in paragraph at lines 3646--3653
+Underfull \hbox (badness 10000) in paragraph at lines 3669--3676
 
  []
 
-[60] <MSDiagram.pdf, id=1209, 289.08pt x 289.08pt>
+[60] <MSDiagram.pdf, id=1215, 289.08pt x 289.08pt>
 File: MSDiagram.pdf Graphic file (type pdf)
  <use MSDiagram.pdf>
-Package pdftex.def Info: MSDiagram.pdf used on input line 3710.
+Package pdftex.def Info: MSDiagram.pdf used on input line 3733.
 (pdftex.def)             Requested size: 289.07999pt x 289.09251pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [61]
-Underfull \hbox (badness 10000) in paragraph at lines 3727--3738
+Underfull \hbox (badness 10000) in paragraph at lines 3750--3761
 
  []
 
 [62 <./MSDiagram.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3790--3793
+Underfull \hbox (badness 10000) in paragraph at lines 3813--3816
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3802--3806
+Underfull \hbox (badness 10000) in paragraph at lines 3825--3829
 
  []
 
-<compPlot.pdf, id=1285, 289.08pt x 289.08pt>
+<compPlot.pdf, id=1291, 289.08pt x 289.08pt>
 File: compPlot.pdf Graphic file (type pdf)
  <use compPlot.pdf>
-Package pdftex.def Info: compPlot.pdf used on input line 3809.
+Package pdftex.def Info: compPlot.pdf used on input line 3832.
 (pdftex.def)             Requested size: 289.07928pt x 289.07928pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [63] [64 <./compPlot.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3918--3922
+Underfull \hbox (badness 10000) in paragraph at lines 3941--3945
 
  []
 
 [65]
-Underfull \hbox (badness 10000) in paragraph at lines 3936--3941
+Underfull \hbox (badness 10000) in paragraph at lines 3959--3964
 
  []
 
-<TcRhoc.pdf, id=1352, 289.08pt x 289.08pt>
+<TcRhoc.pdf, id=1358, 289.08pt x 289.08pt>
 File: TcRhoc.pdf Graphic file (type pdf)
  <use TcRhoc.pdf>
-Package pdftex.def Info: TcRhoc.pdf used on input line 3944.
+Package pdftex.def Info: TcRhoc.pdf used on input line 3967.
 (pdftex.def)             Requested size: 289.07928pt x 289.07928pt.
  [66 <./TcRhoc.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3961--3963
+Underfull \hbox (badness 10000) in paragraph at lines 3984--3986
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3964--3970
+Underfull \hbox (badness 10000) in paragraph at lines 3987--3993
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3992--3996
+Underfull \hbox (badness 10000) in paragraph at lines 4015--4019
 
  []
 
 [67]
-Underfull \hbox (badness 10000) in paragraph at lines 4070--4081
+Underfull \hbox (badness 10000) in paragraph at lines 4093--4104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4085--4089
+Underfull \hbox (badness 10000) in paragraph at lines 4108--4112
 
  []
 
@@ -844,146 +859,146 @@ Underfull \hbox (badness 10000) in paragraph at lines 4085--4089
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4118--4125
+Underfull \hbox (badness 10000) in paragraph at lines 4141--4148
 
  []
 
 [68]
-Underfull \hbox (badness 10000) in paragraph at lines 4133--4138
+Underfull \hbox (badness 10000) in paragraph at lines 4156--4161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4176--4182
+Underfull \hbox (badness 10000) in paragraph at lines 4199--4205
 
  []
 
 [69]
-Underfull \hbox (badness 10000) in paragraph at lines 4183--4184
+Underfull \hbox (badness 10000) in paragraph at lines 4206--4207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4192--4201
+Underfull \hbox (badness 10000) in paragraph at lines 4215--4224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4235--4239
+Underfull \hbox (badness 10000) in paragraph at lines 4258--4262
 
  []
 
 [70]
-Underfull \hbox (badness 10000) in paragraph at lines 4259--4273
+Underfull \hbox (badness 10000) in paragraph at lines 4282--4296
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4307--4324
+Underfull \hbox (badness 10000) in paragraph at lines 4330--4347
 
  []
 
 [71]
-Underfull \hbox (badness 10000) in paragraph at lines 4325--4335
+Underfull \hbox (badness 10000) in paragraph at lines 4348--4358
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4336--4346
+Underfull \hbox (badness 10000) in paragraph at lines 4359--4369
 
  []
 
 [72]
-Underfull \hbox (badness 10000) in paragraph at lines 4434--4437
+Underfull \hbox (badness 10000) in paragraph at lines 4457--4460
 
  []
 
 [73] [74] [75]
-Underfull \hbox (badness 10000) in paragraph at lines 4605--4611
+Underfull \hbox (badness 10000) in paragraph at lines 4628--4634
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4617--4622
+Underfull \hbox (badness 10000) in paragraph at lines 4640--4645
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4634--4637
+Underfull \hbox (badness 10000) in paragraph at lines 4657--4660
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4638--4649
+Underfull \hbox (badness 10000) in paragraph at lines 4661--4672
 
  []
 
 [76]
-Underfull \hbox (badness 10000) in paragraph at lines 4680--4687
+Underfull \hbox (badness 10000) in paragraph at lines 4703--4710
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4688--4691
+Underfull \hbox (badness 10000) in paragraph at lines 4711--4714
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4707--4712
+Underfull \hbox (badness 10000) in paragraph at lines 4730--4735
 
  []
 
 [77] [78] [79]
-Underfull \hbox (badness 10000) in paragraph at lines 4869--4875
+Underfull \hbox (badness 10000) in paragraph at lines 4892--4898
 
  []
 
-<neutrinoCool.pdf, id=1579, 289.08pt x 289.08pt>
+<neutrinoCool.pdf, id=1585, 289.08pt x 289.08pt>
 File: neutrinoCool.pdf Graphic file (type pdf)
  <use neutrinoCool.pdf>
-Package pdftex.def Info: neutrinoCool.pdf used on input line 4878.
+Package pdftex.def Info: neutrinoCool.pdf used on input line 4901.
 (pdftex.def)             Requested size: 289.07928pt x 289.07928pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 4883--4888
+Underfull \hbox (badness 10000) in paragraph at lines 4906--4911
 
  []
 
 [80 <./neutrinoCool.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 4908--4910
+Underfull \hbox (badness 10000) in paragraph at lines 4931--4933
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4939--4943
+Underfull \hbox (badness 10000) in paragraph at lines 4962--4966
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4949--4957
+Underfull \hbox (badness 10000) in paragraph at lines 4972--4980
 
  []
 
 [81]
-Underfull \hbox (badness 10000) in paragraph at lines 5000--5008
+Underfull \hbox (badness 10000) in paragraph at lines 5023--5031
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5009--5019
+Underfull \hbox (badness 10000) in paragraph at lines 5032--5042
 
  []
 
 [82]
-Underfull \hbox (badness 10000) in paragraph at lines 5033--5038
+Underfull \hbox (badness 10000) in paragraph at lines 5056--5061
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5045.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5068.
 [83]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 5045.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 5068.
  (./232-Notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5045.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5045.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5068.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5068.
 
 Package rerunfilecheck Info: File `232-Notes.out' has not changed.
 (rerunfilecheck)             Checksum: ACA80D96798E90BBF0520FB6FC30451D;5608.
@@ -991,15 +1006,15 @@ Package rerunfilecheck Info: File `232-Notes.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5045.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5068.
  ) 
 Here is how much of TeX's memory you used:
- 8248 strings out of 494227
- 113427 string characters out of 6157704
- 231930 words of memory out of 5000000
- 10668 multiletter control sequences out of 15000+600000
+ 8324 strings out of 494181
+ 114479 string characters out of 6156676
+ 233389 words of memory out of 5000000
+ 10735 multiletter control sequences out of 15000+600000
  18270 words of font info for 70 fonts, out of 8000000 for 9000
- 430 hyphenation exceptions out of 8191
+ 470 hyphenation exceptions out of 8191
  34i,32n,43p,484b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
 </opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></
 opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/l
@@ -1022,10 +1037,10 @@ texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></opt/local/share/texmf
 -texlive/fonts/type1/public/amsfonts/symbols/msam10.pfb></opt/local/share/texmf
 -texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb></opt/local/share/texmf
 -texlive/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on 232-Notes.pdf (83 pages, 699485 bytes).
+Output written on 232-Notes.pdf (83 pages, 720958 bytes).
 PDF statistics:
- 1885 PDF objects out of 2073 (max. 8388607)
- 1728 compressed objects within 18 object streams
- 747 named destinations out of 1000 (max. 500000)
- 607 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1891 PDF objects out of 2073 (max. 8388607)
+ 1733 compressed objects within 18 object streams
+ 750 named destinations out of 1000 (max. 500000)
+ 612 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,7 +5,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage
 {geometry,amsmath,amsthm,mathrsfs,amssymb,graphicx,bm,hyperref,url,pdfsync,
-fancyhdr}
+fancyhdr, wrapfig}
 \pagestyle{fancy}
 \numberwithin{equation}{section}
 %%%%%%%%%%%%%%%%%%%
@@ -1099,6 +1099,15 @@ adiabatically (faster than the heat transfer time scale) is
 ``runs away''. This is a linear instability, in that a displacement
 exponentially grows in time. \\
 
+\begin{wrapfigure}{r}{0.5\textwidth}
+	\centering
+	\includegraphics[width=0.48\textwidth]{figures/convection_scheme.pdf}
+	\caption{Bubble at initial ($r=r_1$) and perturbed ($r=r_2$) locations. The
+perturbation happens slow enough so that pressure equilibrium is achieved, but
+fast enough that there is no heat loss. Thus, the pressure remains equal to the
+background pressure, but the density need not match the background density.}	
+\end{wrapfigure}
+
 \n Suppose we have a fluid element in hydrostatic balance. We imagine
 displacing this fluid element from $r$ to $r+dr$. So we assume that
 the displaced element responds adiabatically. Thermodynamcis tells us
@@ -1112,11 +1121,12 @@ inside of the fluid element). This is equivalent to the requirement that
 the timescale of response is much less than that for heat to enter or
 leave the fluid element. We presume that the timescale is longer than
 the time for pressure equilibrium as well:
-\begin{equation}
+\begin{multline}
   \label{eq:10}
   t=\frac{h}{c_s}=\textrm{time for the pressure to
-    equilibrate}\quad\Rightarrow\quad v\ll c_s
-\end{equation}
+    equilibrate}\\
+		\quad\Rightarrow\quad v\ll c_s
+\end{multline}
 where $h$ is agin the scale height. This requirement ensures that the
 fluid element remains in pressure equilibrium with its surroundings at
 all times Suppose the element starts in
