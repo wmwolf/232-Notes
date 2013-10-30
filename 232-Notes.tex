@@ -30,10 +30,6 @@ fancyhdr, wrapfig}
 
 \tableofcontents \newpage
 
-%%%%%%%%%%%%%%%%%%%%%%
-% January 9, 2012 %
-%%%%%%%%%%%%%%%%%%%%%%
-
 \section{Introduction}
 \emph{Monday, September 30, 2013}
 \subsection{The Magnitude Scale} % (fold)
@@ -1350,7 +1346,7 @@ and thus the velocity is
         \rho}{\rho}\right)\right|_{\ell}}=(g\ell)^{1/2}\left(\left.\frac
 {\Delta \rho}{\rho}\right|_{\ell}\right)^{1/2}
 \end{equation}
-\textit{Monday, January 30, 2012}\\
+\textit{Wednesday, October 16, 2013}\\
 
 \subsubsection{Convective Efficiency}
 \label{sec:conv-effic}
@@ -1437,7 +1433,7 @@ and thus the velocity is
     What I'm trying to do here is to write a density model in 1-D that
     doesn't make me blush.\hfill \emph{--Lars Bildsten}
   \end{quote}
-  To find a situation where this \emph{does} work is deep in the
+  To find a situation where this \emph{does} work, we go deep into the
   interior of the star, where $\tau \ggg 1$ (yes, three greater than
   signs). The relevant lengthscale here is still the scale height,
   which begins to approach the radial coordinate:
@@ -1490,7 +1486,7 @@ and thus the velocity is
     \frac{v}{c_s}\approx 10^{-3}\left(\frac{M}{10\ M_\odot}\right)^{7/6}
   \end{equation}
   This relatively slow speed reinforces our assumption that convective
-  bubbles move slow enough to maintain pressure equilibrium with their
+  bubbles move slowly enough to maintain pressure equilibrium with their
   surroundings. Now remember the adiabatic condition for convection
   derived earlier:
   \begin{equation}
@@ -1512,6 +1508,11 @@ _{\mathrm{adiabatic}}=\frac{2}{5}
 scattering)
     opacity, where $P\propto \rho^{4/3}$.
   \end{enumerate}
+\hspace{1in}\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Monday, October 21, 2013    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \n\textit{Monday, October 21, 2013}
 
   \subsection{Fully Convective Star}
   \label{sec:fully-conv-star}
@@ -1569,12 +1570,9 @@ scattering)
   \end{equation}
   So we have a big problem with assuming electron scattering (or
   convection) since this is obviously too low for a star like the
-  sun.\\
+  sun. Also, this temperature is way too low to allow free electrons,
+	which we have been assuming sets the opacity.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Wednesday, February 1, 2012 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \n\textit{Wednesday, February 1, 2012}
   \subsection{The Hayashi Track}
   \label{sec:fully-conv-stars}
   \n It turns out that in this case, the outer body sets the
@@ -1590,7 +1588,8 @@ scattering)
   Hansen, Kawaler, and Trimble give the value of this opacity as
   \begin{equation}
     \label{eq:137}
-    \kappa_{\mathrm{H^-}}=2.5\times 10^{-31}\rho^{1/2} T^9\
+    \kappa_{\mathrm{H^-}}=2.5\times 10^{-31}\left(\frac{\rho}{1\,\mathrm{g\,
+			cm^{-3}}}\right)^{1/2} \left(\frac{T}{1\ \mathrm{K}}\right)^9\
     \mathrm{cm^2\ g^{-1}}
   \end{equation}
   Now with the pressure given by
@@ -1763,6 +1762,12 @@ which is still a field with many unanswered questions.
 {keV}
   \end{equation}
 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Wednesday, October 23, 2012 %
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\n \textit{Wednesday, October 23, 2013}
+
   \subsection{Pre-Main Sequence Stars}
   \label{sec:pre-main-sequence}
 
@@ -1780,7 +1785,7 @@ which is still a field with many unanswered questions.
     \label{eq:70}
     dQ=TdS=dE+PdV
   \end{equation}
-  The corresponding time-dependent equation in the Lagrangian is
+  The corresponding time-dependent equation in the Lagrangian picture is
   \begin{equation}
     \label{eq:71}
     T\frac{dS}{dt}=\frac{dE}{dt}+P\frac{dV}{dt}
@@ -1866,12 +1871,7 @@ which is still a field with many unanswered questions.
     \frac{\partial L(r)}{\partial
       m(r)}=\varepsilon_{\mathrm{nuc}}+\varepsilon_{\mathrm{grav}}
   \end{equation}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Monday, February 6, 2012 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \textit{Monday, February 6, 2012}\\
-
-  \n Let's do some dimensional analysis for a contracting star. The
+	Let's do some dimensional analysis for a contracting star. The
   pressure is
   \begin{equation}
     \label{eq:7}
@@ -1952,10 +1952,16 @@ which is still a field with many unanswered questions.
     \varepsilon_{\mathrm{nuc}}=\frac{\partial L_r}{\partial m_r}
   \end{equation}
   This is a good approximation for stars on the main sequence, where
-  the burning time is much longer than the Kelvin-Helmholtz time.
+  the burning time is much longer than the Kelvin-Helmholtz time.\\
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Monday, October 28, 2013 %
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	 
+	\n\textit{Monday, October 28, 2013}
 
-  \subsection{Low Mass Stars}
-  \label{sec:low-mass-stars}
+  \subsection{Transition to Radiation Domination}
+  \label{sec:transition-to-radiation-domination}
 
   Earlier we derived that as stars are on the Hayashi track,
   \begin{equation}
@@ -1967,8 +1973,8 @@ which is still a field with many unanswered questions.
   radius as a function of time:
   \begin{equation}
     \label{eq:89}
-    \frac{3}{7}\frac{GM^2}{R^2}\frac{dR}{dt}=-0.03\ L_\odot\left(\frac{M}
-{M_\odot}\right)^{4/7}\left(\frac{R}{R_\odot}\right)^2
+		\frac{3}{7}\frac{GM^2}{R^2} \frac{dR}{dt} = -0.03 L_\odot
+		\left(\frac{M}{M_\odot}\right)^{4/7}\left(\frac{R}{R_\odot}\right)^2
   \end{equation}
   We can now read off scalings: $\dot{R}\propto R^4$, $1/t\propto
   R^3$, and so $R\propto t^{-1/3}$. Explicitly, the radius for a
@@ -1981,7 +1987,14 @@ which is still a field with many unanswered questions.
   For masses greater than about a half of a solar mass, convection
   will dominate heat transport until the luminosity reaches the level
   that was predicted by earlier opacity arguments that assumed
-  radiative diffusion. The onset of a radiative core is then roughly
+  radiative diffusion:
+	\begin{align}
+		\label{eq:rad_trans:1} L_{\mathrm{rad}}(\kappa = \mathrm{const}) 
+			&\propto M^3\\
+		\label{eq:rad_trans:2}L_{\mathrm{rad}}(\kappa \propto \rho T^{-3.5})
+			&\propto M^{5.5}R^{-0.5}
+	\end{align}
+	The onset of a radiative core is then roughly
   when $L\lesssim L_{\mathrm{rad}}$. The time it takes for this to
   happen is
   \begin{equation}
@@ -2060,7 +2073,8 @@ which is still a field with many unanswered questions.
     \label{eq:95}
     E_{\mathrm{volume}}=-14\ \mathrm{MeV}\ A
   \end{equation}
-  The next term is a ``surface'' term, due to the phenomenon that a
+  This is essentially just the well depth for each nucleon put in the
+	nucleus. The next term is a ``surface'' term, due to the phenomenon that a
   nucleon at the surface of the nucleus is not as ``bound'' since it
   interacts with fewer nucleons. Since the volume term is known, the
   best way to calculate this is to say we are overestimating the
@@ -2115,9 +2129,9 @@ which is still a field with many unanswered questions.
   so we get
   \begin{equation}
     \label{eq:372}
-    E_{\mathrm{Coulomb}}=e^2\left(\frac{3}{4\pi
-        n_Q}\right)^{-1/3}\frac{3}{5}Q^{5/3}=e^2\left(\frac{3\frac{4\pi}{3}r_n}{4\pi
-        Z}\right)^{-1/3}\frac{3}{5}Q^{5/3}\approx \frac{3}{5}\frac{e^2Q^2}{r_n}
+    E_{\mathrm{Coulomb}}=e^2\left(\frac{3}{4\pi n_Q}\right)^{-1/3}
+    \frac{3}{5}Q^{5/3} = e^2 \left(\frac{3\frac{4\pi}{3}r_n}{4\pi
+    Z}\right)^{-1/3} \frac{3}{5} Q^{5/3} \approx \frac{3}{5} \frac{e^2Q^2}{r_n}
   \end{equation}
   Re-expressing everything in terms of the mass number and the atomic
   number, we get
@@ -2141,7 +2155,7 @@ which is still a field with many unanswered questions.
   \end{equation}
   It is observed that the radius of a nucleus increases with
   $r_n\approx 1.3\ \mathrm{fm}\ A^{1/3}$
-  so that the number mass density of nucleons is
+  so that the mass density of nucleons is
   \begin{equation}
     \label{eq:374}
     \rho=\frac{3 A m_p}{4\pi A\left(1.3\times
@@ -2171,9 +2185,10 @@ which is still a field with many unanswered questions.
     \label{eq:378}
     \avg{T}\approx 20\ \mathrm{MeV}\quad\Rightarrow \quad U=-40\ \mathrm{MeV}
   \end{equation}
-  The Pauli Exclusion Principle requires that we move filled to
-  unfilled (?). Let's see how this changes the kinetic energy content
-  in the nucleus relative to $Z=N=A/2$.\\
+  The Pauli Exclusion Principle requires nucleons to occupy higher states if
+  the $N\neq Z$, which then drives the nucleus to a less bound state. Let's see
+  how this changes the kinetic energy content in the nucleus relative to
+  $Z=N=A/2$.\\
 
   \n Imagine we go to
   \begin{equation}
@@ -2238,11 +2253,6 @@ which is still a field with many unanswered questions.
   curve of binding energy and all other relevant quantities. What we
   must first sort out is how fusion can possibly occur at these very
   low energies.\\
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Wednesday, February 8, 2012%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \n\textit{Wednesday, February 8, 2012}
   \subsection{Tunneling through the Coulomb Barrier}
   \label{sec:tunn-thro-coul}
 

@@ -5,7 +5,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage
 {geometry,amsmath,amsthm,mathrsfs,amssymb,graphicx,bm,hyperref,url,pdfsync,
-fancyhdr}
+fancyhdr, wrapfig}
 \pagestyle{fancy}
 \numberwithin{equation}{section}
 %%%%%%%%%%%%%%%%%%%
@@ -35,7 +35,50 @@ fancyhdr}
 %%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
-	\emph{Monday, January 9, 2012}
+\emph{Monday, September 30, 2013}
+\subsection{The Magnitude Scale} % (fold)
+	\label{sub:the_magnitude_scale}
+	The magnitude is a logarithmic scale detailing the relative brightnesses of
+objects. It is based on the star Vega ($\approx 8$ pc away). It is defined such
+that its magnitude in the $U$, $B$, and $V$ magnitudes is zero. This
+corresponds to a flux definition as
+	\begin{equation}
+		\label{mag:1} 3.5\times 10^{-20}\ \mathrm{erg\,cm^{-2}\,s^{-1}\,Hz^{-1}}
+	\end{equation}
+	for $M = 0$ (where $M$ is the magnitude). Or, in terms of a simple photon
+flux, we have
+	\begin{equation}
+		\label{mag:2} N_\lambda = 10^3\ \mathrm{\gamma\,cm^{-2}\,s^{-1}\,\AA}
+	\end{equation}
+	at the $V$ band for $V=0$. A useful fact to know is that a magnitude
+difference of 5 corresponds to a brightness ratio of 100. The classic filters
+have centers and widths given approximately by Table~\ref{tab:mag:1}
+	\begin{table}[b]
+		\centering
+		\begin{tabular}{cccc}
+		Band & $\lambda_0\ (\AA)$ & FWHM\ (\AA) & Flux ($\mathrm{\#\
+		 cm^{-2}\,s^{-1}\,\AA^{-1}}$)\\
+		 \hline
+		 $U$ & 3650 & 680 & 780 \\
+		 $B$ & 4400 & 980 & 1450 \\
+		 $V$ & 5500 & 890 & 1000 \\
+		 $R$ & 7000 & 2200 & 610 \\
+		 $I$ & 9000 & 2400 & 380
+		\end{tabular}
+		\caption{Basic filter band information used in optical astronomy.}
+		\label{tab:mag:1}
+	\end{table}
+	
+	\n The \textbf{Absolute Magnitude} is the apparent magnitude of the star if
+it were located at a distance of 10 pc. A \textbf{parsec} (pc) is the distance
+at which a star appears to move one arcsecond in the sky over a half of a year
+due to the motion of the earth around the sun. In cgs, it's approximatione
+	\begin{equation}
+		\label{eq:pc:1} 1\ \mathrm{pc} \approx 3\times 10^{18}\ \mathrm{cm}
+	\end{equation}
+	
+	% subsection the_magnitude_scale (end)
+
 	\subsection{The HR Diagram} 
 	Most stars shine predominantly in the optical range of the 
 electromagnetic spectrum. As a result, we get most of our information about 
@@ -47,7 +90,15 @@ it turns out, the controlling parameter for these quantities is the mass of
 the star, at least while the star is on the \textbf{Main Sequence} (stars 
 burning hydrogen to helium). The correlation between the mass of a main-
 sequence star and its luminosity is incredibly strong (see HR diagram 
-examples).
+examples).\\
+
+\n Surveys of all nearby stars within 22 pc have found 2241 stars, which
+corresponds to a number density of stars as
+\begin{equation}
+	\label{eq:hr:1} n_* = \frac{2241}{\frac{4\pi}{3}(22\ \mathrm{pc})^2} = 0.05\
+\mathrm{pc}^{-3}
+\end{equation}
+which gives an average separation of $\avg{r}\approx 1.7\ \mathrm{pc}$
 	\begin{figure}
 		\centering
 		\includegraphics[width=6in]{hr_local.pdf}
@@ -79,7 +130,7 @@ amount of mass contained in these stars per unit volume):
 A, F, G, K, M, L, T, which are roughly in decreasing order of size and 
 temperature (the reasoning for this scale is historical rather than 
 logical, and the ordering is often remembered by the mnemonic, ``Oh Be A 
-Fine Gal/Guy, Kiss Me! Less Talk!''). We see that the big, bright stars 
+Fine Gal/Guy, Kiss Me! Less Tongue!''). We see that the big, bright stars 
 form an exceedingly small portion of the amount of stellar mass in our 
 galaxy. We will find that this is because large stars exhaust their fuel 
 much more quickly than smaller stars, and thus live and die much faster. 
@@ -157,7 +208,7 @@ molecular mass (measured in AMU), and $\rho$ is the density in $\mathrm{g
 (0)\exp\left(-\frac{z}{h}\right)
 	\end{equation}
 	where we have defined the \textbf{scale height} $h\equiv kT/(\mu m_pg)
-$, which is the e-folding distance in number density. As it turns out, the 
+$, which is the $e$-folding distance in number density. As it turns out, the 
 scale height for earth's atmosphere is approximately 10 km. This model is 
 really only valid in cases where $h\ll R$, (where $R$ is the size of the 
 object), so we now investigate the ratio of these two quantities:
@@ -253,9 +304,9 @@ evolution. Since fusion tends to decrease the pressure support, the star
 must continuously readjust its structure so as to hold itself up.\\
 	
 %%%%%%%%%%%%%%%%%%%%%%
-%  January 11, 2012  %
+%  October 2, 2013  %
 %%%%%%%%%%%%%%%%%%%%%%
-	\n \textit{Wednesday, January 11, 2012}
+	\n \textit{Wednesday, October 2, 2013}
 	\subsection{Electric Fields in Stars}
 	Imagine a pure, ionized hydrogen atmosphere which is, on the large 
 scale, electrically neutral. We wish to find the scale height in a plasma 
@@ -299,8 +350,7 @@ two equations will get us the electric field:
 \quad e\mathbf{E}\approx -\frac{m_p\mathbf{g}}{2}.
 	\end{equation}
 	So this field does not directly affect hydrostatic balance, but it does 
-dramatically impact the relative difficulty of (?UNREADABLE TEXT IN LECTURE 
-NOTES?) in a white dwarf.
+dramatically impact the relative surface abundances of elements since different isotopes feel different forces, causing diffusion and sedimentation.
 \section{Self-Gravitating Objects}
 	So far we have only considered systems where the acceleration due to 
 gravity is constant. In any self-gravitating object, this is obviously not 
@@ -376,9 +426,9 @@ r^3\,dr\\
 	where $E_{\mathrm{GR}}$ is the gravitational binding energy. Performing 
 a similar analysis to the left side of \eqref{rss.3} gives
 	\begin{align}
-		\label{rss.5} \int 4\pi r^3\,dr\frac{dP}{dr} &= \left.4\pi r^2P
+		\label{rss.5} \int 4\pi r^3\,dr\frac{dP}{dr} &= \left.4\pi r^3P
 \right|_{0}^R-3\left[4\pi\int Pr^2\,dr\right]\\
-		\label{rss.6} &= -3\int P4\pi  r^2\,dr\\
+		\label{rss.6} &= -3\int P\,4\pi  r^2\,dr\\
 		\label{rss.7}&=-3\avg{P}V
 	\end{align}
 	where we've defined the average pressure to be the pressure
@@ -476,7 +526,7 @@ still wrong) number of about 200 billion years. We conclude that nuclear
 energy is a more promising form of energy for the sun than chemical energy.
 \\
 	
-\n\textit{Wednesday, January 18, 2012}
+\n\textit{Monday, October 7, 2013 (No updates)}
 	\subsection{Gas Pressure and Radiation Pressure}
 		Recall from the case of the constant density star that the 
 gravitational energy is given by
@@ -734,7 +784,7 @@ than a solar mass. Note that we have derived the stellar luminosity with
 modes of heat transport available to the star.\\
 	
 %%%%%	
-	\n \textit{Monday, January 23, 2012}
+	\n \textit{Wednesday, October 9, 2013}
 	\subsubsection{The Eddington Limit and the Eddington Standard Model}
 	Continuing with heat transfer via radiation with electron scattering 
 being the primary source of opacity, the flux is given via Fick's law as
@@ -750,7 +800,7 @@ these in to \eqref{HTS.17}, the flux becomes
 	where we've defined the \textbf{opacity} via
 	\begin{equation}
 		\label{HTS.19} \kappa_{\mathrm{es}}\equiv\frac{\sigma_{\mathrm
-{Th}}}{m_p}
+{Th}}}{m_p} \approx 0.4\ \mathrm{cm^2\ g^{-1}}
 	\end{equation}
 	The opacity is measured in units of area per unit mass, indicating it 
 is the cross-sectional area per unit mass. For electron scattering, it is 
@@ -840,8 +890,42 @@ the luminosity to the Eddington Luminosity:
 	Aside: this model of stars is the called the ``Eddington Standard 
 Model'' and was used to describe stars before their source of energy was 
 known. 
+	\subsubsection{Aside: Alternate Derivation of the Eddington Luminosity} % (fold)
+	\label{ssub:alternate_derivation_of_the_eddington_luminosity}
+		Cosnider a situaton where photons are streaming through a medium of protons
+		and electrons with a number density of photons $n_\gamma$ with the Thomson
+		cross section (they interact primarily with electrons),
+		$\sigma_{\mathrm{es}}$. Then the collision time (the average time between
+		interactions with electrons) is
+		\begin{equation}
+			\label{eq:tcollision} t_{\mathrm{coll}} =
+			\frac{1}{\sigma_{\mathrm{es}}n_\gamma c}
+		\end{equation}
+		And the momentum change from such collisions is given simply by
+		\begin{equation}
+			\label{eq:ledd:1} \Delta p = \frac{E_\gamma}{c}=\frac{h\nu}{c}
+		\end{equation}
+		With the impulse and the time between interactions we can define a force:
+		\begin{equation}
+			\label{eq:ledd:2} F=\frac{\Delta p}{\Delta t} =
+			\sigma_{\mathrm{es}}n_\gamma E_\gamma = \sigma_{\mathrm{es}} \frac{F}{c}
+		\end{equation}
+		where the second $F$ is now the flux. Now when this force is greater than
+		local gravity, $\sigma_{\mathrm{es}} F/c > m_p g$ (now we use the proton
+		mass since we assume the electrons ``pull'' the protons along for the ride),
+		we get radiative levitation with the condition
+		\begin{equation}
+			\label{eq:ledd:3} \frac{\sigma_{\mathrm{es}}L}{4\pi r^2 c} > m_p \frac{G
+			M}{r^2} \qquad \Rightarrow \qquad L > L_{\mathrm{Edd}} = \frac{4\pi G m_p
+			c}{\kappa}
+		\end{equation}
+		So this is the luminosity at which the radiation field drives a mass loss
+		from the star. The details of what actually happens in these conditions is
+		still an active area of research.
+	% subsubsection alternate_derivation_of_the_eddington_luminosity (end)
 	\subsubsection{Polytropic Relations}
-	Now integrating \eqref{HTS.34}, we have
+	Returning now to the Eddinton standard model, we integrate \eqref{HTS.34} and
+get
 	\begin{equation}
 		\label{HTS.35} \int_R^rdP_{\mathrm{rad}}=\frac{L}{L_{\mathrm{Edd}}}
 \int_R^r\eta(r)\,dP
@@ -876,8 +960,13 @@ kT}{\mu m_p}
 values to an actual equation that lets us find $T(r)$, $\rho(r)$, and $P(r)
 $. It appears then, that in our low radiation pressure limit, $\rho\propto 
 T^3$. Additionally, for the ideal gas law, we see that $P\propto \rho^
-{4/3}$. For some given $L/L_{\mathrm{Edd}}$, we have a relation between 
-pressure and density via
+{4/3}$. This is an example of the more general idea of a \textbf{polytrope}, which is a gas whose pressue and density are related simply by
+\begin{equation}
+	\label{eq:polytrope} P\propto \rho^{1+\frac{1}{n}}
+\end{equation}
+Here $n$ is the \textbf{polytropic index}. These will be important later,
+especially for white dwarf stars. For our $n=3$ polytrope we can take a given
+$L/L_{\mathrm{Edd}}$ and recover a relation between pressure and density via
 	\begin{align}
 		\label{HTS.40} \frac{dP}{dr}&=-\rho(r)\frac{Gm(r)}{r^2}\\
 		\label{HTS.41} dm(r) &= \rho 4\pi r^2\,dr
@@ -888,7 +977,27 @@ ideal gas, $\gamma=5/3$, so we have $P\propto \rho^{5/3}$ and $\rho T
 \propto P$, so $T\propto \rho^{2/3}$. Then we'll call the ``entropy'' $T/
 \rho^{2/3}$. For our star, we have $T^3\propto \rho\Rightarrow T\propto 
 \rho^{1/3}$. In our case, the ``entropy'' is then $a/\rho^{1/3}$. Thus the 
-entropy is highest in the outer layers and smallest in the center.
+entropy is highest in the outer layers and smallest in the center.\\
+
+\n At this time we should also introduce another parameter often used in
+stellar astrophysics, $\beta$. Typically we designate
+\begin{equation}
+	\label{eq:beta:1} \beta \equiv \frac{P_\mathrm{gas}}{P_{\mathrm{tot}}}
+\end{equation}
+This parameter gives us a sense of how radiation dominated the gas is at a
+given location. We can write the radiation pressure in terms of $\beta$ and
+$P_{\mathrm{gas}}$ via
+\begin{equation}
+	\label{eq:beta:2} P_{\mathrm{rad}} = \left(\frac{1-\beta}{\beta}\right)
+P_{\mathrm{gas}}
+\end{equation}
+And so the pressure run in the star is given by
+\begin{equation}
+	\label{eq:beta:3} P(r) = \frac{1}{\beta}\frac{k}{\mu
+m_p}\left[\frac{3k}{a\mu m_p}\frac{1-\beta}{\beta}\right]^{1/3}
+\rho(r)^{4/3}
+\end{equation}
+where \eqref{eq:beta:3} comes from combining the definition of $\beta$ with hydrostatic equilibrium and radiative diffusion.
 	\subsubsection{Heat Transfer in the Outer Atmosphere}
 	Near the surface of the star, photons naturally leave (which is why we 
 see them!) We want to know what the place or condition is like. Near the 
@@ -974,7 +1083,7 @@ the fact that $a=4\sigma_{\mathrm{SB}}/c$ and \eqref{HTS.52} to get
         but our result in \eqref{HTS.55} essentially tells us that
         $F=acT^4/\tau$.\\
 
-        \n \textit{Wednesday, January 25, 2012}
+        \n \textit{Monday, October 14, 2013}
 \subsection{Convection}
 \label{sec:conv}
 Another important form of heat transport in stars is that of
@@ -990,6 +1099,15 @@ adiabatically (faster than the heat transfer time scale) is
 ``runs away''. This is a linear instability, in that a displacement
 exponentially grows in time. \\
 
+\begin{wrapfigure}{r}{0.5\textwidth}
+	\centering
+	\includegraphics[width=0.48\textwidth]{figures/convection_scheme.pdf}
+	\caption{Bubble at initial ($r=r_1$) and perturbed ($r=r_2$) locations. The
+perturbation happens slow enough so that pressure equilibrium is achieved, but
+fast enough that there is no heat loss. Thus, the pressure remains equal to the
+background pressure, but the density need not match the background density.}	
+\end{wrapfigure}
+
 \n Suppose we have a fluid element in hydrostatic balance. We imagine
 displacing this fluid element from $r$ to $r+dr$. So we assume that
 the displaced element responds adiabatically. Thermodynamcis tells us
@@ -1003,11 +1121,12 @@ inside of the fluid element). This is equivalent to the requirement that
 the timescale of response is much less than that for heat to enter or
 leave the fluid element. We presume that the timescale is longer than
 the time for pressure equilibrium as well:
-\begin{equation}
+\begin{multline}
   \label{eq:10}
   t=\frac{h}{c_s}=\textrm{time for the pressure to
-    equilibrate}\quad\Rightarrow\quad v\ll c_s
-\end{equation}
+    equilibrate}\\
+		\quad\Rightarrow\quad v\ll c_s
+\end{multline}
 where $h$ is agin the scale height. This requirement ensures that the
 fluid element remains in pressure equilibrium with its surroundings at
 all times Suppose the element starts in
@@ -1062,6 +1181,7 @@ Now, we recall that
 (assuming uniform composition) and thus \eqref{eq:16} can be written as
 \begin{equation}
   \label{eq:18}
+  %Matt - should these be d\ln r as well?
   \frac{1}{\gamma}\frac{d\ln P}{dr}>\frac{d\ln P}{dr}-\frac{d\ln T}{dr}
 \end{equation}
 For an ideal, monatomic gas, this becomes
@@ -1078,8 +1198,9 @@ $T\propto P^{1/4}$. Then computing the logarithmic derivative in
   \label{eq:20}
   \frac{d\ln T}{d\ln P}=\frac{1}{4}<\frac{2}{5}
 \end{equation}
-Note that we could also include a gradient in the composition if we
-wanted. \eqref{eq:20} would become, more genrally,
+so this model is stable to convection. Note that we could also include a
+gradient in the composition if we wanted. \eqref{eq:20} would become, more
+genrally,
 \begin{equation}
   \label{eq:135}
   \boxed{\left(\frac{1}{\gamma}-1\right)\frac{d\ln
@@ -1139,7 +1260,7 @@ $\Delta\rho<0$, or
 {(Stability)}}
 \end{equation}
 This is the same result we obtained previously, just phrased a bit
-differently. In the unstable case, though, we require $\Delta\rho>0$. the
+differently. In the unstable case, though, we require $\Delta\rho>0$. The
 acceleration, $a$, or the displaced element will be given by 
 \begin{equation}
   \label{eq:26}
@@ -1160,14 +1281,27 @@ familiar. In any case, we have
   -\omega^2=g\left(\frac{d\ln\rho}{dr}+\frac{\rho g}{P \gamma}\right)
 \end{equation}
 If $-\omega^2<0$, then the solution is stable, and the element
-oscillates at the Brunt V\"{a}is\"{a}l\"{a} frequency is 
+oscillates at the Brunt V\"{a}is\"{a}l\"{a} frequency, which is 
 \begin{equation}
   \label{eq:29}
   N^2=-g\left[\frac{d\ln\rho}{dr}+\frac{\rho g}{\gamma P}\right]
 \end{equation}
 This is the local frequency of oscillation of a fluid element in a
 convectively stable atmosphere. In the Earth's atmosphere, this
-frequency is around five or ten minutes.\\
+frequency is around five or ten minutes. We should check to see that this
+formalism doesn't cause supersonic velocities in a stable model, so let's check
+the velocity of such an oscillating element, which is roughly
+\begin{equation}
+	\label{eq:conv_vel:1} v_{\mathrm{stable}} \approx N\delta x \approx \delta
+x\frac{c_s^2}{g}
+\end{equation}
+Requiring that this be subsonic gives
+\begin{equation}
+	\label{eq:conv_vel:2} \delta x\frac{c_s^2}{g} < c_s \qquad \Rightarrow \delta
+x < \frac{g}{c_s} = h
+\end{equation}
+where $h$ is again the scale height. So as long as perturbations are smaller
+than the local scale height, our assumptions are valid.\\
 
 \n Now if this coefficient is negative, the solution is unstable
 (i.e., grows exponentially). Note that $N^2\sim g/h$, so 
@@ -1305,7 +1439,7 @@ and thus the velocity is
   \end{quote}
   To find a situation where this \emph{does} work is deep in the
   interior of the star, where $\tau \ggg 1$ (yes, three greater than
-  signs). The relevant lengthscale here is no longer the scale height,
+  signs). The relevant lengthscale here is still the scale height,
   which begins to approach the radial coordinate:
   \begin{equation}
     \label{eq:45}
@@ -1686,7 +1820,7 @@ which is still a field with many unanswered questions.
   Then we can rewrite \eqref{eq:75} as
   \begin{equation}
     \label{eq:77}
-    \frac{\bm{\nabla}\cdot\mathbf{F}}{\rho}=\frac{1}{\rho4\pi
+    \frac{\bm{\nabla}\cdot\mathbf{F}}{\rho}=\frac{1}{\rho\,4\pi
       r^2}\frac{\partial}{\partial r}L(r)=\frac{d L(r)}{dm(r)}
   \end{equation}
   So in the case of no nuclear burning (a pre-main sequence star), we
@@ -1960,17 +2094,17 @@ which is still a field with many unanswered questions.
   \end{equation}
   spread uniformly throughout. The total Coulomb energy is then
   \begin{equation}
-    \label{eq:369}
+    \label{eq:369a}
     E_{\mathrm{Coulomb}}=\int \frac{e^2}{r}q(r)\,dq
   \end{equation}
   where $q(r)=n_Q\, 4\pi r^3/3$ and $dq=n_Q\,4\pi
-  r^2\,dr$. Re-expressing the radius interms of the charge variables,
+  r^2\,dr$. Re-expressing the radius in terms of the charge variables,
   we get
   \begin{equation}
     \label{eq:370}
     r=\left(\frac{3q}{4\pi n_Q}\right)^{1/3}
   \end{equation}
-  Then \eqref{eq:369} can be re-expressed as
+  Then \eqref{eq:369a} can be re-expressed as
   \begin{equation}
     \label{eq:371}
     E_{\mathrm{Coulomb}}\approx
@@ -2205,7 +2339,7 @@ which is still a field with many unanswered questions.
     \sigma(v)v\phi(v)=4\pi\left(\frac{\mu}{2\pi kT}\right)^{3/2}
     \int_0^\infty v^3\sigma(v)\exp\left(-\frac{\mu v^2}{2kT}\right)dv
   \end{equation}
-  where $\mu$ is now the reduced mass, $\mu=m_1m_2/(m_1+m2)$ .Note that
+  where $\mu$ is now the reduced mass, $\mu=m_1m_2/(m_1+m2)$. Note that
   if both reactants are the same species, \eqref{eq:105}
   must be divided by a factor of 2 since we cannot imagine having a
   ``target'' and a ``scatterer'' (this screws up relative velocities
@@ -2396,7 +2530,7 @@ which is still a field with many unanswered questions.
   \begin{equation}
     \label{eq:131}
     I=g(x_0)e^{-f(x_0)}\int_{-\infty}^{\infty}\exp\left[-\frac{f''(x_0)}{2}
-(x_0)^2\right]=g(x_0)e^{-f(x_0)}\sqrt{\frac{2\pi}{f''(x_0)}}
+(x-x_0)^2\right]dx=g(x_0)e^{-f(x_0)}\sqrt{\frac{2\pi}{f''(x_0)}}
   \end{equation}
   Then for our uses, we have
   \begin{equation}
@@ -2428,7 +2562,7 @@ which is still a field with many unanswered questions.
 {2/3}}\exp\left[-3\left(\frac{E_{\mathrm{G}}}{4kT}\right)^{1/3}\right]=\avg
 {\sigma v}}
   \end{align}
-  Note that $\Delta$ was introudce strctly as a matter of
+  Note that $\Delta$ was introduced strictly as a matter of
   convenience. You can think of it as an effective width of the
   Gaussian or something like that. Now \eqref{eq:134b} is valid for
   pretty much any \emph{non-resonant} reaction that we might
@@ -2867,7 +3001,7 @@ m^{1/2}r^4
   particular interest is the CN cycle:
   \begin{align}
     \label{eq:170}
-    \mathrm{p+{}^{13}C} & \to \mathrm{{}^{13}N+\gamma}\\
+    \mathrm{p+{}^{12}C} & \to \mathrm{{}^{13}N+\gamma}\\
     \label{eq:170a}
     \mathrm{{}^{13}N} & \to \mathrm{{}^{13}C+}e^++\nu_e\\
     \label{eq:170b}
@@ -3146,7 +3280,7 @@ m^{1/2}r^4
     studying the stellar spectra.\\
 
     \n To understand and describe the formation of spectral lines, we
-    must link the degree of ionization and the occupation over orbital
+    must link the degree of ionization and the occupation of orbital
     energy levels in the gas to the large-scale thermodynamics
     variables. \\
 
@@ -3164,9 +3298,9 @@ m^{1/2}r^4
     probility of particles residing in these two states is given by
     \begin{equation}
       \label{eq:194}
-      \frac{n_1}{n_2}=\frac{g_1}{g_0}e^{-\Delta E/(kT)}
+      \frac{n_1}{n_2}=\frac{g_1}{g_2}e^{-\Delta E/(kT)}
     \end{equation}
-    where $g_1$ and $g_0$ are the statsitical weights of the two
+    where $g_1$ and $g_2$ are the statsitical weights of the two
     configurations. This equation actually describes the ionization
     states in the stellar interior, though for electrons, it's more
     accurate to use Fermi-Dirac statistics:
@@ -3269,7 +3403,7 @@ m^{1/2}r^4
       concentration:
     \begin{equation}
       \label{eq:225}
-      n_Q=\left[\frac{2\pi mkT}{h}\right]^{3/2}
+      n_Q=\left[\frac{2\pi mkT}{h^2}\right]^{3/2}
     \end{equation}
     Now, suppose we are in a state where exactly half of the hydrogen
     is ionized. In this case,
@@ -3337,18 +3471,22 @@ m^{1/2}r^4
           \mathrm{K}}{T}\right)\left(\frac{g}{2.7\times 10^4}\right)
     \end{equation}
     For various spectral types, we have a range of masses and
-    effective temperatures\\
-    \begin{center}
-    \begin{tabular}[h]{c c c}
-      Spectral Type & $T_{\mathrm{eff}}$ & $M/M\odot$\\
-      \hline\hline
-      O3 & 52000 K & 120\\
-      B0 & 30000 K & 17\\
-      A0 & 9500 K & 3\\
-      G0 & 6000 K & $\sim 1$
-    \end{tabular}
-    \end{center}
-    So there is around a factor of ten spread in these effective
+    effective temperatures summarized in Table \ref{tab:spectral}.\\
+
+    \begin{table}[h]
+      \centering
+      \begin{tabular}[h]{c c c}
+        Spectral Type & $T_{\mathrm{eff}}$ & $M/M\odot$\\
+        \hline\hline
+        O3 & 52000 K & 120\\
+        B0 & 30000 K & 17\\
+        A0 & 9500 K & 3\\
+        G0 & 6000 K & $\sim 1$
+      \end{tabular}
+      \caption{Parameters of selected spectral types.}
+      \label{tab:spectral}
+    \end{table}
+    \n So there is around a factor of ten spread in these effective
     temperatures. Thus, the different emission and absorption lines
     that we see will vary greatly among these classes (hence their
     name of \textbf{spectral classes}). Elements with first
@@ -3363,7 +3501,7 @@ m^{1/2}r^4
       Transitions}. The transtion from 1 to 2 corresponds to a
     wavelength of 1215 \AA, and the Lyman limit, from 1 out to infinity
     is at 911 \AA. Probaly more well-known are transitions to and from the
-    $n=2$, called the \textbf{Balmer Transitions}. The most famous of
+    $n=2$ state, called the \textbf{Balmer Transitions}. The most famous of
     these is the H$\alpha$ line, which is the $n=2$ to $n=3$
     transition, at a wavelength of 6563 \AA. Note that this is in the
     visible and thus easily observable, whereas the Lyman transitions
@@ -3392,7 +3530,7 @@ m^{1/2}r^4
       \label{eq:219}
       \frac{\sigma_{\mathrm{line}}}{\sigma_{\mathrm{Th}}}\sim 10^8
     \end{equation}
-    Now we can determine the relative strenth of this source of
+    Now we can determine the relative strength of this source of
     opacity to electron scattering via
     \begin{equation}
       \label{eq:220}
@@ -3416,7 +3554,7 @@ m^{1/2}r^4
 
     \paragraph{H${}^-$ Opacity}
     \label{par:mathrmh--opacity}
-    With the Boltzmann equation, we can compute what fraction of
+    With the Saha equation (or at least something like it), we can compute what fraction of
     hydrogen atoms are actually ionized into the $\mathrm{H}^-$ ion:
     \begin{equation}
       \label{eq:222}
@@ -3542,7 +3680,7 @@ m^{1/2}r^4
       L_{\mathrm{nuc}}\propto T_c^{15\to 20}
     \end{equation}
     And as the luminosity increases, the temperature will only
-    increase by, at most, 20\%. Some scaline relations of importance
+    increase by, at most, 20\%. Some scaling relations of importance
     for the radius can then be obtained:
     \begin{equation}
       \label{eq:236}
@@ -3729,12 +3867,12 @@ acT_s^4}
 {R_c}r^2P(r)\,dr=-\frac{GM_{\mathrm{core}}}{R_{\mathrm{core}}}
     \end{equation}
     Since we have
-    $P(r)=\rho(r)kT_{\mathrm{core}}/(\mu_{\mathrm{core}}m_p)$. Then we
+    $P(r)=\rho(r)kT_{\mathrm{core}}/(\mu_{\mathrm{core}}m_p)$, we
     can recast \eqref{eq:250} quite easily to
     \begin{equation}
       \label{eq:251}
       4\pi R_{\mathrm{core}}^3P_{\mathrm{core}}(R_{\mathrm{core}})-3\frac
-{kT_{\mathrm{core}}}{mu_{\mathrm{core}}m_p}M_{\mathrm{core}}=-\frac{GM_
+{kT_{\mathrm{core}}}{\mu_{\mathrm{core}}m_p}M_{\mathrm{core}}=-\frac{GM_
 {\mathrm{core}}^2}{R_{\mathrm{core}}}
     \end{equation}
     Solving for the pressure, we have
@@ -3787,7 +3925,7 @@ acT_s^4}
       0.68\frac{1}{\mu_{\mathrm{core}}^4}\frac{1}{M_{\mathrm{core}}}>\frac
 {1}{\mu_{\mathrm{envelope}}}\frac{1}{M^2}
     \end{equation}
-    So then the requirment on the core mass is
+    So then the requirement on the core mass is
     \begin{equation}
       \label{eq:259}
       M_{\mathrm{core}}<M\left(\frac{\mu_{\mathrm{envelope}}}{\mu_{\mathrm
@@ -3864,7 +4002,7 @@ is shown, and barely (if ever) reaches hydrogen ignition.}
     according to
     \begin{align}
       \label{eq:264}
-      \mathrm{{}^4He+{}^4He\to{}^8Be+\gamma}\\
+      \mathrm{{}^4He+{}^4He\to{}^8Be+\gamma}
     \end{align}
     However, $\mathrm{{}^8Be}$ is unstable with a decay time of around
     $\tau\sim 2\times 10^{-16}\ \mathrm{sec}$.  The Gamow energy for
@@ -3908,6 +4046,7 @@ is shown, and barely (if ever) reaches hydrogen ignition.}
       E_0&=146\,\mathrm{keV}T_8^{2/3}
     \end{align}
     This is for the reaction
+    %Matt - It might be nice to include why the excited state of carbon is so important (see lecture 15)
     \begin{equation}
       \label{eq:269}
       \mathrm{\alpha+{}^8Be\to{}^{12}C^*+\gamma}
@@ -3921,7 +4060,7 @@ is shown, and barely (if ever) reaches hydrogen ignition.}
       \label{eq:270}
       3\mu_4=\mu_{12^*}
     \end{equation}
-    Messy algebra ensures, with the result that
+    Messy algebra ensues, with the result that
     \begin{equation}
       \label{eq:271}
       \frac{n_{\mathrm{12^*}}}{n_4}=5\times
@@ -3969,7 +4108,8 @@ is shown, and barely (if ever) reaches hydrogen ignition.}
     Once carbon is present in the core, it can burn to oxygen by the
     synthesis of an alpha particle and a carbon nucleus. Similarly,
     the Oxygen can be burned to Neon. The relevant values are shown in
-    Table \ref{tab:1}
+    Table \ref{tab:1}.\\
+
     \begin{table}[h!]
       \centering
       \begin{tabular}{l c c}
@@ -3984,7 +4124,7 @@ is shown, and barely (if ever) reaches hydrogen ignition.}
 neon.}
       \label{tab:1}
     \end{table}
-    The first reaction in Table \ref{tab:1} does occur fast enough to
+    \n The first reaction in Table \ref{tab:1} does occur fast enough to
     compete with the triple alpha process, so advanced stars typically
     have a core consisting of both carbon and oxygen.
 
@@ -3997,7 +4137,7 @@ neon.}
     time is
     \begin{equation}
       \label{eq:276}
-      t_{\mathrm{He\,burn}}=\frac{E_{\mathrm{nuc}}M_{\mathrm{burn}}}{L}
+      t_{\mathrm{He\,burn}}=\frac{\varepsilon_{\mathrm{nuc}}M_{\mathrm{burn}}}{L}
     \end{equation}
     which is shorter than the hydrogen-burning main sequence burn
     time. For stars above around $6\ M_\odot$, carbon burning will
@@ -4048,7 +4188,7 @@ neon.}
       \label{eq:280}
       E_k=\frac{p^2}{2m_e}=\frac{(\hbar n_e^{1/3})^2}{2m_e}
     \end{equation}
-    So the Fermi energy follows $E_F\propto \rho^{2/3}$, and so the
+    So the Fermi energy follows $E_f\propto \rho^{2/3}$, and so the
     pressure is $P=\rho E_f\propto \rho^{5/3}$. For hydrostatics, we
     have
     \begin{equation}
@@ -4071,7 +4211,7 @@ neon.}
     \begin{equation}
       \label{eq:282}
       kT_s\approx\frac{G M_sm_p}{\mu_e R_c}\quad\Rightarrow \quad
-      T_S\propto \frac{M_c}{R_c}\propto M_c^{4/3}
+      T_s\propto \frac{M_c}{R_c}\propto M_c^{4/3}
     \end{equation}
     So as the shell deposits more and more helium into the core, the
     temperature on the outer edge is rising in time. In the degenerate 
@@ -4547,7 +4687,7 @@ masses and it is important to
     Note that for heilum burning to take place, we needed a
     temperature of about $T=2\times 10^8\,\mathrm{K}$. The Coulomb
     barrier for the double carbon ignition will require a higher
-    temperature than helium burning did, but these stars do ge hot
+    temperature than helium burning did, but these stars do get hot
     enough for this to occur. 
 
     \subsubsection{Onset of Neutrino Emission}
@@ -4593,7 +4733,7 @@ masses and it is important to
     lecture about the ``neutrinosphere'' on neutron star. Stars are
     not this dense at this stage, though.\\
 
-    \n How are neutrnos created, though? The primary source is through
+    \n How are neutrinos created, though? The primary source is through
     positron-electron annihilation:
     \begin{equation}
       \label{eq:342}
@@ -4642,7 +4782,8 @@ masses and it is important to
 temperatures}
       \label{tab:positron}
     \end{table}
-    In the second entry in Table \ref{tab:positron}, the density of
+
+    \n In the second entry in Table \ref{tab:positron}, the density of
     the electrons are set by positrons rather than the ions, so our
     previous considerations are invalid. When does this happen?
     I.e., when does $n_{e^+}=n_e=Zn_i$? Well, it's when this
@@ -4713,7 +4854,7 @@ assuiming $\rho_4=1$.}
     \subsubsection{Plasmon Decay}
     \label{sec:plasmon-decay}
 
-    one other important neutrino emission process is \textbf{plasmon
+   One other important neutrino emission process is \textbf{plasmon
       decay}. In a plasma, the dispersion relation for photons becomes
     \begin{equation}
       \label{eq:356}
@@ -4732,7 +4873,7 @@ assuiming $\rho_4=1$.}
     \end{equation}
     We can solve for energy and momentum conservation for this particle
     to decay to two particles. It turns out that the decay $\gamma\to
-    \nu_e\overline{\nu}_e$ is an available decay. This then gives
+    \nu_e + \overline{\nu}_e$ is an available decay. This then gives
     another source of neutrino losses. We haven't derived a specific
     rate or anything, so if you'd like to know more, see Clayton.
 
@@ -4793,8 +4934,7 @@ dominant.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 % Monday, March 12, 2012 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-    \n \textit{Monday, March 12, 2012}\\
-    
+    \n \textit{Monday, March 12, 2012}    
 \section{Core Collapse and Stellar Death}
 	\label{sec:core-collapse} 
 	\subsection{The March to Collapse}
@@ -4807,49 +4947,57 @@ accelerating the burning phases. Additionally, for nearly all these phases
 \,\left(\frac{10^{6}\,\mathrm{g\,cm^{-3}}}{\rho_{c}}\right)^{1/2}
 	\end{equation}
 	Meanwhile, the star is building up an onion skin shell structure of 
-overlying layers of different elements. The burning up to ${}^{28}\mathrm
-{Si}$ is still fusion driven. However, we find that ${}^{28}\mathrm{Si}$ actually burns via 
-\textbf{photodisintegration}:
+        overlying layers of different elements. The burning up to ${}^{28}\mathrm
+        {Si}$ is still fusion driven. However, we find that ${}^{28}\mathrm{Si}$ actually burns via 
+        \textbf{photodisintegration}:
+        % Matt - It is not clear that the above statement refers to \ref{eq:366}
 	\begin{equation}
-	\label{eq:365}{}^{28}\mathrm{Si}+{}^{28}\mathrm{Si}\to{}^{56}\mathrm
-{Ni}
+          \label{eq:365}{}^{28}\mathrm{Si}+{}^{28}\mathrm{Si}\to{}^{56}\mathrm
+          {Ni}
 	\end{equation}
 	This reaction has a prohibitive Coulomb barrier, so the following 
-reaction is favored
+        reaction is favored
 	\begin{equation}
-	\label{eq:366} \gamma+{}^{28}\mathrm{Si}\to\alpha+{}^{24}\mathrm{Mg}
+          \label{eq:366} \gamma+{}^{28}\mathrm{Si}\to\alpha+{}^{24}\mathrm{Mg}
 	\end{equation}
 	This is the photodisintegration of $\mathrm{{}^{28}Si}$
         mentioned above. Remember that at $T_{9}\sim 1$, we have
         $E_{\gamma}\sim 100\,\mathrm{keV}$.\\
 	
 	\n The most stable element at fixed mass number $A$ are neutron rich 
-($N>Z$). During silicon ``burning'', there is time for weak interactions, 
-yielding more neutron-rich isotopes. Using beta captures, the pressure 
-support is decreased.
+        ($N>Z$). During silicon ``burning'', there is time for weak interactions, 
+        yielding more neutron-rich isotopes. Using beta captures, the pressure 
+        support is decreased.
 	\subsection{Stellar Core Collapse}
 	As the electrons in the core become relativistic, the mass of the core 
-approaches the Chandrasekhar mass (appropriately corrected for temperature 
-and the electrons per baryon, so lower than that for white dwarf). As the 
-mass increases, the core compresses, making the electrons become more 
-relativistic and also increasing the temperature. The electrons are 
-captured by nuclei, and the photons photodisintegrate the nuclei, starting 
-the undoing of all of the nucleosynthesis that has been going on in the 
-star.\\
+        approaches the Chandrasekhar mass (appropriately corrected for temperature 
+        and the electrons per baryon, so lower than that for white dwarf). As the 
+        mass increases, the core compresses, making the electrons become more 
+        relativistic and also increasing the temperature. The electrons are 
+        captured by nuclei, and the photons photodisintegrate the nuclei, starting 
+        the undoing of all of the nucleosynthesis that has been going on in
+        the star.\\ 
 
-	\n Now we have to worry about energy \emph{sinks} in the star, since these reactions are endothermic. One such reaction is
+	\n Now we have to worry about energy \emph{sinks} in the star,
+        since these reactions are endothermic. One such reaction  is
 	\begin{equation}
 	\label{eq:367} \gamma+{}^{56}\mathrm{Fe}\to 13\alpha+4n
 	\end{equation}
-	Which requires an energy of 124 MeV. This energy comes from the ambient thermal energy, so the core is cooled, and thus contracts. The energy lost per unit mass is
+	Which requires an energy of 124 MeV. This energy comes from
+        the ambient thermal energy, so the core is cooled, and thus
+        contracts. The energy lost per unit mass is 
 	\begin{equation}
-	\label{eq:368} \frac{124\,\mathrm{MeV}}{56m_{p}}=2\,\mathrm{MeV/baryon}
+	\label{eq:368}
+        \frac{124\,\mathrm{MeV}}{56m_{p}}=2\,\mathrm{MeV/baryon} 
 	\end{equation}
 	The Contraction must get to
 	\begin{equation}
 	\frac{GM}{R}\approx 2\,\mathrm{MeV/baryon}
 	\end{equation}
-	Which gives for a star the mass of the sun being $R=1000\,\mathrm{km}$! Just considering the case where half of the ${}^{56}\mathrm{Fe}$ is destroyed, we get the data shown in Table \ref{tab:iron}.\\
+	Which gives for a star the mass of the sun being
+        $R=1000\,\mathrm{km}$! Just considering the case where half of
+        the ${}^{56}\mathrm{Fe}$ is destroyed, we get the data shown
+        in Table \ref{tab:iron}.\\ 
 	\begin{table}[h!]
 	\centering
 	\begin{tabular}{cc}
@@ -4859,28 +5007,63 @@ star.\\
 		1 & 0.95\\
 		10 & 1.2
 	\end{tabular}
-	\caption{Density and temperature of a degenerate core at half iron disintegration}
+	\caption{Density and temperature of a degenerate core at half
+          iron disintegration} 
 	\label{tab:iron}
 	\end{table}
 	
-	\n Photodisintegration gets the radius down to less than 1000 km and the density up to $\rho_{10}\sim 1$. Since the electrons are relativistic, the Fermi energy is $E_{F}\sim m_{e}c^{2}$ (for the electrons). Now recall the Chandrasekhar mass,
+	\n Photodisintegration gets the radius down to less than 1000
+        km and the density up to $\rho_{10}\sim 1$. Since the
+        electrons are relativistic, the Fermi energy is $E_{F}\sim
+        m_{e}c^{2}$ (for the electrons). Now recall the Chandrasekhar
+        mass, 
 	\begin{equation}
-	\label{eq:369} M_{\mathrm{Ch}}=1.46\,M_{\odot}\left[\frac{Y_{e}}{1/2}\right]^{2}
+	\label{eq:369}
+        M_{\mathrm{Ch}}=1.46\,M_{\odot}\left[\frac{Y_{e}}{1/2}\right]^{2} 
 	\end{equation}
-	Where $Y_{e}$ is the number of electrons per baryon. For a pure C/O object, $Y_{e}=1/2$. For ${}^{56}\mathrm{Fe}$, though, $Y_{e}=0.46$, which introduces a correction for a \emph{cold} iron core, bringing the mass down to $1.26\,M_{\odot}$. As the Fermi energy increases, more electron captures occur, increasing the neutron-richness of the plasma.\\
+	Where $Y_{e}$ is the number of electrons per baryon. For a
+        pure C/O object, $Y_{e}=1/2$. For ${}^{56}\mathrm{Fe}$,
+        though, $Y_{e}=0.46$, which introduces a correction for a
+        \emph{cold} iron core, bringing the mass down to
+        $1.26\,M_{\odot}$. As the Fermi energy increases, more
+        electron captures occur, increasing the neutron-richness of
+        the plasma.\\ 
 	
-	\n During the rest of the collapse, the nuclei are being broken up and more and more protons are converted to neutrons via electron capture, which also causes a flurry of neutrino emission. The collapse suddenly ``halts'' when a density is reached that implies the mean spacing is of order of the neutron radius, or 1 fm (fermi). Here we have the onset of an incompressible equation of state. That is, the pressure rises dramatically as the density approaches the nuclear density of about $\rho\approx \rho_{\mathrm{nuc}}\approx 10^{14}\,\mathrm{g\,cm^{-3}}$.\\
+	\n During the rest of the collapse, the nuclei are being
+        broken up and more and more protons are converted to neutrons
+        via electron capture, which also causes a flurry of neutrino
+        emission. The collapse suddenly ``halts'' when a density is
+        reached that implies the mean spacing is of order of the
+        neutron radius, or 1 fm (fermi). Here we have the onset of an
+        incompressible equation of state. That is, the pressure rises
+        dramatically as the density approaches the nuclear density of
+        about $\rho\approx \rho_{\mathrm{nuc}}\approx
+        10^{14}\,\mathrm{g\,cm^{-3}}$.\\ 
 	
-	\n At this point, the radius is about 15 km and the collapsed core ``halts'' at about 10 km. The gravitational potential energy is
+	\n At this point, the radius is about 15 km and the collapsed
+        core ``halts'' at about 10 km. The gravitational potential
+        energy is 
 	\begin{equation}
 	E_{\mathrm{GR}}=\frac{GM^{2}}{R}=10^{53}\,\mathrm{ergs}
 	\end{equation}
-	So if a fraction of this energy is tapped, it would be enough to unbind the envelope (around $10^{51}\,\mathrm{ergs}$). As it turns out, the outgoing shock \emph{does} contain about $10^{52}\,\mathrm{ergs}$.
+	So if a fraction of this energy is tapped, it would be enough
+        to unbind the envelope (around $10^{51}\,\mathrm{ergs}$). As
+        it turns out, the outgoing shock \emph{does} contain about
+        $10^{52}\,\mathrm{ergs}$. 
 	
 	\subsection{Neutron Star and Black Hole Formation}
 	\label{sec:neutron-star} 
-	The collapsed core is essentially a proto-neutron star with $E_{\mathrm{th}}=E_{\mathrm{GR}}=10^{53}\,\mathrm{ergs}$, which is strying to cool via thermal neutrino emission. The open question is how the outgoing shock succeeds in ``punching through'' the infalling matter.\\
+	The collapsed core is essentially a proto-neutron star with
+        $E_{\mathrm{th}}=E_{\mathrm{GR}}=10^{53}\,\mathrm{ergs}$,
+        which is trying to cool via thermal neutrino emission. The
+        open question is how the outgoing shock succeeds in ``punching
+        through'' the infalling matter.\\
 	
-	\n Cores in massive stars collapse when $M_{\mathrm{core}}>M_{\mathrm{crit}}$, where $M_{\mathrm{crit}}$ depends on the evolution of the star, details of the star's rotation, and the mass of the star. Collapses lead to a dense proto-neutron star with a radius of around 20 km and an outgoing shock.
+	\n Cores in massive stars collapse when
+        $M_{\mathrm{core}}>M_{\mathrm{crit}}$, where
+        $M_{\mathrm{crit}}$ depends on the evolution of the star,
+        details of the star's rotation, and the mass of the
+        star. Collapses lead to a dense proto-neutron star with a
+        radius of around 20 km and an outgoing shock. 
 	\end{document}
 
