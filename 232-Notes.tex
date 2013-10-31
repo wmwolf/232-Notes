@@ -2253,6 +2253,13 @@ which is still a field with many unanswered questions.
   curve of binding energy and all other relevant quantities. What we
   must first sort out is how fusion can possibly occur at these very
   low energies.\\
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% WEDNESDAY, OCTOBER 30, 2013 %
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\n \textit{Wednesday, October 30, 2013}
+	
   \subsection{Tunneling through the Coulomb Barrier}
   \label{sec:tunn-thro-coul}
 
@@ -2417,14 +2424,13 @@ which is still a field with many unanswered questions.
   \begin{equation}
     \label{eq:117}
     \int_{r_c}^{r_{\mathrm{in}}}\kappa\, dr= \left(\frac{2\mu
-        E}{\hbar^2}\right)^{1/2}
+        E}{\hbar^2}\right)^{1/2} + 
     \int_{r_c}^{r_{\mathrm{in}}}\left[\frac{r_c}{r}-1\right]^{1/2}dr\approx
     \frac{\pi \alpha}{2}Z_1Z_2\left(\frac{2\mu c^2}{E}\right)^{1/2}
   \end{equation}
-  where $\alpha=e^2/(\hbar c)$. Here we've extended the upper limit to zero to make the integral
-  doable, but this is actually a pretty good approximation (see
-  Clayton for the details). This gives the probability of tunneling to
-  be
+  where $\alpha=e^2/(\hbar c)$. Here we've extended the upper limit to zero to
+  make the integral doable, but this is actually a pretty good approximation
+  (see Clayton for the details). This gives the probability of tunneling to be
   \begin{equation}
     \label{eq:118}
     P_{\mathrm{tunnel}}\propto \exp\left[-\pi\alpha
@@ -2437,24 +2443,46 @@ which is still a field with many unanswered questions.
     E_{\mathrm{G}}\equiv \left(\pi\alpha Z_1Z_2\right)^22\mu
     c^2\approx 0.98\ \mathrm{MeV}\ Z_1^2Z_2^2\left(\frac{\mu}{m_p}\right)
   \end{equation}
-  For a proton-proton interaction, $E_{\mathrm{G}}\sim 0.5\
-  \mathrm{MeV}$, and for a carbon-proton interaction,
-  $E_{\mathrm{G}}\sim 33\ \mathrm{MeV}$. These values are
-  significantly lower than that required for straight-up thermal
+  For a proton-proton interaction, $E_{\mathrm{G}}\sim 0.5\ \mathrm{MeV}$, and
+  for a carbon-proton interaction, $E_{\mathrm{G}}\sim 33\ \mathrm{MeV}$. These
+  values are significantly lower than that required for straight-up thermal
   energy to do the work, but still pretty high compared to $kT_c$. The
-  probabiliy for a 1 keV proton to interact with another proton is
-  then
+  probabiliy for a 1 keV (typical of the sun) proton to interact with another
+  proton is then
   \begin{equation}
     \label{eq:120}
     P\propto \exp\left[-\left(\frac{500\ \mathrm{keV}}{1\
           \mathrm{keV}}\right)^{1/2}\right]\sim 2\times 10^{-10}
   \end{equation}
-  So we really need to be out on the Boltzmann tail for this to occur.
-
+  So we really need to be out on the Boltzmann tail for this to occur.\\
+	
   \subsubsection{Nuclear Reaction Rates}
   \label{sec:nucl-react-rates}
-
-  The De Broglie waelength of a particle is 
+	\n To get a better handle on the probability of penetration, we need to
+integrate over all the possible center of mass energies in a thermal plasma.
+The reaction physics only really cares about this center of mass energy,
+	\begin{equation}
+		E_{\mathrm{com}} = \frac{1}{2}\mu \norm{\mathbf{v}_1 - \mathbf{v}_2}^2
+	\end{equation}
+	To understand the distribution of the center of mass energies, we need to
+know the relative velocity (velocity between the two particles in the center of
+mass frame) distribution, which we'll denote via
+	\begin{equation}
+		\label{eq:vel_prob:1} P(v_r)\,dv_r = \textrm{Probability of }v_r\textrm{
+		between } v_r \textrm{ and } v_r+dv_r
+	\end{equation}
+	Assuming that all particles are at the same temperature (i.e.\ a Maxwellian
+velocity distribution), then the thermally averaged cross section for
+interaction, weighted by the velocity is
+	\begin{align}
+		\avg{\sigma v} &= \left[\frac{\mu}{2\pi kT}\right]^{3/2} \int_0^\infty \exp
+		\left(\frac{-\mu v_r^2}{2kT}\right) v_r \sigma(v_r) 4\pi v_r^2\, dv_r\\
+		&= 4\pi \left[\frac{\mu}{2\pi kT}\right]^{3/2} \int_0^\infty \exp
+		\left(-\frac{E}{kT}\right) \frac{2E}{\mu} \sigma(E) \frac{dE}{\mu}
+	\end{align}
+	Where in the second form we have converted to energy units via the
+transformations $E=\frac{1}{2}\mu v_r^2$ and $dE = \mu v_r\, dv_r$. Now we only
+need to quantify the cross section, $\sigma(E)$. A first approach would be to assume that hte cross section is set by the de Broglie wavelength of the incident particles:
   \begin{equation}
     \label{eq:121}
     \lambda = \frac{h}{p}=\frac{h}{\left(kT\mu\right)^{1/2}}\approx
@@ -2470,8 +2498,8 @@ which is still a field with many unanswered questions.
   wave analysis can get an effective cross-section given by
   \begin{equation}
     \label{eq:123}
-    \pi\lambda^2\left(\textrm{dimensionless stuff}\right)\exp\left[-\left
-(\frac{E_\mathrm{G}}{E}\right)^{1/2}\right]
+    \sigma \approx\pi\lambda^2\left(\textrm{dimensionless
+    stuff}\right)\exp\left[-\left (\frac{E_\mathrm{G}}{E}\right)^{1/2}\right]
   \end{equation}
   Where the ``dimensionless stuff'' comes from nasty nuclear
   physics. Often this is written in terms of the reduced wavelength,
@@ -2488,7 +2516,7 @@ which is still a field with many unanswered questions.
     4\pi^3\bar{\lambda}^2=\frac{2\pi^3\hbar^2}{\mu E}=2000\
     \mathrm{barns}\ \left(\frac{\mathrm{keV}}{E}\right)
   \end{equation}
-  where $1\ \mathrm{barn}=10^{-24}\ \mathrm{cm}$. Then the cross section can be written as
+  where $1\ \mathrm{barn}=10^{-24}\ \mathrm{cm^2}$. Then the cross section can be written as
   \begin{equation}
     \label{eq:126}
     \sigma(E)=\frac{S(E)}{E}\exp\left[-\left(\frac{E_{\mathrm{G}}}{E}
@@ -2505,7 +2533,7 @@ which is still a field with many unanswered questions.
   where $S\sim 4\times 10^{-22}\ \mathrm{kev\ barns}$. This value is
   so small because a weak interaction is involved. For comparison, a
   strong reaction typically has a stupid factor about 25 orders of
-  magnitued larger. Now we return back
+  magnitude larger. Now we return back
   to calculating $\avg{\sigma v}$, using our newly found cross-section
   and writing the energy as $E=\frac{1}{2}\mu v^2$ and $dE=\mu v\
   dv$. (Note that the non-relativistic energies are fine for our
@@ -2563,15 +2591,19 @@ which is still a field with many unanswered questions.
     \frac{1}{(kT)^{3/2}}\left(\frac{8}{\pi\mu}\right)^{1/2}S(E_0)\exp\left
 [-3\left(\frac{E_{\mathrm{G}}}{4kT}\right)^{1/3}\right]\int_0^\infty dE\,
     \exp\left[-\frac{(E-E_0)^2}{(\Delta/2)^2}\right]\\
-    \label{eq:134a}
-    & \Rightarrow \boxed{\Delta =
-      \frac{4}{2^{1/3}\sqrt{3}}E_{\mathrm{G}}^{1/6}(kT)^{5/6}}\\
-    \label{eq:134b}
-    &=
-    \boxed{2.6\frac{E_{\mathrm{G}}^{1/6}}{\sqrt{\mu}}\frac{S(E_0)}{(kT)^
-{2/3}}\exp\left[-3\left(\frac{E_{\mathrm{G}}}{4kT}\right)^{1/3}\right]=\avg
-{\sigma v}}
   \end{align}
+	where
+	\begin{equation}
+    \label{eq:134a}
+  	\boxed{\Delta =
+      \frac{4}{2^{1/3}\sqrt{3}}E_{\mathrm{G}}^{1/6}(kT)^{5/6}}		
+	\end{equation}
+	Doing the now-simplified integral, we get
+	\begin{equation}
+    \label{eq:134b} \boxed{\avg{\sigma v} =
+    2.6\frac{E_{\mathrm{G}}^{1/6}}{\sqrt{\mu}} \frac{S(E_0)}{(kT)^{2/3}}
+    \exp\left[-3\left(\frac{E_{\mathrm{G}}}{4kT}\right)^{1/3}\right] }
+	\end{equation}
   Note that $\Delta$ was introduced strictly as a matter of
   convenience. You can think of it as an effective width of the
   Gaussian or something like that. Now \eqref{eq:134b} is valid for
