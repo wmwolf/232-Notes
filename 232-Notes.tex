@@ -2621,10 +2621,10 @@ need to quantify the cross section, $\sigma(E)$. A first approach would be to as
   much. They are more prevalent in larger stars who derive their
   energy from the CNO cycle (more on this later).\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Monday, February 13, 2012 %
+% Monday, November 4, 2013 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   
-  \n \textit{Monday, February 13, 2012}\\
+  \n \textit{Monday, November 4, 2013}\\
 
   \subsection{Proton-Proton Interactions}
   \label{sec:prot-prot-inter}
@@ -2690,7 +2690,7 @@ need to quantify the cross section, $\sigma(E)$. A first approach would be to as
     \label{eq:154}
     L=3\times
     10^{28}\frac{\mathrm{erg}}{\mathrm{s}}\left(\frac{M}{0.1\
-        M_\odot}\right)^{28/51}\left(\frac{R}{0.1\ R_\odot}\right)^4
+        M_\odot}\right)^{28/51}\left(\frac{R}{0.1\ R_\odot}\right)^2
   \end{equation}
   The ``stupid factor'' for a proton-proton interaction is
   \begin{equation}
@@ -2745,8 +2745,8 @@ m^{1/2}r^4
     \label{eq:162}
     T_c=3.4\times 10^6\ \mathrm{K}
   \end{equation}
-  So the radius is ``chosen'' so that the nuclear burning is adequate
-  to match the heat losses due to radiative diffusion and
+  So the radius and central temperature are ``chosen'' so that the nuclear
+  burning is adequate to match the heat losses due to radiative diffusion and
   convection.\\
 
   \n An important trick in dealing with nuclear luminosities is to
@@ -2769,8 +2769,9 @@ m^{1/2}r^4
 
   \subsection{Sidebar: Fusion Before Hydrogen Burning}
   \label{sec:deut-main-sequ}
-
-  Before hydrogen burning takes place, the ``easier'' Deuterium is
+	\subsubsection{Deuterium Burning} % (fold)
+	\label{ssub:deuterium_burning}
+	Before hydrogen burning takes place, the ``easier'' Deuterium is
   usually burned. This process effectively delays gravitational
   contraction for stars that will eventually move on to the
   ZAMS. However, for brown dwarfs, this is the only nuclear reaction
@@ -2895,7 +2896,8 @@ m^{1/2}r^4
     \caption{Parameters for various protostars and brown dwarfs undergoing Deuterium burning.}
     \label{tab:deuterium}
   \end{table}
-  Parameters for vaious contracting, fully-convective models are shown
+	
+  \n Parameters for vaious contracting, fully-convective models are shown
   in Table \ref{tab:deuterium}.\\
 
   \n We might ask whether or not deuterium can even support a star. It
@@ -2926,7 +2928,11 @@ m^{1/2}r^4
   \n It is a bit of a coincidence that the D/H ratio is large enough so
   that this burning can temporarily hold the star up. Obvioulsy
   Deuterium-rich environments can lead to longer lifetimes. However,
-  the pre-hydrogen burning doesn't stop there. Next up are
+  the pre-hydrogen burning doesn't stop there.
+	% subsubsection deuterium_burning (end)
+	\subsubsection{Lithium Burning} % (fold)
+	\label{ssub:lithium_burning}
+		Next up are
   ${}^6\mathrm{Li}$ and ${}^7\mathrm{Li}$. via
   \begin{equation}
     \label{eq:398}
@@ -2956,7 +2962,8 @@ m^{1/2}r^4
     \caption{Parameters for vaious protostars and brown dwarfs undergoing Lithium burning.}
     \label{tab:lithium}
   \end{table}
-  Again, everything is still convective, but it is clear that the
+	
+  \n Again, everything is still convective, but it is clear that the
   higher Gamow peak means we must have a higher core
   temperature. Going through much of the same song and dance as we did
   with Deuterium, we find
@@ -2968,7 +2975,9 @@ m^{1/2}r^4
   \begin{equation}
     \label{eq:402}
     t_{\mathrm{Li}}=\frac{1}{n_p\avg{\sigma
-          v}}=\frac{m_p}{\rho\avg{\sigma v}}=\left(4\times 10^{-12}\frac{r^3}{m}\right)(0.74)^{2/3}\frac{m^{2/3}}{r^{2/3}}\exp\left(\frac{43.4}{m^{1/3}}r^{1/3}\right)
+          v}}=\frac{m_p}{\rho\avg{\sigma v}}=\left(4\times
+          10^{-12}\frac{r^3}{m}\right)(0.74)^{2/3}\frac{m^{2/3}}{r^{2/3}}\exp
+					\left(\frac{43.4}{m^{1/3}}r^{1/3}\right)
   \end{equation}
   Doing the same algebra and logarithm tricks, we find that for
   lithium burning,
@@ -2986,7 +2995,55 @@ m^{1/2}r^4
   critical about lithium is that it acts as a thermometer, since the
   burning is so temperature sensitive. If lithium is gone, then we
   already know that the core temperature has passed a critical point.
-  
+	% subsubsection lithium_burning (end)
+  \subsection{Degeneracy in Low-Mass Protostars} % (fold)
+  \label{sub:degeneracy_in_low_mass_protostars}
+  Thus far, we have assumed that ideal gas pressure, $P = nkT$ (where $n$ is
+  the number density of particles) sets the pressure at the center of the star.
+  However, in dense enough systems, we must consider electron degeneracy. The
+  De Broglie wavelenths of electrons are given by
+	\begin{equation}
+		\label{eq:debroglie:1} \lambda_{\mathrm{DB}} = \frac{h}{p} = 
+		\frac{h}{m_ev_{e,\mathrm{th}}} \sim
+		\frac{h}{m_e\left(\frac{kT}{m_e}\right)^{1/2}}
+	\end{equation}
+	Quantum mechanical effects become important when $\lambda > n_e^{-1/3}$,
+below which the wave function must obey the Pauli Exculsion Principle:
+	\begin{equation}
+		\label{eq:debroglie:2} \frac{1}{n_e^{1/3}} < \frac{h}{m_e^{1/2}(kT)^{1/2}}
+	\end{equation}
+	Or, more simply,
+	\begin{equation}
+		\label{eq:debroglie:3} \frac{1}{\rho} < A\frac{1}{T^{3/2}}
+	\end{equation}
+	Beyond this point, electron degeneracy means that the degeneracy pressure
+exceeds the gas pressure of electrons, and the pressure becomes insensitive to
+the temperature. The energy density in these degenerate electrons is given
+roughly by the number density and the Fermi energy,
+	\begin{equation}
+		\label{eq:debroglie:4} U_e \sim n_e \frac{\left(h n_e\right)^{2/3}}{2 m_e}
+		\propto n_e^{5/3}
+	\end{equation}
+	Again, this is insensitive to the temperature. The onset of electron
+degeneracy then requires there to be a minimum mass star that can ever burn
+hydrogen. Stars below this mass go degenerate before hydrogen can ever burn,
+and the central temperatures never get high enough to generate enough nuclear
+energy to halt collapse. These are the so-called \textbf{Brown Dwarfs}, which
+have masses $M < 0.08\ M_\odot$.\\
+
+	\n Note that if we are in the strong degenerate limit, where electron
+degeneracy is the primary source of pressure, then hydrostatic balance and
+degeneracy together give us
+	\begin{equation}
+		\label{eq:debroglie:4} P_c \approx \frac{GM^2}{R^4} \propto \rho^{5/3}
+		\propto \left(\frac{M}{R}\right)^{5/3}
+	\end{equation}
+	Simplifying, we get the result
+	\begin{equation}
+		\label{eq:debroglie:5} \boxed{R\propto \frac{1}{M^{1/3}}}
+	\end{equation}
+	as $T\to 0$. So these degnerate objects actually get \emph{smaller} as they become more massive.
+  % subsection degeneracy_in_low_mass_protostars (end)
   \subsection{The PP Chain and the CN Cycle}
   \label{sec:pp-chain}
 
@@ -3079,9 +3136,9 @@ m^{1/2}r^4
   24. For the sun, both of these mechanisms are at work.\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Wednesday, February 15, 2012 %
+% Wednesday, November 6, 2013 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\n \textit{Wednesday, February 15, 2012}
+\n \textit{Wednesday, November 6, 2013}
 
   \subsection{Power Generation on the Upper Main Sequence}
   \label{sec:power-gener-upper}
@@ -3134,7 +3191,7 @@ m^{1/2}r^4
       L_{\mathrm{nuc}}=\int \varepsilon\, dm=\frac{M^2}{R^3}5\times
       10^{58}\mathrm{erg\
         s^{-1}}\frac{1}{T_7^{2/3}}\exp\left(-\frac{72.2}{T_7^{1/3}}\right)
-=L_\odot M^3
+=L_\odot \left(\frac{M}{M_\odot}\right)^3
     \end{equation}
     This implies that for the sun, $T_7=2$.
 
@@ -3165,18 +3222,18 @@ m^{1/2}r^4
     This gives a mass dependence on $T_7$ of
     \begin{equation}
       \label{eq:183}
-      \boxed{T_7=1.83 M^{1/5}}
+      \boxed{T_7=1.83 \left(\frac{M}{M_\odot}\right)^{1/5}}
     \end{equation}
-    in solar units. Additionally, the radius is given by
+		Additionally, the radius is given by
     \begin{equation}
       \label{eq:184}
-      R\propto \frac{M}{T}\propto M^{0.8}
+      R\propto \frac{M}{T}\propto M^{4/5}
     \end{equation}
     In the literature, this exponent is often quoted as
     0.75. Then the luminosity is given by
     \begin{equation}
       \label{eq:185}
-      L\propto M^3\propto R^2T_{\mathrm{eff}}^2\quad\Rightarrow\quad
+      L\propto M^3\propto R^2T_{\mathrm{eff}}^4\quad\Rightarrow\quad
       T_{\mathrm{eff}}\propto M^{1/3}
     \end{equation}
     Additionally, we can use $\rho_c\propto M/R^3$ to relate the
@@ -3191,7 +3248,13 @@ m^{1/2}r^4
     convecting due to the concentrated energy source. $T_7$ is nearly
     constant with mass. The above results then define the zero-age
     main sequence for large stars, assuming that their opacity is set
-    by Thomson scattering.
+    by Thomson scattering.\\
+		
+		\n So now we see why in the HR diagram that we have a small dynamical range
+		in effective temperature while having an appreciable spread in luminosities.
+		To increase the effective temperature by a factor of ten, the mass must
+		increase by three orders of magnitude. Meanwhile, the luminosity is highly
+		sensitive to mass, so we get a ``slim'' HR diagram.
 
     \subsubsection{Convection in Large Stars}
     \label{sec:conv-large-stars}
@@ -3275,6 +3338,25 @@ m^{1/2}r^4
     \n For stars larger than the sun, the hydrogen fusion is dominated
     by the CN(O) cycle. They typically have convective cores and
     radiative envelopes with the opacity set by Thomson scattering.
+		
+		\begin{table}[htb]
+			\centering
+			\begin{tabular}{c c c c}
+			$M/M_\odot$ & $\log L/L_\odot$ & $T_{c,7}$ & $q_c$\\
+			\hline \hline
+			1 & 0 & 1.4 & 0\\
+			1.5 & 0.76 & 1.9 & 0.07\\
+			2 & 1.26 & 2.1 & 0.13\\
+			5 & 2.7 & 2.6 & 0.23\\
+			15 & 4.24 & 3.21 & 0.4\\
+			60 & 5.7 & 3.93 & 0.73
+			\end{tabular}
+			\caption{Basic parameters of ZAMS models of various masses (taken from
+			HKT). Provided are the mass in solar masses, the luminosity in solar
+			luminosities, the central temperaures in $10^7$ K, and the mass of the
+			convetive core as a fraction of the total mass.}
+			\label{tab:ZAMS}
+		\end{table}
 
     \subsection{Introduction to Stellar Evolution}
     \label{sec:stellar-evolution}
@@ -3288,17 +3370,16 @@ m^{1/2}r^4
       \label{eq:193}
       t_{\mathrm{MS}}=\frac{E_{\mathrm{fuel}}}{L}
     \end{equation}
-    Where
-    $E_{\mathrm{fuel}}=\varepsilon_{\mathrm{nuc}}M_{\mathrm{burn}}$
-    ($\varepsilon_{\mathrm{nuc}}$ is the nuclear energy available per
-    unit mass of fuel). For massive stars, $M_{\mathrm{burn}}$ will
-    depend on the evolution (in mass coordinates) of the convective
-    core. Some extreme situations have \textbf{convective overshoot},
-    where convective eddies bring hydrogen rich material from the
-    envelope back into the core to prolong the lifetime of the
-    main-sequence star. Once this fuel runs out, the composition of
-    the core rapidly changes, and Kelvin-Helmholtz contraction sets in
-    to pay for the power loss.\\
+    Where $E_{\mathrm{fuel}}=\varepsilon_{\mathrm{nuc}}M_{\mathrm{burn}}$
+    ($\varepsilon_{\mathrm{nuc}}$ is the nuclear energy available per unit mass
+    of fuel and $M_{\mathrm{burn}}$ is the total amount of mass available for
+    nuclear burning). For massive stars, $M_{\mathrm{burn}}$ will depend on the
+    evolution (in mass coordinates) of the convective core. Some extreme
+    situations have \textbf{convective overshoot}, where convective eddies
+    bring hydrogen rich material from the envelope back into the core to
+    prolong the lifetime of the main-sequence star. Once this fuel runs out,
+    the composition of the core rapidly changes, and Kelvin-Helmholtz
+    contraction sets in to pay for the power loss.\\
 
     \n For a lower mass star, there is no convection in the core, so
     the composition changes much more gradually until the majority of
