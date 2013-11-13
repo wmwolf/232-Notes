@@ -3385,10 +3385,10 @@ degeneracy together give us
     the composition changes much more gradually until the majority of
     the fuel is expired.\\
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   Monday, February 22, 2012  %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \n \textit{Monday, February 22, 2012}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Wednesday, November 13, 2013  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \n \textit{Wednesday, November 13, 2013}
 
     \section{State of the Stellar Interior}
     \label{sec:state-stell-inter}
@@ -3412,7 +3412,45 @@ degeneracy together give us
     thermodynamic variables follow a Maxwell-Boltzmann distribution
     and thus that all areas of the star are locally in thermodynamic
     equilibrium.
-
+    
+    \subsection{Conditions at the Photosphere} % (fold)
+    \label{sub:bonus_material}
+    In a stellar atmosphere with some specified $T_{\mathrm{ef}}$, the
+    atmosphere is thin. I.e., the pressure scale height is much smaller than
+    the radius:
+    \begin{equation}
+      \label{bonus:1} h = \frac{kT_{\mathrm{eff}}}{\mu m_p g} \ll R
+    \end{equation}
+    In fact, we earlier showed that, roughly speaking, $H/R \sim
+    T_{\mathrm{eff}}/T_c$. At the photosphere, where $\tau = \int \kappa
+    \rho\,dr \approx 1$, we may assume that $g$ is a constant and that the
+    temperature is roughly $T_{\mathrm{eff}}$. Understanding the atmosphere
+    requires us to understand the states of the atoms at the stellar surface.
+    From hydrostatic equilibrium, we may approximate
+    \begin{equation}
+      \label{eq:bonus:2} \frac{dP}{dz} = -\rho g \qquad \Rightarrow \qquad \int
+      dP = -g\int \rho\,dz = -g\int \frac{d\tau}{\kappa} \qquad \Rightarrow
+      \qquad P_{\mathrm{ph}} \approx \frac{g}{\kappa} = \frac{\rho k
+      T_{\mathrm{eff}}}{\mu m_p}
+    \end{equation}
+    Scaling to solar values, we get
+    \begin{equation}
+      \label{eq:bonus:3} g = 2.7\times 10^4\ \mathrm{cm\,s^{-2}}
+      \left(\frac{M}{M_\odot}\right)^2\left(\frac{R}{R_{\odot}}\right)^{-2}
+    \end{equation}
+    Which gives a number density of 
+    \begin{equation}
+      \label{eq:bonus:4} n_{\mathrm{ph}} \approx 10^{16}
+      \left(\frac{\kappa_{\mathrm{es}}}{\kappa}\right)\left(\frac{10^4\
+      \mathrm{K}}{T_{\mathrm{eff}}}\right) \left(\frac{g}{2.7\times 10^4\
+      \mathrm{cm\,s^{-2}}}\right)
+    \end{equation}
+    For comparison, the electron density in a solid is closer to $n_e\approx
+    10^{23}\ \mathrm{cm^{-3}}$. So, the elctrons and ions are not interacting,
+    but we have not yet determined whether or not quantum effects are important.
+    
+    % subsection bonus_material (end)
+    
     \subsection{The Saha Equation}
     \label{sec:saha-equation}
  
@@ -3443,7 +3481,7 @@ degeneracy together give us
       n=\frac{g}{h^3}\int_0^\infty\frac{4\pi p^2\,dp}{\exp\left[(E_p-\mu)/
 (kT)\right]+1}
     \end{equation}
-    Here we are assuming that the mean free path is much longer than
+    Here we are going to assume that the mean free path is much longer than
     the de Broglie wavelength,
     \begin{equation}
       \label{eq:198}
@@ -3458,28 +3496,30 @@ degeneracy together give us
     remember how to do $\int_0^\infty x^2 e^{-\alpha^2x^2}$, right?)
     \begin{equation}
       \label{eq:200}
-      n=\frac{g 4\pi}{h^3}\int_0^\infty p^2 \exp\left[\frac{-(E_p-\mu)}{kT}\right]
-\,dp
+      n=\frac{g 4\pi}{h^3}\int_0^\infty p^2
+      \exp\left[\frac{-(E_p-\mu)}{kT}\right] \,dp
     \end{equation}
     \begin{equation}
       \label{eq:201}
       \exp\left(\frac{\mu-m_pc^2}{kT}\right)=\frac{nh^3}{g(2m_pk T\pi)^
-{3/2}}=\frac{n}{2n_Q}
+{3/2}}=\frac{n}{gn_Q}
     \end{equation}
-    Here, we are using $n_Q\equiv (2\pi mkT/h^2)^{3/2}$. This is the
-    so-called \textbf{quantum concentration}, at which particles are degenerate. Then the
+    Here, we are using $n_Q\equiv (2\pi mkT/h^2)^{3/2}$. This is the so-called
+    \textbf{quantum concentration}, at which particles are degenerate. Then the
     chemical potential is necessarily
     \begin{equation}
       \label{eq:202}
-      \boxed{\mu_e=kT\ln\left(\frac{n_e}{2n_Q}\right)+m_ec^2}
+      \boxed{\mu_e=kT\ln\left(\frac{n_e}{gn_Q}\right)+m_ec^2}
     \end{equation}
     Now the ionization of Hydrogen is given by
     \begin{equation}
       \label{eq:203}
       e^{-}+\mathrm{p\rightleftharpoons H+\gamma}
     \end{equation}
-    Equating the chemical potentials (the condition for LTE) tells us
-    that
+    We aren't even going to care about the rates of this
+    photoionization/recombinaton reaction. We will simply assume that the rates
+    are equal, mandating the chemical potentials to be equal. Equating the
+    chemical potentials (the condition for chemical balance) tells us that
     \begin{equation}
       \label{eq:204}
       \mu_e+\mu_\mathrm{p}=\mu_\mathrm{H}
@@ -3517,10 +3557,9 @@ degeneracy together give us
     Rearranging this, we get the \textbf{Saha Equation}
     \begin{equation}
       \label{eq:208}
-      \boxed{\frac{n^-n^+}{n}=\frac{g_eg_\mathrm{p}}{g_{\mathrm{H}}}\left
-[\frac{2\pi
-          m_ekT}{h^2}\right]^{3/2}\exp\left(-\frac{13.6\ \mathrm{eV}}{kT}
-\right)}
+    \boxed{\frac{n_en_{\mathrm{p}}}{n_\mathrm{H}} =
+    \frac{g_eg_\mathrm{p}}{g_{\mathrm{ H}}} \left[\frac{2\pi
+    m_ekT}{h^2}\right]^{3/2} \exp\left( -\frac{13.6\ \mathrm{eV}}{kT} \right)}
     \end{equation}
     Often times we'll see this in terms of the quantum
       concentration:
