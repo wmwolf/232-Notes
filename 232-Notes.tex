@@ -3737,11 +3737,11 @@ degeneracy together give us
     This source also peaks at a particular effective temperature and
     is actually the dominant source of opacity in the sun's
     photosphere.\\
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Wednesday, February 24, 2012 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Monday, November 18, 2013   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    \n \textit{Wednesday, February 24, 2012}
+    \n \textit{Monday, November 18, 2012}
 
     \section{Stellar Evolution}
     
@@ -3751,7 +3751,8 @@ degeneracy together give us
     main sequence,
     \begin{equation}
       \label{eq:226}
-      t_{\mathrm{MS}}=\frac{E_{\mathrm{nuc}}}{L}
+      t_{\mathrm{MS}}=\frac{E_{\mathrm{nuc}}}{L} \approx
+      \frac{E_{\mathrm{nuc}}}{E_{\mathrm{th}}} t_{\mathrm{KH}}
     \end{equation}
     is much larger than the Kelvin Helmholtz time since
     $E_{\mathrm{nuc}}\gg E_{\mathrm{th}}$. This is because the
@@ -3801,12 +3802,12 @@ degeneracy together give us
       P=\frac{\rho kT}{m_p}\left(2X+\frac{3}{4}Y\right)=\frac{\rho
         kT}{\mu m_p}
     \end{equation}
-    Then the thermal energy in the core,
+    Then the thermal energy in the core per particle is
     \begin{equation}
       \label{eq:229}
-      k_B T_c\sim\frac{GM\mu m_p}{R}
+      k_B T_c\sim\frac{GM\mu m_p}{R},
     \end{equation}
-    Where the composition is, from \eqref{eq:228},
+    where the composition is, from \eqref{eq:228},
     \begin{equation}
       \label{eq:230}
       \mu = \frac{1}{2X+\frac{3}{4}Y}
@@ -3846,20 +3847,20 @@ degeneracy together give us
     for the radius can then be obtained:
     \begin{equation}
       \label{eq:236}
-      T_c\propto\frac{\mu}{R}
+      T_c\propto\frac{M\mu}{R}
     \end{equation}
     So the radius goes as
     \begin{equation}
       \label{eq:237}
       R\propto\frac{\mu}{T_c}
     \end{equation}
-    And so the final radius is given by
+    And so the final radius given a constant central temperature is
     \begin{equation}
       \label{eq:238}
       \frac{R_f}{R_i}\approx \frac{4/3}{0.6}\approx 2
     \end{equation}
-    Thus the star doubles in radius as it proceeds through the main 
-sequence.
+    Thus the [massive] star doubles in radius as it proceeds through the main 
+    sequence.
 
     \subsection{Main Sequence Evolution for Less Massive Stars}
     \label{sec:main-sequ-evol-1}
@@ -3887,9 +3888,17 @@ sequence.
     \subsection{Post-Main Sequence Evolution}
     \label{sec:post-main-sequence}
 
-    For high mass stars, see \figref{fig:2} for a qualitiative
-    description of the evolution of high-mass stars as they leave the
-    main sequence. \\
+    For stars with $M>2M_\odot$, as $X\to 0$ over the whole
+    convective core, suddenly the core is pure helium. With no nuclear fuel
+    left to support itself, the core undergoes Kelvin-Helmholtz contraction
+    until shell burning of hydrogen picks up and supports the structure above
+    an isothermal helium core.\\
+    
+    \n For stars less than $1.5\ M_\odot$, there is no abrupt transition (the
+    Henyey Hook). Rather, it develops a growing (in mass) helium core. See
+    \figref{fig:2} for a qualitiative description of the evolution of low- and
+    high-mass stars as they leave the main sequence.
+
     \begin{figure}[h!]
       \centering
       \includegraphics[width = 4in]{MSDiagram.pdf}
@@ -3902,9 +3911,6 @@ sequence.
       \label{fig:2}
     \end{figure}
 
-    \n For stars less than $1.5\ M_\odot$, there is no abrupt transition
-    (the Henyey Hook). Rather, it develops a growing (in mass) helium
-    core. 
 
     \subsubsection{The Red Giant Branch (RGB)}
     \label{sec:red-giant-branch}
@@ -3970,11 +3976,14 @@ acT_s^4}
     Plugging in fiducial values for scaling relations gives us
     \begin{equation}
       \label{eq:247}
-      L=5\times 10^{31}\ \mathrm{erg\ s^{-1}}\left(\frac{0.1R_\odot}{R}
+      L=5\times 10^{31}\ \mathrm{erg\ s^{-1}}\left(\frac{0.1R_\odot}{R_c}
 \right)^{25/3}\left(\frac{M_c}{0.2M_\odot}\right)^{10}
     \end{equation}
     Since the helium core is degenerate, $R_c\propto M_c^{-1/3}$. This
-    would make the mass dependence of $L$ even stronger. \\
+    would make the mass dependence of $L$ even stronger. 
+    \eqref{eq:247} is known as the \textbf{Luminosity-Core Mass Relation} and is
+    a solution that is available only if the star can evolve to it (i.e., it
+    isn't guaranteed). This state \emph{is} the red giant branch.\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Monday, February 27, 2012 %
