@@ -3911,10 +3911,6 @@ degeneracy together give us
       \label{fig:2}
     \end{figure}
 
-
-    \subsubsection{The Red Giant Branch (RGB)}
-    \label{sec:red-giant-branch}
-
     For stars less than about $2\ M_\odot$, as the star leaves the
     main sequence, it travels horizontally on the HR diagram and
     eventually starts making its way back up the Hayashi track. This
@@ -3985,10 +3981,10 @@ acT_s^4}
     a solution that is available only if the star can evolve to it (i.e., it
     isn't guaranteed). This state \emph{is} the red giant branch.\\
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Monday, February 27, 2012 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \n \textit{Monday, February 27, 2012}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wednesday, November 20, 2013 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \n \textit{Wednesday, November 20, 2013}
 
     \subsection{The Sch\"onberg-Chadrasekhar Limit}
     \label{sec:schonb-chadr-limit}
@@ -4035,7 +4031,7 @@ acT_s^4}
       \label{eq:250}
       4\pi
       R_{\mathrm{core}}^3P_{\mathrm{core}}(R_{\mathrm{core}})-12\pi\int_0^
-{R_c}r^2P(r)\,dr=-\frac{GM_{\mathrm{core}}}{R_{\mathrm{core}}}
+{R_c}r^2P(r)\,dr=-\frac{GM_{\mathrm{core}}^2}{R_{\mathrm{core}}}
     \end{equation}
     Since we have
     $P(r)=\rho(r)kT_{\mathrm{core}}/(\mu_{\mathrm{core}}m_p)$, we
@@ -4051,7 +4047,7 @@ acT_s^4}
       \label{eq:252}
       P_{\mathrm{core}}(R_{\mathrm{core}})=\frac{3}{4\pi}\frac{kT_{\mathrm
 {core}}}{\mu_{\mathrm{core}}m_p}\frac{M_{\mathrm{core}}}{R_{\mathrm{core}}
-^3}-\frac{1}{4\pi}\frac{GM_{\mathrm{core}}^2}{R_{\mathrm{core}}}
+^3}-\frac{1}{4\pi}\frac{GM_{\mathrm{core}}^2}{R_{\mathrm{core}}^4}
     \end{equation}
     Note that this equation has a well-defined maximum at some
     critical core radius. This radius is
@@ -4064,7 +4060,7 @@ acT_s^4}
     and the maximum pressure is
     \begin{equation}
       \label{eq:254}
-      P_{\mathrm{core,max}}=0.7\left(\frac{kT_{\mathrm{core}}}{\mu_{\mathrm
+      P_{\mathrm{core,max}}=0.68\left(\frac{kT_{\mathrm{core}}}{\mu_{\mathrm
 {core}}m_p}\right)^4\frac{1}{G^3 M_{\mathrm{core}}^2}
     \end{equation}
     The overlying envelope must exert a pressure
@@ -4110,9 +4106,11 @@ acT_s^4}
       q_c=\frac{M_{\mathrm{core}}}{M}=0.37\left(\frac{\mu_{\mathrm
 {envelope}}}{\mu_{\mathrm{core}}}\right)^2=0.08
     \end{equation}
-    If $M_{\mathrm{core}}>0.08M$ \emph{and} the core is not
-    degenerate, \emph{then} this core is not a solution to hydrostatic
-    balance.\\
+    If $M_{\mathrm{core}}>0.08M$ \emph{and} the core is not degenerate,
+    \emph{then} this core is not a solution to hydrostatic balance. The
+    pressure from the envelope would then compress the core until it became hot
+    enough to ignite helium or dense enough for electron degeneracy to support
+    the core.\\
 
     \n Now what about electron degeneracy? In smaller stars, the core
     becomes degnerate before igniting helium. Then the equation of
@@ -4155,17 +4153,19 @@ is shown, and barely (if ever) reaches hydrogen ignition.}
     \end{equation}
     So these stars contract very rapidly.\\
     
-    \n Now consider stars in the range of $2\,M_\odot$ and
-    $6\,M_\odot$. Initially, suppose $q<q_c$, but hydrogen shell
-    burning occrs. Now $q$ will increase until $q>q_c$ and the core
-    undergoes Kelvin-Helmholtz contraction. For stars with less than
-    $2\,M_\odot$, the core will become degenerate before helium
-    burning can star.\\
+    \n Now consider stars in the range of $2\,M_\odot$ and $6\,M_\odot$.
+    Initially, suppose $q<q_c$, but hydrogen shell burning occrs. Now $q$ will
+    increase until $q>q_c$ and the core undergoes Kelvin-Helmholtz contraction.
+    During this time, they shoot over to the red in the HR diagram (the
+    envelope expands while the core contracts), creating the so-called
+    \textbf{Hertzsprung Gap} as observed in star clusters. This is a patch in
+    the HR diagram between the TAMS (terminal age main sequence) and the RGB
+    where very few stars are present due to the short evolutionary timescales
+    at this stage of evolution.\\
+    
+    \n For stars with less than $2\,M_\odot$, the core will become degenerate
+    before helium burning can start.\\
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Wednesday, February 29, 2012 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \n \textit{Monday, February 29, 2012}
     \subsection{Helium and Higher Burning}
     \label{sec:helium-burning}
 
@@ -4181,18 +4181,23 @@ is shown, and barely (if ever) reaches hydrogen ignition.}
     Gamow peak occurs at
     \begin{equation}
       \label{eq:265}
-      E_0=\left(\frac{E_{\mathrm{G}}(kT)^2}{4}\right)=83\mathrm{keV}T_8^
+      E_0=\left(\frac{E_{\mathrm{G}}(kT)^2}{4}\right)=83\,\mathrm{keV}\,T_8^
 {2/3}
     \end{equation}
     So once $T>8\times 10^7\ \mathrm{K}$ or so, the reaction to make
     $\mathrm{{}^8Be}$ proceeds rapidly and can achieve thermal and
     chemical equilibrium.\\
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Friday, November 22, 2013 %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \n \textit{Friday, November 22, 2013}\\
 
     \n Equating the chemical potentials, we have
     \begin{equation}
       \label{eq:266}
       \frac{n_8}{n_4^2}=2^{3/2}\left(\frac{h^2}{2\pi m_\alpha
-          kT}\right)^{3/2}\exp\left(-\frac{m_8-2m_\alpha c^2}{kT}\right)
+          kT}\right)^{3/2}\exp\left(-\frac{(m_8-2m_\alpha) c^2}{kT}\right)
     \end{equation}
     Normalizing to $\rho=10^4\ \mathrm{g\,cm^{-3}}$ of pure helium (at
     the core, obviously), we get
