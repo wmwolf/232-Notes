@@ -4193,7 +4193,12 @@ is shown, and barely (if ever) reaches hydrogen ignition.}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \n \textit{Friday, November 22, 2013}\\
 
-    \n Equating the chemical potentials, we have
+    \n Equating the chemical potentials,
+     \begin{align}
+       \mu_4 &= m_4c^2 - kT\ln\left(\frac{g_4 n_{Q,4}}{n_4}\right)\\
+       \mu_8 &= m_8c^2 - kT\ln\left(\frac{g_8 n_{Q,8}}{n_8}\right)
+     \end{align}
+    we get
     \begin{equation}
       \label{eq:266}
       \frac{n_8}{n_4^2}=2^{3/2}\left(\frac{h^2}{2\pi m_\alpha
@@ -4241,7 +4246,7 @@ is shown, and barely (if ever) reaches hydrogen ignition.}
       \label{eq:271}
       \frac{n_{\mathrm{12^*}}}{n_4}=5\times
       10^{-10}\left(\frac{\rho}{10^5}\right)^2T_8^3\exp\left(-\frac{44}
-{T_8}\right)
+      {T_8}\right)
     \end{equation}
     Where we have implicitly used the binding energy of
     ${}^{12}\mathrm{C}^*$, which is $7.644\,\mathrm{MeV}$ (notably
@@ -4264,19 +4269,19 @@ is shown, and barely (if ever) reaches hydrogen ignition.}
     \begin{equation}
       \label{eq:274}
       \varepsilon = \frac{n_{12^*}E}{\tau}\frac{1}{\rho}=5.3\times 10^
-{21}\mathrm{erg\,g^{-1}\,s^{-1}}\rho_5^2T_8^{-3}\exp\left(-\frac{44}
-{T_8}\right)
+      {21}\mathrm{erg\,g^{-1}\,s^{-1}}\rho_5^2T_8^{-3}\exp\left(-\frac{44}
+      {T_8}\right)
     \end{equation}
-    In order to determine this, we had to know the mass difference
-    between ${}^{12}C^*$ and three alpha particle, as well as the
-    photon decay rate of ${}^{12}C^*$ into plain old
-    $^{12}\mathrm{C}$. Note that this reaction is even more
-    temperature sensitive than either hydrogen burning source, and the
-    energy per reaction per nucleon is about a tenth of what it is for
-    hydrogen burning. Thus, we expect helium burning to end much
-    faster than hydrogen burning since more reactions have to happen
-    per unit time to match the luminosity, \emph{and} the luminosity
-    is higher due to the change in composition that we found earlier.\\
+    where $\tau = r^{-1}\approx 2\times 10^{-13}\ \mathrm{s}$. In order to
+    determine this, we had to know the mass difference between
+    ${}^{12}\mathrm{C}^*$ and three alpha particles, as well as the photon
+    decay rate of ${}^{12}\mathrm{C}^*$ into plain old $^{12}\mathrm{C}$. Note
+    that this reaction is even more temperature sensitive than either hydrogen
+    burning source, and the energy per reaction per nucleon is about a tenth of
+    what it is for hydrogen burning. Thus, we expect helium burning to end much
+    faster than hydrogen burning since more reactions have to happen per unit
+    time to match the luminosity, \emph{and} the luminosity is higher due to
+    the change in composition that we found earlier.\\
     
     \subsubsection{Higher Burning}
     \label{sec:higher-burning-1}
@@ -4288,16 +4293,15 @@ is shown, and barely (if ever) reaches hydrogen ignition.}
 
     \begin{table}[h!]
       \centering
-      \begin{tabular}{l c c}
-        Reaction & $E_0(T_8=2)$ &
+      \begin{tabular}{l c c c}
+        Reaction & $E_{\mathrm{G}}$ (MeV) & $E_0(T_8=2)$ &
         $\exp\left[-3\left(\frac{E_\mathrm{G}}{4kT}\right)^{1/2}\right]$\\
         \hline\hline
-        $\alpha+{}^{12}\mathrm{C}$ & 315 keV & $1.3\times 10^{-24}$\\
-        $\alpha+{}^{16}\mathrm{O}$ & 390 keV & $5.5\times 10^{-38}$\\
-        $\alpha+{}^{20}\mathrm{Ne}$& 460 keV & $1.5\times 10^{-44}$
+        $\alpha+{}^{12}\mathrm{C}$ & 424 & 315 keV & $1.3\times 10^{-24}$\\
+        $\alpha+{}^{16}\mathrm{O}$ & 804 & 390 keV & $5.5\times 10^{-38}$\\
+        $\alpha+{}^{20}\mathrm{Ne}$& 1310 & 460 keV & $1.5\times 10^{-44}$
       \end{tabular}
-      \caption{Parameters controlling the burning of carbon, oxygen, and 
-neon.}
+      \caption{Parameters controlling the burning of carbon, oxygen, and neon.}
       \label{tab:1}
     \end{table}
     \n The first reaction in Table \ref{tab:1} does occur fast enough to
@@ -4313,7 +4317,8 @@ neon.}
     time is
     \begin{equation}
       \label{eq:276}
-      t_{\mathrm{He\,burn}}=\frac{\varepsilon_{\mathrm{nuc}}M_{\mathrm{burn}}}{L}
+      t_{\mathrm{He\,burn}} =
+      \frac{\varepsilon_{\mathrm{nuc}}M_{\mathrm{burn}}}{L}
     \end{equation}
     which is shorter than the hydrogen-burning main sequence burn
     time. For stars above around $6\ M_\odot$, carbon burning will
@@ -4326,7 +4331,7 @@ neon.}
     when the electron gas in the core is nondegnenerate. Solar mass
     stars, however, are not so lucky.
 
-    \subsubsection{Helium Core Flash}
+    \subsubsection{Helium Core Flash and Other Instabilities}
     \label{sec:helium-core-flash}
 
     For stars with masses less than around $2\,M_\odot$, the helium
@@ -4375,11 +4380,6 @@ neon.}
     \end{equation} 
     Thus more massive degenerate objects have \emph{smaller}
     radii.\\   
-%%%%%%%%%%%%%%%%%%%%%%%%%
-% Friday, March 2, 2012 %
-%%%%%%%%%%%%%%%%%%%%%%%%%
-  
-    \n \textit{Friday, March 2, 2012}\\
 
     \n Now returning to our intermediate mass star with a helium
     core, the temperature in the hydrogen burning shell located at
@@ -4398,22 +4398,25 @@ core,
     hotter out towards the hydrogen burning shell since neutrino
     cooling is lowering the temperature at the center).\\
 
-    \n When the star is in hydrostatic balance and has an ideal gas
-    equation of state, an injection of entropy would lead to a decrease in
-    temperature (negative heat capacity). For a star, this means that
-    the pressure drops when entropy is added. Here are some ways to
-    cause trouble in such a star:
-    \begin{itemize}
-    \item Make the electrons degenerate so that the pressure is
-      independent of temperature. 
-    \item Thin Shell Instability
-    \end{itemize}
-    The \textbf{Thin Shell Instability} was discovered in 1965 and is
-    a thermonuclear instability that occurs when temperature sensitive
-    burning is in a geometrically thin shell. By ``geometrically
-    thin'', we mean that at the location of the shell, $\Delta r\ll
-    R$. To get a better handle on this mechanism, recall the condition
-    for hydrostatic balance (again):
+    \n When the star is in hydrostatic balance and has an ideal gas equation of
+    state, an injection of entropy would lead to a decrease in temperature
+    (negative heat capacity). For a star, this means that the pressure drops
+    when entropy is added. However, with a degenerate equation of state, an
+    addition of entropy causes the temperature to \emph{increase}. Thus, if
+    helium burning begins in a degenerate core, it acts to increase the
+    temperature, which in turn increases the burning rate. This is a
+    thermonuclear runaway, giving way to the infamous \textbf{Helium Core
+    Flash}. The burning continues until degeneracy is lifted (i.e.\ the
+    specific heat goes back to being negative) and the burning causes a drop in
+    pressure and temperature.\\
+
+    \n In addition to this degeneracy-induced burning instability, the
+    \textbf{thin shell instability} can cause unstable burning in a number of
+    situations. The thin shell instability was discovered in 1965 and is a
+    thermonuclear instability that occurs when temperature sensitive burning is
+    in a geometrically thin shell. By ``geometrically thin'', we mean that at
+    the location of the shell, $\Delta r\ll R$. To get a better handle on this
+    mechanism, recall the condition for hydrostatic balance (again):
     \begin{equation}
       \label{eq:283}
       \frac{dP}{dr}=-\rho(r)\frac{GM(r)}{r^2}
