@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.10.29)  4 NOV 2013 09:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.10.29)  25 NOV 2013 09:35
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -308,6 +308,9 @@ Package: pdfsync 2008/01/26 v1.1
 Package: wrapfig 2003/01/31  v 3.6
 ) (./232-Notes.aux
 
+LaTeX Warning: Label `eq:debroglie:4' multiply defined.
+
+
 LaTeX Warning: Label `sec:white-dwarf-cooling' multiply defined.
 
 
@@ -475,7 +478,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--90
 
  []
 
-<hr_local.pdf, id=387, 691.58376pt x 548.0475pt>
+<hr_local.pdf, id=402, 691.58376pt x 548.0475pt>
 File: hr_local.pdf Graphic file (type pdf)
  <use hr_local.pdf>
 Package pdftex.def Info: hr_local.pdf used on input line 100.
@@ -555,7 +558,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1092--1097
 
  []
 
-<figures/convection_scheme.pdf, id=665, 597.50786pt x 401.5pt>
+<figures/convection_scheme.pdf, id=680, 597.50786pt x 401.5pt>
 File: figures/convection_scheme.pdf Graphic file (type pdf)
 
 <use figures/convection_scheme.pdf>
@@ -657,7 +660,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2251--2256
 
  []
 
-<energyPlot.pdf, id=913, 289.08pt x 289.08pt>
+<energyPlot.pdf, id=928, 289.08pt x 289.08pt>
 File: energyPlot.pdf Graphic file (type pdf)
  <use energyPlot.pdf>
 Package pdftex.def Info: energyPlot.pdf used on input line 2277.
@@ -702,62 +705,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 2747--2751
  []
 
 [47] [48]
-Underfull \hbox (badness 10000) in paragraph at lines 2884--2900
+Underfull \hbox (badness 10000) in paragraph at lines 2900--2902
 
  []
 
 [49]
-Underfull \hbox (badness 10000) in paragraph at lines 2920--2925
+Underfull \hbox (badness 10000) in paragraph at lines 2922--2927
 
  []
 
 [50] [51]
-Underfull \hbox (badness 10000) in paragraph at lines 3073--3080
+Underfull \hbox (badness 10000) in paragraph at lines 3026--3033
 
  []
 
 [52]
-Underfull \hbox (badness 10000) in paragraph at lines 3157--3159
+Underfull \hbox (badness 10000) in paragraph at lines 3130--3137
 
  []
 
 [53]
-Underfull \hbox (badness 10000) in paragraph at lines 3242--3250
+Underfull \hbox (badness 10000) in paragraph at lines 3214--3216
 
  []
 
 [54]
-Underfull \hbox (badness 10000) in paragraph at lines 3256--3259
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3270--3274
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3290--3302
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3303--3306
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3315--3323
+Underfull \hbox (badness 10000) in paragraph at lines 3245--3252
 
  []
 
 [55]
-Underfull \hbox (badness 10000) in paragraph at lines 3324--3328
+Underfull \hbox (badness 10000) in paragraph at lines 3305--3313
 
  []
 
-[56] [57]
-Underfull \hbox (badness 10000) in paragraph at lines 3514--3517
+
+Underfull \hbox (badness 10000) in paragraph at lines 3319--3322
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3333--3337
+
+ []
+
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 3372--3383
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3384--3387
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3396--3404
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3405--3409
+
+ []
+
+[57] [58] [59]
+Underfull \hbox (badness 10000) in paragraph at lines 3634--3637
 
  []
 
@@ -765,262 +778,277 @@ Underfull \hbox (badness 10000) in paragraph at lines 3514--3517
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3531--3540
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3541--3551
-
- []
-
-[58] [59]
-Underfull \hbox (badness 10000) in paragraph at lines 3616--3623
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3635--3643
+Underfull \hbox (badness 10000) in paragraph at lines 3651--3660
 
  []
 
 [60]
-Underfull \hbox (badness 10000) in paragraph at lines 3711--3718
+Underfull \hbox (badness 10000) in paragraph at lines 3661--3671
 
  []
 
-[61] <MSDiagram.pdf, id=1232, 289.08pt x 289.08pt>
+[61]
+Underfull \hbox (badness 10000) in paragraph at lines 3736--3743
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3756--3764
+
+ []
+
+[62]
+Underfull \hbox (badness 10000) in paragraph at lines 3832--3839
+
+ []
+
+[63]
+Underfull \hbox (badness 10000) in paragraph at lines 3891--3896
+
+ []
+
+<MSDiagram.pdf, id=1264, 289.08pt x 289.08pt>
 File: MSDiagram.pdf Graphic file (type pdf)
  <use MSDiagram.pdf>
-Package pdftex.def Info: MSDiagram.pdf used on input line 3775.
+Package pdftex.def Info: MSDiagram.pdf used on input line 3904.
 (pdftex.def)             Requested size: 289.07999pt x 289.09251pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3792--3803
+Underfull \hbox (badness 10000) in paragraph at lines 3914--3925
 
  []
 
-[62] [63 <./MSDiagram.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3855--3858
+[64] [65 <./MSDiagram.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3977--3983
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3867--3871
+Underfull \hbox (badness 10000) in paragraph at lines 3992--3996
 
  []
 
-<compPlot.pdf, id=1308, 289.08pt x 289.08pt>
+<compPlot.pdf, id=1342, 289.08pt x 289.08pt>
 File: compPlot.pdf Graphic file (type pdf)
  <use compPlot.pdf>
-Package pdftex.def Info: compPlot.pdf used on input line 3874.
+Package pdftex.def Info: compPlot.pdf used on input line 3999.
 (pdftex.def)             Requested size: 289.07928pt x 289.07928pt.
- [64 <./compPlot.pdf>] [65]
-Underfull \hbox (badness 10000) in paragraph at lines 3983--3987
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[66] [67 <./compPlot.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 4108--4114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4001--4006
+Underfull \hbox (badness 10000) in paragraph at lines 4128--4133
 
  []
 
-<TcRhoc.pdf, id=1361, 289.08pt x 289.08pt>
+<TcRhoc.pdf, id=1395, 289.08pt x 289.08pt>
 File: TcRhoc.pdf Graphic file (type pdf)
  <use TcRhoc.pdf>
-Package pdftex.def Info: TcRhoc.pdf used on input line 4009.
+Package pdftex.def Info: TcRhoc.pdf used on input line 4136.
 (pdftex.def)             Requested size: 289.07928pt x 289.07928pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4026--4028
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4029--4035
-
- []
-
-[66]
-Underfull \hbox (badness 10000) in paragraph at lines 4057--4061
-
- []
-
-[67 <./TcRhoc.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 4135--4146
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4150--4154
+Underfull \hbox (badness 10000) in paragraph at lines 4153--4155
 
  []
 
 [68]
-Underfull \hbox (badness 10000) in paragraph at lines 4183--4190
+Underfull \hbox (badness 10000) in paragraph at lines 4156--4165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4198--4203
+Underfull \hbox (badness 10000) in paragraph at lines 4166--4168
 
  []
 
-[69]
-Underfull \hbox (badness 10000) in paragraph at lines 4241--4247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4248--4249
+[69 <./TcRhoc.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 4186--4190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4257--4266
+Underfull \hbox (badness 10000) in paragraph at lines 4194--4195
 
  []
 
 [70]
-Underfull \hbox (badness 10000) in paragraph at lines 4300--4304
+Underfull \hbox (badness 10000) in paragraph at lines 4274--4285
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4324--4338
+Underfull \hbox (badness 10000) in paragraph at lines 4289--4293
 
  []
 
 [71]
-Underfull \hbox (badness 10000) in paragraph at lines 4372--4389
+Underfull \hbox (badness 10000) in paragraph at lines 4322--4329
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4390--4400
+Underfull \hbox (badness 10000) in paragraph at lines 4337--4342
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4401--4411
+Underfull \hbox (badness 10000) in paragraph at lines 4380--4383
 
  []
 
 [72]
-Underfull \hbox (badness 10000) in paragraph at lines 4499--4502
-
- []
-
-[73] [74] [75]
-Underfull \hbox (badness 10000) in paragraph at lines 4670--4676
+Underfull \hbox (badness 10000) in paragraph at lines 4391--4400
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4687
+Underfull \hbox (badness 10000) in paragraph at lines 4401--4412
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4699--4702
+Underfull \hbox (badness 10000) in paragraph at lines 4437--4441
+
+ []
+
+[73]
+Underfull \hbox (badness 10000) in paragraph at lines 4461--4475
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4703--4714
+Underfull \hbox (badness 10000) in paragraph at lines 4509--4526
 
  []
 
-[76]
-Underfull \hbox (badness 10000) in paragraph at lines 4745--4752
+[74]
+Underfull \hbox (badness 10000) in paragraph at lines 4527--4537
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4753--4756
+Underfull \hbox (badness 10000) in paragraph at lines 4538--4548
 
  []
 
-[77]
-Underfull \hbox (badness 10000) in paragraph at lines 4772--4777
+[75]
+Underfull \hbox (badness 10000) in paragraph at lines 4636--4639
 
  []
 
-[78] [79]
-Underfull \hbox (badness 10000) in paragraph at lines 4934--4940
+[76] [77] [78]
+Underfull \hbox (badness 10000) in paragraph at lines 4807--4813
 
  []
 
-<neutrinoCool.pdf, id=1590, 289.08pt x 289.08pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4819--4824
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4836--4839
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4840--4851
+
+ []
+
+[79]
+Underfull \hbox (badness 10000) in paragraph at lines 4882--4889
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4890--4893
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4909--4914
+
+ []
+
+[80] [81] [82]
+Underfull \hbox (badness 10000) in paragraph at lines 5071--5077
+
+ []
+
+<neutrinoCool.pdf, id=1633, 289.08pt x 289.08pt>
 File: neutrinoCool.pdf Graphic file (type pdf)
  <use neutrinoCool.pdf>
-Package pdftex.def Info: neutrinoCool.pdf used on input line 4943.
+Package pdftex.def Info: neutrinoCool.pdf used on input line 5080.
 (pdftex.def)             Requested size: 289.07928pt x 289.07928pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 5085--5090
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+ []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 4948--4953
+[83 <./neutrinoCool.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 5110--5112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4973--4975
-
- []
-
-[80]
-Underfull \hbox (badness 10000) in paragraph at lines 5004--5008
-
- []
-
-[81 <./neutrinoCool.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 5014--5022
+Underfull \hbox (badness 10000) in paragraph at lines 5141--5145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5065--5073
+Underfull \hbox (badness 10000) in paragraph at lines 5151--5159
+
+ []
+
+[84]
+Underfull \hbox (badness 10000) in paragraph at lines 5202--5210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5074--5084
+Underfull \hbox (badness 10000) in paragraph at lines 5211--5221
 
  []
 
-[82]
-Underfull \hbox (badness 10000) in paragraph at lines 5098--5103
+[85]
+Underfull \hbox (badness 10000) in paragraph at lines 5235--5240
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5110.
-[83]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 5110.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5247.
+[86]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 5247.
  (./232-Notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5110.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5110.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5247.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5247.
 
 Package rerunfilecheck Info: File `232-Notes.out' has not changed.
-(rerunfilecheck)             Checksum: 3C2C055BD584E7127ADF367583A76531;5628.
+(rerunfilecheck)             Checksum: C5BA918D88E0017723F646541DE39825;5878.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5110.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5247.
  ) 
 Here is how much of TeX's memory you used:
- 8334 strings out of 494227
- 114642 string characters out of 6157703
- 233552 words of memory out of 5000000
- 10738 multiletter control sequences out of 15000+600000
+ 8369 strings out of 494227
+ 115150 string characters out of 6157703
+ 234330 words of memory out of 5000000
+ 10754 multiletter control sequences out of 15000+600000
  18270 words of font info for 70 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  34i,32n,43p,484b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1045,10 +1073,10 @@ texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></opt/local/share/texmf
 -texlive/fonts/type1/public/amsfonts/symbols/msam10.pfb></opt/local/share/texmf
 -texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb></opt/local/share/texmf
 -texlive/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on 232-Notes.pdf (83 pages, 724759 bytes).
+Output written on 232-Notes.pdf (86 pages, 735246 bytes).
 PDF statistics:
- 1901 PDF objects out of 2073 (max. 8388607)
- 1743 compressed objects within 18 object streams
- 757 named destinations out of 1000 (max. 500000)
- 612 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1946 PDF objects out of 2073 (max. 8388607)
+ 1785 compressed objects within 18 object streams
+ 776 named destinations out of 1000 (max. 500000)
+ 636 words of extra memory for PDF output out of 10000 (max. 10000000)
 
