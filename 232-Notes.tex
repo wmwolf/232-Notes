@@ -4699,7 +4699,12 @@ masses and it is important to
     Where $\mu_e$ is, as always, the number of baryons per electron.
     If the star gets heavier than this mass, it undergoes catastrophic
     collapse, creating a neutron star if it didn't explode as a Type Ia
-    supernova before totally collapsing.
+    supernova before totally collapsing.\\
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Wednesday, November 27, 2013 %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+    \n\textit{Wednesday, November 27, 2013}
 
     \subsection{White Dwarf Cooling}
     \label{sec:white-dwarf-cooling}
@@ -4774,7 +4779,8 @@ masses and it is important to
     This is known as \textbf{Mestel's Cooling Law}, though it isn't
     really accurate, since the opacity is changing as we get towards
     the degeneracy. Now all of the energy source is coming from the
-    thermal content of the ions, which is approximately
+    thermal content of the ions, which is approximately (fror a pure
+    carbon WD)
     \begin{equation}
       \label{eq:299}
       E_{\mathrm{th}}=\frac{3}{2}N_i k T=1.25\times 10^{48}\,\mathrm{ergs}
@@ -4834,7 +4840,7 @@ masses and it is important to
       \label{eq:305}
       \frac{e^2}{\avg{r}}\gtrsim kT
     \end{equation}
-    Then we have
+    Then we define the \textbf{Coulomb Parameter}:
     \begin{equation}
       \label{eq:306}
       \Gamma = \frac{Z^2 e^2}{a kT}
@@ -4845,17 +4851,31 @@ masses and it is important to
     \n When in a Coulomb solid, $E_{\mathrm{th}}=3kT$, since each
     positional degree of freedom now has an energy. This phase
     transition introduces a latent heat. The WD goes crystalline at
-    $\Gamma\approx 173$. In a Coulomb liquid, we have short-range
+    $\Gamma\approx 135$. In a Coulomb liquid, we have short-range
     order at $\Gamma\sim1$ and $C_V$ increases relative to
     $\frac{3}{2}N_i kT$. Lindimann in the 1920's discovered the
     following rule: when the average displacement at a given site in a
-    lattice is bigeer than $0.1a$, the solid melts.\\
+    lattice is bigeer than $0.1a$, the solid melts.
+    
+    \subsection{White Dwarf Taxonomy} % (fold)
+    \label{sub:white_dwarf_taxonomy}
+    Just like main sequence stars have spectral classifications, white dwarfs
+    also have their own classification scheme. \textbf{DA} white dwarfs show
+    strong Balmer emission because gravitational sedimentation has caused the
+    surface to be \emph{pure} hydrogen. DA white dwarfs make up $\approx 80$ \%
+    of the white dwarf population. Similarly, \textbf{DB} white dwarfs are
+    white dwarfs that have no Balmer lines but appreciable helium lines. These
+    are believed to have lost their hydrogen envelopes and developed a pure
+    helium envelope via sedimentation. These make up $\approx 20$\% of the
+    white dwarf population. There have even been white dwarfs that have pure
+    C/O on their surface, but these are much rarer (SDSS found 2).\\
+    % subsection white_dwarf_taxonomy (end)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Wednesday, March 7, 2012 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     \n \textit{Wednesday, March 7, 2012}
-    \section{Evolution of Larger Stars}
+    \section{Evolution of Massive Stars}
     \label{sec:evolution-gt-6}
     In stars larger than about 6 $M_\odot$, helium is ignited while
     the core is non degenerate. There is complete helium burning into
@@ -4914,7 +4934,7 @@ masses and it is important to
     \end{equation}
     Interestingly, neutron stars follow this criterion \emph{and} they
     are optically thick to neutrinos, so you will often hear in the
-    lecture about the ``neutrinosphere'' on neutron star. Stars are
+    literature about the ``neutrinosphere'' of a neutron star. Stars are
     not this dense at this stage, though.\\
 
     \n How are neutrinos created, though? The primary source is through
@@ -4927,14 +4947,14 @@ masses and it is important to
     there is a population of positrons where
     \begin{equation}
       \label{eq:343}
-      \frac{e^++d^-\to \nu_e+\overline{\nu}_e}{e^++e^-\to 2\gamma}\sim 10^
+      \frac{e^++e^-\to \nu_e+\overline{\nu}_e}{e^++e^-\to 2\gamma}\sim 10^
 {-19}
     \end{equation}
-    It is of interest, then, to calculate the equilibrium abundance of
-    positrons from
+    where this is essentially a ratio of reaction rates. It is of interest,
+    then, to calculate the equilibrium abundance of positrons from
     \begin{equation}
       \label{eq:344}
-      e^++e^-\to 2\gamma
+      e^++e^-\rightleftharpoons 2\gamma
     \end{equation}
     by equating the chemical potentials:
     \begin{equation}
@@ -4963,7 +4983,7 @@ masses and it is important to
         2 & $>1$
       \end{tabular}
       \caption{Relative densities of positrons and electrons at various 
-temperatures}
+temperatures at $\rho=10^4\ \mathrm{g\ cm^{-3}}$.}
       \label{tab:positron}
     \end{table}
 
@@ -5004,13 +5024,13 @@ temperatures}
     Then the cooling rate is, more explicitly
     \begin{equation}
       \label{eq:353}
-      \frac{dU_\nu}{dt}=5\times 10^{18}T_9^3\exp\left(-\frac{11.84}
+      \frac{dU_\nu}{dt}=4.8\times 10^{18}T_9^3\exp\left(-\frac{11.84}
 {T_9}\right)\mathrm{erg\,cm^{-3}\,s^{-1}}
     \end{equation}
     Since the thermal energy is just
     \begin{equation}
       \label{eq:354}
-      E_{\mathrm{th}}=nkT=7\times 10^{19}\,\mathrm{erg\,cm^{-3}}\,T_9\rho^4
+      E_{\mathrm{th}}=nkT=7\times 10^{19}\,\mathrm{erg\,cm^{-3}}\,T_9\rho_4
     \end{equation}
     and thus the cooling timescale is
     \begin{equation}
