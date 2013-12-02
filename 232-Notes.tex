@@ -5268,6 +5268,172 @@ accelerating the burning phases. Additionally, for nearly all these phases
         $M_{\mathrm{crit}}$ depends on the evolution of the star,
         details of the star's rotation, and the mass of the
         star. Collapses lead to a dense proto-neutron star with a
-        radius of around 20 km and an outgoing shock. 
+        radius of around 20 km and an outgoing shock. \\
+        
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Monday, December 2, 2013 %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \n\textit{Monday, December 2, 2013}
+  \section{Missing Elements} % (fold)
+  \label{sec:missing_elements}
+  Thus far, we've avoided discussing several key concepts in stellar astrophysics. Namely, we've missed
+  \begin{itemize}
+    \item Rotation
+    \item Magnetism
+    \item Dynamics
+    \item Binarity
+    \item Mass Transfer
+    \item Stellar Winds
+  \end{itemize}
+  First, we'll briefly talk about binarity
+  \subsection{Binarity} % (fold)
+  \label{sub:binarity}
+  Binarity is, briefly, two or more stars existing in mutual orbits. While the
+  sun is a lone star, about half of all stars are actually in binaries. Their
+  relative prevalence is due to the fact that it is easier to store angular
+  momentum in orbital angular momentum than in rotational angular momentum, so
+  cloud collapse ``likes'' to form binaries.\\
+  
+  \n When in a binary, a star experiences tidal coupling between the
+  orbit and rotation, so the very act of being in a binary will affect its
+  rotation. Additionally, being in a binary (especially tight binaries) causes
+  mass transfer between the binary members and the surrounding medium. This can
+  explain some weird discrepancies between masses/ages of stars (\textbf{Algol
+  Paradox}), massive white dwars, and ISM enrichment.
+  % subsection binarity (end)
+  \subsection{Dynamics and Rotation} % (fold)
+  \label{sub:dynamics_and_rotation}
+  In this course, we have relied heavily on hydrostatic equilibrium:
+  \begin{equation}
+    \label{dr:1} 0 = -\nabla P + \rho\mathbf{g}
+  \end{equation}
+  In reality, this is a special case of the momentume quation from fluid
+  mechanics:
+  \begin{equation}
+    \label{dr:2} \rho\frac{D\mathbf{u}}{Dt} = \rho\left[\frac{\partial
+    \mathbf{u}}{\partial t} + (\mathbf{u}\cdot\nabla) \mathbf{u}\right] =
+    -\nabla P + \rho\mathbf{g}
+  \end{equation}
+  If we add in rotation, we recover the centrifugal and coriolis forces:
+  \begin{equation}
+    \label{dr:3}\rho\left[\frac{\partial
+    \mathbf{u}}{\partial t} + (\mathbf{u}\cdot\nabla) \mathbf{u} + 2\,
+    \bm{\Omega}_0\times \mathbf{u}\right] = -\nabla P + \rho\mathbf{g} +\rho
+    \Omega_0^2 \varpi \hat{\varpi}
+  \end{equation}
+  Where, in spherical coordinates, $\varpi = r\sin\theta$, since centrifugal
+  forces act in a cylindrical fashion. $\bm{\Omega}_0$ is the bulk rotation
+  rate.\\
+  
+  \n We might also check to compare the strength of the centrifugal force to the
+  surface gravity. If the effect is weak, we may not care about rotation.
+  \begin{equation}
+    \label{eq:dr:4} \frac{\rho \Omega^2 R}{\rho g} = \frac{\Omega^2 R^2}{GM/R}
+    = \frac{v_{\mathrm{eq}}^2}{v_{\mathrm{esc}}^2} = \frac{\textrm{Kinetic
+    Energy at Surface}}{\textrm{Gravitational Energy at Surface}}
+  \end{equation}
+  So if this quantity is greater than unity, the star is ripped apart (it's
+  spinning at ``break-up''). If the quantity less than unity, but still large,
+  we should still care about rotation. If it is very small, though, we are safe
+  to neglect rotation effects. For the sun,
+  $v_{\mathrm{eq}}^2/v_{\mathrm{esc}}^2 \sim 10^{-5}$, so the centrifugal
+  forces do not greatly affect the shape of the sun.
+  
+  \subsubsection{Hydrostatic Rotating Stars} % (fold)
+  \label{ssub:hydrostatic_rotating_stars}
+  Just because rotation is present doesn't mean there isn't a hydrostatic
+  solution anymore. Such a solution simply won't be spherical anymore. The new
+  equation of hydrostatic equilibrium would be
+  \begin{equation}
+    \label{eq:dr:5} \nabla P = \rho\mathbf{g} +
+    \rho\Omega_0^2\varpi\,\hat{\varpi}
+  \end{equation}
+  We can write the gravitational acceleration as the gradient of a scalar
+  potential:
+  \begin{equation}
+    \label{dr:6} \mathbf{g} = -\nabla \phi_g
+  \end{equation}
+  So we can define an effective potential as
+  \begin{equation}
+    \label{dr:7} \phi_{\mathrm{eff}} = \phi_g - \frac{\Omega^2\varpi^2}{2}
+  \end{equation}
+  Which can give us an effective gravity:
+  \begin{equation}
+    \label{dr:8} \mathbf{g}_{\mathrm{eff}} = -\nabla \phi_{\mathrm{eff}} =
+    -\nabla \left[\phi_g - \frac{\Omega^2\varpi^2}{2}\right]
+  \end{equation}
+  And now the equation of hydrostatic equilibrium is [artifically] cleaner:
+  \begin{equation}
+    \label{eq:dr:9} \nabla P = \rho \mathbf{g}_{\mathrm{eff}}
+  \end{equation}
+  The only difference between this and our standard calculation is that
+  $\mathbf{g}_{\mathrm{eff}}$ is not spherical, so constant pressure contours
+  are oblate. This is actually observed in stars that are rapidly rotating.
+  They are puffed out along the equator and thinner at the poles. There is a
+  problem here, though. We've assumed rigid-body rotation, which is fine, but
+  if we also mandate thermal equilibrium (as we have been doing), then the
+  \textbf{von Zeipel} paradox kicks in. In 1924, von Zeipel found that a
+  uniformly star cannot be in steady-state thermal equilibrium.\\
+  
+  \n The solution to this proble is to allow the rotation to vary as a function
+  of position \emph{or} to allow velocities in the fluids:
+  \begin{equation}
+    \label{eq:dr:10} \bm{\Omega} = \bm{\Omega}(r, \theta) \qquad \textrm{or}
+    \qquad \mathbf{u} \neq 0
+  \end{equation}
+  Many stars take the latter option, inducing \textbf{meridional flows} that
+  add extra mixing to a star that we previously would not have expected.
+  % subsubsection hydrostatic_rotating_stars (end)
+  \subsubsection{The Coriolis Term} % (fold)
+  \label{ssub:the_coriolis_term}
+  In our hydrostatic calculations, we assumed no flows (and thus no coriolis
+  force). However, we've just shown that there are often non-zero velocities in
+  rotating stars, so we need to get a handle on what the coriolis force does.
+  To characterize this effect, we introduce the \textbf{Rossby Number}. To do
+  so, we'll use some dirty fluid dynamics math, where derivatives are simply
+  inverse lengthscales: $\nabla \to 1/R$ and velocites are converted to
+  scalars: $\mathbf{u}\to u$.
+  \begin{equation}
+    \label{eq:rossby:1} R_o = \frac{\mathbf{u}\cdot\nabla\mathbf{u}}{ 2
+    \bm{\Omega} \times \mathbf{u}} = \frac{u^2/R}{2\Omega u} = \frac{u}{2\Omega
+    R}
+  \end{equation}
+  If $R_o \gg 1$, rotation does \emph{not} matter, but if $R_o \ll 1$, the
+  velocities are heavily constrained by rotation, so rotation \emph{does}
+  matter. We can measure $\Omega$ and $R$, but we usually don't have access to 
+  the internal velocities ($u$), so this is hard to constrain from observations.
+  Studies on the effects of the coriolis terms are thus very dependent on 3D 
+  simulations or helioseismic studies of the sun.
+  % subsubsection the_coriolis_term (end)
+  \subsubsection{Rotation in the Early Sun} % (fold)
+  \label{ssub:rotation_in_the_sun}
+  We already noted that the sun's rotation doesn't greatly affect it's current
+  shape. However, the same may not be true of the early sun. Ths sun likely
+  collapsed out of an ISM cloud with $n\sim 1\ \mathrm{cm^{-3}}$. The sphere of
+  such ISM that encompasses $1\ M_\odot$ is roughly 2 pc $\sim 6\times 10^{18}$
+  cm. The angular velocity of that cloud is set by the differential rotation in
+  the galactic disk:
+  \begin{equation}
+    \label{eq:sunRot:1} \Omega_{\mathrm{cloud}} \sim \Delta R
+    \frac{d\Omega_g}{dr} \sim \frac{\Delta R}{R}\Omega_g
+  \end{equation}
+  And so the period of the cloud is
+  \begin{equation}
+    \label{eq:sunRot:2} P_c \sim \frac{R}{\Delta R}P_g \approx 8\times 10^{11}\
+    \mathrm{years}
+  \end{equation}
+  period of the galaxy's rotation is $P_g\approx 2\times 10^8$ years. Now
+  during the sun's collapse, the angular momentum must be conserved, which
+  means that after shrinking down to its current radius, the period was
+  \begin{equation}
+    \label{eq:sunRot:3} P_f = \left(\frac{R_f}{R_i}\right)^2P_i =
+    \left(\frac{R_\odot}{2\ \mathrm{pc}}\right)^2(8\times 10^{11}\
+    \mathrm{years}) \sim 1\ \mathrm{hr}
+  \end{equation}
+  Such a short period means the equatorial velocity is $v_{\mathrm{eq}} \sim 1000\ \mathrm{km\ s^{-1}}$, and so $V_{\mathrm{eq}}^2 / v_{\mathrm{esc}}^2 > 1$. So evidently angular momentum transport and shedding of angular momentum is an essential part of stellar formation, and the youngest stars must be rotating very rapidly.
+  % subsubsection rotation_in_the_sun (end)
+  
+  % subsection dynamics_and_rotation (end)
+  % section missing_elements (end)
 	\end{document}
 
