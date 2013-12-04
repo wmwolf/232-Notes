@@ -5430,10 +5430,105 @@ accelerating the burning phases. Additionally, for nearly all these phases
     \left(\frac{R_\odot}{2\ \mathrm{pc}}\right)^2(8\times 10^{11}\
     \mathrm{years}) \sim 1\ \mathrm{hr}
   \end{equation}
-  Such a short period means the equatorial velocity is $v_{\mathrm{eq}} \sim 1000\ \mathrm{km\ s^{-1}}$, and so $V_{\mathrm{eq}}^2 / v_{\mathrm{esc}}^2 > 1$. So evidently angular momentum transport and shedding of angular momentum is an essential part of stellar formation, and the youngest stars must be rotating very rapidly.
+  Such a short period means the equatorial velocity is $v_{\mathrm{eq}} \sim
+  1000\ \mathrm{km\ s^{-1}}$, and so $v_{\mathrm{eq}}^2 / v_{\mathrm{esc}}^2 >
+  1$. So evidently angular momentum transport and shedding of angular momentum
+  is an essential part of stellar formation, and the youngest stars must be
+  rotating very rapidly.\\
   % subsubsection rotation_in_the_sun (end)
-  
   % subsection dynamics_and_rotation (end)
+
+  \n \textit{Wednesday, December 4, 2013}
+  \subsection{Magnetism in Stars} % (fold)
+  \label{sub:magnetism_in_stars}
+  \subsubsection{Stellar Spindown} % (fold)
+  \label{ssub:stellar_spindown}
+    Late in their lives (age $\gtrsim$ 1 Gyr for the sun), the period grows
+    approximately with the square root of the age, so the spindown rate is
+    actually decreasing with time. This is likely due to the presence of strong
+    winds in early evolution that help to efficiently remove angular momentum
+    from the star. Observations (and simulations) show a correlation between
+    X-ray luminosity and rotation period. For small periods, the X-ray
+    luminosity is largely a flat function, but at around 10 days, the X-ray
+    luminosity dies off as a power law. X-Ray emission from stars are expected
+    to arise from magnetic activity in the coronae of such stars, so evidently
+    magnetic fields and rotation have a very strong connection.\\
+    
+    \n In fact, the observed increase of the period of a star with age and
+    accurate measurements of the period together can help us constrain the age
+    of a star. Making age estimates in this way is in the purview of the field
+    of \textbf{gyrochronology}.
+  % subsubsection stellar_spindown (end)
+  \subsubsection{More Magnetism} % (fold)
+  \label{ssub:more_magnetism}
+    In stars, we have magnetic fields running through a hot plasma, so we
+    require the machinery of magnetohydrodynamics (MHD) to accurately describe
+    the interplay between the magnetic fields and the plasma. In MHD, we model
+    the plasma as a single fluid where electrons and ions move together as very
+    tightly-coupled particles. The overall charge of said plasma both locally
+    and globally neutral (so no electric fields), though currents are allowed
+    (hence magnetic fields). Finally, we'll assume that the flows in the plasma
+    are slow, in that $v\ll c$. A quick review of Maxwell's equations gives us
+    \begin{align}
+      \label{eq:monopole}\nabla\cdot \mathbf{B} &= 0\\
+      \label{eq:induction}\frac{\partial \mathbf{B}}{\partial t} &= \nabla
+      \times \left[\mathbf{u} \times \mathbf{B}\right] = -(\mathbf{u} \cdot
+      \nabla)\mathbf{B} + (\mathbf{B}\cdot \nabla)\mathbf{u} -
+      \mathbf{B}(\nabla\cdot \mathbf{u})
+    \end{align}
+    If we re-express \eqref{eq:induction} to move the advection term to the
+    left side, we get
+    \begin{equation}
+      \label{eq:induction2} \frac{\partial\mathbf{B}}{\partial t} +
+      (\mathbf{u}\cdot\nabla)\mathbf{B} = (\mathbf{B}\cdot\nabla)\mathbf{u} -
+      \mathbf{B}(\nabla\cdot \mathbf{u})
+    \end{equation}
+    The first source term tells us that flows that are collinear with magnetic
+    fields tend to strengthen the magnetic fields, and the second term tells us
+    that converging flows also act to strengthen a magnetic field.\\
+    
+    \n There's still one more equation left: the momentum equation, now with a
+    magnetic term
+    \begin{equation}
+      \label{eq:momentum} \rho\left[\frac{\partial \mathbf{u}}{\partial t} +
+      (\mathbf{u}\cdot\nabla)\mathbf{u}\right] = -\nabla P + \rho \mathbf{g} +
+      \frac{1}{4\pi}\left(\nabla\times \mathbf{B}\right)\times \mathbf{B}
+    \end{equation}
+    That magnetic term is a bit difficult to expand, so let's expand it with a
+    vector identity:
+    \begin{equation}
+      \label{eq:momentum2} \frac{1}{4\pi}\left(\nabla\times \mathbf{B}\right)
+      \times \mathbf{B} = -\frac{1}{4\pi}\nabla\left(\frac{1}{2}B^2\right) +
+      \frac{1}{4\pi} \left(\mathbf{B}\cdot \nabla\right)\mathbf{B}
+    \end{equation}
+    Ah! Now we recognize the first part as a magnetic pressure, and the second
+    term is [SOMETHING ELSE]. Now let's return to our old problem of the sun's
+    collapse from the galactic ISM. The ISM has magnetic fields running through
+    it at approximately $B\approx 5\times 10^{-6}\ \mathrm{G}$. Due to magnetic
+    flux freezing in a plasma, we get $BR^2 = \mathrm{const}$, so as the sun
+    collapses from $R\sim \mathrm{pc}$ to $R\sim R_\odot$, the magnetic field
+    is amplified by a factor of $10^{16}$ (just like we saw with the angular
+    momentum conservation argument). The resulting field would then be
+    \begin{equation}
+      B_{\mathrm{collapsed}} \sim 1.8\times 10^{10}\ \mathrm{G}
+    \end{equation}
+    This is \emph{crazy} high. For comparison, magnetic white dwarfs have field
+    strengths of about $10^6$ G, neutron stars are sitting at around $10^{12}$
+    G, and the most magnetic entities in the known universe, magnetars, have
+    fields at a whopping $10^{15}$ G. So, this proposed field of the collapsed
+    sun seems improbable. Note also that magnetic pressure at the center of
+    such a star would be
+    \begin{equation}
+      \label{eq:mag_pressure} P_B\sim\frac{B^2}{8\pi}\sim 10^{19}\
+      \mathrm{dyne\ cm^{-2}}
+    \end{equation}
+    Compare that to the simple pressure we get from HSE: $P_c\sim GM^2/R^4 \sim
+    10^{16}\ \mathrm{dyne\ cm^{-2}}$. Evidently, stellar formation requires not
+    only massive angular momentum loss, but also a tremendous weakening of
+    magnetic fields.
+  % subsubsection more_magnetism (end)
+  % subsection magnetism_in_stars (end)
+  
   % section missing_elements (end)
 	\end{document}
 
