@@ -46,3 +46,4 @@ stellar_atmospheres.pdf
 .232-Notes.toc
 figures/paxton_2011_contraction.tiff
 ignore_all.rb
+figures/*.tiff
