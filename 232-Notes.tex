@@ -1036,6 +1036,8 @@ for the mean free path to be comparable to the scale height:
 	\begin{equation}
 		\label{HTS.46} P_{\mathrm{gas}}\leq \frac{g}{\kappa}
 	\end{equation}
+  Below this pressure, our diffusion approximation starts to fail as the mean
+  free path length is exceeding the local scale height.
 	This argument assumed a constant opacity. In general, we must
         do a line integral through the depth of the outer
         atmosphere. Imagine we ask the probability for a photon to
@@ -1127,8 +1129,8 @@ that
 for an adiabatic process (here these quantities are related to the
 inside of the fluid element). This is equivalent to the requirement that
 the timescale of response is much less than that for heat to enter or
-leave the fluid element. We presume that the timescale is longer than
-the time for pressure equilibrium as well:
+leave the fluid element (i.e., the local thermal timescale. We presume that the 
+timescale is longer than the time for pressure equilibrium as well:
 \begin{multline}
   \label{eq:10}
   t=\frac{h}{c_s}=\textrm{time for the pressure to
