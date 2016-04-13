@@ -1408,13 +1408,17 @@ and thus the velocity is
 {\rho}\right|_{\ell=h}\right)^{3/2}=Pc_s\left(\left.\frac{\Delta\rho}{\rho}
 \right|_{\ell=h}\right)^{3/2}
   \end{equation}
-  Now recall our result for the radiative flux:
+  The measure of how effective convection can be is to compare this to the
+  radiative heat flux. Recall our result for the radiative flux:
   \begin{equation}
     \label{eq:41}
     F_{\mathrm{rad}}=\frac{1}{3}\frac{c}{\kappa\rho}\frac{d}{dr}\left
-(aT^4\right)\approx \frac{cP_{\mathrm{rad}}}{\tau}
+		(aT^4\right)\approx \frac{c}{\kappa\rho}\frac{P_{\mathrm{rad}}}{h} =
+ 		\frac{cP_{\mathrm{rad}}}{\tau}
   \end{equation}
-  where in the second equality, we're let $d/dr\to 1/h$. Now we find
+  where in the second equality, we're let $d/dr\to 1/h$, and in the third we've
+  used the definition of optical depth, \eqref{HTS.47}, to replace the
+  denominator with the optical depth through a scale height. Now we find
   the ratio in these two fluxes:
   \begin{equation}
     \label{eq:42}
@@ -1516,8 +1520,8 @@ _{\mathrm{adiabatic}}=\frac{2}{5}
   (models where $P\propto \rho^{(n+1)/n}$ for some $n$):
   \begin{enumerate}
   \item[1.] \textbf{Fully Convective and Efficient}: $P\propto \rho^{5/3}$,
-    where the prefactor is the specific entropy of the star, which is
-    spatially constant. Thus if we have the mass of a star and the
+    where the prefactor is the specific entropy of the star, \textit{which is
+    spatially constant}. Thus if we have the mass of a star and the
     entropy, we can calculate everything we want to know about this
     star (in this simple model).
   \item[2.] \textbf{Constant} $\bm{L/M}$ star with constant (electron 
