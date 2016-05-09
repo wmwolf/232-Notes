@@ -3642,9 +3642,10 @@ degeneracy together give us
       g=\frac{GM}{R^2}=2.7\times 10^4\frac{M}{R_\odot}=2.7\times
       10^4\left(\frac{M_\odot}{M}\right)^{1/2}
     \end{equation}
-    Where we have used the fact that $R\propto M^{0.75}$. Recalling
-    the optical depth, $\tau=\int \rho\kappa\, dr$, we will say that at
-    the photosphere, $\tau_{\mathrm{ph}}=2/3$. Then we find
+    Where we have used the fact that $R\propto M^{0.75}$ on the main 
+    sequence. Recalling the optical depth, $\tau=\int \rho\kappa\, dr$, 
+    we will say that at the photosphere, $\tau_{\mathrm{ph}}=2/3$. Then 
+    we find
     \begin{equation}
       \label{eq:214}
       %Matt - x->y, for consistency with previous sections
@@ -3663,7 +3664,8 @@ degeneracy together give us
       10^{16}\
         \mathrm{cm^{-3}}\left(\frac{\kappa_{\mathrm{es}}}{\kappa}\right)
 \left(\frac{10^4\
-          \mathrm{K}}{T}\right)\left(\frac{g}{2.7\times 10^4}\right)
+          \mathrm{K}}{T}\right)\left(\frac{g}{2.7\times 10^4
+          ~\mathrm{cm~s^{-2}}}\right)
     \end{equation}
     For various spectral types, we have a range of masses and
     effective temperatures summarized in Table \ref{tab:spectral}.\\
@@ -3749,23 +3751,25 @@ degeneracy together give us
 
     \paragraph{H${}^-$ Opacity}
     \label{par:mathrmh--opacity}
-    With the Saha equation (or at least something like it), we can compute what fraction of
-    hydrogen atoms are actually ionized into the $\mathrm{H}^-$ ion:
+    With the Saha equation (or at least something like it), we can 
+    compute what fraction of hydrogen atoms are actually ionized into 
+    the $\mathrm{H}^-$ ion:
     \begin{equation}
       \label{eq:222}
-      \frac{n(\mathrm{H})}{n(\mathrm{H}^-)}=\frac{n_Q}{n_e}\exp\left(-\frac
-{0.75\ \mathrm{eV}}{kT}\right)
+      \frac{n(\mathrm{H})}{n(\mathrm{H}^-)}=\frac{n_Q}{n_e}\exp\left(-
+      \frac{0.75\ \mathrm{eV}}{kT}\right)
     \end{equation}
     or
     \begin{equation}
       \label{eq:223}
-      \frac{n(\mathrm{H^-})}{n(\mathrm{H})}=\frac{n_e}{n_Q}\exp\left[\frac
-{8700}{T}\right]
+      \frac{n(\mathrm{H^-})}{n(\mathrm{H})}=\frac{n_e}{n_Q}\exp\left[
+      \frac{8700~\mathrm{K}}{T}\right]
     \end{equation}
     For the sun, this gives $n_e=10^{13}\ \mathrm{cm^{-3}}$ and thus
     \begin{equation}
       \label{eq:224}
-      \frac{n(\mathrm{H}^-)}{n(\mathrm{H})}\approx 10^{-8}e^{8700/T}
+      \frac{n(\mathrm{H}^-)}{n(\mathrm{H})}\approx 10^{-8}e^{8700~
+      \mathrm{K}/T}
     \end{equation}
     This source also peaks at a particular effective temperature and
     is actually the dominant source of opacity in the sun's
